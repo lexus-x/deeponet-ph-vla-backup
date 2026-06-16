@@ -1,0 +1,110 @@
+[train] variant=baseline mode=full out=/home/user/Desktop/Ayush PH test/output/strong_libero10_baseline
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6675.72it/s]
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 4576.44it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 111107.39it/s]
+[train] dataset frames=101469 episodes=379
+
+=== stage1 | steps=5000 batch=16 trainable: head=99.9M backbone=0.0M ===
+[stage1] step    499 | flow=0.7120 L1=0.3912 PH=0.0000 total=0.7120 | VRAM=4.8GB | 0.134s/it
+[stage1] step    999 | flow=0.5434 L1=0.3368 PH=0.0000 total=0.5434 | VRAM=4.8GB | 0.130s/it
+[stage1] step   1499 | flow=0.5023 L1=0.3208 PH=0.0000 total=0.5023 | VRAM=4.8GB | 0.123s/it
+[stage1] step   1999 | flow=0.4850 L1=0.3099 PH=0.0000 total=0.4850 | VRAM=4.8GB | 0.121s/it
+[stage1] step   2499 | flow=0.4670 L1=0.3054 PH=0.0000 total=0.4670 | VRAM=4.8GB | 0.120s/it
+[stage1] step   2999 | flow=0.4597 L1=0.3025 PH=0.0000 total=0.4597 | VRAM=4.8GB | 0.227s/it
+[stage1] step   3499 | flow=0.4514 L1=0.3001 PH=0.0000 total=0.4514 | VRAM=4.8GB | 0.129s/it
+[stage1] step   3999 | flow=0.4417 L1=0.2935 PH=0.0000 total=0.4417 | VRAM=4.8GB | 0.123s/it
+[stage1] step   4499 | flow=0.4324 L1=0.2935 PH=0.0000 total=0.4324 | VRAM=4.8GB | 0.126s/it
+[stage1] step   4999 | flow=0.4237 L1=0.2890 PH=0.0000 total=0.4237 | VRAM=4.8GB | 0.120s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_libero10_baseline/checkpoints/5000
+LlamaModel does not expose input embeddings. Gradients cannot flow back to the token embeddings when using adapters or gradient checkpointing. Override `get_input_embeddings` to fully support those features, or set `_input_embed_layer` to the attribute name that holds the embeddings.
+
+=== stage2 | steps=38000 batch=16 trainable: head=99.9M backbone=350.2M ===
+[stage2] step   5499 | flow=0.4258 L1=0.2881 PH=0.0000 total=0.4258 | VRAM=19.6GB | 0.787s/it
+[stage2] step   5999 | flow=0.4089 L1=0.2794 PH=0.0000 total=0.4089 | VRAM=19.6GB | 0.245s/it
+[stage2] step   6499 | flow=0.4077 L1=0.2809 PH=0.0000 total=0.4077 | VRAM=19.6GB | 1.579s/it
+[stage2] step   6999 | flow=0.3990 L1=0.2737 PH=0.0000 total=0.3990 | VRAM=19.6GB | 0.242s/it
+[stage2] step   7499 | flow=0.3952 L1=0.2749 PH=0.0000 total=0.3952 | VRAM=19.6GB | 1.189s/it
+[stage2] step   7999 | flow=0.3925 L1=0.2730 PH=0.0000 total=0.3925 | VRAM=19.6GB | 0.238s/it
+[stage2] step   8499 | flow=0.3777 L1=0.2688 PH=0.0000 total=0.3777 | VRAM=19.6GB | 0.241s/it
+[stage2] step   8999 | flow=0.3749 L1=0.2656 PH=0.0000 total=0.3749 | VRAM=19.6GB | 0.240s/it
+[stage2] step   9499 | flow=0.3651 L1=0.2624 PH=0.0000 total=0.3651 | VRAM=19.6GB | 0.238s/it
+[stage2] step   9999 | flow=0.3585 L1=0.2604 PH=0.0000 total=0.3585 | VRAM=19.6GB | 0.241s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_libero10_baseline/checkpoints/10000
+[stage2] step  10499 | flow=0.3478 L1=0.2546 PH=0.0000 total=0.3478 | VRAM=19.6GB | 0.238s/it
+[stage2] step  10999 | flow=0.3428 L1=0.2527 PH=0.0000 total=0.3428 | VRAM=19.6GB | 0.240s/it
+[stage2] step  11499 | flow=0.3320 L1=0.2500 PH=0.0000 total=0.3320 | VRAM=19.6GB | 0.240s/it
+[stage2] step  11999 | flow=0.3242 L1=0.2466 PH=0.0000 total=0.3242 | VRAM=19.6GB | 0.239s/it
+[stage2] step  12499 | flow=0.3147 L1=0.2421 PH=0.0000 total=0.3147 | VRAM=19.6GB | 0.239s/it
+[stage2] step  12999 | flow=0.3091 L1=0.2392 PH=0.0000 total=0.3091 | VRAM=19.6GB | 0.366s/it
+[stage2] step  13499 | flow=0.3002 L1=0.2389 PH=0.0000 total=0.3002 | VRAM=19.6GB | 0.242s/it
+[stage2] step  13999 | flow=0.2993 L1=0.2315 PH=0.0000 total=0.2993 | VRAM=19.6GB | 0.248s/it
+[stage2] step  14499 | flow=0.2919 L1=0.2305 PH=0.0000 total=0.2919 | VRAM=19.6GB | 0.239s/it
+[stage2] step  14999 | flow=0.2840 L1=0.2291 PH=0.0000 total=0.2840 | VRAM=19.6GB | 0.240s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_libero10_baseline/checkpoints/15000
+[stage2] step  15499 | flow=0.2806 L1=0.2248 PH=0.0000 total=0.2806 | VRAM=19.6GB | 0.239s/it
+[stage2] step  15999 | flow=0.2741 L1=0.2211 PH=0.0000 total=0.2741 | VRAM=19.6GB | 0.241s/it
+[stage2] step  16499 | flow=0.2666 L1=0.2193 PH=0.0000 total=0.2666 | VRAM=19.6GB | 0.241s/it
+[stage2] step  16999 | flow=0.2604 L1=0.2184 PH=0.0000 total=0.2604 | VRAM=19.6GB | 0.240s/it
+[stage2] step  17499 | flow=0.2586 L1=0.2164 PH=0.0000 total=0.2586 | VRAM=19.6GB | 0.240s/it
+[stage2] step  17999 | flow=0.2509 L1=0.2126 PH=0.0000 total=0.2509 | VRAM=19.6GB | 0.240s/it
+[stage2] step  18499 | flow=0.2427 L1=0.2080 PH=0.0000 total=0.2427 | VRAM=19.6GB | 0.241s/it
+[stage2] step  18999 | flow=0.2409 L1=0.2068 PH=0.0000 total=0.2409 | VRAM=19.6GB | 0.242s/it
+[stage2] step  19499 | flow=0.2309 L1=0.2046 PH=0.0000 total=0.2309 | VRAM=19.6GB | 0.367s/it
+[stage2] step  19999 | flow=0.2322 L1=0.2029 PH=0.0000 total=0.2322 | VRAM=19.6GB | 0.244s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_libero10_baseline/checkpoints/20000
+[stage2] step  20499 | flow=0.2225 L1=0.2020 PH=0.0000 total=0.2225 | VRAM=19.6GB | 1.389s/it
+[stage2] step  20999 | flow=0.2229 L1=0.1989 PH=0.0000 total=0.2229 | VRAM=19.6GB | 0.241s/it
+[stage2] step  21499 | flow=0.2191 L1=0.1973 PH=0.0000 total=0.2191 | VRAM=19.6GB | 1.395s/it
+[stage2] step  21999 | flow=0.2174 L1=0.1956 PH=0.0000 total=0.2174 | VRAM=19.6GB | 0.241s/it
+[stage2] step  22499 | flow=0.2130 L1=0.1935 PH=0.0000 total=0.2130 | VRAM=19.6GB | 1.051s/it
+[stage2] step  22999 | flow=0.2066 L1=0.1914 PH=0.0000 total=0.2066 | VRAM=19.6GB | 0.241s/it
+[stage2] step  23499 | flow=0.2059 L1=0.1912 PH=0.0000 total=0.2059 | VRAM=19.6GB | 0.691s/it
+[stage2] step  23999 | flow=0.2035 L1=0.1894 PH=0.0000 total=0.2035 | VRAM=19.6GB | 0.242s/it
+[stage2] step  24499 | flow=0.1974 L1=0.1845 PH=0.0000 total=0.1974 | VRAM=19.6GB | 0.239s/it
+[stage2] step  24999 | flow=0.1935 L1=0.1831 PH=0.0000 total=0.1935 | VRAM=19.6GB | 0.240s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_libero10_baseline/checkpoints/25000
+[stage2] step  25499 | flow=0.1910 L1=0.1838 PH=0.0000 total=0.1910 | VRAM=19.6GB | 0.241s/it
+[stage2] step  25999 | flow=0.1916 L1=0.1813 PH=0.0000 total=0.1916 | VRAM=19.6GB | 0.242s/it
+[stage2] step  26499 | flow=0.1894 L1=0.1808 PH=0.0000 total=0.1894 | VRAM=19.6GB | 0.241s/it
+[stage2] step  26999 | flow=0.1885 L1=0.1790 PH=0.0000 total=0.1885 | VRAM=19.6GB | 0.241s/it
+[stage2] step  27499 | flow=0.1814 L1=0.1788 PH=0.0000 total=0.1814 | VRAM=19.6GB | 0.246s/it
+[stage2] step  27999 | flow=0.1809 L1=0.1784 PH=0.0000 total=0.1809 | VRAM=19.6GB | 0.241s/it
+[stage2] step  28499 | flow=0.1828 L1=0.1755 PH=0.0000 total=0.1828 | VRAM=19.6GB | 0.240s/it
+[stage2] step  28999 | flow=0.1795 L1=0.1747 PH=0.0000 total=0.1795 | VRAM=19.6GB | 0.242s/it
+[stage2] step  29499 | flow=0.1760 L1=0.1746 PH=0.0000 total=0.1760 | VRAM=19.6GB | 0.249s/it
+[stage2] step  29999 | flow=0.1722 L1=0.1754 PH=0.0000 total=0.1722 | VRAM=19.6GB | 0.263s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_libero10_baseline/checkpoints/30000
+[stage2] step  30499 | flow=0.1708 L1=0.1708 PH=0.0000 total=0.1708 | VRAM=19.6GB | 0.243s/it
+[stage2] step  30999 | flow=0.1678 L1=0.1696 PH=0.0000 total=0.1678 | VRAM=19.6GB | 0.241s/it
+[stage2] step  31499 | flow=0.1668 L1=0.1693 PH=0.0000 total=0.1668 | VRAM=19.6GB | 0.241s/it
+[stage2] step  31999 | flow=0.1662 L1=0.1663 PH=0.0000 total=0.1662 | VRAM=19.6GB | 0.240s/it
+[stage2] step  32499 | flow=0.1651 L1=0.1674 PH=0.0000 total=0.1651 | VRAM=19.6GB | 0.240s/it
+[stage2] step  32999 | flow=0.1630 L1=0.1656 PH=0.0000 total=0.1630 | VRAM=19.6GB | 0.247s/it
+[stage2] step  33499 | flow=0.1622 L1=0.1666 PH=0.0000 total=0.1622 | VRAM=19.6GB | 0.241s/it
+[stage2] step  33999 | flow=0.1626 L1=0.1667 PH=0.0000 total=0.1626 | VRAM=19.6GB | 0.252s/it
+[stage2] step  34499 | flow=0.1592 L1=0.1639 PH=0.0000 total=0.1592 | VRAM=19.6GB | 0.243s/it
+[stage2] step  34999 | flow=0.1575 L1=0.1649 PH=0.0000 total=0.1575 | VRAM=19.6GB | 0.247s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_libero10_baseline/checkpoints/35000
+[stage2] step  35499 | flow=0.1584 L1=0.1635 PH=0.0000 total=0.1584 | VRAM=19.6GB | 0.242s/it
+[stage2] step  35999 | flow=0.1558 L1=0.1615 PH=0.0000 total=0.1558 | VRAM=19.6GB | 0.240s/it
+[stage2] step  36499 | flow=0.1542 L1=0.1625 PH=0.0000 total=0.1542 | VRAM=19.6GB | 0.241s/it
+[stage2] step  36999 | flow=0.1523 L1=0.1600 PH=0.0000 total=0.1523 | VRAM=19.6GB | 0.242s/it
+[stage2] step  37499 | flow=0.1491 L1=0.1594 PH=0.0000 total=0.1491 | VRAM=19.6GB | 1.133s/it
+[stage2] step  37999 | flow=0.1476 L1=0.1592 PH=0.0000 total=0.1476 | VRAM=19.6GB | 0.241s/it
+[stage2] step  38499 | flow=0.1461 L1=0.1592 PH=0.0000 total=0.1461 | VRAM=19.6GB | 0.913s/it
+[stage2] step  38999 | flow=0.1493 L1=0.1561 PH=0.0000 total=0.1493 | VRAM=19.6GB | 0.243s/it
+[stage2] step  39499 | flow=0.1482 L1=0.1576 PH=0.0000 total=0.1482 | VRAM=19.6GB | 0.241s/it
+[stage2] step  39999 | flow=0.1438 L1=0.1563 PH=0.0000 total=0.1438 | VRAM=19.6GB | 0.241s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_libero10_baseline/checkpoints/40000
+[stage2] step  40499 | flow=0.1449 L1=0.1573 PH=0.0000 total=0.1449 | VRAM=19.6GB | 0.242s/it
+[stage2] step  40999 | flow=0.1421 L1=0.1560 PH=0.0000 total=0.1421 | VRAM=19.6GB | 0.240s/it
+[stage2] step  41499 | flow=0.1461 L1=0.1564 PH=0.0000 total=0.1461 | VRAM=19.6GB | 0.240s/it
+[stage2] step  41999 | flow=0.1397 L1=0.1532 PH=0.0000 total=0.1397 | VRAM=19.6GB | 0.245s/it
+[stage2] step  42499 | flow=0.1388 L1=0.1537 PH=0.0000 total=0.1388 | VRAM=19.6GB | 0.242s/it
+[stage2] step  42999 | flow=0.1413 L1=0.1532 PH=0.0000 total=0.1413 | VRAM=19.6GB | 0.241s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_libero10_baseline/checkpoints/43000
+
+[train] DONE variant=baseline total_steps=43000 wall=287.8 min  -> /home/user/Desktop/Ayush PH test/output/strong_libero10_baseline

@@ -1,0 +1,196 @@
+{
+  "_config": {
+    "libero_object": {
+      "replan": 5,
+      "indist_episodes": 20,
+      "pert_episodes": 8,
+      "max_steps": 520,
+      "models": {
+        "flow": "../Object/runs/flow_s0/checkpoints/15000",
+        "m3": "../Object/runs/m3_s0/checkpoints/15000",
+        "m4": "../Object/runs/m4_s0/checkpoints/15000"
+      }
+    }
+  },
+  "LIBERO-OBJECT": {
+    "flow": {
+      "per_task": {
+        "0": {
+          "task": "pick up the alphabet soup and place it in the basket",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the cream cheese and place it in the basket",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the salad dressing and place it in the basket",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the bbq sauce and place it in the basket",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the ketchup and place it in the basket",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the tomato sauce and place it in the basket",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the butter and place it in the basket",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the milk and place it in the basket",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the chocolate pudding and place it in the basket",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the orange juice and place it in the basket",
+          "success_rate": 0.7,
+          "n": 20
+        }
+      },
+      "average": 0.845
+    },
+    "m3": {
+      "per_task": {
+        "0": {
+          "task": "pick up the alphabet soup and place it in the basket",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the cream cheese and place it in the basket",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the salad dressing and place it in the basket",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the bbq sauce and place it in the basket",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the ketchup and place it in the basket",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the tomato sauce and place it in the basket",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the butter and place it in the basket",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the milk and place it in the basket",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the chocolate pudding and place it in the basket",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the orange juice and place it in the basket",
+          "success_rate": 0.95,
+          "n": 20
+        }
+      },
+      "average": 0.9399999999999998
+    },
+    "m4": {
+      "per_task": {
+        "0": {
+          "task": "pick up the alphabet soup and place it in the basket",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the cream cheese and place it in the basket",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the salad dressing and place it in the basket",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the bbq sauce and place it in the basket",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the ketchup and place it in the basket",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the tomato sauce and place it in the basket",
+          "success_rate": 0.65,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the butter and place it in the basket",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the milk and place it in the basket",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the chocolate pudding and place it in the basket",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the orange juice and place it in the basket",
+          "success_rate": 0.95,
+          "n": 20
+        }
+      },
+      "average": 0.8699999999999999
+    }
+  },
+  "_summary": {
+    "flow": {
+      "LIBERO-OBJECT_avg": 0.845,
+      "LIBERO-OBJECT-V_avg": null
+    },
+    "m3": {
+      "LIBERO-OBJECT_avg": 0.9399999999999998,
+      "LIBERO-OBJECT-V_avg": null
+    },
+    "m4": {
+      "LIBERO-OBJECT_avg": 0.8699999999999999,
+      "LIBERO-OBJECT-V_avg": null
+    }
+  }
+}

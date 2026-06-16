@@ -1,0 +1,5 @@
+  saved 1_accuracy.png
+  saved 3_success_per_task.png
+[SPATIAL15K] plots+CSVs -> ../Spatial/plots ../Spatial/data
+[SPATIAL15K] in-dist acc: {'M1 flow': 78.5, 'M3 DeepONet-v2': 82.0, 'M4 DeepONet+PH-v2': 80.5}
+[SPATIAL15K] robustness : {'M1 flow': None, 'M3 DeepONet-v2': None, 'M4 DeepONet+PH-v2': None}

@@ -1,0 +1,11 @@
+[pipeline 18:38:26] waiting for training to finish ...
+[pipeline 21:02:26] training done. starting post-training pipeline.
+[pipeline 21:02:26] STEP 1/4: compare.py (params + latency, 1000 passes)
+[pipeline 21:07:27] compare done
+[pipeline 21:07:27] STEP 2/4: simulate_videos.py (~51 MP4s)
+[pipeline 21:16:04] videos done
+[pipeline 21:16:04] STEP 3/4: evaluate.py (LIBERO-10 12ep + LIBERO-V 8ep; the long step)
+[pipeline 23:17:12] eval done
+[pipeline 23:17:12] STEP 4/4: plots.py (6 figures PNG+PDF + summary.pdf)
+[pipeline 23:17:14] plots done
+[pipeline 23:17:14] ALL PIPELINE DONE

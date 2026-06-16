@@ -1,0 +1,19 @@
+[hfph-report] cross_lambda_accuracy_robustness.png/.pdf
+[hfph-report] per_task_obj_lambda_0p02.png/.pdf
+[hfph-report] per_task_rob_lambda_0p02.png/.pdf
+[hfph-report] per_task_obj_lambda_0p05.png/.pdf
+[hfph-report] per_task_rob_lambda_0p05.png/.pdf
+[hfph-report] per_task_obj_lambda_0p1.png/.pdf
+[hfph-report] per_task_rob_lambda_0p1.png/.pdf
+[hfph-report] per_task_obj_lambda_0p2.png/.pdf
+[hfph-report] per_task_rob_lambda_0p2.png/.pdf
+[hfph-report] per_task_obj_lambda_0p5.png/.pdf
+[hfph-report] per_task_rob_lambda_0p5.png/.pdf
+[hfph-report] latency_params.png/.pdf
+[hfph-report] control: acc=70.0 rob=31.7
+[hfph-report] λ=0.02  acc=64.2  rob=36.7
+[hfph-report] λ=0.05  acc=69.2  rob=31.7
+[hfph-report] λ=0.1   acc=70.0  rob=33.3
+[hfph-report] λ=0.2   acc=65.0  rob=30.0
+[hfph-report] λ=0.5   acc=68.3  rob=36.7
+[hfph-report] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/summary.pdf

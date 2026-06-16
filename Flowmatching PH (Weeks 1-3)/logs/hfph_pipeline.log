@@ -1,0 +1,40 @@
+[hfph 06-04 12:19:06] START PH-finetune sweep on official ckpt (object); models: 6
+[hfph 06-04 12:19:06] TRAIN control (variant=baseline lambda=0.0, continued-finetune 10000 steps bb=5e-6 hd=2e-5)
+[hfph 06-04 13:46:40] done TRAIN control
+[hfph 06-04 13:46:40] EVAL control (object clean + viewpoint robustness)
+[hfph 06-04 14:07:19] done EVAL control
+[hfph 06-04 14:07:19] TRAIN lambda_0p02 (variant=ph lambda=0.02, continued-finetune 10000 steps bb=5e-6 hd=2e-5)
+[hfph 06-04 15:32:31] done TRAIN lambda_0p02
+[hfph 06-04 15:32:31] EVAL lambda_0p02 (object clean + viewpoint robustness)
+[hfph 06-04 15:57:05] done EVAL lambda_0p02
+[hfph 06-04 15:57:05] TRAIN lambda_0p05 (variant=ph lambda=0.05, continued-finetune 10000 steps bb=5e-6 hd=2e-5)
+[hfph 06-04 17:33:11] done TRAIN lambda_0p05
+[hfph 06-04 17:33:12] EVAL lambda_0p05 (object clean + viewpoint robustness)
+[hfph 06-04 17:54:18] done EVAL lambda_0p05
+[hfph 06-04 17:54:18] TRAIN lambda_0p1 (variant=ph lambda=0.1, continued-finetune 10000 steps bb=5e-6 hd=2e-5)
+[hfph 06-04 19:11:37] done TRAIN lambda_0p1
+[hfph 06-04 19:11:37] EVAL lambda_0p1 (object clean + viewpoint robustness)
+[hfph 06-04 19:35:30] done EVAL lambda_0p1
+[hfph 06-04 19:35:30] TRAIN lambda_0p2 (variant=ph lambda=0.2, continued-finetune 10000 steps bb=5e-6 hd=2e-5)
+[hfph 06-04 21:13:57] done TRAIN lambda_0p2
+[hfph 06-04 21:13:57] EVAL lambda_0p2 (object clean + viewpoint robustness)
+[hfph 06-04 21:38:35] done EVAL lambda_0p2
+[hfph 06-04 21:38:35] TRAIN lambda_0p5 (variant=ph lambda=0.5, continued-finetune 10000 steps bb=5e-6 hd=2e-5)
+[hfph 06-04 22:52:38] done TRAIN lambda_0p5
+[hfph 06-04 22:52:38] EVAL lambda_0p5 (object clean + viewpoint robustness)
+[hfph 06-04 23:16:12] done EVAL lambda_0p5
+[hfph 06-04 23:16:12] VIDEOS lambda_0p02 (control vs lambda_0p02, object)
+[hfph 06-04 23:23:04] done VIDEOS lambda_0p02
+[hfph 06-04 23:23:04] VIDEOS lambda_0p05 (control vs lambda_0p05, object)
+[hfph 06-04 23:30:09] done VIDEOS lambda_0p05
+[hfph 06-04 23:30:09] VIDEOS lambda_0p1 (control vs lambda_0p1, object)
+[hfph 06-04 23:37:23] done VIDEOS lambda_0p1
+[hfph 06-04 23:37:23] VIDEOS lambda_0p2 (control vs lambda_0p2, object)
+[hfph 06-04 23:44:52] done VIDEOS lambda_0p2
+[hfph 06-04 23:44:52] VIDEOS lambda_0p5 (control vs lambda_0p5, object)
+[hfph 06-04 23:52:05] done VIDEOS lambda_0p5
+[hfph 06-04 23:52:05] COMPARE (latency + params, once)
+[hfph 06-04 23:59:28] done COMPARE
+[hfph 06-04 23:59:28] REPORT
+[hfph 06-04 23:59:31] done REPORT
+[hfph 06-04 23:59:31] ALL HF-PH DONE

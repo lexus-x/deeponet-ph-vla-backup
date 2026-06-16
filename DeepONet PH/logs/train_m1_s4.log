@@ -1,0 +1,61 @@
+[train] head=flow variant=baseline seed=4 out=runs/m1_flow_s4
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6743.01it/s]
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 29905.91it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 15293.72it/s]
+[train] dataset frames=52970 episodes=432 -> 1 epoch = 1104 steps @ batch 48
+[train] planned frames seen = 398400 = 7.52 epochs
+
+=== stage1 | steps=1650 batch=48 trainable: head=99.88M backbone=0.0M ===
+[stage1] step    199 | mse=0.6755 L1=0.4045 PH=0.0000 total=0.6755 | VRAM=12.8GB | 0.314s/it
+[stage1] step    399 | mse=0.4824 L1=0.3314 PH=0.0000 total=0.4824 | VRAM=12.8GB | 0.314s/it
+[stage1] step    599 | mse=0.4546 L1=0.3148 PH=0.0000 total=0.4546 | VRAM=12.8GB | 0.314s/it
+[stage1] step    799 | mse=0.4367 L1=0.3116 PH=0.0000 total=0.4367 | VRAM=12.8GB | 0.315s/it
+[stage1] step    999 | mse=0.4210 L1=0.3020 PH=0.0000 total=0.4210 | VRAM=12.8GB | 0.318s/it
+[stage1] step   1199 | mse=0.4135 L1=0.3004 PH=0.0000 total=0.4135 | VRAM=12.8GB | 6.485s/it
+[stage1] step   1399 | mse=0.4006 L1=0.2950 PH=0.0000 total=0.4006 | VRAM=12.8GB | 5.886s/it
+[stage1] step   1599 | mse=0.3947 L1=0.2935 PH=0.0000 total=0.3947 | VRAM=12.8GB | 4.282s/it
+[ckpt] saved -> runs/m1_flow_s4/checkpoints/1650  (EMA weights)
+LlamaModel does not expose input embeddings. Gradients cannot flow back to the token embeddings when using adapters or gradient checkpointing. Override `get_input_embeddings` to fully support those features, or set `_input_embed_layer` to the attribute name that holds the embeddings.
+
+=== stage2 | steps=6650 batch=48 trainable: head=99.88M backbone=350.2M ===
+[stage2] step   1849 | mse=0.3898 L1=0.2937 PH=0.0000 total=0.3898 | VRAM=53.6GB | 0.672s/it
+[stage2] step   2049 | mse=0.3698 L1=0.2852 PH=0.0000 total=0.3698 | VRAM=53.6GB | 0.672s/it
+[stage2] step   2249 | mse=0.3573 L1=0.2781 PH=0.0000 total=0.3573 | VRAM=53.6GB | 0.676s/it
+[stage2] step   2449 | mse=0.3459 L1=0.2754 PH=0.0000 total=0.3459 | VRAM=53.6GB | 0.675s/it
+[stage2] step   2649 | mse=0.3293 L1=0.2693 PH=0.0000 total=0.3293 | VRAM=53.6GB | 0.673s/it
+[stage2] step   2849 | mse=0.3028 L1=0.2599 PH=0.0000 total=0.3028 | VRAM=53.6GB | 3.552s/it
+[stage2] step   3049 | mse=0.2929 L1=0.2493 PH=0.0000 total=0.2929 | VRAM=53.6GB | 3.639s/it
+[stage2] step   3249 | mse=0.2726 L1=0.2458 PH=0.0000 total=0.2726 | VRAM=53.6GB | 3.474s/it
+[stage2] step   3449 | mse=0.2595 L1=0.2380 PH=0.0000 total=0.2595 | VRAM=53.6GB | 3.305s/it
+[stage2] step   3649 | mse=0.2475 L1=0.2310 PH=0.0000 total=0.2475 | VRAM=53.6GB | 2.526s/it
+[stage2] step   3849 | mse=0.2321 L1=0.2254 PH=0.0000 total=0.2321 | VRAM=53.6GB | 1.683s/it
+[stage2] step   4049 | mse=0.2163 L1=0.2179 PH=0.0000 total=0.2163 | VRAM=53.6GB | 0.670s/it
+[stage2] step   4249 | mse=0.2028 L1=0.2137 PH=0.0000 total=0.2028 | VRAM=53.6GB | 1.358s/it
+[stage2] step   4449 | mse=0.2003 L1=0.2079 PH=0.0000 total=0.2003 | VRAM=53.6GB | 0.670s/it
+[stage2] step   4649 | mse=0.1940 L1=0.2056 PH=0.0000 total=0.1940 | VRAM=53.6GB | 0.671s/it
+[ckpt] saved -> runs/m1_flow_s4/checkpoints/4650  (EMA weights)
+[stage2] step   4849 | mse=0.1837 L1=0.1998 PH=0.0000 total=0.1837 | VRAM=53.6GB | 0.671s/it
+[stage2] step   5049 | mse=0.1757 L1=0.1964 PH=0.0000 total=0.1757 | VRAM=53.6GB | 0.670s/it
+[stage2] step   5249 | mse=0.1720 L1=0.1907 PH=0.0000 total=0.1720 | VRAM=53.6GB | 0.670s/it
+[stage2] step   5449 | mse=0.1644 L1=0.1889 PH=0.0000 total=0.1644 | VRAM=53.6GB | 0.671s/it
+[stage2] step   5649 | mse=0.1592 L1=0.1868 PH=0.0000 total=0.1592 | VRAM=53.6GB | 0.673s/it
+[stage2] step   5849 | mse=0.1558 L1=0.1855 PH=0.0000 total=0.1558 | VRAM=53.6GB | 0.673s/it
+[stage2] step   6049 | mse=0.1517 L1=0.1843 PH=0.0000 total=0.1517 | VRAM=53.6GB | 0.671s/it
+[stage2] step   6249 | mse=0.1461 L1=0.1784 PH=0.0000 total=0.1461 | VRAM=53.6GB | 0.671s/it
+[stage2] step   6449 | mse=0.1452 L1=0.1766 PH=0.0000 total=0.1452 | VRAM=53.6GB | 0.672s/it
+[stage2] step   6649 | mse=0.1386 L1=0.1753 PH=0.0000 total=0.1386 | VRAM=53.6GB | 0.672s/it
+[stage2] step   6849 | mse=0.1376 L1=0.1739 PH=0.0000 total=0.1376 | VRAM=53.6GB | 0.673s/it
+[stage2] step   7049 | mse=0.1340 L1=0.1745 PH=0.0000 total=0.1340 | VRAM=53.6GB | 0.672s/it
+[stage2] step   7249 | mse=0.1329 L1=0.1706 PH=0.0000 total=0.1329 | VRAM=53.6GB | 0.670s/it
+[stage2] step   7449 | mse=0.1284 L1=0.1682 PH=0.0000 total=0.1284 | VRAM=53.6GB | 0.671s/it
+[stage2] step   7649 | mse=0.1264 L1=0.1688 PH=0.0000 total=0.1264 | VRAM=53.6GB | 0.672s/it
+[ckpt] saved -> runs/m1_flow_s4/checkpoints/7650  (EMA weights)
+[stage2] step   7849 | mse=0.1275 L1=0.1684 PH=0.0000 total=0.1275 | VRAM=53.6GB | 0.713s/it
+[stage2] step   8049 | mse=0.1232 L1=0.1665 PH=0.0000 total=0.1232 | VRAM=53.6GB | 0.673s/it
+[stage2] step   8249 | mse=0.1206 L1=0.1631 PH=0.0000 total=0.1206 | VRAM=53.6GB | 1.167s/it
+[ckpt] saved -> runs/m1_flow_s4/checkpoints/8300  (EMA weights)
+
+[train] DONE head=flow variant=baseline steps=8300 wall=145.6 min -> runs/m1_flow_s4

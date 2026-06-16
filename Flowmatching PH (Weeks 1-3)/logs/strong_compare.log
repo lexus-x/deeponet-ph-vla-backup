@@ -1,0 +1,30 @@
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 5132.22it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6617.14it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[compare] timing baseline (1000 fwd passes, batch=1) ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6485.42it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[compare] timing ph (1000 fwd passes, batch=1) ...
+
+=== PARAMETER COUNT (millions) ===
+submodule                        baseline           ph
+backbone_vlm (SmolVLM2)           350.165      350.165
+action_expert (lm_expert)          98.246       98.246
+state_proj                          0.032        0.032
+action_in_proj                      0.024        0.024
+action_out_proj                     0.023        0.023
+action_time_mlp                     1.557        1.557
+other                               0.000        0.000
+TOTAL                             450.046      450.046
+
+=== INFERENCE LATENCY (ms, batch=1) ===
+model          mean      std      p50      p90      p99
+baseline     127.71     1.17   127.56   128.99   131.70
+ph           128.48     1.10   128.39   129.72   132.07
+
+[compare] saved -> /home/user/Desktop/Ayush PH test/output/results_strong/compare.json

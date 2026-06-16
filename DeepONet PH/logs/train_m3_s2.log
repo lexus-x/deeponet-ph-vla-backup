@@ -1,0 +1,64 @@
+[train] head=deeponet variant=baseline seed=2 out=runs/m3_deeponet_s2
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6238.14it/s]
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6161.53it/s]
+WARNING:root:Missing key(s) when loading model: {'model.deeponet.branch.0.weight', 'model.deeponet.trunk.4.bias', 'model.deeponet.trunk.6.bias', 'model.deeponet.out_mlp.2.bias', 'model.deeponet.trunk.4.weight', 'model.deeponet.branch.3.weight', 'model.deeponet.branch.4.weight', 'model.deeponet.out_mlp.0.weight', 'model.deeponet.branch.0.bias', 'model.deeponet.branch.1.weight', 'model.deeponet.branch.6.bias', 'model.deeponet.out_mlp.0.bias', 'model.deeponet.branch.4.bias', 'model.deeponet.trunk.0.bias', 'model.deeponet.branch.1.bias', 'model.deeponet.trunk.2.bias', 'model.deeponet.trunk.2.weight', 'model.deeponet.out_bias', 'model.deeponet.out_mlp.2.weight', 'model.deeponet.branch.3.bias', 'model.deeponet.branch.6.weight', 'model.deeponet.trunk.0.weight', 'model.deeponet.trunk.6.weight'}
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 101067.57it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 6467.70it/s]
+[train] dataset frames=52970 episodes=432 -> 1 epoch = 1104 steps @ batch 48
+[train] planned frames seen = 398400 = 7.52 epochs
+
+=== stage1 | steps=1650 batch=48 trainable: head=2.31M backbone=0.0M ===
+[stage1] step    199 | mse=0.7363 L1=0.7210 PH=0.0000 total=0.7363 | VRAM=9.2GB | 0.274s/it
+[stage1] step    399 | mse=0.5682 L1=0.6096 PH=0.0000 total=0.5682 | VRAM=9.2GB | 0.274s/it
+[stage1] step    599 | mse=0.4864 L1=0.5602 PH=0.0000 total=0.4864 | VRAM=9.2GB | 0.275s/it
+[stage1] step    799 | mse=0.4549 L1=0.5389 PH=0.0000 total=0.4549 | VRAM=9.2GB | 0.275s/it
+[stage1] step    999 | mse=0.4305 L1=0.5241 PH=0.0000 total=0.4305 | VRAM=9.2GB | 0.275s/it
+[stage1] step   1199 | mse=0.4144 L1=0.5132 PH=0.0000 total=0.4144 | VRAM=9.2GB | 7.469s/it
+[stage1] step   1399 | mse=0.4008 L1=0.5065 PH=0.0000 total=0.4008 | VRAM=9.2GB | 6.637s/it
+[stage1] step   1599 | mse=0.3997 L1=0.5053 PH=0.0000 total=0.3997 | VRAM=9.2GB | 0.276s/it
+[ckpt] saved -> runs/m3_deeponet_s2/checkpoints/1650  (EMA weights)
+
+=== stage2 | steps=6650 batch=48 trainable: head=2.31M backbone=350.2M ===
+[stage2] step   1849 | mse=0.3951 L1=0.5032 PH=0.0000 total=0.3951 | VRAM=50.0GB | 0.634s/it
+[stage2] step   2049 | mse=0.3801 L1=0.4920 PH=0.0000 total=0.3801 | VRAM=50.0GB | 0.754s/it
+[stage2] step   2249 | mse=0.3695 L1=0.4849 PH=0.0000 total=0.3695 | VRAM=50.0GB | 0.668s/it
+[stage2] step   2449 | mse=0.3566 L1=0.4739 PH=0.0000 total=0.3566 | VRAM=50.0GB | 0.633s/it
+[stage2] step   2649 | mse=0.3444 L1=0.4698 PH=0.0000 total=0.3444 | VRAM=50.0GB | 0.633s/it
+[stage2] step   2849 | mse=0.3361 L1=0.4627 PH=0.0000 total=0.3361 | VRAM=50.0GB | 4.465s/it
+[stage2] step   3049 | mse=0.3212 L1=0.4562 PH=0.0000 total=0.3212 | VRAM=50.0GB | 3.986s/it
+[stage2] step   3249 | mse=0.3126 L1=0.4492 PH=0.0000 total=0.3126 | VRAM=50.0GB | 4.377s/it
+[stage2] step   3449 | mse=0.2999 L1=0.4405 PH=0.0000 total=0.2999 | VRAM=50.0GB | 4.396s/it
+[stage2] step   3649 | mse=0.2906 L1=0.4375 PH=0.0000 total=0.2906 | VRAM=50.0GB | 4.069s/it
+[stage2] step   3849 | mse=0.2834 L1=0.4347 PH=0.0000 total=0.2834 | VRAM=50.0GB | 3.543s/it
+[stage2] step   4049 | mse=0.2662 L1=0.4237 PH=0.0000 total=0.2662 | VRAM=50.0GB | 0.972s/it
+[stage2] step   4249 | mse=0.2618 L1=0.4202 PH=0.0000 total=0.2618 | VRAM=50.0GB | 2.358s/it
+[stage2] step   4449 | mse=0.2530 L1=0.4155 PH=0.0000 total=0.2530 | VRAM=50.0GB | 3.789s/it
+[stage2] step   4649 | mse=0.2426 L1=0.4116 PH=0.0000 total=0.2426 | VRAM=50.0GB | 4.482s/it
+[ckpt] saved -> runs/m3_deeponet_s2/checkpoints/4650  (EMA weights)
+[stage2] step   4849 | mse=0.2346 L1=0.4039 PH=0.0000 total=0.2346 | VRAM=50.0GB | 3.881s/it
+[stage2] step   5049 | mse=0.2247 L1=0.3964 PH=0.0000 total=0.2247 | VRAM=50.0GB | 0.677s/it
+[stage2] step   5249 | mse=0.2152 L1=0.3929 PH=0.0000 total=0.2152 | VRAM=50.0GB | 0.688s/it
+[stage2] step   5449 | mse=0.2109 L1=0.3903 PH=0.0000 total=0.2109 | VRAM=50.0GB | 0.724s/it
+[stage2] step   5649 | mse=0.2041 L1=0.3850 PH=0.0000 total=0.2041 | VRAM=50.0GB | 0.672s/it
+[stage2] step   5849 | mse=0.1988 L1=0.3821 PH=0.0000 total=0.1988 | VRAM=50.0GB | 0.629s/it
+[stage2] step   6049 | mse=0.1944 L1=0.3781 PH=0.0000 total=0.1944 | VRAM=50.0GB | 0.630s/it
+[stage2] step   6249 | mse=0.1830 L1=0.3700 PH=0.0000 total=0.1830 | VRAM=50.0GB | 0.632s/it
+[stage2] step   6449 | mse=0.1773 L1=0.3690 PH=0.0000 total=0.1773 | VRAM=50.0GB | 1.003s/it
+[stage2] step   6649 | mse=0.1756 L1=0.3655 PH=0.0000 total=0.1756 | VRAM=50.0GB | 1.170s/it
+[stage2] step   6849 | mse=0.1728 L1=0.3617 PH=0.0000 total=0.1728 | VRAM=50.0GB | 2.036s/it
+[stage2] step   7049 | mse=0.1669 L1=0.3588 PH=0.0000 total=0.1669 | VRAM=50.0GB | 3.868s/it
+[stage2] step   7249 | mse=0.1622 L1=0.3560 PH=0.0000 total=0.1622 | VRAM=50.0GB | 0.631s/it
+[stage2] step   7449 | mse=0.1555 L1=0.3492 PH=0.0000 total=0.1555 | VRAM=50.0GB | 0.631s/it
+[stage2] step   7649 | mse=0.1547 L1=0.3491 PH=0.0000 total=0.1547 | VRAM=50.0GB | 0.632s/it
+[ckpt] saved -> runs/m3_deeponet_s2/checkpoints/7650  (EMA weights)
+[stage2] step   7849 | mse=0.1501 L1=0.3462 PH=0.0000 total=0.1501 | VRAM=50.0GB | 0.632s/it
+[stage2] step   8049 | mse=0.1484 L1=0.3437 PH=0.0000 total=0.1484 | VRAM=50.0GB | 0.679s/it
+[stage2] step   8249 | mse=0.1432 L1=0.3422 PH=0.0000 total=0.1432 | VRAM=50.0GB | 0.679s/it
+[ckpt] saved -> runs/m3_deeponet_s2/checkpoints/8300  (EMA weights)
+
+[train] DONE head=deeponet variant=baseline steps=8300 wall=159.9 min -> runs/m3_deeponet_s2

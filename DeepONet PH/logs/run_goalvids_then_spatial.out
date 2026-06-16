@@ -1,0 +1,368 @@
+###### Goal videos ######
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 13464.86it/s]
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6901.17it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6828.95it/s]
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6970.24it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6969.22it/s]
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6970.29it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[vid-libero_goal] 3 policies loaded
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task0 M1 flow: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task0 M3 v2: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task0 M4 v2+PH: x
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[vid-libero_goal] saved task00.mp4 (300f)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task1 M1 flow: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task1 M3 v2: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task1 M4 v2+PH: OK
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[vid-libero_goal] saved task01.mp4 (91f)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task2 M1 flow: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task2 M3 v2: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task2 M4 v2+PH: OK
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[vid-libero_goal] saved task02.mp4 (90f)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task3 M1 flow: x
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task3 M3 v2: x
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task3 M4 v2+PH: x
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[vid-libero_goal] saved task03.mp4 (300f)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task4 M1 flow: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task4 M3 v2: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task4 M4 v2+PH: OK
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[vid-libero_goal] saved task04.mp4 (152f)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task5 M1 flow: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task5 M3 v2: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task5 M4 v2+PH: x
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[vid-libero_goal] saved task05.mp4 (300f)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task6 M1 flow: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task6 M3 v2: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task6 M4 v2+PH: x
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[vid-libero_goal] saved task06.mp4 (300f)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task7 M1 flow: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task7 M3 v2: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task7 M4 v2+PH: OK
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[vid-libero_goal] saved task07.mp4 (93f)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task8 M1 flow: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task8 M3 v2: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task8 M4 v2+PH: OK
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[vid-libero_goal] saved task08.mp4 (79f)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task9 M1 flow: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task9 M3 v2: OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[vid-libero_goal] task9 M4 v2+PH: OK
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[vid-libero_goal] saved task09.mp4 (149f)
+[vid-libero_goal] DONE -> ../Goal/videos
+###### [SPATIAL15K] train flow (head=flow variant=baseline) 15K ######
+[train] head=flow variant=baseline seed=0 out=../Spatial/runs/flow_s0
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6633.62it/s]
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 9631.01it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 5050.34it/s]
+[train] dataset frames=52970 episodes=432 -> 1 epoch = 1104 steps @ batch 48
+[train] planned frames seen = 720000 = 13.59 epochs
+
+=== stage1 | steps=1650 batch=48 trainable: head=99.88M backbone=0.0M ===
+[stage1] step    199 | mse=0.6735 L1=0.4092 PH=0.0000 total=0.6735 | VRAM=12.8GB | 0.313s/it
+[stage1] step    399 | mse=0.4845 L1=0.3338 PH=0.0000 total=0.4845 | VRAM=12.8GB | 0.313s/it
+[stage1] step    599 | mse=0.4544 L1=0.3180 PH=0.0000 total=0.4544 | VRAM=12.8GB | 1.289s/it
+[stage1] step    799 | mse=0.4395 L1=0.3096 PH=0.0000 total=0.4395 | VRAM=12.8GB | 2.086s/it
+[stage1] step    999 | mse=0.4244 L1=0.3043 PH=0.0000 total=0.4244 | VRAM=12.8GB | 5.895s/it
+[stage1] step   1199 | mse=0.4136 L1=0.2998 PH=0.0000 total=0.4136 | VRAM=12.8GB | 4.238s/it
+[stage1] step   1399 | mse=0.4063 L1=0.2938 PH=0.0000 total=0.4063 | VRAM=12.8GB | 2.404s/it
+[stage1] step   1599 | mse=0.3952 L1=0.2912 PH=0.0000 total=0.3952 | VRAM=12.8GB | 0.318s/it
+[ckpt] saved -> ../Spatial/runs/flow_s0/checkpoints/1650  (EMA weights)
+LlamaModel does not expose input embeddings. Gradients cannot flow back to the token embeddings when using adapters or gradient checkpointing. Override `get_input_embeddings` to fully support those features, or set `_input_embed_layer` to the attribute name that holds the embeddings.
+
+=== stage2 | steps=13350 batch=48 trainable: head=99.88M backbone=350.2M ===
+[stage2] step   1849 | mse=0.3895 L1=0.2902 PH=0.0000 total=0.3895 | VRAM=53.6GB | 0.671s/it
+[stage2] step   2049 | mse=0.3746 L1=0.2866 PH=0.0000 total=0.3746 | VRAM=53.6GB | 0.717s/it
+[stage2] step   2249 | mse=0.3596 L1=0.2814 PH=0.0000 total=0.3596 | VRAM=53.6GB | 0.677s/it
+[stage2] step   2449 | mse=0.3464 L1=0.2749 PH=0.0000 total=0.3464 | VRAM=53.6GB | 0.698s/it
+[stage2] step   2649 | mse=0.3283 L1=0.2692 PH=0.0000 total=0.3283 | VRAM=53.6GB | 0.712s/it
+[stage2] step   2849 | mse=0.3070 L1=0.2587 PH=0.0000 total=0.3070 | VRAM=53.6GB | 4.364s/it
+[stage2] step   3049 | mse=0.2898 L1=0.2532 PH=0.0000 total=0.2898 | VRAM=53.6GB | 3.267s/it
+[stage2] step   3249 | mse=0.2747 L1=0.2467 PH=0.0000 total=0.2747 | VRAM=53.6GB | 3.648s/it
+[stage2] step   3449 | mse=0.2598 L1=0.2394 PH=0.0000 total=0.2598 | VRAM=53.6GB | 2.915s/it
+[stage2] step   3649 | mse=0.2454 L1=0.2320 PH=0.0000 total=0.2454 | VRAM=53.6GB | 2.005s/it
+[stage2] step   3849 | mse=0.2307 L1=0.2255 PH=0.0000 total=0.2307 | VRAM=53.6GB | 1.692s/it
+[stage2] step   4049 | mse=0.2155 L1=0.2199 PH=0.0000 total=0.2155 | VRAM=53.6GB | 0.670s/it
+[stage2] step   4249 | mse=0.2062 L1=0.2145 PH=0.0000 total=0.2062 | VRAM=53.6GB | 0.795s/it
+[stage2] step   4449 | mse=0.1975 L1=0.2081 PH=0.0000 total=0.1975 | VRAM=53.6GB | 1.407s/it
+[stage2] step   4649 | mse=0.1905 L1=0.2064 PH=0.0000 total=0.1905 | VRAM=53.6GB | 1.523s/it
+[stage2] step   4849 | mse=0.1844 L1=0.2005 PH=0.0000 total=0.1844 | VRAM=53.6GB | 1.833s/it
+[stage2] step   5049 | mse=0.1770 L1=0.1975 PH=0.0000 total=0.1770 | VRAM=53.6GB | 0.675s/it
+[stage2] step   5249 | mse=0.1685 L1=0.1946 PH=0.0000 total=0.1685 | VRAM=53.6GB | 0.675s/it
+[stage2] step   5449 | mse=0.1637 L1=0.1900 PH=0.0000 total=0.1637 | VRAM=53.6GB | 0.676s/it
+[stage2] step   5649 | mse=0.1583 L1=0.1900 PH=0.0000 total=0.1583 | VRAM=53.6GB | 0.675s/it
+[stage2] step   5849 | mse=0.1587 L1=0.1868 PH=0.0000 total=0.1587 | VRAM=53.6GB | 0.677s/it
+[stage2] step   6049 | mse=0.1514 L1=0.1842 PH=0.0000 total=0.1514 | VRAM=53.6GB | 0.680s/it
+[stage2] step   6249 | mse=0.1453 L1=0.1793 PH=0.0000 total=0.1453 | VRAM=53.6GB | 0.676s/it
+[stage2] step   6449 | mse=0.1434 L1=0.1816 PH=0.0000 total=0.1434 | VRAM=53.6GB | 0.676s/it
+[stage2] step   6649 | mse=0.1398 L1=0.1779 PH=0.0000 total=0.1398 | VRAM=53.6GB | 0.672s/it
+[stage2] step   6849 | mse=0.1363 L1=0.1754 PH=0.0000 total=0.1363 | VRAM=53.6GB | 0.670s/it
+[stage2] step   7049 | mse=0.1349 L1=0.1748 PH=0.0000 total=0.1349 | VRAM=53.6GB | 0.670s/it
+[stage2] step   7249 | mse=0.1323 L1=0.1730 PH=0.0000 total=0.1323 | VRAM=53.6GB | 0.671s/it
+[stage2] step   7449 | mse=0.1303 L1=0.1700 PH=0.0000 total=0.1303 | VRAM=53.6GB | 0.672s/it
+[stage2] step   7649 | mse=0.1271 L1=0.1708 PH=0.0000 total=0.1271 | VRAM=53.6GB | 0.672s/it
+[stage2] step   7849 | mse=0.1254 L1=0.1679 PH=0.0000 total=0.1254 | VRAM=53.6GB | 0.670s/it
+[stage2] step   8049 | mse=0.1220 L1=0.1664 PH=0.0000 total=0.1220 | VRAM=53.6GB | 0.670s/it
+[stage2] step   8249 | mse=0.1222 L1=0.1677 PH=0.0000 total=0.1222 | VRAM=53.6GB | 0.672s/it
+[stage2] step   8449 | mse=0.1168 L1=0.1642 PH=0.0000 total=0.1168 | VRAM=53.6GB | 0.671s/it
+[stage2] step   8649 | mse=0.1175 L1=0.1648 PH=0.0000 total=0.1175 | VRAM=53.6GB | 0.671s/it
+[stage2] step   8849 | mse=0.1168 L1=0.1622 PH=0.0000 total=0.1168 | VRAM=53.6GB | 0.669s/it
+[stage2] step   9049 | mse=0.1151 L1=0.1617 PH=0.0000 total=0.1151 | VRAM=53.6GB | 0.670s/it
+[stage2] step   9249 | mse=0.1123 L1=0.1604 PH=0.0000 total=0.1123 | VRAM=53.6GB | 0.672s/it
+[stage2] step   9449 | mse=0.1096 L1=0.1604 PH=0.0000 total=0.1096 | VRAM=53.6GB | 0.806s/it
+[stage2] step   9649 | mse=0.1080 L1=0.1585 PH=0.0000 total=0.1080 | VRAM=53.6GB | 0.808s/it
+[stage2] step   9849 | mse=0.1081 L1=0.1591 PH=0.0000 total=0.1081 | VRAM=53.6GB | 0.713s/it
+[stage2] step  10049 | mse=0.1079 L1=0.1562 PH=0.0000 total=0.1079 | VRAM=53.6GB | 0.686s/it
+[stage2] step  10249 | mse=0.1062 L1=0.1564 PH=0.0000 total=0.1062 | VRAM=53.6GB | 0.680s/it
+[stage2] step  10449 | mse=0.1042 L1=0.1551 PH=0.0000 total=0.1042 | VRAM=53.6GB | 0.809s/it
+[stage2] step  10649 | mse=0.1044 L1=0.1541 PH=0.0000 total=0.1044 | VRAM=53.6GB | 0.791s/it
+[stage2] step  10849 | mse=0.0991 L1=0.1554 PH=0.0000 total=0.0991 | VRAM=53.6GB | 0.750s/it
+[stage2] step  11049 | mse=0.1003 L1=0.1524 PH=0.0000 total=0.1003 | VRAM=53.6GB | 0.803s/it
+[stage2] step  11249 | mse=0.0999 L1=0.1538 PH=0.0000 total=0.0999 | VRAM=53.6GB | 0.813s/it
+[stage2] step  11449 | mse=0.1018 L1=0.1505 PH=0.0000 total=0.1018 | VRAM=53.6GB | 0.691s/it
+[stage2] step  11649 | mse=0.0983 L1=0.1515 PH=0.0000 total=0.0983 | VRAM=53.6GB | 3.393s/it
+[stage2] step  11849 | mse=0.0941 L1=0.1514 PH=0.0000 total=0.0941 | VRAM=53.6GB | 3.588s/it
+[stage2] step  12049 | mse=0.0971 L1=0.1486 PH=0.0000 total=0.0971 | VRAM=53.6GB | 3.623s/it
+[stage2] step  12249 | mse=0.0938 L1=0.1526 PH=0.0000 total=0.0938 | VRAM=53.6GB | 3.814s/it
+[stage2] step  12449 | mse=0.0944 L1=0.1494 PH=0.0000 total=0.0944 | VRAM=53.6GB | 3.816s/it
+[stage2] step  12649 | mse=0.0939 L1=0.1487 PH=0.0000 total=0.0939 | VRAM=53.6GB | 3.960s/it
+[stage2] step  12849 | mse=0.0915 L1=0.1469 PH=0.0000 total=0.0915 | VRAM=53.6GB | 0.670s/it
+[stage2] step  13049 | mse=0.0883 L1=0.1483 PH=0.0000 total=0.0883 | VRAM=53.6GB | 0.669s/it
+[stage2] step  13249 | mse=0.0922 L1=0.1461 PH=0.0000 total=0.0922 | VRAM=53.6GB | 0.670s/it
+[stage2] step  13449 | mse=0.0886 L1=0.1492 PH=0.0000 total=0.0886 | VRAM=53.6GB | 0.668s/it
+[stage2] step  13649 | mse=0.0898 L1=0.1468 PH=0.0000 total=0.0898 | VRAM=53.6GB | 0.670s/it
+[stage2] step  13849 | mse=0.0924 L1=0.1453 PH=0.0000 total=0.0924 | VRAM=53.6GB | 0.670s/it
+[stage2] step  14049 | mse=0.0877 L1=0.1458 PH=0.0000 total=0.0877 | VRAM=53.6GB | 0.671s/it
+[stage2] step  14249 | mse=0.0865 L1=0.1457 PH=0.0000 total=0.0865 | VRAM=53.6GB | 0.675s/it
+[stage2] step  14449 | mse=0.0850 L1=0.1434 PH=0.0000 total=0.0850 | VRAM=53.6GB | 0.730s/it
+[stage2] step  14649 | mse=0.0855 L1=0.1466 PH=0.0000 total=0.0855 | VRAM=53.6GB | 0.710s/it
+[stage2] step  14849 | mse=0.0850 L1=0.1444 PH=0.0000 total=0.0850 | VRAM=53.6GB | 1.241s/it
+[ckpt] saved -> ../Spatial/runs/flow_s0/checkpoints/15000  (EMA weights)
+
+[train] DONE head=flow variant=baseline steps=15000 wall=275.0 min -> ../Spatial/runs/flow_s0
+###### [SPATIAL15K] train m3 (head=deeponet variant=baseline) 15K ######
+[train] head=deeponet variant=baseline seed=0 out=../Spatial/runs/m3_s0
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6787.66it/s]
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6687.26it/s]
+WARNING:root:Missing key(s) when loading model: {'model.deeponet.out_mlp.0.weight', 'model.deeponet.pool.blocks.2.ff.0.weight', 'model.deeponet.pool.blocks.0.ff.2.bias', 'model.deeponet.branch.1.weight', 'model.deeponet.pool.blocks.2.ff.2.bias', 'model.deeponet.trunk.0.weight', 'model.deeponet.pool.blocks.0.ln_q.bias', 'model.deeponet.branch.0.bias', 'model.deeponet.pool.queries', 'model.deeponet.pool.blocks.0.attn.in_proj_bias', 'model.deeponet.trunk.4.weight', 'model.deeponet.branch.1.bias', 'model.deeponet.out_mlp.2.weight', 'model.deeponet.pool.blocks.1.ln2.weight', 'model.deeponet.pool.blocks.1.ln_q.weight', 'model.deeponet.out_bias', 'model.deeponet.pool.blocks.2.attn.out_proj.bias', 'model.deeponet.pool.blocks.1.ln_kv.bias', 'model.deeponet.pool.blocks.2.ln_q.weight', 'model.deeponet.trunk.4.bias', 'model.deeponet.pool.blocks.1.ff.0.bias', 'model.deeponet.pool.blocks.0.ln2.bias', 'model.deeponet.pool.blocks.0.attn.in_proj_weight', 'model.deeponet.pool.blocks.1.attn.out_proj.weight', 'model.deeponet.pool.blocks.2.ln2.weight', 'model.deeponet.pool.blocks.2.ln_kv.weight', 'model.deeponet.pool.blocks.1.ln_kv.weight', 'model.deeponet.pool.blocks.1.ff.2.weight', 'model.deeponet.pool.blocks.2.attn.in_proj_weight', 'model.deeponet.pool.blocks.0.attn.out_proj.weight', 'model.deeponet.branch.0.weight', 'model.deeponet.out_mlp.0.bias', 'model.deeponet.pool.blocks.2.ln_q.bias', 'model.deeponet.pool.blocks.0.ff.0.bias', 'model.deeponet.pool.blocks.1.ln_q.bias', 'model.deeponet.pool.blocks.1.attn.in_proj_weight', 'model.deeponet.pool.blocks.0.ff.0.weight', 'model.deeponet.trunk.2.bias', 'model.deeponet.pool.blocks.2.ln_kv.bias', 'model.deeponet.branch.3.bias', 'model.deeponet.pool.blocks.0.ln_kv.bias', 'model.deeponet.pool.blocks.0.ln_q.weight', 'model.deeponet.pool.blocks.0.ln2.weight', 'model.deeponet.pool.blocks.2.attn.in_proj_bias', 'model.deeponet.pool.blocks.2.ln2.bias', 'model.deeponet.pool.blocks.2.ff.0.bias', 'model.deeponet.trunk.2.weight', 'model.deeponet.out_mlp.2.bias', 'model.deeponet.trunk.0.bias', 'model.deeponet.pool.blocks.1.ff.2.bias', 'model.deeponet.branch.3.weight', 'model.deeponet.pool.blocks.2.attn.out_proj.weight', 'model.deeponet.pool.blocks.2.ff.2.weight', 'model.deeponet.pool.in_proj.weight', 'model.deeponet.pool.in_proj.bias', 'model.deeponet.pool.blocks.1.attn.out_proj.bias', 'model.deeponet.pool.blocks.0.attn.out_proj.bias', 'model.deeponet.pool.blocks.0.ln_kv.weight', 'model.deeponet.pool.blocks.0.ff.2.weight', 'model.deeponet.pool.blocks.1.attn.in_proj_bias', 'model.deeponet.pool.blocks.1.ln2.bias', 'model.deeponet.pool.blocks.1.ff.0.weight'}
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 4567.71it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 3663.95it/s]
+[train] dataset frames=52970 episodes=432 -> 1 epoch = 1104 steps @ batch 48
+[train] planned frames seen = 720000 = 13.59 epochs
+
+=== stage1 | steps=1650 batch=48 trainable: head=10.40M backbone=0.0M ===
+[stage1] step    199 | mse=0.7262 L1=0.7116 PH=0.0000 total=0.7262 | VRAM=9.5GB | 0.278s/it
+[stage1] step    399 | mse=0.4778 L1=0.5522 PH=0.0000 total=0.4778 | VRAM=9.5GB | 0.278s/it
+[stage1] step    599 | mse=0.4015 L1=0.5011 PH=0.0000 total=0.4015 | VRAM=9.5GB | 0.278s/it
+[stage1] step    799 | mse=0.3671 L1=0.4796 PH=0.0000 total=0.3671 | VRAM=9.5GB | 0.278s/it
+[stage1] step    999 | mse=0.3489 L1=0.4660 PH=0.0000 total=0.3489 | VRAM=9.5GB | 0.278s/it
+[stage1] step   1199 | mse=0.3257 L1=0.4560 PH=0.0000 total=0.3257 | VRAM=9.5GB | 6.622s/it
+[stage1] step   1399 | mse=0.3126 L1=0.4446 PH=0.0000 total=0.3126 | VRAM=9.5GB | 5.405s/it
+[stage1] step   1599 | mse=0.3026 L1=0.4407 PH=0.0000 total=0.3026 | VRAM=9.5GB | 4.784s/it
+[ckpt] saved -> ../Spatial/runs/m3_s0/checkpoints/1650  (EMA weights)
+
+=== stage2 | steps=13350 batch=48 trainable: head=10.40M backbone=350.2M ===
+[stage2] step   1849 | mse=0.2812 L1=0.4273 PH=0.0000 total=0.2812 | VRAM=50.3GB | 0.634s/it
+[stage2] step   2049 | mse=0.2676 L1=0.4190 PH=0.0000 total=0.2676 | VRAM=50.3GB | 0.685s/it
+[stage2] step   2249 | mse=0.2531 L1=0.4116 PH=0.0000 total=0.2531 | VRAM=50.3GB | 0.641s/it
+[stage2] step   2449 | mse=0.2307 L1=0.3978 PH=0.0000 total=0.2307 | VRAM=50.3GB | 0.632s/it
+[stage2] step   2649 | mse=0.2129 L1=0.3855 PH=0.0000 total=0.2129 | VRAM=50.3GB | 0.653s/it
+[stage2] step   2849 | mse=0.1967 L1=0.3767 PH=0.0000 total=0.1967 | VRAM=50.3GB | 4.706s/it
+[stage2] step   3049 | mse=0.1784 L1=0.3633 PH=0.0000 total=0.1784 | VRAM=50.3GB | 4.527s/it
+[stage2] step   3249 | mse=0.1674 L1=0.3560 PH=0.0000 total=0.1674 | VRAM=50.3GB | 4.069s/it
+[stage2] step   3449 | mse=0.1585 L1=0.3485 PH=0.0000 total=0.1585 | VRAM=50.3GB | 3.442s/it
+[stage2] step   3649 | mse=0.1496 L1=0.3417 PH=0.0000 total=0.1496 | VRAM=50.3GB | 2.472s/it
+[stage2] step   3849 | mse=0.1416 L1=0.3371 PH=0.0000 total=0.1416 | VRAM=50.3GB | 0.639s/it
+[stage2] step   4049 | mse=0.1295 L1=0.3259 PH=0.0000 total=0.1295 | VRAM=50.3GB | 0.639s/it
+[stage2] step   4249 | mse=0.1247 L1=0.3201 PH=0.0000 total=0.1247 | VRAM=50.3GB | 0.639s/it
+[stage2] step   4449 | mse=0.1202 L1=0.3171 PH=0.0000 total=0.1202 | VRAM=50.3GB | 0.638s/it
+[stage2] step   4649 | mse=0.1157 L1=0.3107 PH=0.0000 total=0.1157 | VRAM=50.3GB | 0.650s/it
+[stage2] step   4849 | mse=0.1127 L1=0.3091 PH=0.0000 total=0.1127 | VRAM=50.3GB | 0.639s/it
+[stage2] step   5049 | mse=0.1060 L1=0.3034 PH=0.0000 total=0.1060 | VRAM=50.3GB | 0.644s/it
+[stage2] step   5249 | mse=0.1008 L1=0.2965 PH=0.0000 total=0.1008 | VRAM=50.3GB | 0.645s/it
+[stage2] step   5449 | mse=0.0989 L1=0.2956 PH=0.0000 total=0.0989 | VRAM=50.3GB | 0.645s/it
+[stage2] step   5649 | mse=0.0957 L1=0.2938 PH=0.0000 total=0.0957 | VRAM=50.3GB | 0.644s/it
+[stage2] step   5849 | mse=0.0935 L1=0.2917 PH=0.0000 total=0.0935 | VRAM=50.3GB | 0.646s/it
+[stage2] step   6049 | mse=0.0909 L1=0.2882 PH=0.0000 total=0.0909 | VRAM=50.3GB | 0.648s/it
+[stage2] step   6249 | mse=0.0857 L1=0.2808 PH=0.0000 total=0.0857 | VRAM=50.3GB | 0.643s/it
+[stage2] step   6449 | mse=0.0853 L1=0.2820 PH=0.0000 total=0.0853 | VRAM=50.3GB | 0.641s/it
+[stage2] step   6649 | mse=0.0826 L1=0.2795 PH=0.0000 total=0.0826 | VRAM=50.3GB | 0.637s/it
+[stage2] step   6849 | mse=0.0809 L1=0.2741 PH=0.0000 total=0.0809 | VRAM=50.3GB | 0.640s/it
+[stage2] step   7049 | mse=0.0791 L1=0.2757 PH=0.0000 total=0.0791 | VRAM=50.3GB | 0.639s/it
+[stage2] step   7249 | mse=0.0773 L1=0.2713 PH=0.0000 total=0.0773 | VRAM=50.3GB | 0.632s/it
+[stage2] step   7449 | mse=0.0738 L1=0.2695 PH=0.0000 total=0.0738 | VRAM=50.3GB | 0.634s/it
+[stage2] step   7649 | mse=0.0726 L1=0.2678 PH=0.0000 total=0.0726 | VRAM=50.3GB | 0.635s/it
+[stage2] step   7849 | mse=0.0710 L1=0.2652 PH=0.0000 total=0.0710 | VRAM=50.3GB | 0.634s/it
+[stage2] step   8049 | mse=0.0709 L1=0.2634 PH=0.0000 total=0.0709 | VRAM=50.3GB | 0.639s/it
+[stage2] step   8249 | mse=0.0702 L1=0.2648 PH=0.0000 total=0.0702 | VRAM=50.3GB | 0.643s/it
+[stage2] step   8449 | mse=0.0670 L1=0.2569 PH=0.0000 total=0.0670 | VRAM=50.3GB | 0.642s/it
+[stage2] step   8649 | mse=0.0663 L1=0.2578 PH=0.0000 total=0.0663 | VRAM=50.3GB | 0.646s/it
+[stage2] step   8849 | mse=0.0650 L1=0.2592 PH=0.0000 total=0.0650 | VRAM=50.3GB | 0.636s/it
+[stage2] step   9049 | mse=0.0640 L1=0.2591 PH=0.0000 total=0.0640 | VRAM=50.3GB | 0.645s/it
+[stage2] step   9249 | mse=0.0628 L1=0.2575 PH=0.0000 total=0.0628 | VRAM=50.3GB | 0.642s/it
+[stage2] step   9449 | mse=0.0615 L1=0.2544 PH=0.0000 total=0.0615 | VRAM=50.3GB | 0.640s/it
+[stage2] step   9649 | mse=0.0586 L1=0.2500 PH=0.0000 total=0.0586 | VRAM=50.3GB | 0.636s/it
+[stage2] step   9849 | mse=0.0593 L1=0.2499 PH=0.0000 total=0.0593 | VRAM=50.3GB | 0.634s/it
+[stage2] step  10049 | mse=0.0586 L1=0.2522 PH=0.0000 total=0.0586 | VRAM=50.3GB | 0.635s/it
+[stage2] step  10249 | mse=0.0584 L1=0.2496 PH=0.0000 total=0.0584 | VRAM=50.3GB | 0.635s/it
+[stage2] step  10449 | mse=0.0574 L1=0.2489 PH=0.0000 total=0.0574 | VRAM=50.3GB | 0.635s/it
+[stage2] step  10649 | mse=0.0552 L1=0.2464 PH=0.0000 total=0.0552 | VRAM=50.3GB | 0.635s/it
+[stage2] step  10849 | mse=0.0550 L1=0.2460 PH=0.0000 total=0.0550 | VRAM=50.3GB | 0.635s/it
+[stage2] step  11049 | mse=0.0531 L1=0.2461 PH=0.0000 total=0.0531 | VRAM=50.3GB | 0.636s/it
+[stage2] step  11249 | mse=0.0536 L1=0.2445 PH=0.0000 total=0.0536 | VRAM=50.3GB | 0.634s/it
+[stage2] step  11449 | mse=0.0528 L1=0.2430 PH=0.0000 total=0.0528 | VRAM=50.3GB | 0.642s/it
+[stage2] step  11649 | mse=0.0524 L1=0.2424 PH=0.0000 total=0.0524 | VRAM=50.3GB | 4.675s/it
+[stage2] step  11849 | mse=0.0505 L1=0.2408 PH=0.0000 total=0.0505 | VRAM=50.3GB | 4.706s/it
+[stage2] step  12049 | mse=0.0501 L1=0.2392 PH=0.0000 total=0.0501 | VRAM=50.3GB | 4.607s/it
+[stage2] step  12249 | mse=0.0495 L1=0.2391 PH=0.0000 total=0.0495 | VRAM=50.3GB | 4.541s/it
+[stage2] step  12449 | mse=0.0494 L1=0.2389 PH=0.0000 total=0.0494 | VRAM=50.3GB | 4.620s/it
+[stage2] step  12649 | mse=0.0490 L1=0.2360 PH=0.0000 total=0.0490 | VRAM=50.3GB | 4.440s/it
+[stage2] step  12849 | mse=0.0474 L1=0.2342 PH=0.0000 total=0.0474 | VRAM=50.3GB | 0.632s/it
+[stage2] step  13049 | mse=0.0471 L1=0.2345 PH=0.0000 total=0.0471 | VRAM=50.3GB | 0.638s/it
+[stage2] step  13249 | mse=0.0467 L1=0.2354 PH=0.0000 total=0.0467 | VRAM=50.3GB | 0.636s/it
+[stage2] step  13449 | mse=0.0460 L1=0.2358 PH=0.0000 total=0.0460 | VRAM=50.3GB | 0.635s/it
+[stage2] step  13649 | mse=0.0461 L1=0.2316 PH=0.0000 total=0.0461 | VRAM=50.3GB | 0.636s/it
+[stage2] step  13849 | mse=0.0451 L1=0.2336 PH=0.0000 total=0.0451 | VRAM=50.3GB | 0.635s/it
+[stage2] step  14049 | mse=0.0445 L1=0.2312 PH=0.0000 total=0.0445 | VRAM=50.3GB | 0.635s/it
+[stage2] step  14249 | mse=0.0435 L1=0.2297 PH=0.0000 total=0.0435 | VRAM=50.3GB | 0.633s/it
+[stage2] step  14449 | mse=0.0438 L1=0.2303 PH=0.0000 total=0.0438 | VRAM=50.3GB | 0.635s/it
+[stage2] step  14649 | mse=0.0438 L1=0.2301 PH=0.0000 total=0.0438 | VRAM=50.3GB | 0.635s/it
+[stage2] step  14849 | mse=0.0431 L1=0.2303 PH=0.0000 total=0.0431 | VRAM=50.3GB | 0.640s/it
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/train.py", line 361, in <module>
+    main()
+  File "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/train.py", line 352, in main
+    gstep = run_stage("stage2", cfg["stage2"], policy, ema, di, preprocessor, out_dir,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/train.py", line 247, in run_stage
+    save_checkpoint(policy, ema, preprocessor, out_dir, gstep + 1)
+  File "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/train.py", line 257, in save_checkpoint
+    policy.save_pretrained(cdir)
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/lerobot/utils/hub.py", line 67, in save_pretrained
+    self._save_pretrained(save_directory)
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/lerobot/policies/pretrained.py", line 72, in _save_pretrained
+    save_model_as_safetensor(model_to_save, str(save_directory / SAFETENSORS_SINGLE_FILE))
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/safetensors/torch.py", line 183, in save_model
+    save_file(state_dict, filename, metadata=metadata)
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/safetensors/torch.py", line 307, in save_file
+    serialize_file(_flatten(tensors), filename, metadata=metadata)
+safetensors_rust.SafetensorError: Error while serializing: I/O error: No space left on device (os error 28)
+tee: ../Spatial/logs/train_m3.log: No space left on device

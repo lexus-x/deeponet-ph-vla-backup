@@ -1,0 +1,37 @@
+[train] variant=ph mode=full out=/home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p2
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6287.25it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 82646.38it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 34879.87it/s]
+[train] dataset frames=66984 episodes=454
+=== stage1 skipped (0 steps) ===
+LlamaModel does not expose input embeddings. Gradients cannot flow back to the token embeddings when using adapters or gradient checkpointing. Override `get_input_embeddings` to fully support those features, or set `_input_embed_layer` to the attribute name that holds the embeddings.
+
+=== stage2 | steps=10000 batch=16 trainable: head=99.9M backbone=350.2M ===
+[stage2] step    499 | flow=0.1078 L1=0.0747 PH=0.1343 total=0.1346 | VRAM=8.1GB | 0.593s/it
+[stage2] step    999 | flow=0.0948 L1=0.0752 PH=0.1324 total=0.1213 | VRAM=8.1GB | 0.574s/it
+[stage2] step   1499 | flow=0.0901 L1=0.0759 PH=0.1290 total=0.1159 | VRAM=8.1GB | 0.576s/it
+[stage2] step   1999 | flow=0.0826 L1=0.0746 PH=0.1257 total=0.1078 | VRAM=8.1GB | 0.576s/it
+[stage2] step   2499 | flow=0.0808 L1=0.0731 PH=0.1190 total=0.1045 | VRAM=8.1GB | 0.569s/it
+[stage2] step   2999 | flow=0.0765 L1=0.0719 PH=0.1144 total=0.0994 | VRAM=8.1GB | 0.590s/it
+[stage2] step   3499 | flow=0.0769 L1=0.0724 PH=0.1146 total=0.0998 | VRAM=8.1GB | 0.584s/it
+[stage2] step   3999 | flow=0.0686 L1=0.0703 PH=0.1112 total=0.0909 | VRAM=8.1GB | 0.608s/it
+[stage2] step   4499 | flow=0.0718 L1=0.0697 PH=0.1100 total=0.0938 | VRAM=8.1GB | 0.594s/it
+[stage2] step   4999 | flow=0.0713 L1=0.0708 PH=0.1057 total=0.0925 | VRAM=8.1GB | 0.592s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p2/checkpoints/5000
+[stage2] step   5499 | flow=0.0703 L1=0.0695 PH=0.1018 total=0.0906 | VRAM=8.1GB | 0.597s/it
+[stage2] step   5999 | flow=0.0696 L1=0.0693 PH=0.1029 total=0.0902 | VRAM=8.1GB | 0.571s/it
+[stage2] step   6499 | flow=0.0663 L1=0.0686 PH=0.1038 total=0.0871 | VRAM=8.1GB | 0.582s/it
+[stage2] step   6999 | flow=0.0654 L1=0.0681 PH=0.0998 total=0.0853 | VRAM=8.1GB | 0.575s/it
+[stage2] step   7499 | flow=0.0636 L1=0.0677 PH=0.1031 total=0.0842 | VRAM=8.1GB | 0.584s/it
+[stage2] step   7999 | flow=0.0613 L1=0.0680 PH=0.0983 total=0.0810 | VRAM=8.1GB | 0.588s/it
+[stage2] step   8499 | flow=0.0613 L1=0.0664 PH=0.0959 total=0.0805 | VRAM=8.1GB | 0.585s/it
+[stage2] step   8999 | flow=0.0611 L1=0.0669 PH=0.0951 total=0.0801 | VRAM=8.1GB | 0.595s/it
+[stage2] step   9499 | flow=0.0617 L1=0.0670 PH=0.0924 total=0.0801 | VRAM=8.1GB | 0.580s/it
+[stage2] step   9999 | flow=0.0589 L1=0.0660 PH=0.0926 total=0.0774 | VRAM=8.1GB | 0.574s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p2/checkpoints/10000
+
+[train] DONE variant=ph total_steps=10000 wall=98.1 min  -> /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p2

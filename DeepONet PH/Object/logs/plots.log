@@ -1,0 +1,7 @@
+  saved 1_accuracy.png
+  saved 2_robustness.png
+  saved 3_success_per_task.png
+  saved 4_robustness_by_perturbation.png
+[OBJECT] plots+CSVs -> ../Object/plots ../Object/data
+[OBJECT] in-dist acc: {'M1 flow': 83.5, 'M3 DeepONet-v2': 93.99999999999999, 'M4 DeepONet+PH-v2': 86.99999999999999}
+[OBJECT] robustness : {'M1 flow': 0.0, 'M3 DeepONet-v2': 0.0, 'M4 DeepONet+PH-v2': 11.428571428571429}

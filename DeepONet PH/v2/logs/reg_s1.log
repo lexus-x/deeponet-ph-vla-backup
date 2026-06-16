@@ -1,0 +1,62 @@
+[train] head=deeponet variant=baseline seed=1 out=runs/reg_s1
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6391.72it/s]
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6517.49it/s]
+WARNING:root:Missing key(s) when loading model: {'model.deeponet.pool.blocks.1.attn.in_proj_bias', 'model.deeponet.pool.blocks.1.ff.0.bias', 'model.deeponet.pool.blocks.0.ff.2.weight', 'model.deeponet.decoder.0.weight', 'model.deeponet.pool.blocks.0.attn.in_proj_bias', 'model.deeponet.pool.blocks.1.attn.in_proj_weight', 'model.deeponet.pool.blocks.1.ff.2.bias', 'model.deeponet.pool.blocks.2.ln_kv.bias', 'model.deeponet.pool.blocks.1.attn.out_proj.weight', 'model.deeponet.pool.blocks.2.attn.out_proj.bias', 'model.deeponet.decoder.1.weight', 'model.deeponet.pool.blocks.0.ff.2.bias', 'model.deeponet.pool.blocks.2.ln2.bias', 'model.deeponet.pool.blocks.2.ln_q.bias', 'model.deeponet.pool.blocks.2.ff.2.bias', 'model.deeponet.pool.blocks.0.ln_q.weight', 'model.deeponet.pool.blocks.2.ff.0.bias', 'model.deeponet.pool.blocks.1.ln_q.bias', 'model.deeponet.pool.in_proj.weight', 'model.deeponet.pool.blocks.2.ln_kv.weight', 'model.deeponet.pool.in_proj.bias', 'model.deeponet.decoder.3.weight', 'model.deeponet.pool.blocks.1.ln2.weight', 'model.deeponet.pool.blocks.0.attn.in_proj_weight', 'model.deeponet.pool.blocks.2.ln2.weight', 'model.deeponet.pool.blocks.0.ln2.weight', 'model.deeponet.pool.blocks.0.ln_kv.bias', 'model.deeponet.decoder.1.bias', 'model.deeponet.decoder.0.bias', 'model.deeponet.pool.blocks.0.ff.0.bias', 'model.deeponet.pool.blocks.0.ff.0.weight', 'model.deeponet.pool.blocks.0.attn.out_proj.weight', 'model.deeponet.pool.blocks.1.ff.0.weight', 'model.deeponet.pool.blocks.1.ln2.bias', 'model.deeponet.pool.blocks.2.ln_q.weight', 'model.deeponet.pool.queries', 'model.deeponet.pool.blocks.0.ln_kv.weight', 'model.deeponet.pool.blocks.2.ff.0.weight', 'model.deeponet.pool.blocks.2.attn.out_proj.weight', 'model.deeponet.pool.blocks.1.attn.out_proj.bias', 'model.deeponet.pool.blocks.0.ln_q.bias', 'model.deeponet.pool.blocks.2.attn.in_proj_bias', 'model.deeponet.pool.blocks.2.attn.in_proj_weight', 'model.deeponet.pool.blocks.0.ln2.bias', 'model.deeponet.decoder.3.bias', 'model.deeponet.pool.blocks.2.ff.2.weight', 'model.deeponet.pool.blocks.1.ln_kv.weight', 'model.deeponet.pool.blocks.1.ln_kv.bias', 'model.deeponet.pool.blocks.1.ff.2.weight', 'model.deeponet.pool.blocks.1.ln_q.weight', 'model.deeponet.pool.blocks.0.attn.out_proj.bias'}
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 17154.62it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 52758.54it/s]
+[train] dataset frames=52970 episodes=432 -> 1 epoch = 1104 steps @ batch 48
+[train] planned frames seen = 398400 = 7.52 epochs
+
+=== stage1 | steps=1650 batch=48 trainable: head=10.49M backbone=0.0M ===
+[stage1] step    199 | mse=0.6698 L1=0.6864 PH=0.0000 total=0.6698 | VRAM=9.5GB | 0.339s/it
+[stage1] step    399 | mse=0.4546 L1=0.5426 PH=0.0000 total=0.4546 | VRAM=9.5GB | 0.302s/it
+[stage1] step    599 | mse=0.3788 L1=0.4900 PH=0.0000 total=0.3788 | VRAM=9.5GB | 0.432s/it
+[stage1] step    799 | mse=0.3571 L1=0.4760 PH=0.0000 total=0.3571 | VRAM=9.5GB | 0.447s/it
+[stage1] step    999 | mse=0.3340 L1=0.4641 PH=0.0000 total=0.3340 | VRAM=9.5GB | 0.443s/it
+[stage1] step   1199 | mse=0.3213 L1=0.4520 PH=0.0000 total=0.3213 | VRAM=9.5GB | 6.921s/it
+[stage1] step   1399 | mse=0.3038 L1=0.4431 PH=0.0000 total=0.3038 | VRAM=9.5GB | 0.344s/it
+[stage1] step   1599 | mse=0.2880 L1=0.4363 PH=0.0000 total=0.2880 | VRAM=9.5GB | 0.279s/it
+[ckpt] saved -> runs/reg_s1/checkpoints/1650  (EMA weights)
+
+=== stage2 | steps=6650 batch=48 trainable: head=10.49M backbone=350.2M ===
+[stage2] step   1849 | mse=0.2706 L1=0.4285 PH=0.0000 total=0.2706 | VRAM=50.3GB | 0.657s/it
+[stage2] step   2049 | mse=0.2576 L1=0.4179 PH=0.0000 total=0.2576 | VRAM=50.3GB | 0.644s/it
+[stage2] step   2249 | mse=0.2439 L1=0.4112 PH=0.0000 total=0.2439 | VRAM=50.3GB | 0.663s/it
+[stage2] step   2449 | mse=0.2256 L1=0.4020 PH=0.0000 total=0.2256 | VRAM=50.3GB | 0.645s/it
+[stage2] step   2649 | mse=0.2102 L1=0.3902 PH=0.0000 total=0.2102 | VRAM=50.3GB | 0.647s/it
+[stage2] step   2849 | mse=0.1898 L1=0.3770 PH=0.0000 total=0.1898 | VRAM=50.3GB | 3.950s/it
+[stage2] step   3049 | mse=0.1725 L1=0.3689 PH=0.0000 total=0.1725 | VRAM=50.3GB | 3.847s/it
+[stage2] step   3249 | mse=0.1633 L1=0.3608 PH=0.0000 total=0.1633 | VRAM=50.3GB | 3.957s/it
+[stage2] step   3449 | mse=0.1539 L1=0.3522 PH=0.0000 total=0.1539 | VRAM=50.3GB | 3.929s/it
+[stage2] step   3649 | mse=0.1471 L1=0.3475 PH=0.0000 total=0.1471 | VRAM=50.3GB | 3.379s/it
+[stage2] step   3849 | mse=0.1391 L1=0.3404 PH=0.0000 total=0.1391 | VRAM=50.3GB | 2.202s/it
+[stage2] step   4049 | mse=0.1243 L1=0.3272 PH=0.0000 total=0.1243 | VRAM=50.3GB | 1.336s/it
+[stage2] step   4249 | mse=0.1201 L1=0.3265 PH=0.0000 total=0.1201 | VRAM=50.3GB | 2.315s/it
+[stage2] step   4449 | mse=0.1160 L1=0.3205 PH=0.0000 total=0.1160 | VRAM=50.3GB | 3.512s/it
+[stage2] step   4649 | mse=0.1128 L1=0.3172 PH=0.0000 total=0.1128 | VRAM=50.3GB | 4.014s/it
+[stage2] step   4849 | mse=0.1083 L1=0.3138 PH=0.0000 total=0.1083 | VRAM=50.3GB | 4.052s/it
+[stage2] step   5049 | mse=0.1012 L1=0.3102 PH=0.0000 total=0.1012 | VRAM=50.3GB | 0.642s/it
+[stage2] step   5249 | mse=0.0959 L1=0.3008 PH=0.0000 total=0.0959 | VRAM=50.3GB | 0.644s/it
+[stage2] step   5449 | mse=0.0944 L1=0.2991 PH=0.0000 total=0.0944 | VRAM=50.3GB | 1.298s/it
+[stage2] step   5649 | mse=0.0917 L1=0.2977 PH=0.0000 total=0.0917 | VRAM=50.3GB | 1.766s/it
+[stage2] step   5849 | mse=0.0895 L1=0.2944 PH=0.0000 total=0.0895 | VRAM=50.3GB | 1.558s/it
+[stage2] step   6049 | mse=0.0878 L1=0.2922 PH=0.0000 total=0.0878 | VRAM=50.3GB | 1.653s/it
+[stage2] step   6249 | mse=0.0807 L1=0.2846 PH=0.0000 total=0.0807 | VRAM=50.3GB | 0.947s/it
+[stage2] step   6449 | mse=0.0796 L1=0.2840 PH=0.0000 total=0.0796 | VRAM=50.3GB | 0.705s/it
+[stage2] step   6649 | mse=0.0779 L1=0.2828 PH=0.0000 total=0.0779 | VRAM=50.3GB | 0.642s/it
+[stage2] step   6849 | mse=0.0769 L1=0.2783 PH=0.0000 total=0.0769 | VRAM=50.3GB | 0.645s/it
+[stage2] step   7049 | mse=0.0757 L1=0.2793 PH=0.0000 total=0.0757 | VRAM=50.3GB | 0.642s/it
+[stage2] step   7249 | mse=0.0715 L1=0.2769 PH=0.0000 total=0.0715 | VRAM=50.3GB | 0.714s/it
+[stage2] step   7449 | mse=0.0693 L1=0.2690 PH=0.0000 total=0.0693 | VRAM=50.3GB | 0.704s/it
+[stage2] step   7649 | mse=0.0680 L1=0.2691 PH=0.0000 total=0.0680 | VRAM=50.3GB | 1.175s/it
+[stage2] step   7849 | mse=0.0674 L1=0.2694 PH=0.0000 total=0.0674 | VRAM=50.3GB | 2.773s/it
+[stage2] step   8049 | mse=0.0663 L1=0.2660 PH=0.0000 total=0.0663 | VRAM=50.3GB | 4.183s/it
+[stage2] step   8249 | mse=0.0658 L1=0.2661 PH=0.0000 total=0.0658 | VRAM=50.3GB | 3.957s/it
+[ckpt] saved -> runs/reg_s1/checkpoints/8300  (EMA weights)
+
+[train] DONE head=deeponet variant=baseline steps=8300 wall=149.3 min -> runs/reg_s1

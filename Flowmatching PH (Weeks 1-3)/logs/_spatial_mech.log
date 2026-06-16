@@ -1,0 +1,18 @@
+[train] variant=ph mode=smoke out=outputs/_spatial_mechcheck
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6888.47it/s]
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 7130.14it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 4274.45it/s]
+Fetching 75 files:   0%|          | 0/75 [00:00<?, ?it/s]Fetching 75 files:   1%|▏         | 1/75 [00:00<00:20,  3.68it/s]Fetching 75 files:   4%|▍         | 3/75 [01:18<34:59, 29.16s/it]Fetching 75 files:   5%|▌         | 4/75 [01:19<22:53, 19.34s/it]Fetching 75 files:   8%|▊         | 6/75 [02:06<24:35, 21.39s/it]Fetching 75 files:  15%|█▍        | 11/75 [02:14<09:15,  8.68s/it]Fetching 75 files:  21%|██▏       | 16/75 [02:33<06:16,  6.38s/it]Fetching 75 files:  25%|██▌       | 19/75 [03:19<08:20,  8.94s/it]Fetching 75 files:  29%|██▉       | 22/75 [03:25<06:06,  6.92s/it]Fetching 75 files:  32%|███▏      | 24/75 [04:12<08:58, 10.55s/it]Fetching 75 files:  37%|███▋      | 28/75 [04:16<05:26,  6.94s/it]Fetching 75 files:  39%|███▊      | 29/75 [05:08<09:24, 12.27s/it]Fetching 75 files:  48%|████▊     | 36/75 [05:27<04:37,  7.12s/it]Fetching 75 files:  51%|█████     | 38/75 [05:47<04:41,  7.61s/it]Fetching 75 files:  53%|█████▎    | 40/75 [06:07<04:41,  8.05s/it]Fetching 75 files:  55%|█████▍    | 41/75 [06:07<03:59,  7.05s/it]Fetching 75 files:  56%|█████▌    | 42/75 [06:48<06:47, 12.36s/it]Fetching 75 files:  60%|██████    | 45/75 [06:52<03:59,  8.00s/it]Fetching 75 files:  65%|██████▌   | 49/75 [07:39<04:09,  9.61s/it]Fetching 75 files:  73%|███████▎  | 55/75 [07:42<01:43,  5.20s/it]Fetching 75 files:  75%|███████▍  | 56/75 [07:47<01:38,  5.17s/it]Fetching 75 files:  77%|███████▋  | 58/75 [08:36<02:43,  9.62s/it]Fetching 75 files:  80%|████████  | 60/75 [08:38<01:51,  7.46s/it]Fetching 75 files:  81%|████████▏ | 61/75 [08:44<01:42,  7.29s/it]Fetching 75 files:  88%|████████▊ | 66/75 [09:15<01:00,  6.71s/it]Fetching 75 files:  89%|████████▉ | 67/75 [09:26<00:57,  7.20s/it]Fetching 75 files:  91%|█████████ | 68/75 [09:26<00:42,  6.10s/it]Fetching 75 files:  92%|█████████▏| 69/75 [09:28<00:32,  5.35s/it]Fetching 75 files: 100%|██████████| 75/75 [09:28<00:00,  7.58s/it]
+[train] dataset frames=52970 episodes=432
+
+=== stage1 | steps=4 batch=16 trainable: head=99.9M backbone=0.0M ===
+[ckpt] saved -> outputs/_spatial_mechcheck/checkpoints/4
+LlamaModel does not expose input embeddings. Gradients cannot flow back to the token embeddings when using adapters or gradient checkpointing. Override `get_input_embeddings` to fully support those features, or set `_input_embed_layer` to the attribute name that holds the embeddings.
+
+=== stage2 | steps=4 batch=16 trainable: head=99.9M backbone=350.2M ===
+[ckpt] saved -> outputs/_spatial_mechcheck/checkpoints/8
+
+[train] DONE variant=ph total_steps=8 wall=0.2 min  -> outputs/_spatial_mechcheck

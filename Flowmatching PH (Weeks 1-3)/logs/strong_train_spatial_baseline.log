@@ -1,0 +1,70 @@
+[train] variant=baseline mode=full out=/home/user/Desktop/Ayush PH test/output/strong_spatial_baseline
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6931.94it/s]
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 99864.38it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 9425.40it/s]
+[train] dataset frames=52970 episodes=432
+
+=== stage1 | steps=5000 batch=16 trainable: head=99.9M backbone=0.0M ===
+[stage1] step    499 | flow=0.6292 L1=0.3918 PH=0.0000 total=0.6292 | VRAM=4.8GB | 0.114s/it
+[stage1] step    999 | flow=0.4856 L1=0.3325 PH=0.0000 total=0.4856 | VRAM=4.8GB | 0.118s/it
+[stage1] step   1499 | flow=0.4568 L1=0.3206 PH=0.0000 total=0.4568 | VRAM=4.8GB | 0.118s/it
+[stage1] step   1999 | flow=0.4412 L1=0.3133 PH=0.0000 total=0.4412 | VRAM=4.8GB | 0.120s/it
+[stage1] step   2499 | flow=0.4331 L1=0.3057 PH=0.0000 total=0.4331 | VRAM=4.8GB | 0.121s/it
+[stage1] step   2999 | flow=0.4191 L1=0.3022 PH=0.0000 total=0.4191 | VRAM=4.8GB | 0.128s/it
+[stage1] step   3499 | flow=0.4076 L1=0.2990 PH=0.0000 total=0.4076 | VRAM=4.8GB | 0.118s/it
+[stage1] step   3999 | flow=0.3990 L1=0.2957 PH=0.0000 total=0.3990 | VRAM=4.8GB | 0.117s/it
+[stage1] step   4499 | flow=0.3941 L1=0.2915 PH=0.0000 total=0.3941 | VRAM=4.8GB | 0.124s/it
+[stage1] step   4999 | flow=0.3811 L1=0.2893 PH=0.0000 total=0.3811 | VRAM=4.8GB | 0.121s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_spatial_baseline/checkpoints/5000
+LlamaModel does not expose input embeddings. Gradients cannot flow back to the token embeddings when using adapters or gradient checkpointing. Override `get_input_embeddings` to fully support those features, or set `_input_embed_layer` to the attribute name that holds the embeddings.
+
+=== stage2 | steps=20000 batch=16 trainable: head=99.9M backbone=350.2M ===
+[stage2] step   5499 | flow=0.3771 L1=0.2885 PH=0.0000 total=0.3771 | VRAM=19.6GB | 0.242s/it
+[stage2] step   5999 | flow=0.3638 L1=0.2822 PH=0.0000 total=0.3638 | VRAM=19.6GB | 0.238s/it
+[stage2] step   6499 | flow=0.3549 L1=0.2775 PH=0.0000 total=0.3549 | VRAM=19.6GB | 0.241s/it
+[stage2] step   6999 | flow=0.3383 L1=0.2733 PH=0.0000 total=0.3383 | VRAM=19.6GB | 0.242s/it
+[stage2] step   7499 | flow=0.3239 L1=0.2660 PH=0.0000 total=0.3239 | VRAM=19.6GB | 0.245s/it
+[stage2] step   7999 | flow=0.3087 L1=0.2571 PH=0.0000 total=0.3087 | VRAM=19.6GB | 0.244s/it
+[stage2] step   8499 | flow=0.2906 L1=0.2514 PH=0.0000 total=0.2906 | VRAM=19.6GB | 0.240s/it
+[stage2] step   8999 | flow=0.2717 L1=0.2437 PH=0.0000 total=0.2717 | VRAM=19.6GB | 0.240s/it
+[stage2] step   9499 | flow=0.2581 L1=0.2401 PH=0.0000 total=0.2581 | VRAM=19.6GB | 0.240s/it
+[stage2] step   9999 | flow=0.2442 L1=0.2329 PH=0.0000 total=0.2442 | VRAM=19.6GB | 0.241s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_spatial_baseline/checkpoints/10000
+[stage2] step  10499 | flow=0.2348 L1=0.2279 PH=0.0000 total=0.2348 | VRAM=19.6GB | 0.242s/it
+[stage2] step  10999 | flow=0.2221 L1=0.2209 PH=0.0000 total=0.2221 | VRAM=19.6GB | 0.241s/it
+[stage2] step  11499 | flow=0.2160 L1=0.2171 PH=0.0000 total=0.2160 | VRAM=19.6GB | 0.240s/it
+[stage2] step  11999 | flow=0.2064 L1=0.2119 PH=0.0000 total=0.2064 | VRAM=19.6GB | 0.240s/it
+[stage2] step  12499 | flow=0.1980 L1=0.2054 PH=0.0000 total=0.1980 | VRAM=19.6GB | 0.242s/it
+[stage2] step  12999 | flow=0.1906 L1=0.2037 PH=0.0000 total=0.1906 | VRAM=19.6GB | 0.241s/it
+[stage2] step  13499 | flow=0.1850 L1=0.2003 PH=0.0000 total=0.1850 | VRAM=19.6GB | 0.243s/it
+[stage2] step  13999 | flow=0.1783 L1=0.1980 PH=0.0000 total=0.1783 | VRAM=19.6GB | 0.241s/it
+[stage2] step  14499 | flow=0.1762 L1=0.1957 PH=0.0000 total=0.1762 | VRAM=19.6GB | 0.243s/it
+[stage2] step  14999 | flow=0.1706 L1=0.1937 PH=0.0000 total=0.1706 | VRAM=19.6GB | 0.239s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_spatial_baseline/checkpoints/15000
+[stage2] step  15499 | flow=0.1616 L1=0.1886 PH=0.0000 total=0.1616 | VRAM=19.6GB | 0.244s/it
+[stage2] step  15999 | flow=0.1595 L1=0.1886 PH=0.0000 total=0.1595 | VRAM=19.6GB | 0.241s/it
+[stage2] step  16499 | flow=0.1571 L1=0.1847 PH=0.0000 total=0.1571 | VRAM=19.6GB | 0.241s/it
+[stage2] step  16999 | flow=0.1557 L1=0.1854 PH=0.0000 total=0.1557 | VRAM=19.6GB | 0.240s/it
+[stage2] step  17499 | flow=0.1515 L1=0.1811 PH=0.0000 total=0.1515 | VRAM=19.6GB | 0.241s/it
+[stage2] step  17999 | flow=0.1502 L1=0.1806 PH=0.0000 total=0.1502 | VRAM=19.6GB | 0.243s/it
+[stage2] step  18499 | flow=0.1472 L1=0.1773 PH=0.0000 total=0.1472 | VRAM=19.6GB | 0.239s/it
+[stage2] step  18999 | flow=0.1410 L1=0.1794 PH=0.0000 total=0.1410 | VRAM=19.6GB | 0.241s/it
+[stage2] step  19499 | flow=0.1413 L1=0.1775 PH=0.0000 total=0.1413 | VRAM=19.6GB | 0.240s/it
+[stage2] step  19999 | flow=0.1374 L1=0.1757 PH=0.0000 total=0.1374 | VRAM=19.6GB | 0.241s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_spatial_baseline/checkpoints/20000
+[stage2] step  20499 | flow=0.1348 L1=0.1715 PH=0.0000 total=0.1348 | VRAM=19.6GB | 0.240s/it
+[stage2] step  20999 | flow=0.1352 L1=0.1735 PH=0.0000 total=0.1352 | VRAM=19.6GB | 0.240s/it
+[stage2] step  21499 | flow=0.1318 L1=0.1715 PH=0.0000 total=0.1318 | VRAM=19.6GB | 0.241s/it
+[stage2] step  21999 | flow=0.1295 L1=0.1676 PH=0.0000 total=0.1295 | VRAM=19.6GB | 0.389s/it
+[stage2] step  22499 | flow=0.1284 L1=0.1684 PH=0.0000 total=0.1284 | VRAM=19.6GB | 0.240s/it
+[stage2] step  22999 | flow=0.1249 L1=0.1674 PH=0.0000 total=0.1249 | VRAM=19.6GB | 0.556s/it
+[stage2] step  23499 | flow=0.1240 L1=0.1673 PH=0.0000 total=0.1240 | VRAM=19.6GB | 0.242s/it
+[stage2] step  23999 | flow=0.1236 L1=0.1674 PH=0.0000 total=0.1236 | VRAM=19.6GB | 0.669s/it
+[stage2] step  24499 | flow=0.1213 L1=0.1649 PH=0.0000 total=0.1213 | VRAM=19.6GB | 0.241s/it
+[stage2] step  24999 | flow=0.1196 L1=0.1673 PH=0.0000 total=0.1196 | VRAM=19.6GB | 0.241s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/strong_spatial_baseline/checkpoints/25000
+
+[train] DONE variant=baseline total_steps=25000 wall=144.4 min  -> /home/user/Desktop/Ayush PH test/output/strong_spatial_baseline

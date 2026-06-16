@@ -1,0 +1,103 @@
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 20044.46it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6662.77it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[eval] suite=libero_object loaded models: ['ph']  out=/home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p2/results/success_rates.json
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/lighting] ph task0: 50.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/lighting] ph task1: 66.7%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/lighting] ph task2: 50.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/lighting] ph task3: 50.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/lighting] ph task4: 100.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/lighting] ph task5: 33.3%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/lighting] ph task6: 100.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/lighting] ph task7: 83.3%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/lighting] ph task8: 100.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/lighting] ph task9: 66.7%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/sensor_noise] ph task0: 50.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/sensor_noise] ph task1: 66.7%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/sensor_noise] ph task2: 0.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/sensor_noise] ph task3: 50.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/sensor_noise] ph task4: 83.3%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/sensor_noise] ph task5: 66.7%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/sensor_noise] ph task6: 83.3%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/sensor_noise] ph task7: 50.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/sensor_noise] ph task8: 100.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-V/sensor_noise] ph task9: 50.0%
+[eval] DONE. summary: {
+  "baseline": {
+    "LIBERO-OBJECT_avg": null,
+    "LIBERO-OBJECT-V_avg": null
+  },
+  "ph": {
+    "LIBERO-OBJECT_avg": 0.65,
+    "LIBERO-OBJECT-V_avg": 0.65
+  }
+}

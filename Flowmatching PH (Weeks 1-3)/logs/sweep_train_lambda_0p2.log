@@ -1,0 +1,70 @@
+[train] variant=ph mode=full out=/home/user/Desktop/Ayush PH test/output/sweep_spatial_lambda_0p2
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6178.65it/s]
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 34309.24it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 6087.52it/s]
+[train] dataset frames=52970 episodes=432
+
+=== stage1 | steps=5000 batch=16 trainable: head=99.9M backbone=0.0M ===
+[stage1] step    499 | flow=0.6770 L1=0.4029 PH=0.7042 total=0.8179 | VRAM=4.8GB | 0.131s/it
+[stage1] step    999 | flow=0.5223 L1=0.3447 PH=0.5821 total=0.6387 | VRAM=4.8GB | 0.136s/it
+[stage1] step   1499 | flow=0.4913 L1=0.3304 PH=0.5603 total=0.6034 | VRAM=4.8GB | 0.572s/it
+[stage1] step   1999 | flow=0.4712 L1=0.3212 PH=0.5354 total=0.5783 | VRAM=4.8GB | 0.128s/it
+[stage1] step   2499 | flow=0.4607 L1=0.3162 PH=0.5263 total=0.5660 | VRAM=4.8GB | 0.277s/it
+[stage1] step   2999 | flow=0.4490 L1=0.3127 PH=0.5111 total=0.5512 | VRAM=4.8GB | 0.265s/it
+[stage1] step   3499 | flow=0.4390 L1=0.3035 PH=0.4876 total=0.5366 | VRAM=4.8GB | 0.287s/it
+[stage1] step   3999 | flow=0.4301 L1=0.3065 PH=0.5009 total=0.5303 | VRAM=4.8GB | 1.722s/it
+[stage1] step   4499 | flow=0.4256 L1=0.3031 PH=0.4895 total=0.5235 | VRAM=4.8GB | 0.128s/it
+[stage1] step   4999 | flow=0.4178 L1=0.3008 PH=0.4827 total=0.5144 | VRAM=4.8GB | 1.057s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/sweep_spatial_lambda_0p2/checkpoints/5000
+LlamaModel does not expose input embeddings. Gradients cannot flow back to the token embeddings when using adapters or gradient checkpointing. Override `get_input_embeddings` to fully support those features, or set `_input_embed_layer` to the attribute name that holds the embeddings.
+
+=== stage2 | steps=20000 batch=16 trainable: head=99.9M backbone=350.2M ===
+[stage2] step   5499 | flow=0.4156 L1=0.2999 PH=0.4893 total=0.5135 | VRAM=19.6GB | 0.499s/it
+[stage2] step   5999 | flow=0.4005 L1=0.2916 PH=0.4739 total=0.4953 | VRAM=19.6GB | 0.516s/it
+[stage2] step   6499 | flow=0.3914 L1=0.2915 PH=0.4591 total=0.4833 | VRAM=19.6GB | 0.251s/it
+[stage2] step   6999 | flow=0.3881 L1=0.2904 PH=0.4552 total=0.4791 | VRAM=19.6GB | 0.290s/it
+[stage2] step   7499 | flow=0.3758 L1=0.2844 PH=0.4438 total=0.4646 | VRAM=19.6GB | 0.259s/it
+[stage2] step   7999 | flow=0.3694 L1=0.2801 PH=0.4154 total=0.4525 | VRAM=19.6GB | 0.246s/it
+[stage2] step   8499 | flow=0.3528 L1=0.2758 PH=0.4030 total=0.4333 | VRAM=19.6GB | 0.256s/it
+[stage2] step   8999 | flow=0.3403 L1=0.2706 PH=0.3922 total=0.4188 | VRAM=19.6GB | 0.301s/it
+[stage2] step   9499 | flow=0.3273 L1=0.2661 PH=0.3831 total=0.4039 | VRAM=19.6GB | 0.252s/it
+[stage2] step   9999 | flow=0.3239 L1=0.2601 PH=0.3676 total=0.3974 | VRAM=19.6GB | 0.514s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/sweep_spatial_lambda_0p2/checkpoints/10000
+[stage2] step  10499 | flow=0.3109 L1=0.2566 PH=0.3638 total=0.3837 | VRAM=19.6GB | 0.503s/it
+[stage2] step  10999 | flow=0.2982 L1=0.2532 PH=0.3524 total=0.3687 | VRAM=19.6GB | 0.499s/it
+[stage2] step  11499 | flow=0.2924 L1=0.2494 PH=0.3447 total=0.3614 | VRAM=19.6GB | 0.512s/it
+[stage2] step  11999 | flow=0.2802 L1=0.2415 PH=0.3281 total=0.3458 | VRAM=19.6GB | 0.517s/it
+[stage2] step  12499 | flow=0.2736 L1=0.2381 PH=0.3292 total=0.3394 | VRAM=19.6GB | 0.506s/it
+[stage2] step  12999 | flow=0.2625 L1=0.2352 PH=0.3177 total=0.3260 | VRAM=19.6GB | 0.520s/it
+[stage2] step  13499 | flow=0.2610 L1=0.2309 PH=0.3115 total=0.3233 | VRAM=19.6GB | 0.503s/it
+[stage2] step  13999 | flow=0.2525 L1=0.2297 PH=0.3081 total=0.3142 | VRAM=19.6GB | 0.518s/it
+[stage2] step  14499 | flow=0.2424 L1=0.2275 PH=0.3096 total=0.3043 | VRAM=19.6GB | 0.507s/it
+[stage2] step  14999 | flow=0.2410 L1=0.2228 PH=0.3013 total=0.3013 | VRAM=19.6GB | 0.499s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/sweep_spatial_lambda_0p2/checkpoints/15000
+[stage2] step  15499 | flow=0.2307 L1=0.2198 PH=0.2918 total=0.2891 | VRAM=19.6GB | 0.517s/it
+[stage2] step  15999 | flow=0.2266 L1=0.2137 PH=0.2886 total=0.2843 | VRAM=19.6GB | 0.509s/it
+[stage2] step  16499 | flow=0.2202 L1=0.2116 PH=0.2884 total=0.2779 | VRAM=19.6GB | 0.500s/it
+[stage2] step  16999 | flow=0.2150 L1=0.2117 PH=0.2910 total=0.2732 | VRAM=19.6GB | 0.497s/it
+[stage2] step  17499 | flow=0.2132 L1=0.2090 PH=0.2789 total=0.2689 | VRAM=19.6GB | 0.512s/it
+[stage2] step  17999 | flow=0.2073 L1=0.2057 PH=0.2786 total=0.2630 | VRAM=19.6GB | 0.509s/it
+[stage2] step  18499 | flow=0.2024 L1=0.2038 PH=0.2730 total=0.2570 | VRAM=19.6GB | 0.500s/it
+[stage2] step  18999 | flow=0.1989 L1=0.2013 PH=0.2665 total=0.2522 | VRAM=19.6GB | 0.518s/it
+[stage2] step  19499 | flow=0.1952 L1=0.1997 PH=0.2725 total=0.2497 | VRAM=19.6GB | 0.500s/it
+[stage2] step  19999 | flow=0.1913 L1=0.1985 PH=0.2663 total=0.2445 | VRAM=19.6GB | 0.515s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/sweep_spatial_lambda_0p2/checkpoints/20000
+[stage2] step  20499 | flow=0.1891 L1=0.1934 PH=0.2627 total=0.2416 | VRAM=19.6GB | 0.519s/it
+[stage2] step  20999 | flow=0.1832 L1=0.1931 PH=0.2661 total=0.2365 | VRAM=19.6GB | 0.501s/it
+[stage2] step  21499 | flow=0.1808 L1=0.1911 PH=0.2635 total=0.2335 | VRAM=19.6GB | 0.245s/it
+[stage2] step  21999 | flow=0.1781 L1=0.1869 PH=0.2540 total=0.2289 | VRAM=19.6GB | 0.242s/it
+[stage2] step  22499 | flow=0.1775 L1=0.1865 PH=0.2541 total=0.2283 | VRAM=19.6GB | 0.294s/it
+[stage2] step  22999 | flow=0.1729 L1=0.1847 PH=0.2532 total=0.2236 | VRAM=19.6GB | 0.279s/it
+[stage2] step  23499 | flow=0.1719 L1=0.1839 PH=0.2556 total=0.2230 | VRAM=19.6GB | 0.243s/it
+[stage2] step  23999 | flow=0.1707 L1=0.1826 PH=0.2504 total=0.2208 | VRAM=19.6GB | 0.282s/it
+[stage2] step  24499 | flow=0.1699 L1=0.1808 PH=0.2475 total=0.2194 | VRAM=19.6GB | 0.242s/it
+[stage2] step  24999 | flow=0.1623 L1=0.1797 PH=0.2458 total=0.2114 | VRAM=19.6GB | 0.521s/it
+[ckpt] saved -> /home/user/Desktop/Ayush PH test/output/sweep_spatial_lambda_0p2/checkpoints/25000
+
+[train] DONE variant=ph total_steps=25000 wall=193.6 min  -> /home/user/Desktop/Ayush PH test/output/sweep_spatial_lambda_0p2

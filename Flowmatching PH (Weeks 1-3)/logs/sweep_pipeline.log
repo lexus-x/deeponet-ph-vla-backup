@@ -1,0 +1,28 @@
+[sweep 06-04 10:20:30] START lambda sweep (LIBERO-Spatial)
+[sweep 06-04 10:20:30] TRAIN PH spatial lambda=0.02
+[sweep 06-04 13:15:16] done TRAIN 0.02
+[sweep 06-04 13:15:16] SELECT-BEST lambda=0.02
+[sweep 06-04 13:23:32] done SELECT 0.02
+[sweep 06-04 13:23:32] EVAL (PH only) lambda=0.02
+[sweep 06-04 14:10:49] done EVAL 0.02
+[sweep 06-04 14:10:49] TRAIN PH spatial lambda=0.05
+[sweep 06-04 17:24:16] done TRAIN 0.05
+[sweep 06-04 17:24:16] SELECT-BEST lambda=0.05
+[sweep 06-04 17:32:36] done SELECT 0.05
+[sweep 06-04 17:32:36] EVAL (PH only) lambda=0.05
+[sweep 06-04 18:26:02] done EVAL 0.05
+[sweep 06-04 18:26:02] TRAIN PH spatial lambda=0.2
+[sweep 06-04 21:40:00] done TRAIN 0.2
+[sweep 06-04 21:40:00] SELECT-BEST lambda=0.2
+[sweep 06-04 21:47:44] done SELECT 0.2
+[sweep 06-04 21:47:44] EVAL (PH only) lambda=0.2
+[sweep 06-04 22:48:53] done EVAL 0.2
+[sweep 06-04 22:48:53] TRAIN PH spatial lambda=0.5
+[sweep 06-05 01:32:13] done TRAIN 0.5
+[sweep 06-05 01:32:13] SELECT-BEST lambda=0.5
+[sweep 06-05 01:39:43] done SELECT 0.5
+[sweep 06-05 01:39:43] EVAL (PH only) lambda=0.5
+[sweep 06-05 02:29:22] done EVAL 0.5
+[sweep 06-05 02:29:22] REPORT
+[sweep 06-05 02:29:22] done REPORT
+[sweep 06-05 02:29:22] ALL SWEEP DONE

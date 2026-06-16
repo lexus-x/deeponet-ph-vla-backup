@@ -1,0 +1,489 @@
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 4441.94it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 5641.66it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[eval] loaded m1_s0 (head=flow) replan=5 <- runs/m1_flow_s0/checkpoints/8300
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 5929.14it/s]
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 5997.66it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[eval] loaded m3_s0 (head=deeponet) replan=5 <- runs/m3_deeponet_s0/checkpoints/8300
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 5788.68it/s]
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 5712.50it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[eval] loaded m4_s0 (head=deeponet) replan=5 <- runs/m4_deeponet_ph_s0/checkpoints/8300
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s0 task0: 90.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s0 task1: 85.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s0 task2: 95.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s0 task3: 95.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s0 task4: 70.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s0 task5: 10.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s0 task6: 95.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s0 task7: 90.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s0 task8: 75.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s0 task9: 85.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s0 task0: 80.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s0 task1: 65.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s0 task2: 75.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s0 task3: 80.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s0 task4: 55.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s0 task5: 30.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s0 task6: 70.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s0 task7: 15.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s0 task8: 65.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s0 task9: 10.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s0 task0: 65.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s0 task1: 50.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s0 task2: 65.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s0 task3: 100.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s0 task4: 25.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s0 task5: 60.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s0 task6: 80.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s0 task7: 30.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s0 task8: 70.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s0 task9: 30.0%
+[eval] DONE. summary: {
+  "m1_s0": {
+    "LIBERO-SPATIAL_avg": 0.7899999999999999,
+    "LIBERO-SPATIAL-V_avg": null
+  },
+  "m3_s0": {
+    "LIBERO-SPATIAL_avg": 0.545,
+    "LIBERO-SPATIAL-V_avg": null
+  },
+  "m4_s0": {
+    "LIBERO-SPATIAL_avg": 0.575,
+    "LIBERO-SPATIAL-V_avg": null
+  }
+}
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 7473.15it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 5936.11it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[eval] loaded m1_s1 (head=flow) replan=5 <- runs/m1_flow_s1/checkpoints/8300
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 5973.23it/s]
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6242.28it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[eval] loaded m3_s1 (head=deeponet) replan=5 <- runs/m3_deeponet_s1/checkpoints/8300
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 5943.76it/s]
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 5899.21it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[eval] loaded m4_s1 (head=deeponet) replan=5 <- runs/m4_deeponet_ph_s1/checkpoints/8300
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s1 task0: 80.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s1 task1: 85.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s1 task2: 90.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s1 task3: 100.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s1 task4: 60.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s1 task5: 15.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s1 task6: 90.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s1 task7: 75.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s1 task8: 80.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s1 task9: 95.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s1 task0: 75.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s1 task1: 60.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s1 task2: 60.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s1 task3: 70.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s1 task4: 70.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s1 task5: 20.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s1 task6: 100.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s1 task7: 15.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s1 task8: 60.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s1 task9: 30.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s1 task0: 80.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s1 task1: 40.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s1 task2: 65.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s1 task3: 55.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s1 task4: 60.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s1 task5: 15.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s1 task6: 80.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s1 task7: 10.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s1 task8: 70.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s1 task9: 20.0%
+[eval] DONE. summary: {
+  "m1_s1": {
+    "LIBERO-SPATIAL_avg": 0.7699999999999999,
+    "LIBERO-SPATIAL-V_avg": null
+  },
+  "m3_s1": {
+    "LIBERO-SPATIAL_avg": 0.5599999999999998,
+    "LIBERO-SPATIAL-V_avg": null
+  },
+  "m4_s1": {
+    "LIBERO-SPATIAL_avg": 0.4950000000000001,
+    "LIBERO-SPATIAL-V_avg": null
+  }
+}
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 92691.80it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 5699.62it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[eval] loaded m1_s2 (head=flow) replan=5 <- runs/m1_flow_s2/checkpoints/8300
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6285.23it/s]
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6247.21it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[eval] loaded m3_s2 (head=deeponet) replan=5 <- runs/m3_deeponet_s2/checkpoints/8300
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6546.70it/s]
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6491.07it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[eval] loaded m4_s2 (head=deeponet) replan=5 <- runs/m4_deeponet_ph_s2/checkpoints/8300
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s2 task0: 80.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s2 task1: 85.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s2 task2: 90.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s2 task3: 90.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s2 task4: 70.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s2 task5: 30.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s2 task6: 95.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s2 task7: 95.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s2 task8: 80.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m1_s2 task9: 90.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s2 task0: 75.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s2 task1: 50.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s2 task2: 65.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s2 task3: 60.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s2 task4: 60.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s2 task5: 10.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s2 task6: 65.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s2 task7: 5.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s2 task8: 65.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m3_s2 task9: 30.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s2 task0: 80.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s2 task1: 65.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s2 task2: 60.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s2 task3: 65.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s2 task4: 65.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s2 task5: 40.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s2 task6: 65.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s2 task7: 15.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s2 task8: 70.0%
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-SPATIAL] m4_s2 task9: 30.0%
+[eval] DONE. summary: {
+  "m1_s2": {
+    "LIBERO-SPATIAL_avg": 0.8049999999999999,
+    "LIBERO-SPATIAL-V_avg": null
+  },
+  "m3_s2": {
+    "LIBERO-SPATIAL_avg": 0.485,
+    "LIBERO-SPATIAL-V_avg": null
+  },
+  "m4_s2": {
+    "LIBERO-SPATIAL_avg": 0.555,
+    "LIBERO-SPATIAL-V_avg": null
+  }
+}

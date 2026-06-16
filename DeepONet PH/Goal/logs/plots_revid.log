@@ -1,0 +1,5 @@
+  saved 1_accuracy.png
+  saved 3_success_per_task.png
+[GOAL] plots+CSVs -> ../Goal/plots ../Goal/data
+[GOAL] in-dist acc: {'M1 flow': 93.5, 'M3 DeepONet-v2': 90.0, 'M4 DeepONet+PH-v2': 89.0}
+[GOAL] robustness : {'M1 flow': None, 'M3 DeepONet-v2': None, 'M4 DeepONet+PH-v2': None}

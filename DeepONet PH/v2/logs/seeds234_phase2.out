@@ -1,0 +1,85 @@
+###### abl_p64 seed 2 (--deeponet_p 64) ######
+[train] head=deeponet variant=baseline seed=2 out=runs/abl_p64_s2
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6472.20it/s]
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6407.74it/s]
+WARNING:root:Missing key(s) when loading model: {'model.deeponet.pool.blocks.0.ff.2.weight', 'model.deeponet.out_mlp.0.weight', 'model.deeponet.pool.blocks.1.ln_q.weight', 'model.deeponet.pool.blocks.1.ff.2.weight', 'model.deeponet.pool.blocks.1.attn.out_proj.weight', 'model.deeponet.trunk.0.weight', 'model.deeponet.trunk.4.weight', 'model.deeponet.pool.blocks.0.ln_q.weight', 'model.deeponet.pool.blocks.1.ln_q.bias', 'model.deeponet.branch.0.weight', 'model.deeponet.branch.3.weight', 'model.deeponet.pool.blocks.0.ln_kv.weight', 'model.deeponet.pool.blocks.2.ln_q.bias', 'model.deeponet.pool.in_proj.weight', 'model.deeponet.pool.blocks.0.attn.out_proj.bias', 'model.deeponet.pool.blocks.2.ff.0.bias', 'model.deeponet.pool.blocks.0.ln2.bias', 'model.deeponet.pool.blocks.2.ff.2.weight', 'model.deeponet.pool.blocks.1.ff.0.bias', 'model.deeponet.branch.3.bias', 'model.deeponet.pool.blocks.1.attn.in_proj_bias', 'model.deeponet.trunk.4.bias', 'model.deeponet.out_bias', 'model.deeponet.pool.queries', 'model.deeponet.pool.blocks.1.ln_kv.weight', 'model.deeponet.out_mlp.2.bias', 'model.deeponet.trunk.0.bias', 'model.deeponet.pool.blocks.0.ln_q.bias', 'model.deeponet.pool.blocks.1.attn.out_proj.bias', 'model.deeponet.pool.blocks.0.ff.0.weight', 'model.deeponet.pool.blocks.0.attn.in_proj_weight', 'model.deeponet.pool.in_proj.bias', 'model.deeponet.pool.blocks.2.ff.0.weight', 'model.deeponet.branch.1.weight', 'model.deeponet.pool.blocks.2.attn.out_proj.bias', 'model.deeponet.trunk.2.weight', 'model.deeponet.pool.blocks.2.attn.in_proj_bias', 'model.deeponet.pool.blocks.1.ln_kv.bias', 'model.deeponet.pool.blocks.2.ln2.bias', 'model.deeponet.out_mlp.2.weight', 'model.deeponet.pool.blocks.0.attn.in_proj_bias', 'model.deeponet.pool.blocks.1.ln2.bias', 'model.deeponet.branch.1.bias', 'model.deeponet.pool.blocks.2.attn.out_proj.weight', 'model.deeponet.pool.blocks.1.ff.2.bias', 'model.deeponet.pool.blocks.2.ln2.weight', 'model.deeponet.out_mlp.0.bias', 'model.deeponet.pool.blocks.2.attn.in_proj_weight', 'model.deeponet.pool.blocks.0.ff.2.bias', 'model.deeponet.pool.blocks.2.ln_q.weight', 'model.deeponet.pool.blocks.2.ff.2.bias', 'model.deeponet.pool.blocks.1.ln2.weight', 'model.deeponet.pool.blocks.0.ln_kv.bias', 'model.deeponet.pool.blocks.0.ff.0.bias', 'model.deeponet.pool.blocks.2.ln_kv.weight', 'model.deeponet.trunk.2.bias', 'model.deeponet.pool.blocks.1.attn.in_proj_weight', 'model.deeponet.branch.0.bias', 'model.deeponet.pool.blocks.0.attn.out_proj.weight', 'model.deeponet.pool.blocks.2.ln_kv.bias', 'model.deeponet.pool.blocks.0.ln2.weight', 'model.deeponet.pool.blocks.1.ff.0.weight'}
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 4950.49it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 10652.20it/s]
+[train] dataset frames=52970 episodes=432 -> 1 epoch = 1104 steps @ batch 48
+[train] planned frames seen = 398400 = 7.52 epochs
+
+=== stage1 | steps=1650 batch=48 trainable: head=10.15M backbone=0.0M ===
+[stage1] step    199 | mse=0.7294 L1=0.7155 PH=0.0000 total=0.7294 | VRAM=9.5GB | 0.291s/it
+[stage1] step    399 | mse=0.4894 L1=0.5631 PH=0.0000 total=0.4894 | VRAM=9.5GB | 0.278s/it
+[stage1] step    599 | mse=0.4094 L1=0.5080 PH=0.0000 total=0.4094 | VRAM=9.5GB | 0.345s/it
+[stage1] step    799 | mse=0.3722 L1=0.4865 PH=0.0000 total=0.3722 | VRAM=9.5GB | 0.282s/it
+[stage1] step    999 | mse=0.3503 L1=0.4744 PH=0.0000 total=0.3503 | VRAM=9.5GB | 0.343s/it
+[stage1] step   1199 | mse=0.3307 L1=0.4612 PH=0.0000 total=0.3307 | VRAM=9.5GB | 4.578s/it
+[stage1] step   1399 | mse=0.3180 L1=0.4529 PH=0.0000 total=0.3180 | VRAM=9.5GB | 0.673s/it
+[stage1] step   1599 | mse=0.3035 L1=0.4466 PH=0.0000 total=0.3035 | VRAM=9.5GB | 0.427s/it
+[ckpt] saved -> runs/abl_p64_s2/checkpoints/1650  (EMA weights)
+
+=== stage2 | steps=6650 batch=48 trainable: head=10.15M backbone=350.2M ===
+[stage2] step   1849 | mse=0.2856 L1=0.4359 PH=0.0000 total=0.2856 | VRAM=50.3GB | 0.956s/it
+[stage2] step   2049 | mse=0.2749 L1=0.4299 PH=0.0000 total=0.2749 | VRAM=50.3GB | 0.979s/it
+[stage2] step   2249 | mse=0.2589 L1=0.4204 PH=0.0000 total=0.2589 | VRAM=50.3GB | 0.648s/it
+[stage2] step   2449 | mse=0.2446 L1=0.4125 PH=0.0000 total=0.2446 | VRAM=50.3GB | 0.644s/it
+[stage2] step   2649 | mse=0.2272 L1=0.4031 PH=0.0000 total=0.2272 | VRAM=50.3GB | 0.702s/it
+[stage2] step   2849 | mse=0.2101 L1=0.3875 PH=0.0000 total=0.2101 | VRAM=50.3GB | 3.906s/it
+[stage2] step   3049 | mse=0.1918 L1=0.3782 PH=0.0000 total=0.1918 | VRAM=50.3GB | 4.003s/it
+[stage2] step   3249 | mse=0.1790 L1=0.3679 PH=0.0000 total=0.1790 | VRAM=50.3GB | 3.480s/it
+[stage2] step   3449 | mse=0.1681 L1=0.3662 PH=0.0000 total=0.1681 | VRAM=50.3GB | 2.011s/it
+[stage2] step   3649 | mse=0.1629 L1=0.3585 PH=0.0000 total=0.1629 | VRAM=50.3GB | 1.586s/it
+[stage2] step   3849 | mse=0.1512 L1=0.3496 PH=0.0000 total=0.1512 | VRAM=50.3GB | 0.643s/it
+[stage2] step   4049 | mse=0.1406 L1=0.3410 PH=0.0000 total=0.1406 | VRAM=50.3GB | 0.647s/it
+[stage2] step   4249 | mse=0.1366 L1=0.3362 PH=0.0000 total=0.1366 | VRAM=50.3GB | 0.642s/it
+[stage2] step   4449 | mse=0.1334 L1=0.3323 PH=0.0000 total=0.1334 | VRAM=50.3GB | 0.648s/it
+[stage2] step   4649 | mse=0.1273 L1=0.3288 PH=0.0000 total=0.1273 | VRAM=50.3GB | 0.707s/it
+[stage2] step   4849 | mse=0.1228 L1=0.3259 PH=0.0000 total=0.1228 | VRAM=50.3GB | 0.645s/it
+[stage2] step   5049 | mse=0.1176 L1=0.3157 PH=0.0000 total=0.1176 | VRAM=50.3GB | 0.650s/it
+[stage2] step   5249 | mse=0.1114 L1=0.3130 PH=0.0000 total=0.1114 | VRAM=50.3GB | 0.649s/it
+[stage2] step   5449 | mse=0.1124 L1=0.3121 PH=0.0000 total=0.1124 | VRAM=50.3GB | 0.656s/it
+[stage2] step   5649 | mse=0.1084 L1=0.3099 PH=0.0000 total=0.1084 | VRAM=50.3GB | 0.902s/it
+[stage2] step   5849 | mse=0.1035 L1=0.3064 PH=0.0000 total=0.1035 | VRAM=50.3GB | 0.656s/it
+[stage2] step   6049 | mse=0.1027 L1=0.3058 PH=0.0000 total=0.1027 | VRAM=50.3GB | 1.448s/it
+[stage2] step   6249 | mse=0.0973 L1=0.2981 PH=0.0000 total=0.0973 | VRAM=50.3GB | 0.638s/it
+[stage2] step   6449 | mse=0.0957 L1=0.2943 PH=0.0000 total=0.0957 | VRAM=50.3GB | 0.977s/it
+[stage2] step   6649 | mse=0.0940 L1=0.2962 PH=0.0000 total=0.0940 | VRAM=50.3GB | 1.011s/it
+[stage2] step   6849 | mse=0.0930 L1=0.2970 PH=0.0000 total=0.0930 | VRAM=50.3GB | 0.942s/it
+[stage2] step   7049 | mse=0.0913 L1=0.2921 PH=0.0000 total=0.0913 | VRAM=50.3GB | 0.942s/it
+[stage2] step   7249 | mse=0.0885 L1=0.2894 PH=0.0000 total=0.0885 | VRAM=50.3GB | 0.638s/it
+[stage2] step   7449 | mse=0.0849 L1=0.2876 PH=0.0000 total=0.0849 | VRAM=50.3GB | 0.653s/it
+[stage2] step   7649 | mse=0.0852 L1=0.2861 PH=0.0000 total=0.0852 | VRAM=50.3GB | 0.646s/it
+[stage2] step   7849 | mse=0.0837 L1=0.2871 PH=0.0000 total=0.0837 | VRAM=50.3GB | 0.708s/it
+[stage2] step   8049 | mse=0.0829 L1=0.2841 PH=0.0000 total=0.0829 | VRAM=50.3GB | 0.667s/it
+[stage2] step   8249 | mse=0.0819 L1=0.2834 PH=0.0000 total=0.0819 | VRAM=50.3GB | 0.645s/it
+[ckpt] saved -> runs/abl_p64_s2/checkpoints/8300  (EMA weights)
+
+[train] DONE head=deeponet variant=baseline steps=8300 wall=149.5 min -> runs/abl_p64_s2
+###### eval runs/abl_p64_s2 seed 2 (env: DEEPONET_P=64) ######
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 36314.32it/s]
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/evaluate.py", line 255, in <module>
+    main()
+  File "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/evaluate.py", line 227, in main
+    models[name] = load_policy(head, ckpt, norm_stats, args.replan)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/evaluate.py", line 64, in load_policy
+    policy = SmolVLADeepONetPolicy.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/lerobot/policies/pretrained.py", line 95, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/lerobot/configs/policies.py", line 190, in from_pretrained
+    config_file = hf_hub_download(
+                  ^^^^^^^^^^^^^^^^
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 84, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 132, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'runs/runs/abl_p64_s2_s2/checkpoints/LATEST'. Use `repo_type` argument if needed.

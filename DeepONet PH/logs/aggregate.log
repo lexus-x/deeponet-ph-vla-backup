@@ -1,0 +1,20 @@
+
+================= HEAD-TO-HEAD (mean +/- std over seeds) =================
+model                 in-dist acc     robustness
+M1 flow-matching       78.8+/-1.4     20.3+/-5.1
+M3 DeepONet            53.0+/-3.2     15.6+/-4.7
+M4 DeepONet+PH         54.2+/-3.4     17.1+/-2.1
+
+--- paired significance (positive mean_diff favours the first model) ---
+acc_m3_vs_m1     n= 30 diff=-25.8pp t_p=0.000 wilcoxon_p=2.440926896668574e-05
+rob_m3_vs_m1     n= 21 diff= -4.8pp t_p=0.416 wilcoxon_p=0.31306326673535323
+acc_m4_vs_m3     n= 30 diff= +1.2pp t_p=0.666 wilcoxon_p=0.6400359790765435
+rob_m4_vs_m3     n= 21 diff= +1.6pp t_p=0.424 wilcoxon_p=0.5745813643188029
+acc_m4_vs_m1     n= 30 diff=-24.7pp t_p=0.000 wilcoxon_p=0.0001694246643831578
+rob_m4_vs_m1     n= 21 diff= -3.2pp t_p=0.622 wilcoxon_p=0.5653348674229388
+
+--- efficiency gate (deterministic) ---
+head params: flow 99.9M vs deeponet 2.31M (43x)
+latency: flow 148ms vs deeponet 23ms (6.3x faster)
+
+saved -> runs/report/report.json + plots

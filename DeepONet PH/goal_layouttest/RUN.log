@@ -1,0 +1,3 @@
+[06-16 19:59:27] ==== GOAL OBJECT-LAYOUT TEST START (concurrent, 20 ep/task, replan 5) ====
+[06-16 19:59:27] checkpoint: ../Goal/runs/flow_s0/checkpoints/LATEST  (= the model that scored 93.5%)
+[06-16 19:59:27] LAYOUT off=0  start  (object layouts init_states[0:20])

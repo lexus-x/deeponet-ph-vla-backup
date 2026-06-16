@@ -1,0 +1,12 @@
+[plots] training_curves_LIBERO-10_per_epoch.png / .pdf
+[plots] training_curves_LIBERO_SPATIAL_per_epoch.png / .pdf
+[plots] training_curves_LIBERO-10_per_step.png / .pdf
+[plots] training_curves_LIBERO_SPATIAL_per_step.png / .pdf
+[plots] success_LIBERO-10_per_task.png / .pdf
+[plots] success_LIBERO-SPATIAL_per_task.png / .pdf
+[plots] success_LIBERO-10-V_by_perturbation.png / .pdf
+[plots] success_LIBERO-SPATIAL-V_by_perturbation.png / .pdf
+[plots] params_latency.png / .pdf
+[plots] headline_summary.png / .pdf
+[plots] wrote /home/user/Desktop/Ayush PH test/output/summary_strong.pdf
+[plots] DONE

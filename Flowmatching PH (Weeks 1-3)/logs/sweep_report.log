@@ -1,0 +1,7 @@
+[sweep] baseline  indist=62.5 robust=51.1
+[sweep] lambda=0.02  indist=62.5  robust=57.2
+[sweep] lambda=0.05  indist=59.2  robust=50.6
+[sweep] lambda=0.1   indist=57.5  robust=46.1
+[sweep] lambda=0.2   indist=45.8  robust=42.8
+[sweep] lambda=0.5   indist=44.2  robust=45.0
+[sweep] wrote output/plots_strong/lambda_sweep_spatial.png + sweep_summary.json

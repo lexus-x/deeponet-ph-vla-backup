@@ -1,0 +1,30 @@
+[strong 06-03 11:32:59] START max-accuracy strong run
+[strong 06-03 11:32:59] TRAIN libero10 baseline (stage1=5000 stage2=38000 bs16 ~6ep)
+[strong 06-03 16:21:07] done TRAIN libero10 baseline
+[strong 06-03 16:21:07] TRAIN libero10 ph (stage1=5000 stage2=38000 bs16 ~6ep)
+[strong 06-03 20:46:35] done TRAIN libero10 ph
+[strong 06-03 20:46:35] TRAIN spatial baseline (stage1=5000 stage2=20000 bs16 ~6ep)
+[strong 06-03 23:11:19] done TRAIN spatial baseline
+[strong 06-03 23:11:19] TRAIN spatial ph (stage1=5000 stage2=20000 bs16 ~6ep)
+[strong 06-04 01:40:03] done TRAIN spatial ph
+[strong 06-04 01:40:03] SELECT-BEST libero10 baseline
+[strong 06-04 01:47:04] done SELECT libero10 baseline
+[strong 06-04 01:47:04] SELECT-BEST libero10 ph
+[strong 06-04 01:54:10] done SELECT libero10 ph
+[strong 06-04 01:54:10] SELECT-BEST spatial baseline
+[strong 06-04 02:00:42] done SELECT spatial baseline
+[strong 06-04 02:00:42] SELECT-BEST spatial ph
+[strong 06-04 02:06:59] done SELECT spatial ph
+[strong 06-04 02:06:59] COMPARE
+[strong 06-04 02:11:58] done COMPARE
+[strong 06-04 02:11:58] EVAL libero_10
+[strong 06-04 03:45:45] done EVAL libero_10
+[strong 06-04 03:45:45] EVAL libero_spatial
+[strong 06-04 05:15:17] done EVAL libero_spatial
+[strong 06-04 05:15:17] VIDEOS libero_10
+[strong 06-04 05:24:20] done VIDEOS libero_10
+[strong 06-04 05:24:20] VIDEOS libero_spatial
+[strong 06-04 05:31:48] done VIDEOS libero_spatial
+[strong 06-04 05:31:48] PLOTS
+[strong 06-04 05:31:51] done PLOTS
+[strong 06-04 05:31:51] ALL STRONG DONE

@@ -1,0 +1,33 @@
+# ===== Environments / external libraries (not ours, huge) =====
+venv/
+third_party/
+data/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# ===== Model weights / checkpoints (28+ GB; each file > GitHub 100MB limit) =====
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.onnx
+**/checkpoints/
+**/*_checkpoints/
+
+# ===== HuggingFace / dataset caches (live under ~/.cache anyway) =====
+**/hub/
+**/.locks/
+**/datasets--*/
+*.arrow
+
+# ===== misc =====
+.DS_Store
+*.tmp
+*.swp
+nohup.out
+core.*
+
+# NOTE: videos (*.mp4), plots (*.png), results (*.json/*.csv), logs (*.log),
+# code (*.py/*.sh) and docs (*.md) are intentionally TRACKED.

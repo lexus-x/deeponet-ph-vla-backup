@@ -1,0 +1,187 @@
+===== BASELINE full training start Tue 02 Jun 2026 06:18:45 PM KST =====
+[train] variant=baseline mode=full out=outputs/baseline_full
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6841.87it/s]
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 16912.52it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 3793.18it/s]
+[train] dataset frames=101469 episodes=379
+
+=== stage1 | steps=5000 batch=8 trainable: head=99.9M backbone=0.0M ===
+[stage1] step    499 | flow=0.7910 L1=0.4174 PH=0.0000 total=0.7910 | VRAM=3.2GB | 0.100s/it
+[stage1] step    999 | flow=0.6171 L1=0.3676 PH=0.0000 total=0.6171 | VRAM=3.2GB | 0.106s/it
+[stage1] step   1499 | flow=0.5604 L1=0.3429 PH=0.0000 total=0.5604 | VRAM=3.2GB | 0.102s/it
+[stage1] step   1999 | flow=0.5326 L1=0.3307 PH=0.0000 total=0.5326 | VRAM=3.2GB | 0.104s/it
+[stage1] step   2499 | flow=0.5141 L1=0.3266 PH=0.0000 total=0.5141 | VRAM=3.2GB | 0.105s/it
+[stage1] step   2999 | flow=0.4987 L1=0.3190 PH=0.0000 total=0.4987 | VRAM=3.2GB | 0.106s/it
+[stage1] step   3499 | flow=0.4935 L1=0.3184 PH=0.0000 total=0.4935 | VRAM=3.2GB | 0.099s/it
+[stage1] step   3999 | flow=0.4831 L1=0.3152 PH=0.0000 total=0.4831 | VRAM=3.2GB | 0.108s/it
+[stage1] step   4499 | flow=0.4700 L1=0.3019 PH=0.0000 total=0.4700 | VRAM=3.2GB | 0.103s/it
+[stage1] step   4999 | flow=0.4727 L1=0.3079 PH=0.0000 total=0.4727 | VRAM=3.2GB | 0.102s/it
+[ckpt] saved -> outputs/baseline_full/checkpoints/5000
+LlamaModel does not expose input embeddings. Gradients cannot flow back to the token embeddings when using adapters or gradient checkpointing. Override `get_input_embeddings` to fully support those features, or set `_input_embed_layer` to the attribute name that holds the embeddings.
+
+=== stage2 | steps=30000 batch=4 trainable: head=99.9M backbone=350.2M ===
+[stage2] step   5499 | flow=0.4905 L1=0.3216 PH=0.0000 total=0.4905 | VRAM=7.5GB | 0.161s/it
+[stage2] step   5999 | flow=0.4864 L1=0.3157 PH=0.0000 total=0.4864 | VRAM=7.5GB | 0.138s/it
+[stage2] step   6499 | flow=0.4897 L1=0.3112 PH=0.0000 total=0.4897 | VRAM=7.5GB | 0.139s/it
+[stage2] step   6999 | flow=0.4684 L1=0.3054 PH=0.0000 total=0.4684 | VRAM=7.5GB | 0.139s/it
+[stage2] step   7499 | flow=0.4763 L1=0.3095 PH=0.0000 total=0.4763 | VRAM=7.5GB | 0.128s/it
+[stage2] step   7999 | flow=0.4704 L1=0.2992 PH=0.0000 total=0.4704 | VRAM=7.5GB | 0.131s/it
+[stage2] step   8499 | flow=0.4526 L1=0.2991 PH=0.0000 total=0.4526 | VRAM=7.5GB | 0.132s/it
+[stage2] step   8999 | flow=0.4704 L1=0.3037 PH=0.0000 total=0.4704 | VRAM=7.5GB | 0.130s/it
+[stage2] step   9499 | flow=0.4665 L1=0.3020 PH=0.0000 total=0.4665 | VRAM=7.5GB | 0.129s/it
+[stage2] step   9999 | flow=0.4628 L1=0.3036 PH=0.0000 total=0.4628 | VRAM=7.5GB | 0.132s/it
+[ckpt] saved -> outputs/baseline_full/checkpoints/10000
+[stage2] step  10499 | flow=0.4544 L1=0.2989 PH=0.0000 total=0.4544 | VRAM=7.5GB | 0.128s/it
+[stage2] step  10999 | flow=0.4503 L1=0.2989 PH=0.0000 total=0.4503 | VRAM=7.5GB | 0.127s/it
+[stage2] step  11499 | flow=0.4467 L1=0.3005 PH=0.0000 total=0.4467 | VRAM=7.5GB | 0.126s/it
+[stage2] step  11999 | flow=0.4456 L1=0.2954 PH=0.0000 total=0.4456 | VRAM=7.5GB | 0.126s/it
+[stage2] step  12499 | flow=0.4351 L1=0.2915 PH=0.0000 total=0.4351 | VRAM=7.5GB | 0.132s/it
+[stage2] step  12999 | flow=0.4263 L1=0.2934 PH=0.0000 total=0.4263 | VRAM=7.5GB | 0.129s/it
+[stage2] step  13499 | flow=0.4505 L1=0.2852 PH=0.0000 total=0.4505 | VRAM=7.5GB | 0.134s/it
+[stage2] step  13999 | flow=0.4238 L1=0.2835 PH=0.0000 total=0.4238 | VRAM=7.5GB | 0.133s/it
+[stage2] step  14499 | flow=0.4226 L1=0.2869 PH=0.0000 total=0.4226 | VRAM=7.5GB | 0.130s/it
+[stage2] step  14999 | flow=0.4405 L1=0.2886 PH=0.0000 total=0.4405 | VRAM=7.5GB | 0.132s/it
+[ckpt] saved -> outputs/baseline_full/checkpoints/15000
+[stage2] step  15499 | flow=0.4193 L1=0.2850 PH=0.0000 total=0.4193 | VRAM=7.5GB | 0.132s/it
+[stage2] step  15999 | flow=0.4263 L1=0.2880 PH=0.0000 total=0.4263 | VRAM=7.5GB | 0.133s/it
+[stage2] step  16499 | flow=0.4215 L1=0.2906 PH=0.0000 total=0.4215 | VRAM=7.5GB | 0.134s/it
+[stage2] step  16999 | flow=0.4105 L1=0.2775 PH=0.0000 total=0.4105 | VRAM=7.5GB | 0.128s/it
+[stage2] step  17499 | flow=0.4056 L1=0.2762 PH=0.0000 total=0.4056 | VRAM=7.5GB | 0.130s/it
+[stage2] step  17999 | flow=0.4118 L1=0.2764 PH=0.0000 total=0.4118 | VRAM=7.5GB | 0.131s/it
+[stage2] step  18499 | flow=0.4052 L1=0.2827 PH=0.0000 total=0.4052 | VRAM=7.5GB | 0.131s/it
+[stage2] step  18999 | flow=0.4061 L1=0.2765 PH=0.0000 total=0.4061 | VRAM=7.5GB | 0.129s/it
+[stage2] step  19499 | flow=0.4093 L1=0.2800 PH=0.0000 total=0.4093 | VRAM=7.5GB | 0.129s/it
+[stage2] step  19999 | flow=0.4003 L1=0.2722 PH=0.0000 total=0.4003 | VRAM=7.5GB | 0.127s/it
+[ckpt] saved -> outputs/baseline_full/checkpoints/20000
+[stage2] step  20499 | flow=0.3891 L1=0.2794 PH=0.0000 total=0.3891 | VRAM=7.5GB | 0.128s/it
+[stage2] step  20999 | flow=0.3955 L1=0.2713 PH=0.0000 total=0.3955 | VRAM=7.5GB | 0.127s/it
+[stage2] step  21499 | flow=0.3936 L1=0.2731 PH=0.0000 total=0.3936 | VRAM=7.6GB | 0.132s/it
+[stage2] step  21999 | flow=0.3989 L1=0.2709 PH=0.0000 total=0.3989 | VRAM=7.5GB | 0.137s/it
+[stage2] step  22499 | flow=0.3919 L1=0.2746 PH=0.0000 total=0.3919 | VRAM=7.5GB | 0.131s/it
+[stage2] step  22999 | flow=0.3901 L1=0.2732 PH=0.0000 total=0.3901 | VRAM=7.5GB | 0.129s/it
+[stage2] step  23499 | flow=0.3848 L1=0.2726 PH=0.0000 total=0.3848 | VRAM=7.5GB | 0.132s/it
+[stage2] step  23999 | flow=0.3846 L1=0.2701 PH=0.0000 total=0.3846 | VRAM=7.5GB | 0.130s/it
+[stage2] step  24499 | flow=0.3764 L1=0.2665 PH=0.0000 total=0.3764 | VRAM=7.5GB | 0.134s/it
+[stage2] step  24999 | flow=0.3778 L1=0.2711 PH=0.0000 total=0.3778 | VRAM=7.5GB | 0.133s/it
+[ckpt] saved -> outputs/baseline_full/checkpoints/25000
+[stage2] step  25499 | flow=0.3777 L1=0.2664 PH=0.0000 total=0.3777 | VRAM=7.5GB | 0.133s/it
+[stage2] step  25999 | flow=0.3790 L1=0.2650 PH=0.0000 total=0.3790 | VRAM=7.5GB | 0.137s/it
+[stage2] step  26499 | flow=0.3781 L1=0.2682 PH=0.0000 total=0.3781 | VRAM=7.5GB | 0.129s/it
+[stage2] step  26999 | flow=0.3744 L1=0.2641 PH=0.0000 total=0.3744 | VRAM=7.5GB | 0.132s/it
+[stage2] step  27499 | flow=0.3596 L1=0.2643 PH=0.0000 total=0.3596 | VRAM=7.5GB | 0.137s/it
+[stage2] step  27999 | flow=0.3681 L1=0.2609 PH=0.0000 total=0.3681 | VRAM=7.5GB | 0.135s/it
+[stage2] step  28499 | flow=0.3642 L1=0.2625 PH=0.0000 total=0.3642 | VRAM=7.5GB | 0.139s/it
+[stage2] step  28999 | flow=0.3599 L1=0.2578 PH=0.0000 total=0.3599 | VRAM=7.5GB | 0.129s/it
+[stage2] step  29499 | flow=0.3631 L1=0.2618 PH=0.0000 total=0.3631 | VRAM=7.5GB | 0.130s/it
+[stage2] step  29999 | flow=0.3541 L1=0.2582 PH=0.0000 total=0.3541 | VRAM=7.5GB | 0.126s/it
+[ckpt] saved -> outputs/baseline_full/checkpoints/30000
+[stage2] step  30499 | flow=0.3576 L1=0.2568 PH=0.0000 total=0.3576 | VRAM=7.5GB | 0.126s/it
+[stage2] step  30999 | flow=0.3433 L1=0.2534 PH=0.0000 total=0.3433 | VRAM=7.5GB | 0.136s/it
+[stage2] step  31499 | flow=0.3376 L1=0.2491 PH=0.0000 total=0.3376 | VRAM=7.5GB | 0.142s/it
+[stage2] step  31999 | flow=0.3366 L1=0.2481 PH=0.0000 total=0.3366 | VRAM=7.5GB | 0.131s/it
+[stage2] step  32499 | flow=0.3470 L1=0.2486 PH=0.0000 total=0.3470 | VRAM=7.5GB | 0.133s/it
+[stage2] step  32999 | flow=0.3359 L1=0.2547 PH=0.0000 total=0.3359 | VRAM=7.5GB | 0.135s/it
+[stage2] step  33499 | flow=0.3393 L1=0.2547 PH=0.0000 total=0.3393 | VRAM=7.5GB | 0.134s/it
+[stage2] step  33999 | flow=0.3351 L1=0.2459 PH=0.0000 total=0.3351 | VRAM=7.5GB | 0.126s/it
+[stage2] step  34499 | flow=0.3438 L1=0.2549 PH=0.0000 total=0.3438 | VRAM=7.5GB | 0.131s/it
+[stage2] step  34999 | flow=0.3348 L1=0.2450 PH=0.0000 total=0.3348 | VRAM=7.5GB | 0.136s/it
+[ckpt] saved -> outputs/baseline_full/checkpoints/35000
+
+[train] DONE variant=baseline total_steps=35000 wall=82.6 min  -> outputs/baseline_full
+===== PH full training start Tue 02 Jun 2026 07:41:42 PM KST =====
+[train] variant=ph mode=full out=outputs/ph_full
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6629.31it/s]
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 111848.11it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 3776.10it/s]
+[train] dataset frames=101469 episodes=379
+
+=== stage1 | steps=5000 batch=8 trainable: head=99.9M backbone=0.0M ===
+[stage1] step    499 | flow=0.7991 L1=0.4206 PH=0.8301 total=0.8821 | VRAM=3.2GB | 0.094s/it
+[stage1] step    999 | flow=0.6285 L1=0.3668 PH=0.7231 total=0.7008 | VRAM=3.2GB | 0.098s/it
+[stage1] step   1499 | flow=0.5761 L1=0.3510 PH=0.6636 total=0.6425 | VRAM=3.2GB | 0.096s/it
+[stage1] step   1999 | flow=0.5537 L1=0.3364 PH=0.6321 total=0.6169 | VRAM=3.2GB | 0.099s/it
+[stage1] step   2499 | flow=0.5332 L1=0.3334 PH=0.6273 total=0.5959 | VRAM=3.2GB | 0.098s/it
+[stage1] step   2999 | flow=0.5179 L1=0.3300 PH=0.6313 total=0.5810 | VRAM=3.2GB | 0.105s/it
+[stage1] step   3499 | flow=0.5073 L1=0.3169 PH=0.5792 total=0.5652 | VRAM=3.2GB | 0.101s/it
+[stage1] step   3999 | flow=0.4985 L1=0.3137 PH=0.5926 total=0.5578 | VRAM=3.2GB | 0.099s/it
+[stage1] step   4499 | flow=0.4950 L1=0.3111 PH=0.5777 total=0.5527 | VRAM=3.2GB | 0.100s/it
+[stage1] step   4999 | flow=0.4868 L1=0.3114 PH=0.5735 total=0.5441 | VRAM=3.2GB | 0.100s/it
+[ckpt] saved -> outputs/ph_full/checkpoints/5000
+LlamaModel does not expose input embeddings. Gradients cannot flow back to the token embeddings when using adapters or gradient checkpointing. Override `get_input_embeddings` to fully support those features, or set `_input_embed_layer` to the attribute name that holds the embeddings.
+
+=== stage2 | steps=30000 batch=4 trainable: head=99.9M backbone=350.2M ===
+[stage2] step   5499 | flow=0.5005 L1=0.3144 PH=0.6000 total=0.5605 | VRAM=7.5GB | 0.129s/it
+[stage2] step   5999 | flow=0.4999 L1=0.3186 PH=0.5840 total=0.5583 | VRAM=7.5GB | 0.128s/it
+[stage2] step   6499 | flow=0.4835 L1=0.3146 PH=0.6067 total=0.5442 | VRAM=7.5GB | 0.126s/it
+[stage2] step   6999 | flow=0.4904 L1=0.3125 PH=0.5930 total=0.5497 | VRAM=7.5GB | 0.125s/it
+[stage2] step   7499 | flow=0.4926 L1=0.3122 PH=0.5674 total=0.5493 | VRAM=7.5GB | 0.126s/it
+[stage2] step   7999 | flow=0.4853 L1=0.3133 PH=0.5734 total=0.5426 | VRAM=7.5GB | 0.127s/it
+[stage2] step   8499 | flow=0.4724 L1=0.3086 PH=0.5789 total=0.5302 | VRAM=7.5GB | 0.127s/it
+[stage2] step   8999 | flow=0.4842 L1=0.3081 PH=0.5571 total=0.5399 | VRAM=7.5GB | 0.125s/it
+[stage2] step   9499 | flow=0.4801 L1=0.3037 PH=0.5459 total=0.5347 | VRAM=7.5GB | 0.130s/it
+[stage2] step   9999 | flow=0.4767 L1=0.3050 PH=0.5778 total=0.5345 | VRAM=7.5GB | 0.129s/it
+[ckpt] saved -> outputs/ph_full/checkpoints/10000
+[stage2] step  10499 | flow=0.4663 L1=0.2973 PH=0.5455 total=0.5208 | VRAM=7.5GB | 0.129s/it
+[stage2] step  10999 | flow=0.4639 L1=0.3054 PH=0.5623 total=0.5201 | VRAM=7.5GB | 0.127s/it
+[stage2] step  11499 | flow=0.4680 L1=0.3015 PH=0.5528 total=0.5233 | VRAM=7.5GB | 0.124s/it
+[stage2] step  11999 | flow=0.4573 L1=0.3010 PH=0.5786 total=0.5152 | VRAM=7.6GB | 0.125s/it
+[stage2] step  12499 | flow=0.4540 L1=0.2912 PH=0.5245 total=0.5065 | VRAM=7.6GB | 0.130s/it
+[stage2] step  12999 | flow=0.4616 L1=0.2942 PH=0.5409 total=0.5157 | VRAM=7.5GB | 0.129s/it
+[stage2] step  13499 | flow=0.4541 L1=0.2990 PH=0.5341 total=0.5075 | VRAM=7.5GB | 0.131s/it
+[stage2] step  13999 | flow=0.4521 L1=0.2864 PH=0.5264 total=0.5048 | VRAM=7.5GB | 0.125s/it
+[stage2] step  14499 | flow=0.4534 L1=0.2982 PH=0.5456 total=0.5079 | VRAM=7.5GB | 0.130s/it
+[stage2] step  14999 | flow=0.4423 L1=0.2898 PH=0.5203 total=0.4944 | VRAM=7.5GB | 0.123s/it
+[ckpt] saved -> outputs/ph_full/checkpoints/15000
+[stage2] step  15499 | flow=0.4351 L1=0.2877 PH=0.5258 total=0.4877 | VRAM=7.6GB | 0.135s/it
+[stage2] step  15999 | flow=0.4342 L1=0.2820 PH=0.5056 total=0.4848 | VRAM=7.6GB | 0.125s/it
+[stage2] step  16499 | flow=0.4354 L1=0.2869 PH=0.5198 total=0.4873 | VRAM=7.5GB | 0.127s/it
+[stage2] step  16999 | flow=0.4369 L1=0.2913 PH=0.5150 total=0.4884 | VRAM=7.5GB | 0.131s/it
+[stage2] step  17499 | flow=0.4294 L1=0.2817 PH=0.4909 total=0.4785 | VRAM=7.5GB | 0.125s/it
+[stage2] step  17999 | flow=0.4222 L1=0.2837 PH=0.5078 total=0.4730 | VRAM=7.5GB | 0.125s/it
+[stage2] step  18499 | flow=0.4219 L1=0.2835 PH=0.5101 total=0.4729 | VRAM=7.5GB | 0.125s/it
+[stage2] step  18999 | flow=0.4256 L1=0.2822 PH=0.5047 total=0.4761 | VRAM=7.5GB | 0.124s/it
+[stage2] step  19499 | flow=0.4187 L1=0.2781 PH=0.4871 total=0.4674 | VRAM=7.5GB | 0.126s/it
+[stage2] step  19999 | flow=0.4199 L1=0.2792 PH=0.5051 total=0.4704 | VRAM=7.5GB | 0.126s/it
+[ckpt] saved -> outputs/ph_full/checkpoints/20000
+[stage2] step  20499 | flow=0.4123 L1=0.2800 PH=0.4999 total=0.4623 | VRAM=7.5GB | 0.125s/it
+[stage2] step  20999 | flow=0.4131 L1=0.2763 PH=0.4915 total=0.4623 | VRAM=7.5GB | 0.122s/it
+[stage2] step  21499 | flow=0.4143 L1=0.2821 PH=0.5048 total=0.4648 | VRAM=7.5GB | 0.126s/it
+[stage2] step  21999 | flow=0.4150 L1=0.2785 PH=0.4807 total=0.4630 | VRAM=7.5GB | 0.126s/it
+[stage2] step  22499 | flow=0.4082 L1=0.2748 PH=0.4878 total=0.4569 | VRAM=7.5GB | 0.124s/it
+[stage2] step  22999 | flow=0.4008 L1=0.2756 PH=0.4883 total=0.4497 | VRAM=7.5GB | 0.127s/it
+[stage2] step  23499 | flow=0.4004 L1=0.2749 PH=0.4847 total=0.4489 | VRAM=7.5GB | 0.132s/it
+[stage2] step  23999 | flow=0.3919 L1=0.2764 PH=0.5037 total=0.4423 | VRAM=7.5GB | 0.125s/it
+[stage2] step  24499 | flow=0.4023 L1=0.2711 PH=0.4824 total=0.4506 | VRAM=7.5GB | 0.127s/it
+[stage2] step  24999 | flow=0.3917 L1=0.2706 PH=0.4811 total=0.4398 | VRAM=7.5GB | 0.129s/it
+[ckpt] saved -> outputs/ph_full/checkpoints/25000
+[stage2] step  25499 | flow=0.3974 L1=0.2727 PH=0.4907 total=0.4465 | VRAM=7.5GB | 0.126s/it
+[stage2] step  25999 | flow=0.3980 L1=0.2691 PH=0.4633 total=0.4443 | VRAM=7.6GB | 0.131s/it
+[stage2] step  26499 | flow=0.3916 L1=0.2698 PH=0.4666 total=0.4383 | VRAM=7.5GB | 0.131s/it
+[stage2] step  26999 | flow=0.3893 L1=0.2664 PH=0.4553 total=0.4349 | VRAM=7.5GB | 0.128s/it
+[stage2] step  27499 | flow=0.3917 L1=0.2674 PH=0.4491 total=0.4366 | VRAM=7.5GB | 0.129s/it
+[stage2] step  27999 | flow=0.3787 L1=0.2649 PH=0.4717 total=0.4259 | VRAM=7.5GB | 0.127s/it
+[stage2] step  28499 | flow=0.3821 L1=0.2639 PH=0.4643 total=0.4285 | VRAM=7.5GB | 0.127s/it
+[stage2] step  28999 | flow=0.3843 L1=0.2609 PH=0.4602 total=0.4303 | VRAM=7.5GB | 0.129s/it
+[stage2] step  29499 | flow=0.3771 L1=0.2666 PH=0.4596 total=0.4231 | VRAM=7.5GB | 0.127s/it
+[stage2] step  29999 | flow=0.3838 L1=0.2654 PH=0.4712 total=0.4309 | VRAM=7.5GB | 0.130s/it
+[ckpt] saved -> outputs/ph_full/checkpoints/30000
+[stage2] step  30499 | flow=0.3824 L1=0.2642 PH=0.4556 total=0.4279 | VRAM=7.5GB | 0.125s/it
+[stage2] step  30999 | flow=0.3670 L1=0.2615 PH=0.4546 total=0.4125 | VRAM=7.5GB | 0.126s/it
+[stage2] step  31499 | flow=0.3731 L1=0.2669 PH=0.4602 total=0.4191 | VRAM=7.5GB | 0.129s/it
+[stage2] step  31999 | flow=0.3641 L1=0.2526 PH=0.4236 total=0.4064 | VRAM=7.5GB | 0.125s/it
+[stage2] step  32499 | flow=0.3540 L1=0.2536 PH=0.4314 total=0.3972 | VRAM=7.5GB | 0.133s/it
+[stage2] step  32999 | flow=0.3596 L1=0.2572 PH=0.4321 total=0.4028 | VRAM=7.5GB | 0.129s/it
+[stage2] step  33499 | flow=0.3623 L1=0.2576 PH=0.4307 total=0.4053 | VRAM=7.5GB | 0.124s/it
+[stage2] step  33999 | flow=0.3631 L1=0.2565 PH=0.4442 total=0.4075 | VRAM=7.5GB | 0.125s/it
+[stage2] step  34499 | flow=0.3631 L1=0.2542 PH=0.4370 total=0.4068 | VRAM=7.5GB | 0.128s/it
+[stage2] step  34999 | flow=0.3585 L1=0.2537 PH=0.4158 total=0.4001 | VRAM=7.5GB | 0.130s/it
+[ckpt] saved -> outputs/ph_full/checkpoints/35000
+
+[train] DONE variant=ph total_steps=35000 wall=79.7 min  -> outputs/ph_full
+===== ALL TRAINING DONE Tue 02 Jun 2026 09:01:43 PM KST =====

@@ -1,0 +1,8 @@
+[plots] training_curves_per_epoch.png / .pdf
+[plots] training_curves_per_step.png / .pdf
+[plots] libero10_per_task.png / .pdf
+[plots] liberov_perturbation.png / .pdf
+[plots] params_latency.png / .pdf
+[plots] headline_summary.png / .pdf
+[plots] wrote summary.pdf
+[plots] DONE

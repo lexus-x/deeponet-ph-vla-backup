@@ -1,0 +1,251 @@
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 33825.03it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 5978.01it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 5850.05it/s]
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task00_baseline.mp4 (140 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task00_ph.mp4 (154 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/comparison/indist_task00_baseline_vs_ph.mp4 (154 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task01_baseline.mp4 (165 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task01_ph.mp4 (300 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/comparison/indist_task01_baseline_vs_ph.mp4 (300 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task02_baseline.mp4 (124 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task02_ph.mp4 (129 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/comparison/indist_task02_baseline_vs_ph.mp4 (129 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task03_baseline.mp4 (146 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task03_ph.mp4 (146 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/comparison/indist_task03_baseline_vs_ph.mp4 (146 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task04_baseline.mp4 (156 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task04_ph.mp4 (151 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task05_baseline.mp4 (130 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task05_ph.mp4 (134 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task06_baseline.mp4 (165 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task06_ph.mp4 (165 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task07_baseline.mp4 (142 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task07_ph.mp4 (146 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task08_baseline.mp4 (155 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task08_ph.mp4 (157 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task09_baseline.mp4 (157 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/indist/task09_ph.mp4 (300 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task00_viewpoint_baseline.mp4 (152 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task00_viewpoint_ph.mp4 (138 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task00_lighting_baseline.mp4 (136 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task00_lighting_ph.mp4 (139 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task00_sensor_noise_baseline.mp4 (135 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task00_sensor_noise_ph.mp4 (300 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/comparison/perturbed_viewpoint_baseline_vs_ph.mp4 (152 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/comparison/perturbed_lighting_baseline_vs_ph.mp4 (139 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/comparison/perturbed_sensor_noise_baseline_vs_ph.mp4 (300 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task01_viewpoint_baseline.mp4 (300 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task01_viewpoint_ph.mp4 (300 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task01_lighting_baseline.mp4 (166 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task01_lighting_ph.mp4 (165 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task01_sensor_noise_baseline.mp4 (141 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task01_sensor_noise_ph.mp4 (136 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task02_viewpoint_baseline.mp4 (300 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task02_viewpoint_ph.mp4 (127 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task02_lighting_baseline.mp4 (127 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task02_lighting_ph.mp4 (129 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task02_sensor_noise_baseline.mp4 (300 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task02_sensor_noise_ph.mp4 (123 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task03_viewpoint_baseline.mp4 (300 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task03_viewpoint_ph.mp4 (131 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task03_lighting_baseline.mp4 (145 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task03_lighting_ph.mp4 (146 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task03_sensor_noise_baseline.mp4 (148 frames)
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[video] wrote /home/user/Desktop/Ayush PH test/hugging face ckp/ph_object/lambda_0p5/videos/perturbed/task03_sensor_noise_ph.mp4 (144 frames)
+[video] DONE

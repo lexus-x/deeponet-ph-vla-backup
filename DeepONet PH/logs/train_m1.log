@@ -1,0 +1,31 @@
+[train] head=flow variant=baseline out=runs/m1_flow_baseline
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6963.92it/s]
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 4630.75it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 4422.04it/s]
+[train] dataset frames=52970 episodes=432 -> 1 epoch = 1104 steps @ batch 48
+[train] planned frames seen = 398400 = 7.52 epochs
+
+=== stage1 | steps=1650 batch=48 trainable: head=99.88M backbone=0.0M ===
+[stage1] step    199 | mse=0.6716 L1=0.4096 PH=0.0000 total=0.6716 | VRAM=12.8GB | 0.335s/it
+[stage1] step    399 | mse=0.4901 L1=0.3308 PH=0.0000 total=0.4901 | VRAM=12.8GB | 0.322s/it
+[stage1] step    599 | mse=0.4527 L1=0.3173 PH=0.0000 total=0.4527 | VRAM=12.8GB | 0.323s/it
+[stage1] step    799 | mse=0.4350 L1=0.3127 PH=0.0000 total=0.4350 | VRAM=12.8GB | 0.553s/it
+[stage1] step    999 | mse=0.4224 L1=0.3026 PH=0.0000 total=0.4224 | VRAM=12.8GB | 0.327s/it
+[stage1] step   1199 | mse=0.4149 L1=0.3004 PH=0.0000 total=0.4149 | VRAM=12.8GB | 7.237s/it
+[stage1] step   1399 | mse=0.4008 L1=0.2958 PH=0.0000 total=0.4008 | VRAM=12.8GB | 1.334s/it
+[stage1] step   1599 | mse=0.3950 L1=0.2952 PH=0.0000 total=0.3950 | VRAM=12.8GB | 0.319s/it
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/DeepONet PH/train.py", line 339, in <module>
+    main()
+  File "/home/user/Desktop/Ayush PH test/DeepONet PH/train.py", line 327, in main
+    gstep = run_stage("stage1", cfg["stage1"], policy, ema, di, preprocessor, out_dir,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/Desktop/Ayush PH test/DeepONet PH/train.py", line 217, in run_stage
+    step_logger.log(row)
+  File "/home/user/Desktop/Ayush PH test/DeepONet PH/train.py", line 145, in log
+    with open(self.path, "a", newline="") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runs/m1_flow_baseline/log_step.csv'

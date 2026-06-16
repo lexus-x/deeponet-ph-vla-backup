@@ -1,0 +1,9 @@
+
+=== DeepONet-v2 design ablations ===
+config                                            in-dist     robustness  n
+Full DeepONet-v2 (p256, 3blk, Fourier)       80.3± 2.4      38.5± 6.9   5
+(-) basis p: 256->64                         81.5± 0.5      30.0± 4.3   2
+(-) Fourier-tau (linear only)                83.5± 1.0      44.8± 3.8   2
+(-) cross-attn blocks: 3->1                  78.8± 2.2      32.4± 4.8   2
+Regression head (NO operator, same ctx)      86.0± 0.0      32.4± 1.0   2
+saved -> ../Ablation_Results (ablations.csv, ablations.png, raw JSONs)

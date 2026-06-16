@@ -1,0 +1,93 @@
+[train] head=flow variant=baseline seed=0 out=../Goal/runs/flow_s0
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6711.35it/s]
+Reducing the number of VLM layers to 16 ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 7272.31it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 5447.15it/s]
+Fetching 72 files:   0%|          | 0/72 [00:00<?, ?it/s]Fetching 72 files:   1%|▏         | 1/72 [00:00<00:53,  1.34it/s]Fetching 72 files:   4%|▍         | 3/72 [00:57<24:32, 21.35s/it]Fetching 72 files:   6%|▌         | 4/72 [01:21<24:56, 22.01s/it]Fetching 72 files:   8%|▊         | 6/72 [01:55<21:26, 19.49s/it]Fetching 72 files:  15%|█▌        | 11/72 [01:58<07:32,  7.42s/it]Fetching 72 files:  17%|█▋        | 12/72 [02:00<06:36,  6.61s/it]Fetching 72 files:  18%|█▊        | 13/72 [02:01<05:31,  5.62s/it]Fetching 72 files:  19%|█▉        | 14/72 [02:11<06:20,  6.56s/it]Fetching 72 files:  22%|██▏       | 16/72 [02:39<08:34,  9.20s/it]Fetching 72 files:  25%|██▌       | 18/72 [03:29<13:12, 14.68s/it]Fetching 72 files:  33%|███▎      | 24/72 [03:29<04:46,  5.98s/it]Fetching 72 files:  36%|███▌      | 26/72 [03:31<03:43,  4.87s/it]Fetching 72 files:  39%|███▉      | 28/72 [04:16<06:41,  9.13s/it]Fetching 72 files:  40%|████      | 29/72 [05:25<12:46, 17.84s/it]Fetching 72 files:  51%|█████▏    | 37/72 [05:54<05:12,  8.94s/it]Fetching 72 files:  57%|█████▋    | 41/72 [05:55<03:13,  6.23s/it]Fetching 72 files:  60%|█████▉    | 43/72 [06:37<04:20,  8.97s/it]Fetching 72 files:  62%|██████▎   | 45/72 [06:47<03:37,  8.07s/it]Fetching 72 files:  65%|██████▌   | 47/72 [06:49<02:43,  6.54s/it]Fetching 72 files:  67%|██████▋   | 48/72 [06:51<02:21,  5.91s/it]Fetching 72 files:  71%|███████   | 51/72 [06:52<01:20,  3.82s/it]Fetching 72 files:  74%|███████▎  | 53/72 [07:56<03:33, 11.21s/it]Fetching 72 files:  78%|███████▊  | 56/72 [07:58<01:58,  7.43s/it]Fetching 72 files:  85%|████████▍ | 61/72 [08:54<01:40,  9.14s/it]Fetching 72 files:  86%|████████▌ | 62/72 [09:00<01:27,  8.75s/it]Fetching 72 files:  90%|█████████ | 65/72 [09:02<00:42,  6.06s/it]Fetching 72 files: 100%|██████████| 72/72 [09:02<00:00,  7.53s/it]
+[train] dataset frames=52042 episodes=428 -> 1 epoch = 1084 steps @ batch 48
+[train] planned frames seen = 720000 = 13.83 epochs
+
+=== stage1 | steps=1650 batch=48 trainable: head=99.88M backbone=0.0M ===
+[stage1] step    199 | mse=0.5858 L1=0.3740 PH=0.0000 total=0.5858 | VRAM=12.8GB | 0.312s/it
+[stage1] step    399 | mse=0.3933 L1=0.2954 PH=0.0000 total=0.3933 | VRAM=12.8GB | 0.313s/it
+[stage1] step    599 | mse=0.3601 L1=0.2760 PH=0.0000 total=0.3601 | VRAM=12.8GB | 0.314s/it
+[stage1] step    799 | mse=0.3438 L1=0.2696 PH=0.0000 total=0.3438 | VRAM=12.8GB | 0.313s/it
+[stage1] step    999 | mse=0.3321 L1=0.2653 PH=0.0000 total=0.3321 | VRAM=12.8GB | 0.313s/it
+[stage1] step   1199 | mse=0.3223 L1=0.2603 PH=0.0000 total=0.3223 | VRAM=12.8GB | 0.312s/it
+[stage1] step   1399 | mse=0.3146 L1=0.2531 PH=0.0000 total=0.3146 | VRAM=12.8GB | 0.314s/it
+[stage1] step   1599 | mse=0.3068 L1=0.2525 PH=0.0000 total=0.3068 | VRAM=12.8GB | 0.313s/it
+[ckpt] saved -> ../Goal/runs/flow_s0/checkpoints/1650  (EMA weights)
+LlamaModel does not expose input embeddings. Gradients cannot flow back to the token embeddings when using adapters or gradient checkpointing. Override `get_input_embeddings` to fully support those features, or set `_input_embed_layer` to the attribute name that holds the embeddings.
+
+=== stage2 | steps=13350 batch=48 trainable: head=99.88M backbone=350.2M ===
+[stage2] step   1849 | mse=0.3080 L1=0.2513 PH=0.0000 total=0.3080 | VRAM=53.6GB | 0.670s/it
+[stage2] step   2049 | mse=0.2926 L1=0.2461 PH=0.0000 total=0.2926 | VRAM=53.6GB | 0.671s/it
+[stage2] step   2249 | mse=0.2877 L1=0.2436 PH=0.0000 total=0.2877 | VRAM=53.6GB | 0.671s/it
+[stage2] step   2449 | mse=0.2769 L1=0.2394 PH=0.0000 total=0.2769 | VRAM=53.6GB | 0.671s/it
+[stage2] step   2649 | mse=0.2659 L1=0.2355 PH=0.0000 total=0.2659 | VRAM=53.6GB | 0.670s/it
+[stage2] step   2849 | mse=0.2492 L1=0.2283 PH=0.0000 total=0.2492 | VRAM=53.6GB | 0.666s/it
+[stage2] step   3049 | mse=0.2397 L1=0.2258 PH=0.0000 total=0.2397 | VRAM=53.6GB | 0.668s/it
+[stage2] step   3249 | mse=0.2309 L1=0.2203 PH=0.0000 total=0.2309 | VRAM=53.6GB | 0.671s/it
+[stage2] step   3449 | mse=0.2175 L1=0.2134 PH=0.0000 total=0.2175 | VRAM=53.6GB | 0.668s/it
+[stage2] step   3649 | mse=0.2050 L1=0.2083 PH=0.0000 total=0.2050 | VRAM=53.6GB | 0.668s/it
+[stage2] step   3849 | mse=0.1970 L1=0.2055 PH=0.0000 total=0.1970 | VRAM=53.6GB | 0.668s/it
+[stage2] step   4049 | mse=0.1837 L1=0.1991 PH=0.0000 total=0.1837 | VRAM=53.6GB | 0.675s/it
+[stage2] step   4249 | mse=0.1747 L1=0.1948 PH=0.0000 total=0.1747 | VRAM=53.6GB | 0.669s/it
+[stage2] step   4449 | mse=0.1710 L1=0.1903 PH=0.0000 total=0.1710 | VRAM=53.6GB | 0.669s/it
+[stage2] step   4649 | mse=0.1632 L1=0.1878 PH=0.0000 total=0.1632 | VRAM=53.6GB | 0.668s/it
+[stage2] step   4849 | mse=0.1594 L1=0.1840 PH=0.0000 total=0.1594 | VRAM=53.6GB | 0.669s/it
+[stage2] step   5049 | mse=0.1508 L1=0.1799 PH=0.0000 total=0.1508 | VRAM=53.6GB | 0.667s/it
+[stage2] step   5249 | mse=0.1431 L1=0.1755 PH=0.0000 total=0.1431 | VRAM=53.6GB | 4.641s/it
+[stage2] step   5449 | mse=0.1395 L1=0.1745 PH=0.0000 total=0.1395 | VRAM=53.6GB | 0.669s/it
+[stage2] step   5649 | mse=0.1343 L1=0.1747 PH=0.0000 total=0.1343 | VRAM=53.6GB | 0.669s/it
+[stage2] step   5849 | mse=0.1348 L1=0.1707 PH=0.0000 total=0.1348 | VRAM=53.6GB | 2.441s/it
+[stage2] step   6049 | mse=0.1279 L1=0.1706 PH=0.0000 total=0.1279 | VRAM=53.6GB | 0.669s/it
+[stage2] step   6249 | mse=0.1235 L1=0.1664 PH=0.0000 total=0.1235 | VRAM=53.6GB | 3.693s/it
+[stage2] step   6449 | mse=0.1225 L1=0.1646 PH=0.0000 total=0.1225 | VRAM=53.6GB | 3.963s/it
+[stage2] step   6649 | mse=0.1175 L1=0.1623 PH=0.0000 total=0.1175 | VRAM=53.6GB | 4.098s/it
+[stage2] step   6849 | mse=0.1157 L1=0.1612 PH=0.0000 total=0.1157 | VRAM=53.6GB | 5.113s/it
+[stage2] step   7049 | mse=0.1141 L1=0.1585 PH=0.0000 total=0.1141 | VRAM=53.6GB | 4.228s/it
+[stage2] step   7249 | mse=0.1101 L1=0.1571 PH=0.0000 total=0.1101 | VRAM=53.6GB | 0.668s/it
+[stage2] step   7449 | mse=0.1086 L1=0.1559 PH=0.0000 total=0.1086 | VRAM=53.6GB | 0.667s/it
+[stage2] step   7649 | mse=0.1072 L1=0.1557 PH=0.0000 total=0.1072 | VRAM=53.6GB | 0.668s/it
+[stage2] step   7849 | mse=0.1068 L1=0.1556 PH=0.0000 total=0.1068 | VRAM=53.6GB | 0.668s/it
+[stage2] step   8049 | mse=0.1037 L1=0.1537 PH=0.0000 total=0.1037 | VRAM=53.6GB | 0.668s/it
+[stage2] step   8249 | mse=0.1029 L1=0.1522 PH=0.0000 total=0.1029 | VRAM=53.6GB | 0.666s/it
+[stage2] step   8449 | mse=0.0981 L1=0.1523 PH=0.0000 total=0.0981 | VRAM=53.6GB | 3.909s/it
+[stage2] step   8649 | mse=0.0986 L1=0.1492 PH=0.0000 total=0.0986 | VRAM=53.6GB | 4.177s/it
+[stage2] step   8849 | mse=0.0967 L1=0.1490 PH=0.0000 total=0.0967 | VRAM=53.6GB | 1.847s/it
+[stage2] step   9049 | mse=0.0987 L1=0.1476 PH=0.0000 total=0.0987 | VRAM=53.6GB | 0.669s/it
+[stage2] step   9249 | mse=0.0936 L1=0.1485 PH=0.0000 total=0.0936 | VRAM=53.6GB | 0.666s/it
+[stage2] step   9449 | mse=0.0910 L1=0.1476 PH=0.0000 total=0.0910 | VRAM=53.6GB | 0.669s/it
+[stage2] step   9649 | mse=0.0913 L1=0.1462 PH=0.0000 total=0.0913 | VRAM=53.6GB | 0.667s/it
+[stage2] step   9849 | mse=0.0917 L1=0.1472 PH=0.0000 total=0.0917 | VRAM=53.6GB | 0.667s/it
+[stage2] step  10049 | mse=0.0916 L1=0.1448 PH=0.0000 total=0.0916 | VRAM=53.6GB | 0.668s/it
+[stage2] step  10249 | mse=0.0889 L1=0.1449 PH=0.0000 total=0.0889 | VRAM=53.6GB | 0.667s/it
+[stage2] step  10449 | mse=0.0883 L1=0.1437 PH=0.0000 total=0.0883 | VRAM=53.6GB | 0.669s/it
+[stage2] step  10649 | mse=0.0869 L1=0.1436 PH=0.0000 total=0.0869 | VRAM=53.6GB | 0.668s/it
+[stage2] step  10849 | mse=0.0846 L1=0.1420 PH=0.0000 total=0.0846 | VRAM=53.6GB | 0.670s/it
+[stage2] step  11049 | mse=0.0836 L1=0.1422 PH=0.0000 total=0.0836 | VRAM=53.6GB | 0.666s/it
+[stage2] step  11249 | mse=0.0850 L1=0.1415 PH=0.0000 total=0.0850 | VRAM=53.6GB | 0.669s/it
+[stage2] step  11449 | mse=0.0862 L1=0.1408 PH=0.0000 total=0.0862 | VRAM=53.6GB | 0.668s/it
+[stage2] step  11649 | mse=0.0815 L1=0.1377 PH=0.0000 total=0.0815 | VRAM=53.6GB | 0.666s/it
+[stage2] step  11849 | mse=0.0791 L1=0.1398 PH=0.0000 total=0.0791 | VRAM=53.6GB | 0.669s/it
+[stage2] step  12049 | mse=0.0817 L1=0.1395 PH=0.0000 total=0.0817 | VRAM=53.6GB | 0.666s/it
+[stage2] step  12249 | mse=0.0789 L1=0.1372 PH=0.0000 total=0.0789 | VRAM=53.6GB | 0.661s/it
+[stage2] step  12449 | mse=0.0780 L1=0.1384 PH=0.0000 total=0.0780 | VRAM=53.6GB | 1.877s/it
+[stage2] step  12649 | mse=0.0789 L1=0.1375 PH=0.0000 total=0.0789 | VRAM=53.6GB | 0.666s/it
+[stage2] step  12849 | mse=0.0781 L1=0.1370 PH=0.0000 total=0.0781 | VRAM=53.6GB | 0.676s/it
+[stage2] step  13049 | mse=0.0748 L1=0.1368 PH=0.0000 total=0.0748 | VRAM=53.6GB | 0.669s/it
+[stage2] step  13249 | mse=0.0778 L1=0.1345 PH=0.0000 total=0.0778 | VRAM=53.6GB | 0.666s/it
+[stage2] step  13449 | mse=0.0749 L1=0.1367 PH=0.0000 total=0.0749 | VRAM=53.6GB | 0.669s/it
+[stage2] step  13649 | mse=0.0749 L1=0.1365 PH=0.0000 total=0.0749 | VRAM=53.6GB | 0.667s/it
+[stage2] step  13849 | mse=0.0765 L1=0.1345 PH=0.0000 total=0.0765 | VRAM=53.6GB | 0.670s/it
+[stage2] step  14049 | mse=0.0748 L1=0.1326 PH=0.0000 total=0.0748 | VRAM=53.6GB | 0.666s/it
+[stage2] step  14249 | mse=0.0729 L1=0.1347 PH=0.0000 total=0.0729 | VRAM=53.6GB | 0.668s/it
+[stage2] step  14449 | mse=0.0717 L1=0.1357 PH=0.0000 total=0.0717 | VRAM=53.6GB | 0.670s/it
+[stage2] step  14649 | mse=0.0711 L1=0.1371 PH=0.0000 total=0.0711 | VRAM=53.6GB | 0.669s/it
+[stage2] step  14849 | mse=0.0718 L1=0.1354 PH=0.0000 total=0.0718 | VRAM=53.6GB | 0.668s/it
+[ckpt] saved -> ../Goal/runs/flow_s0/checkpoints/15000  (EMA weights)
+
+[train] DONE head=flow variant=baseline steps=15000 wall=277.9 min -> ../Goal/runs/flow_s0

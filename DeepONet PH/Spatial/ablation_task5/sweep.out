@@ -1,0 +1,70 @@
+[t5] loading dataset stats ...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 14993.04it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6238.30it/s]
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[t5] replan=5 ep00 seed1000 -> FAIL
+[t5] replan=5 ep01 seed1001 -> FAIL
+[t5] replan=5 ep02 seed1002 -> FAIL
+[t5] replan=5 ep03 seed1003 -> FAIL
+[t5] replan=5 ep04 seed1004 -> FAIL
+[t5] replan=5 ep05 seed1005 -> FAIL
+[t5] replan=5 ep06 seed1006 -> PASS
+[t5] replan=5 ep07 seed1007 -> FAIL
+[t5] replan=5 ep08 seed1008 -> FAIL
+[t5] replan=5 ep09 seed1009 -> FAIL
+[t5] replan=5 ep10 seed1010 -> FAIL
+[t5] replan=5 ep11 seed1011 -> FAIL
+[t5] === replan=5: 1/12 = 8.3%  (321.7s) ===
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6567.60it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[t5] replan=2 ep00 seed1000 -> FAIL
+[t5] replan=2 ep01 seed1001 -> FAIL
+[t5] replan=2 ep02 seed1002 -> FAIL
+[t5] replan=2 ep03 seed1003 -> FAIL
+[t5] replan=2 ep04 seed1004 -> FAIL
+[t5] replan=2 ep05 seed1005 -> FAIL
+[t5] replan=2 ep06 seed1006 -> PASS
+[t5] replan=2 ep07 seed1007 -> FAIL
+[t5] replan=2 ep08 seed1008 -> FAIL
+[t5] replan=2 ep09 seed1009 -> FAIL
+[t5] replan=2 ep10 seed1010 -> FAIL
+[t5] replan=2 ep11 seed1011 -> FAIL
+[t5] === replan=2: 1/12 = 8.3%  (570.8s) ===
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6865.34it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[t5] replan=1 ep00 seed1000 -> FAIL
+[t5] replan=1 ep01 seed1001 -> FAIL
+[t5] replan=1 ep02 seed1002 -> FAIL
+[t5] replan=1 ep03 seed1003 -> FAIL
+[t5] replan=1 ep04 seed1004 -> FAIL
+[t5] replan=1 ep05 seed1005 -> FAIL
+[t5] replan=1 ep06 seed1006 -> FAIL
+[t5] replan=1 ep07 seed1007 -> FAIL
+[t5] replan=1 ep08 seed1008 -> FAIL
+[t5] replan=1 ep09 seed1009 -> FAIL
+[t5] replan=1 ep10 seed1010 -> FAIL
+[t5] replan=1 ep11 seed1011 -> FAIL
+[t5] === replan=1: 0/12 = 0.0%  (1029.9s) ===
+[t5] DONE {"replan_5": {"passes": 1, "n": 12, "success_rate": 0.08333333333333333, "wall_s": 321.7}, "replan_2": {"passes": 1, "n": 12, "success_rate": 0.08333333333333333, "wall_s": 570.8}, "replan_1": {"passes": 0, "n": 12, "success_rate": 0.0, "wall_s": 1029.9}}

@@ -1,0 +1,307 @@
+WARNING 2026-06-04 11:06:21 figs/eval.py:65 No job name provided, using 'libero_smolvla' as job name.
+INFO 2026-06-04 11:06:21 bot_eval.py:508 {'env': {'camera_name': 'agentview_image,robot0_eye_in_hand_image',
+         'camera_name_mapping': None,
+         'control_mode': 'relative',
+         'disable_env_checker': True,
+         'episode_length': None,
+         'features': {'action': {'shape': (7,),
+                                 'type': <FeatureType.ACTION: 'ACTION'>},
+                      'pixels/agentview_image': {'shape': (360, 360, 3),
+                                                 'type': <FeatureType.VISUAL: 'VISUAL'>},
+                      'pixels/robot0_eye_in_hand_image': {'shape': (360,
+                                                                    360,
+                                                                    3),
+                                                          'type': <FeatureType.VISUAL: 'VISUAL'>},
+                      'robot_state/eef/mat': {'shape': (3, 3),
+                                              'type': <FeatureType.STATE: 'STATE'>},
+                      'robot_state/eef/pos': {'shape': (3,),
+                                              'type': <FeatureType.STATE: 'STATE'>},
+                      'robot_state/eef/quat': {'shape': (4,),
+                                               'type': <FeatureType.STATE: 'STATE'>},
+                      'robot_state/gripper/qpos': {'shape': (2,),
+                                                   'type': <FeatureType.STATE: 'STATE'>},
+                      'robot_state/gripper/qvel': {'shape': (2,),
+                                                   'type': <FeatureType.STATE: 'STATE'>},
+                      'robot_state/joints/pos': {'shape': (7,),
+                                                 'type': <FeatureType.STATE: 'STATE'>},
+                      'robot_state/joints/vel': {'shape': (7,),
+                                                 'type': <FeatureType.STATE: 'STATE'>}},
+         'features_map': {'action': 'action',
+                          'pixels/agentview_image': 'observation.images.image',
+                          'pixels/robot0_eye_in_hand_image': 'observation.images.image2',
+                          'robot_state/eef/mat': 'observation.state.eef_mat',
+                          'robot_state/eef/pos': 'observation.state.eef_pos',
+                          'robot_state/eef/quat': 'observation.state.eef_quat',
+                          'robot_state/gripper/qpos': 'observation.state.gripper_qpos',
+                          'robot_state/gripper/qvel': 'observation.state.gripper_qvel',
+                          'robot_state/joints/pos': 'observation.state.joint_pos',
+                          'robot_state/joints/vel': 'observation.state.joint_vel'},
+         'fps': 30,
+         'init_states': True,
+         'max_parallel_tasks': 1,
+         'obs_type': 'pixels_agent_pos',
+         'observation_height': 360,
+         'observation_width': 360,
+         'render_mode': 'rgb_array',
+         'task': 'libero_object',
+         'task_ids': None},
+ 'eval': {'batch_size': 1, 'n_episodes': 2, 'use_async_envs': False},
+ 'job_name': 'libero_smolvla',
+ 'output_dir': PosixPath('hugging face ckp/_test2'),
+ 'policy': {'adapt_to_pi_aloha': False,
+            'add_image_special_tokens': False,
+            'attention_mode': 'cross_attn',
+            'chunk_size': 50,
+            'compile_mode': 'max-autotune',
+            'compile_model': False,
+            'device': 'cuda',
+            'empty_cameras': 0,
+            'expert_width_multiplier': 0.75,
+            'freeze_vision_encoder': False,
+            'input_features': {'observation.images.camera1': {'shape': (3,
+                                                                        256,
+                                                                        256),
+                                                              'type': <FeatureType.VISUAL: 'VISUAL'>},
+                               'observation.images.camera2': {'shape': (3,
+                                                                        256,
+                                                                        256),
+                                                              'type': <FeatureType.VISUAL: 'VISUAL'>},
+                               'observation.state': {'shape': (8,),
+                                                     'type': <FeatureType.STATE: 'STATE'>}},
+            'license': None,
+            'load_vlm_weights': True,
+            'max_action_dim': 32,
+            'max_period': 4.0,
+            'max_state_dim': 32,
+            'min_period': 0.004,
+            'n_action_steps': 50,
+            'n_obs_steps': 1,
+            'normalization_mapping': {'ACTION': <NormalizationMode.MEAN_STD: 'MEAN_STD'>,
+                                      'STATE': <NormalizationMode.MEAN_STD: 'MEAN_STD'>,
+                                      'VISUAL': <NormalizationMode.IDENTITY: 'IDENTITY'>},
+            'num_expert_layers': 0,
+            'num_steps': 10,
+            'num_vlm_layers': 16,
+            'optimizer_betas': (0.9, 0.95),
+            'optimizer_eps': 1e-08,
+            'optimizer_grad_clip_norm': 10.0,
+            'optimizer_lr': 0.0001,
+            'optimizer_weight_decay': 1e-10,
+            'output_features': {'action': {'shape': (7,),
+                                           'type': <FeatureType.ACTION: 'ACTION'>}},
+            'pad_language_to': 'max_length',
+            'prefix_length': 0,
+            'pretrained_path': PosixPath('hugging face ckp/smolvla_libero_local'),
+            'private': None,
+            'push_to_hub': True,
+            'repo_id': 'pepijn223/smolvla_libero',
+            'resize_imgs_with_padding': (512, 512),
+            'rtc_config': None,
+            'scheduler_decay_lr': 2.5e-06,
+            'scheduler_decay_steps': 25000,
+            'scheduler_warmup_steps': 1000,
+            'self_attn_every_n_layers': 2,
+            'tags': None,
+            'tokenizer_max_length': 48,
+            'train_expert_only': False,
+            'train_state_proj': True,
+            'use_amp': False,
+            'use_cache': True,
+            'use_delta_joint_actions_aloha': False,
+            'use_peft': False,
+            'vlm_model_name': 'HuggingFaceTB/SmolVLM2-500M-Video-Instruct'},
+ 'rename_map': {},
+ 'seed': 1000,
+ 'trust_remote_code': False}
+INFO 2026-06-04 11:06:21 bot_eval.py:517 Output dir: hugging face ckp/_test2
+INFO 2026-06-04 11:06:21 bot_eval.py:519 Making environment.
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING 2026-06-04 11:06:21 e/__init__.py:7 No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING 2026-06-04 11:06:21 e/__init__.py:8 It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING 2026-06-04 11:06:21 e/__init__.py:9 To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+INFO 2026-06-04 11:06:21 tesupport.py:24 No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+INFO 2026-06-04 11:06:37 bot_eval.py:527 Making policy.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Creating LIBERO envs | suites=['libero_object'] | n_envs(per task)=1 | init_states=True
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+Built vec env | suite=libero_object | task_id=0 | n_envs=1
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+Built vec env | suite=libero_object | task_id=1 | n_envs=1
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+Built vec env | suite=libero_object | task_id=2 | n_envs=1
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+Built vec env | suite=libero_object | task_id=3 | n_envs=1
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+Built vec env | suite=libero_object | task_id=4 | n_envs=1
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+Built vec env | suite=libero_object | task_id=5 | n_envs=1
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+Built vec env | suite=libero_object | task_id=6 | n_envs=1
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+Built vec env | suite=libero_object | task_id=7 | n_envs=1
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+Built vec env | suite=libero_object | task_id=8 | n_envs=1
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+Built vec env | suite=libero_object | task_id=9 | n_envs=1
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 6236.44it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/bin/lerobot-eval", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/lerobot/scripts/lerobot_eval.py", line 810, in main
+    eval_main()
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/lerobot/configs/parser.py", line 233, in wrapper_inner
+    response = fn(cfg, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/lerobot/scripts/lerobot_eval.py", line 529, in eval_main
+    policy = make_policy(
+             ^^^^^^^^^^^^
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/lerobot/policies/factory.py", line 572, in make_policy
+    validate_visual_features_consistency(cfg, features)
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/lerobot/policies/utils.py", line 249, in validate_visual_features_consistency
+    raise_feature_mismatch_error(provided_visuals, expected_visuals)
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/lerobot/policies/utils.py", line 214, in raise_feature_mismatch_error
+    raise ValueError(
+ValueError: Feature mismatch between dataset/environment and policy config.
+- Missing features: ['observation.images.camera1', 'observation.images.camera2']
+- Extra features: ['observation.images.image', 'observation.images.image2']
+
+Please ensure your dataset and policy use consistent feature names.
+If your dataset uses different observation keys (e.g., cameras named differently), use the `--rename_map` argument, for example:
+  --rename_map='{"observation.images.left": "observation.images.camera1", "observation.images.top": "observation.images.camera2"}'
+Exception ignored in: <function MjRenderContext.__del__ at 0x7c1c6696bb00>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function MjRenderContext.__del__ at 0x7c1c6696bb00>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function MjRenderContext.__del__ at 0x7c1c6696bb00>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function MjRenderContext.__del__ at 0x7c1c6696bb00>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function MjRenderContext.__del__ at 0x7c1c6696bb00>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function MjRenderContext.__del__ at 0x7c1c6696bb00>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function MjRenderContext.__del__ at 0x7c1c6696bb00>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function MjRenderContext.__del__ at 0x7c1c6696bb00>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function MjRenderContext.__del__ at 0x7c1c6696bb00>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function MjRenderContext.__del__ at 0x7c1c6696bb00>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function EGLGLContext.__del__ at 0x7c1c6696b9c0>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function EGLGLContext.__del__ at 0x7c1c6696b9c0>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function EGLGLContext.__del__ at 0x7c1c6696b9c0>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function EGLGLContext.__del__ at 0x7c1c6696b9c0>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function EGLGLContext.__del__ at 0x7c1c6696b9c0>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function EGLGLContext.__del__ at 0x7c1c6696b9c0>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function EGLGLContext.__del__ at 0x7c1c6696b9c0>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function EGLGLContext.__del__ at 0x7c1c6696b9c0>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function EGLGLContext.__del__ at 0x7c1c6696b9c0>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 150, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function EGLGLContext.__del__ at 0x7c1c6696b9c0>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>

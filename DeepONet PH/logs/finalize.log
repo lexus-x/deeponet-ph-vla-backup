@@ -1,0 +1,115 @@
+[finalize] waiting for v2/V2_EVAL_DONE ...
+[finalize] eval done -> building deliverable Wed 10 Jun 2026 04:39:02 AM KST
+=== FINAL REPORT ===
+M1 flow          in-dist     79.4 ± 1.4  robust     17.9 ± 5.2
+M3 DeepONet v1   in-dist     53.0 ± 3.2  robust     15.6 ± 4.7
+M4 DON+PH v1     in-dist     54.2 ± 3.4  robust     17.1 ± 2.1
+M3 DeepONet v2   in-dist     80.3 ± 2.4  robust     38.5 ± 6.9
+M4 DON+PH v2     in-dist     81.5 ± 3.9  robust     32.6 ± 5.1
+saved -> runs/report_final/ (report.json, REPORT.md, 3 plots)
+[vid] 3 policies loaded
+[vid] task0 M1 flow: OK (78f)
+[vid] task0 M3 v1: x (300f)
+[vid] task0 M3 v2: OK (74f)
+[vid] saved indist_task00.mp4 (300f)
+[vid] task1 M1 flow: OK (115f)
+[vid] task1 M3 v1: OK (143f)
+[vid] task1 M3 v2: OK (125f)
+[vid] saved indist_task01.mp4 (143f)
+[vid] task2 M1 flow: OK (101f)
+[vid] task2 M3 v1: OK (102f)
+[vid] task2 M3 v2: OK (99f)
+[vid] saved indist_task02.mp4 (102f)
+[vid] task3 M1 flow: OK (84f)
+[vid] task3 M3 v1: OK (81f)
+[vid] task3 M3 v2: x (300f)
+[vid] saved indist_task03.mp4 (300f)
+[vid] task4 M1 flow: OK (125f)
+[vid] task4 M3 v1: OK (125f)
+[vid] task4 M3 v2: OK (135f)
+[vid] saved indist_task04.mp4 (135f)
+[vid] task5 M1 flow: x (300f)
+[vid] task5 M3 v1: OK (92f)
+[vid] task5 M3 v2: x (300f)
+[vid] saved indist_task05.mp4 (300f)
+[vid] task6 M1 flow: OK (106f)
+[vid] task6 M3 v1: x (300f)
+[vid] task6 M3 v2: OK (112f)
+[vid] saved indist_task06.mp4 (300f)
+[vid] task7 M1 flow: OK (111f)
+[vid] task7 M3 v1: x (300f)
+[vid] task7 M3 v2: OK (108f)
+[vid] saved indist_task07.mp4 (300f)
+[vid] task8 M1 flow: OK (93f)
+[vid] task8 M3 v1: x (300f)
+[vid] task8 M3 v2: OK (104f)
+[vid] saved indist_task08.mp4 (300f)
+[vid] task9 M1 flow: OK (118f)
+[vid] task9 M3 v1: x (300f)
+[vid] task9 M3 v2: x (300f)
+[vid] saved indist_task09.mp4 (300f)
+[vid] DONE -> runs/videos
+[vidp] loaded
+[vidp] Camera Viewpoints idx616 M1 flow: x
+[vidp] Camera Viewpoints idx616 M3 v1: x
+[vidp] Camera Viewpoints idx616 M3 v2: x
+[vidp] saved pert_Camera_Viewpoints_idx616.mp4 (300f)
+[vidp] Light Conditions idx2113 M1 flow: x
+[vidp] Light Conditions idx2113 M3 v1: x
+[vidp] Light Conditions idx2113 M3 v2: OK
+[vidp] saved pert_Light_Conditions_idx2113.mp4 (300f)
+[vidp] Sensor Noise idx1380 M1 flow: OK
+[vidp] Sensor Noise idx1380 M3 v1: x
+[vidp] Sensor Noise idx1380 M3 v2: x
+[vidp] saved pert_Sensor_Noise_idx1380.mp4 (300f)
+[vidp] DONE
+[finalize] DONE Wed 10 Jun 2026 04:48:04 AM KST -> DeepONet_Results/ and DeepONet_Results.zip
+DeepONet_Results:
+data
+idea
+plots
+REPORT.md
+videos
+
+DeepONet_Results/data:
+compare.json
+indist_v1flow.json
+indist_v2.json
+report.json
+robustness_v1flow.json
+robustness_v2.json
+
+DeepONet_Results/idea:
+IDEA_v2.md
+PORTING_TO_PI0.md
+
+DeepONet_Results/plots:
+accuracy_robustness.png
+per_task.png
+per_task_v1_v2.png
+robustness_per_category.png
+
+DeepONet_Results/videos:
+indist_task00.mp4
+indist_task00.png
+indist_task01.mp4
+indist_task01.png
+indist_task02.mp4
+indist_task02.png
+indist_task03.mp4
+indist_task03.png
+indist_task04.mp4
+indist_task04.png
+indist_task05.mp4
+indist_task05.png
+indist_task06.mp4
+indist_task06.png
+indist_task07.mp4
+indist_task07.png
+indist_task08.mp4
+indist_task08.png
+indist_task09.mp4
+indist_task09.png
+pert_Camera_Viewpoints_idx616.mp4
+pert_Light_Conditions_idx2113.mp4
+pert_Sensor_Noise_idx1380.mp4

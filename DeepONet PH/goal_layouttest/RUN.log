@@ -1,3 +1,60 @@
 [06-16 19:59:27] ==== GOAL OBJECT-LAYOUT TEST START (concurrent, 20 ep/task, replan 5) ====
 [06-16 19:59:27] checkpoint: ../Goal/runs/flow_s0/checkpoints/LATEST  (= the model that scored 93.5%)
 [06-16 19:59:27] LAYOUT off=0  start  (object layouts init_states[0:20])
+[06-16 20:33:34] LAYOUT off=0  done
+[aggregate] 1 layout-slice file(s) under /home/user/Desktop/Ayush PH test/DeepONet PH/goal_layouttest
+  off_0: avg=91.5%  (10/10 tasks)
+
+==== GOAL flow over 1 object-layout slice(s) ====
+SUITE AVERAGE: 91.5%  +/- 0.0   slices={'off_0': 91.5}
+per-task (mean +/- std across layouts):
+  task0:  90.0%  +/-  0.0   [90]
+  task1: 100.0%  +/-  0.0   [100]
+  task2:  90.0%  +/-  0.0   [90]
+  task3:  75.0%  +/-  0.0   [75]
+  task4:  95.0%  +/-  0.0   [95]
+  task5:  95.0%  +/-  0.0   [95]
+  task6:  80.0%  +/-  0.0   [80]
+  task7:  95.0%  +/-  0.0   [95]
+  task8: 100.0%  +/-  0.0   [100]
+  task9:  95.0%  +/-  0.0   [95]
+[06-16 20:33:35] LAYOUT off=20  start  (object layouts init_states[20:40])
+[06-16 21:10:12] LAYOUT off=20  done
+[aggregate] 2 layout-slice file(s) under /home/user/Desktop/Ayush PH test/DeepONet PH/goal_layouttest
+  off_0: avg=91.5%  (10/10 tasks)
+  off_20: avg=88.0%  (10/10 tasks)
+
+==== GOAL flow over 2 object-layout slice(s) ====
+SUITE AVERAGE: 89.7%  +/- 1.8   slices={'off_0': 91.5, 'off_20': 88.0}
+per-task (mean +/- std across layouts):
+  task0:  95.0%  +/-  5.0   [90, 100]
+  task1:  97.5%  +/-  2.5   [100, 95]
+  task2:  85.0%  +/-  5.0   [90, 80]
+  task3:  77.5%  +/-  2.5   [75, 80]
+  task4:  90.0%  +/-  5.0   [95, 85]
+  task5:  95.0%  +/-  0.0   [95, 95]
+  task6:  70.0%  +/- 10.0   [80, 60]
+  task7:  97.5%  +/-  2.5   [95, 100]
+  task8:  95.0%  +/-  5.0   [100, 90]
+  task9:  95.0%  +/-  0.0   [95, 95]
+[06-16 21:10:12] LAYOUT off=30  start  (object layouts init_states[30:50])
+[06-16 21:42:27] LAYOUT off=30  done
+[aggregate] 3 layout-slice file(s) under /home/user/Desktop/Ayush PH test/DeepONet PH/goal_layouttest
+  off_0: avg=91.5%  (10/10 tasks)
+  off_20: avg=88.0%  (10/10 tasks)
+  off_30: avg=91.5%  (10/10 tasks)
+
+==== GOAL flow over 3 object-layout slice(s) ====
+SUITE AVERAGE: 90.3%  +/- 1.6   slices={'off_0': 91.5, 'off_20': 88.0, 'off_30': 91.5}
+per-task (mean +/- std across layouts):
+  task0:  95.0%  +/-  4.1   [90, 100, 95]
+  task1:  96.7%  +/-  2.4   [100, 95, 95]
+  task2:  86.7%  +/-  4.7   [90, 80, 90]
+  task3:  81.7%  +/-  6.2   [75, 80, 90]
+  task4:  91.7%  +/-  4.7   [95, 85, 95]
+  task5:  96.7%  +/-  2.4   [95, 95, 100]
+  task6:  68.3%  +/-  8.5   [80, 60, 65]
+  task7:  96.7%  +/-  2.4   [95, 100, 95]
+  task8:  95.0%  +/-  4.1   [100, 90, 95]
+  task9:  95.0%  +/-  0.0   [95, 95, 95]
+[06-16 21:42:28] ==== ALL 3 LAYOUT SLICES DONE ====

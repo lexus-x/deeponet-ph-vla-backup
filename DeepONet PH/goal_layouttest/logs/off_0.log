@@ -33,3 +33,24 @@ WARNING:robosuite_logs:To setup, run: python /home/user/Desktop/Ayush PH test/ve
 [Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
 [Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
 [LIBERO-GOAL] flow task5: 95.0%  (19/20 PASS, base_seed=1000)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-GOAL] flow task6: 80.0%  (16/20 PASS, base_seed=1000)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-GOAL] flow task7: 95.0%  (19/20 PASS, base_seed=1000)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-GOAL] flow task8: 100.0%  (20/20 PASS, base_seed=1000)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[LIBERO-GOAL] flow task9: 95.0%  (19/20 PASS, base_seed=1000)
+[eval] DONE. summary: {
+  "flow": {
+    "LIBERO-GOAL_avg": 0.9149999999999998
+  }
+}

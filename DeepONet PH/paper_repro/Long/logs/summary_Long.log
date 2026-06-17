@@ -1,0 +1,3 @@
+[LIBERO-10] FULL 10-task average = 66.5%
+[LIBERO-10] EXCL task0 (30%) -> 9-task average = 70.6%
+[LIBERO-10] wrote summary_full.json + summary_excl_task0.json + summary_both.csv -> ../paper_repro/Long/runs/eval_flow

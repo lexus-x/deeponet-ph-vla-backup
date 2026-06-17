@@ -1,2 +1,19 @@
 [06-16 11:59:48] ==== CAMPAIGN START (30K, batch48, flow-first) ====
 [06-16 11:59:48] TRAIN start  Spatial/flow  (head=flow variant=baseline) 30K
+[06-16 22:04:01] TRAIN done   Spatial/flow
+[06-16 22:04:01] EVAL start   Spatial -> eval_flow
+[06-16 22:07:52] RECOVERY: Spatial flow 30K eval start (fixed --model)
+[06-16 22:47:36] RECOVERY: Spatial flow 30K eval done
+[06-16 22:47:37] ######## RESULT READY: Spatial flow 30K -> ../paper_repro/Spatial/runs/eval_flow + ../paper_repro/Spatial/plots ########
+[06-16 23:07:32] ==== OBJECT + LONG recovery run START (30K, batch48, flow) ====
+[06-16 23:07:32] TRAIN start  Object/flow 30K
+[06-17 08:59:27] TRAIN done   Object/flow
+[06-17 08:59:27] EVAL start   Object -> eval_flow
+[06-17 09:31:51] EVAL done    Object
+[06-17 09:31:51] ######## RESULT READY: Object flow 30K -> ../paper_repro/Object/runs/eval_flow (full + excl-lowest) ########
+[06-17 09:31:51] TRAIN start  Long/flow 30K
+[06-17 18:58:34] TRAIN done   Long/flow
+[06-17 18:58:34] EVAL start   Long -> eval_flow
+[06-17 19:58:19] EVAL done    Long
+[06-17 19:58:20] ######## RESULT READY: Long flow 30K -> ../paper_repro/Long/runs/eval_flow (full + excl-lowest) ########
+[06-17 19:58:20] ==== OBJECT + LONG recovery run DONE ====

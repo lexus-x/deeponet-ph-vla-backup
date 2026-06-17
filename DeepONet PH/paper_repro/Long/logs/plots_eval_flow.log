@@ -1,0 +1,5 @@
+  saved 1_accuracy.png
+  saved 3_success_per_task.png
+[Long_FLOW] plots+CSVs -> ../paper_repro/Long/plots ../paper_repro/Long/data
+[Long_FLOW] in-dist acc: {'M1 flow': 66.5, 'M3 DeepONet-v2': None, 'M4 DeepONet+PH-v2': None}
+[Long_FLOW] robustness : {'M1 flow': None, 'M3 DeepONet-v2': None, 'M4 DeepONet+PH-v2': None}

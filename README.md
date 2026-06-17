@@ -253,6 +253,33 @@ but loses ~6 points of robustness (32.7 vs 38.5). `p` and Fourier trade a little
 
 Full numbers, plots, and per-task tables: [`docs/results.md`](docs/results.md).
 
+### 30K paper-reproduction flow campaign — COMPLETE (batch 48 — `DeepONet PH/paper_repro/`)
+
+Higher-budget flow-matching runs (30,000 steps, batch 48) to push the flow baseline toward its published
+LIBERO values. **Finished 2026-06-17** (in-distribution, 20 ep/task, replan 5):
+
+| Suite | Flow 10-task (official) | Flow 9-task (excl-lowest) |
+|---|---|---|
+| LIBERO-Spatial | 79.5 % | 87.78 % (excl task5) |
+| LIBERO-Object | 87.5 % | 90.56 % (excl task9) |
+| LIBERO-Long (LIBERO-10) | 66.5 % | 70.56 % (excl task0) |
+
+These came in **below the published targets** (Spatial 90 / Object 96 / Long ≥71). The matching
+**DeepONet (m3) and DeepONet+PH (m4) 30K runs** are packaged for a budget-matched comparison on a second GPU
+— see the self-contained **`transfere/`** bundle (`transfere.zip`, `SETUP_AND_RUN.md`, `run_deeponet_m3m4.sh`).
+
+### Goal object-layout / anti-memorisation test — COMPLETE (`DeepONet PH/goal_layouttest/`)
+
+The frozen LIBERO-Goal flow model re-evaluated over **3 different object-position layout slices** covering all
+50 init-states, 20 ep/task. Accuracy holds across unseen layouts → **no memorisation**:
+
+| Layout slice | init-states | seed | Goal avg |
+|---|---|---|---|
+| off_0 (canonical) | [0:20] | 1000 | 91.5 % |
+| off_20 | [20:40] | 1020 | 88.0 % |
+| off_30 | [30:50] | 1030 | 91.5 % |
+| **Mean ± std** | — | — | **90.3 ± 1.7 %** |
+
 ---
 
 ## Everything that was run — step by step
@@ -268,12 +295,13 @@ A complete chronological log is in [`docs/experiments_log.md`](docs/experiments_
 4. **Ablations.** p256→64, no-Fourier, 3→1 cross-attn blocks, regression-head (no operator). → `DeepONet PH/Ablation_Results/`
 5. **Per-suite generalisation.** Trained/evaluated M1/M3/M4 on **Object** and **Goal** (and Spatial) at 15K steps,
    with per-task plots + per-episode videos. → `DeepONet PH/{Spatial,Object,Goal}/`
-6. **Paper-reproduction campaign (running).** 30K-step, batch-48 flow runs to push the flow baseline to its paper
-   values (Spatial 90 / Object 96 / Long ≥71), flow-first, per-suite eval + plots. → `DeepONet PH/paper_repro/`
+6. **Paper-reproduction campaign (done, 2026-06-17).** 30K-step, batch-48 flow runs. Final flow in-dist:
+   **Spatial 79.5 % · Object 87.5 % · Long 66.5 %** (10-task) — below the paper targets (90 / 96 / ≥71). The
+   budget-matched **DeepONet m3/m4 30K** runs are bundled in `transfere/` for a second GPU. → `DeepONet PH/paper_repro/`
 7. **task5 investigation.** Why LIBERO-Spatial task5 (stacked-bowl grasp) is a hard ceiling; replan sweep (inference
    tuning did not fix it). → `DeepONet PH/v2/task5_fix_experiment.py`
-8. **Goal object-layout test (running).** Generalisation/anti-memorisation check: evaluate the frozen Goal model on
-   3 different object-layout slices of LIBERO's 50 init-states. → `DeepONet PH/goal_layouttest/`
+8. **Goal object-layout test (done).** Generalisation/anti-memorisation check on 3 object-layout slices (all 50
+   init-states): **90.3 ± 1.7 %** (91.5 / 88.0 / 91.5) — holds across unseen layouts → no memorisation. → `DeepONet PH/goal_layouttest/`
 9. **Pi0 porting analysis.** Time/feasibility of porting the head to π0. → `DeepONet PH/PORTING_TO_PI0.md`
 
 ---
@@ -308,10 +336,11 @@ A complete chronological log is in [`docs/experiments_log.md`](docs/experiments_
 │   ├── v1_results/ v2_results/       ← packaged results + plots + CSV summaries
 │   ├── Ablation_Results/             ← ablation JSONs, CSV, plot
 │   ├── DeepONet_Results/             ← final report + collated data
-│   ├── paper_repro/                  ← 30K campaign outputs + PROGRESS.log  (LIVE)
-│   ├── goal_layouttest/              ← Goal object-layout test outputs       (LIVE)
+│   ├── paper_repro/                  ← 30K campaign outputs + PROGRESS.log  (done)
+│   ├── goal_layouttest/              ← Goal object-layout test outputs       (done)
 │   └── PORTING_TO_PI0.md             ← π0 porting analysis
 │
+├── transfere/ + transfere.zip        ← self-contained bundle to train DeepONet m3/m4 (30K) on a 2nd GPU
 └── Flowmatching PH (Weeks 1-3)/      ← early flow-matching baseline work + presentation
 ```
 
@@ -356,7 +385,9 @@ python make_suite_plots.py --suite_dir ../Spatial --suite libero_spatial --label
 - **Per-suite (Object/Goal) numbers are single-seed** (15K steps); the **5-seed** comparison is Spatial only. Treat
   single-seed numbers as ± a few % sampling noise.
 - **PH loss helps in-dist but not robustness** — the robustness win comes from the operator structure, not PH.
-- **The 30K paper-repro campaign is still running** — its flow numbers are not final yet (see `paper_repro/PROGRESS.log`).
+- **The 30K paper-repro flow campaign is complete** (Spatial 79.5 / Object 87.5 / Long 66.5 % in-dist) but fell
+  short of the published targets (90 / 96 / ≥71); the matched DeepONet m3/m4 30K runs are still pending a second GPU
+  (`transfere/`), so the **30K head-to-head comparison is not available yet** — current head-to-head is the 15K/5-seed set.
 - Cross-model parameter savings for π0/Octo/GR00T/OpenVLA in `docs/architecture.md` use **published model sizes**
   (approximate); only the SmolVLA numbers are measured here.
 

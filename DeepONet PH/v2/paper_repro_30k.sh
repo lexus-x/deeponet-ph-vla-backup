@@ -75,7 +75,7 @@ rm -f "$BASE/FLOW_DONE" "$BASE/ALL_DONE"
 # ---------- FLOW ONLY, per-suite: train -> eval -> plot each suite for EARLY incremental results ----------
 for i in 0 1 2; do
   train_one $i flow flow baseline ""
-  eval_suite $i eval_flow "--model flow=flow=$BASE/${SNAME[$i]}/runs/flow_s0/checkpoints/LATEST"
+  eval_suite $i eval_flow --model "flow=flow=$BASE/${SNAME[$i]}/runs/flow_s0/checkpoints/LATEST"
   plot_suite $i eval_flow _FLOW
   note "######## RESULT READY: ${SNAME[$i]} flow -> $BASE/${SNAME[$i]}/runs/eval_flow + $BASE/${SNAME[$i]}/plots ########"
 done

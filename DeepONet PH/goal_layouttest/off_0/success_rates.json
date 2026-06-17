@@ -43,9 +43,34 @@
           "task": "push the plate to the front of the stove",
           "success_rate": 0.95,
           "n": 20
+        },
+        "6": {
+          "task": "put the cream cheese in the bowl",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "7": {
+          "task": "turn on the stove",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "8": {
+          "task": "put the bowl on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "9": {
+          "task": "put the wine bottle on the rack",
+          "success_rate": 0.95,
+          "n": 20
         }
       },
-      "average": null
+      "average": 0.9149999999999998
+    }
+  },
+  "_summary": {
+    "flow": {
+      "LIBERO-GOAL_avg": 0.9149999999999998
     }
   }
 }

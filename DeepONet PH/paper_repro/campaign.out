@@ -139,3 +139,39 @@ LlamaModel does not expose input embeddings. Gradients cannot flow back to the t
 [stage2] step  24649 | mse=0.0656 L1=0.1316 PH=0.0000 total=0.0656 | VRAM=53.6GB | 1.363s/it
 [stage2] step  24849 | mse=0.0665 L1=0.1305 PH=0.0000 total=0.0665 | VRAM=53.6GB | 0.838s/it
 [stage2] step  25049 | mse=0.0639 L1=0.1311 PH=0.0000 total=0.0639 | VRAM=53.6GB | 0.850s/it
+[stage2] step  25249 | mse=0.0623 L1=0.1321 PH=0.0000 total=0.0623 | VRAM=53.6GB | 0.782s/it
+[stage2] step  25449 | mse=0.0650 L1=0.1326 PH=0.0000 total=0.0650 | VRAM=53.6GB | 0.841s/it
+[stage2] step  25649 | mse=0.0655 L1=0.1305 PH=0.0000 total=0.0655 | VRAM=53.6GB | 0.828s/it
+[stage2] step  25849 | mse=0.0649 L1=0.1296 PH=0.0000 total=0.0649 | VRAM=53.6GB | 4.097s/it
+[stage2] step  26049 | mse=0.0644 L1=0.1322 PH=0.0000 total=0.0644 | VRAM=53.6GB | 0.815s/it
+[stage2] step  26249 | mse=0.0635 L1=0.1315 PH=0.0000 total=0.0635 | VRAM=53.6GB | 0.816s/it
+[stage2] step  26449 | mse=0.0632 L1=0.1294 PH=0.0000 total=0.0632 | VRAM=53.6GB | 0.746s/it
+[stage2] step  26649 | mse=0.0636 L1=0.1294 PH=0.0000 total=0.0636 | VRAM=53.6GB | 0.818s/it
+[stage2] step  26849 | mse=0.0635 L1=0.1277 PH=0.0000 total=0.0635 | VRAM=53.6GB | 0.845s/it
+[stage2] step  27049 | mse=0.0631 L1=0.1283 PH=0.0000 total=0.0631 | VRAM=53.6GB | 0.835s/it
+[stage2] step  27249 | mse=0.0630 L1=0.1279 PH=0.0000 total=0.0630 | VRAM=53.6GB | 0.678s/it
+[stage2] step  27449 | mse=0.0627 L1=0.1276 PH=0.0000 total=0.0627 | VRAM=53.6GB | 0.827s/it
+[stage2] step  27649 | mse=0.0624 L1=0.1287 PH=0.0000 total=0.0624 | VRAM=53.6GB | 0.744s/it
+[stage2] step  27849 | mse=0.0606 L1=0.1317 PH=0.0000 total=0.0606 | VRAM=53.6GB | 0.836s/it
+[stage2] step  28049 | mse=0.0614 L1=0.1276 PH=0.0000 total=0.0614 | VRAM=53.6GB | 0.848s/it
+[stage2] step  28249 | mse=0.0609 L1=0.1292 PH=0.0000 total=0.0609 | VRAM=53.6GB | 0.803s/it
+[stage2] step  28449 | mse=0.0594 L1=0.1291 PH=0.0000 total=0.0594 | VRAM=53.6GB | 0.837s/it
+[stage2] step  28649 | mse=0.0595 L1=0.1258 PH=0.0000 total=0.0595 | VRAM=53.6GB | 0.835s/it
+[stage2] step  28849 | mse=0.0598 L1=0.1272 PH=0.0000 total=0.0598 | VRAM=53.6GB | 0.849s/it
+[stage2] step  29049 | mse=0.0608 L1=0.1273 PH=0.0000 total=0.0608 | VRAM=53.6GB | 1.797s/it
+[stage2] step  29249 | mse=0.0597 L1=0.1278 PH=0.0000 total=0.0597 | VRAM=53.6GB | 2.573s/it
+[stage2] step  29449 | mse=0.0593 L1=0.1283 PH=0.0000 total=0.0593 | VRAM=53.6GB | 0.670s/it
+[stage2] step  29649 | mse=0.0616 L1=0.1262 PH=0.0000 total=0.0616 | VRAM=53.6GB | 0.670s/it
+[stage2] step  29849 | mse=0.0578 L1=0.1280 PH=0.0000 total=0.0578 | VRAM=53.6GB | 0.670s/it
+[ckpt] saved -> ../paper_repro/Spatial/runs/flow_s0/checkpoints/30000  (EMA weights)
+
+[train] DONE head=flow variant=baseline steps=30000 wall=603.8 min -> ../paper_repro/Spatial/runs/flow_s0
+[06-16 22:04:01] TRAIN done   Spatial/flow
+[06-16 22:04:01] EVAL start   Spatial -> eval_flow
+usage: evaluate.py [-h] --model MODEL [--out OUT] [--suite SUITE]
+                   [--dataset DATASET] [--stats_path STATS_PATH]
+                   [--replan REPLAN] [--indist_episodes INDIST_EPISODES]
+                   [--pert_episodes PERT_EPISODES] [--n_tasks N_TASKS]
+                   [--max_steps MAX_STEPS] [--only {indist,pert,both}]
+                   [--perturbations PERTURBATIONS]
+evaluate.py: error: the following arguments are required: --model

@@ -1,0 +1,76 @@
+{
+  "_config": {
+    "libero_object": {
+      "replan": 5,
+      "indist_episodes": 20,
+      "pert_episodes": 8,
+      "max_steps": 520,
+      "models": {
+        "m4": "deeponet_results/Object/runs/m4_s0/checkpoints/30000"
+      }
+    }
+  },
+  "LIBERO-OBJECT": {
+    "m4": {
+      "per_task": {
+        "0": {
+          "task": "pick up the alphabet soup and place it in the basket",
+          "success_rate": 0.65,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the cream cheese and place it in the basket",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the salad dressing and place it in the basket",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the bbq sauce and place it in the basket",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the ketchup and place it in the basket",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the tomato sauce and place it in the basket",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the butter and place it in the basket",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the milk and place it in the basket",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the chocolate pudding and place it in the basket",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the orange juice and place it in the basket",
+          "success_rate": 0.95,
+          "n": 20
+        }
+      },
+      "average": 0.8949999999999999
+    }
+  },
+  "_summary": {
+    "m4": {
+      "LIBERO-OBJECT_avg": 0.8949999999999999,
+      "LIBERO-OBJECT-V_avg": null
+    }
+  }
+}

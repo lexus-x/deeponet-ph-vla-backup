@@ -1,0 +1,8 @@
+[LIBERO-OBJECT] FULL 10-task average = 89.5%
+[LIBERO-OBJECT] EXCL task0 (65%) -> 9-task average = 92.2%
+[LIBERO-OBJECT] wrote summary_full.json + summary_excl_task0.json + summary_both.csv -> deeponet_results/Object/runs/eval_m4
+  saved libero_object_all10tasks.png
+  saved libero_object_excl_task0_9tasks.png
+[Object m4 30K] FULL 10-task avg = 89.5%
+[Object m4 30K] EXCL task0 -> 9-task avg = 92.2%
+[Object m4 30K] plots -> deeponet_results/Object/plots | summaries -> deeponet_results/Object/runs/eval_m4

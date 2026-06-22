@@ -1,0 +1,170 @@
+[train] head=deeponet variant=baseline seed=0 out=deeponet_results/Object/runs/m3_s0
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:Missing key(s) when loading model: {'model.deeponet.pool.blocks.0.ln2.weight', 'model.deeponet.pool.blocks.0.ln_kv.weight', 'model.deeponet.pool.blocks.1.ff.0.weight', 'model.deeponet.pool.blocks.0.attn.out_proj.weight', 'model.deeponet.pool.blocks.1.ln_kv.weight', 'model.deeponet.pool.blocks.1.ln2.bias', 'model.deeponet.pool.blocks.1.ff.2.weight', 'model.deeponet.pool.blocks.0.attn.in_proj_weight', 'model.deeponet.pool.blocks.2.ln_q.bias', 'model.deeponet.pool.blocks.0.ln_kv.bias', 'model.deeponet.pool.blocks.2.ff.0.bias', 'model.deeponet.out_mlp.2.bias', 'model.deeponet.pool.blocks.2.attn.in_proj_bias', 'model.deeponet.pool.blocks.2.attn.in_proj_weight', 'model.deeponet.pool.blocks.2.ln2.weight', 'model.deeponet.pool.blocks.2.ln_kv.weight', 'model.deeponet.branch.3.weight', 'model.deeponet.trunk.2.weight', 'model.deeponet.pool.blocks.2.ln2.bias', 'model.deeponet.pool.in_proj.weight', 'model.deeponet.pool.blocks.0.ff.2.bias', 'model.deeponet.pool.blocks.1.attn.in_proj_weight', 'model.deeponet.pool.blocks.2.attn.out_proj.bias', 'model.deeponet.branch.0.weight', 'model.deeponet.branch.1.weight', 'model.deeponet.branch.1.bias', 'model.deeponet.pool.blocks.0.ff.0.weight', 'model.deeponet.pool.blocks.0.ln_q.weight', 'model.deeponet.pool.blocks.1.attn.out_proj.bias', 'model.deeponet.pool.blocks.2.ff.2.bias', 'model.deeponet.out_mlp.2.weight', 'model.deeponet.out_mlp.0.bias', 'model.deeponet.pool.blocks.1.ln_kv.bias', 'model.deeponet.pool.blocks.0.attn.out_proj.bias', 'model.deeponet.pool.blocks.2.ff.0.weight', 'model.deeponet.trunk.0.bias', 'model.deeponet.pool.blocks.1.ln2.weight', 'model.deeponet.pool.blocks.2.ln_q.weight', 'model.deeponet.pool.blocks.0.attn.in_proj_bias', 'model.deeponet.pool.queries', 'model.deeponet.trunk.2.bias', 'model.deeponet.out_mlp.0.weight', 'model.deeponet.trunk.0.weight', 'model.deeponet.pool.blocks.0.ff.2.weight', 'model.deeponet.pool.in_proj.bias', 'model.deeponet.pool.blocks.0.ff.0.bias', 'model.deeponet.pool.blocks.1.attn.in_proj_bias', 'model.deeponet.pool.blocks.1.attn.out_proj.weight', 'model.deeponet.pool.blocks.1.ff.2.bias', 'model.deeponet.pool.blocks.2.ln_kv.bias', 'model.deeponet.pool.blocks.1.ln_q.bias', 'model.deeponet.branch.3.bias', 'model.deeponet.pool.blocks.1.ff.0.bias', 'model.deeponet.branch.0.bias', 'model.deeponet.pool.blocks.2.attn.out_proj.weight', 'model.deeponet.pool.blocks.2.ff.2.weight', 'model.deeponet.trunk.4.bias', 'model.deeponet.trunk.4.weight', 'model.deeponet.out_bias', 'model.deeponet.pool.blocks.1.ln_q.weight', 'model.deeponet.pool.blocks.0.ln2.bias', 'model.deeponet.pool.blocks.0.ln_q.bias'}
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Reducing the number of VLM layers to 16 ...
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Reducing the number of VLM layers to 16 ...
+[train] dataset frames=66984 episodes=454 -> 1 epoch = 1396 steps @ batch 48
+[train] planned frames seen = 1440000 = 21.50 epochs
+
+=== stage1 | steps=1650 batch=48 trainable: head=10.40M backbone=0.0M ===
+[stage1] step    199 | mse=0.6982 L1=0.6381 PH=0.0000 total=0.6982 | VRAM=9.5GB | 0.278s/it
+[stage1] step    399 | mse=0.4790 L1=0.5019 PH=0.0000 total=0.4790 | VRAM=9.5GB | 0.277s/it
+[stage1] step    599 | mse=0.4184 L1=0.4634 PH=0.0000 total=0.4184 | VRAM=9.5GB | 0.278s/it
+[stage1] step    799 | mse=0.3838 L1=0.4478 PH=0.0000 total=0.3838 | VRAM=9.5GB | 0.278s/it
+[stage1] step    999 | mse=0.3661 L1=0.4401 PH=0.0000 total=0.3661 | VRAM=9.5GB | 0.278s/it
+[stage1] step   1199 | mse=0.3462 L1=0.4312 PH=0.0000 total=0.3462 | VRAM=9.5GB | 0.277s/it
+[stage1] step   1399 | mse=0.3307 L1=0.4230 PH=0.0000 total=0.3307 | VRAM=9.5GB | 0.277s/it
+[stage1] step   1599 | mse=0.3150 L1=0.4180 PH=0.0000 total=0.3150 | VRAM=9.5GB | 1.481s/it
+[ckpt] saved -> deeponet_results/Object/runs/m3_s0/checkpoints/1650  (EMA weights)
+
+=== stage2 | steps=28350 batch=48 trainable: head=10.40M backbone=350.2M ===
+[stage2] step   1849 | mse=0.2978 L1=0.4057 PH=0.0000 total=0.2978 | VRAM=50.3GB | 0.635s/it
+[stage2] step   2049 | mse=0.2932 L1=0.4049 PH=0.0000 total=0.2932 | VRAM=50.3GB | 0.635s/it
+[stage2] step   2249 | mse=0.2812 L1=0.3984 PH=0.0000 total=0.2812 | VRAM=50.3GB | 0.634s/it
+[stage2] step   2449 | mse=0.2694 L1=0.3931 PH=0.0000 total=0.2694 | VRAM=50.3GB | 0.635s/it
+[stage2] step   2649 | mse=0.2590 L1=0.3843 PH=0.0000 total=0.2590 | VRAM=50.3GB | 0.632s/it
+[stage2] step   2849 | mse=0.2467 L1=0.3761 PH=0.0000 total=0.2467 | VRAM=50.3GB | 0.634s/it
+[stage2] step   3049 | mse=0.2385 L1=0.3710 PH=0.0000 total=0.2385 | VRAM=50.3GB | 0.631s/it
+[stage2] step   3249 | mse=0.2190 L1=0.3607 PH=0.0000 total=0.2190 | VRAM=50.3GB | 0.634s/it
+[stage2] step   3449 | mse=0.2166 L1=0.3605 PH=0.0000 total=0.2166 | VRAM=50.3GB | 0.635s/it
+[stage2] step   3649 | mse=0.2068 L1=0.3538 PH=0.0000 total=0.2068 | VRAM=50.3GB | 0.634s/it
+[stage2] step   3849 | mse=0.1981 L1=0.3490 PH=0.0000 total=0.1981 | VRAM=50.3GB | 0.633s/it
+[stage2] step   4049 | mse=0.1892 L1=0.3421 PH=0.0000 total=0.1892 | VRAM=50.3GB | 0.634s/it
+[stage2] step   4249 | mse=0.1840 L1=0.3402 PH=0.0000 total=0.1840 | VRAM=50.3GB | 0.634s/it
+[stage2] step   4449 | mse=0.1756 L1=0.3321 PH=0.0000 total=0.1756 | VRAM=50.3GB | 0.631s/it
+[stage2] step   4649 | mse=0.1594 L1=0.3215 PH=0.0000 total=0.1594 | VRAM=50.3GB | 0.633s/it
+[stage2] step   4849 | mse=0.1562 L1=0.3178 PH=0.0000 total=0.1562 | VRAM=50.3GB | 0.632s/it
+[stage2] step   5049 | mse=0.1515 L1=0.3141 PH=0.0000 total=0.1515 | VRAM=50.3GB | 0.634s/it
+[stage2] step   5249 | mse=0.1441 L1=0.3088 PH=0.0000 total=0.1441 | VRAM=50.3GB | 0.633s/it
+[stage2] step   5449 | mse=0.1408 L1=0.3075 PH=0.0000 total=0.1408 | VRAM=50.3GB | 0.633s/it
+[stage2] step   5649 | mse=0.1349 L1=0.3007 PH=0.0000 total=0.1349 | VRAM=50.3GB | 0.633s/it
+[stage2] step   5849 | mse=0.1293 L1=0.2974 PH=0.0000 total=0.1293 | VRAM=50.3GB | 0.631s/it
+[stage2] step   6049 | mse=0.1183 L1=0.2874 PH=0.0000 total=0.1183 | VRAM=50.3GB | 0.633s/it
+[stage2] step   6249 | mse=0.1150 L1=0.2844 PH=0.0000 total=0.1150 | VRAM=50.3GB | 0.633s/it
+[stage2] step   6449 | mse=0.1114 L1=0.2817 PH=0.0000 total=0.1114 | VRAM=50.3GB | 0.633s/it
+[stage2] step   6649 | mse=0.1087 L1=0.2795 PH=0.0000 total=0.1087 | VRAM=50.3GB | 0.633s/it
+[stage2] step   6849 | mse=0.1060 L1=0.2732 PH=0.0000 total=0.1060 | VRAM=50.3GB | 0.632s/it
+[stage2] step   7049 | mse=0.1018 L1=0.2714 PH=0.0000 total=0.1018 | VRAM=50.3GB | 0.634s/it
+[stage2] step   7249 | mse=0.0999 L1=0.2683 PH=0.0000 total=0.0999 | VRAM=50.3GB | 0.631s/it
+[stage2] step   7449 | mse=0.0920 L1=0.2623 PH=0.0000 total=0.0920 | VRAM=50.3GB | 0.634s/it
+[stage2] step   7649 | mse=0.0909 L1=0.2589 PH=0.0000 total=0.0909 | VRAM=50.3GB | 0.631s/it
+[stage2] step   7849 | mse=0.0883 L1=0.2579 PH=0.0000 total=0.0883 | VRAM=50.3GB | 0.631s/it
+[stage2] step   8049 | mse=0.0871 L1=0.2558 PH=0.0000 total=0.0871 | VRAM=50.3GB | 0.632s/it
+[stage2] step   8249 | mse=0.0849 L1=0.2548 PH=0.0000 total=0.0849 | VRAM=50.3GB | 0.632s/it
+[stage2] step   8449 | mse=0.0829 L1=0.2532 PH=0.0000 total=0.0829 | VRAM=50.3GB | 0.633s/it
+[stage2] step   8649 | mse=0.0814 L1=0.2487 PH=0.0000 total=0.0814 | VRAM=50.3GB | 4.977s/it
+[stage2] step   8849 | mse=0.0777 L1=0.2456 PH=0.0000 total=0.0777 | VRAM=50.3GB | 3.935s/it
+[stage2] step   9049 | mse=0.0760 L1=0.2445 PH=0.0000 total=0.0760 | VRAM=50.3GB | 2.451s/it
+[stage2] step   9249 | mse=0.0742 L1=0.2400 PH=0.0000 total=0.0742 | VRAM=50.3GB | 0.631s/it
+[stage2] step   9449 | mse=0.0722 L1=0.2390 PH=0.0000 total=0.0722 | VRAM=50.3GB | 0.631s/it
+[stage2] step   9649 | mse=0.0728 L1=0.2388 PH=0.0000 total=0.0728 | VRAM=50.3GB | 0.633s/it
+[stage2] step   9849 | mse=0.0710 L1=0.2406 PH=0.0000 total=0.0710 | VRAM=50.3GB | 0.638s/it
+[stage2] step  10049 | mse=0.0701 L1=0.2366 PH=0.0000 total=0.0701 | VRAM=50.3GB | 0.632s/it
+[stage2] step  10249 | mse=0.0661 L1=0.2342 PH=0.0000 total=0.0661 | VRAM=50.3GB | 0.634s/it
+[stage2] step  10449 | mse=0.0665 L1=0.2325 PH=0.0000 total=0.0665 | VRAM=50.3GB | 0.632s/it
+[stage2] step  10649 | mse=0.0647 L1=0.2310 PH=0.0000 total=0.0647 | VRAM=50.3GB | 0.633s/it
+[stage2] step  10849 | mse=0.0641 L1=0.2291 PH=0.0000 total=0.0641 | VRAM=50.3GB | 0.634s/it
+[stage2] step  11049 | mse=0.0634 L1=0.2287 PH=0.0000 total=0.0634 | VRAM=50.3GB | 0.634s/it
+[stage2] step  11249 | mse=0.0631 L1=0.2299 PH=0.0000 total=0.0631 | VRAM=50.3GB | 0.655s/it
+[stage2] step  11449 | mse=0.0614 L1=0.2265 PH=0.0000 total=0.0614 | VRAM=50.3GB | 0.636s/it
+[stage2] step  11649 | mse=0.0591 L1=0.2234 PH=0.0000 total=0.0591 | VRAM=50.3GB | 0.630s/it
+[ckpt] saved -> deeponet_results/Object/runs/m3_s0/checkpoints/11650  (EMA weights)
+[stage2] step  11849 | mse=0.0584 L1=0.2219 PH=0.0000 total=0.0584 | VRAM=50.3GB | 0.632s/it
+[stage2] step  12049 | mse=0.0586 L1=0.2230 PH=0.0000 total=0.0586 | VRAM=50.3GB | 0.631s/it
+[stage2] step  12249 | mse=0.0574 L1=0.2227 PH=0.0000 total=0.0574 | VRAM=50.3GB | 0.631s/it
+[stage2] step  12449 | mse=0.0570 L1=0.2229 PH=0.0000 total=0.0570 | VRAM=50.3GB | 0.631s/it
+[stage2] step  12649 | mse=0.0557 L1=0.2189 PH=0.0000 total=0.0557 | VRAM=50.3GB | 0.632s/it
+[stage2] step  12849 | mse=0.0552 L1=0.2199 PH=0.0000 total=0.0552 | VRAM=50.3GB | 0.632s/it
+[stage2] step  13049 | mse=0.0534 L1=0.2179 PH=0.0000 total=0.0534 | VRAM=50.3GB | 0.633s/it
+[stage2] step  13249 | mse=0.0529 L1=0.2166 PH=0.0000 total=0.0529 | VRAM=50.3GB | 0.636s/it
+[stage2] step  13449 | mse=0.0525 L1=0.2176 PH=0.0000 total=0.0525 | VRAM=50.3GB | 0.632s/it
+[stage2] step  13649 | mse=0.0527 L1=0.2160 PH=0.0000 total=0.0527 | VRAM=50.3GB | 0.634s/it
+[stage2] step  13849 | mse=0.0513 L1=0.2118 PH=0.0000 total=0.0513 | VRAM=50.3GB | 0.646s/it
+[stage2] step  14049 | mse=0.0511 L1=0.2119 PH=0.0000 total=0.0511 | VRAM=50.3GB | 0.632s/it
+[stage2] step  14249 | mse=0.0503 L1=0.2139 PH=0.0000 total=0.0503 | VRAM=50.3GB | 0.633s/it
+[stage2] step  14449 | mse=0.0491 L1=0.2117 PH=0.0000 total=0.0491 | VRAM=50.3GB | 0.634s/it
+[stage2] step  14649 | mse=0.0487 L1=0.2106 PH=0.0000 total=0.0487 | VRAM=50.3GB | 0.634s/it
+[stage2] step  14849 | mse=0.0484 L1=0.2084 PH=0.0000 total=0.0484 | VRAM=50.3GB | 0.634s/it
+[stage2] step  15049 | mse=0.0474 L1=0.2087 PH=0.0000 total=0.0474 | VRAM=50.3GB | 0.629s/it
+[stage2] step  15249 | mse=0.0475 L1=0.2062 PH=0.0000 total=0.0475 | VRAM=50.3GB | 0.635s/it
+[stage2] step  15449 | mse=0.0469 L1=0.2087 PH=0.0000 total=0.0469 | VRAM=50.3GB | 0.634s/it
+[stage2] step  15649 | mse=0.0463 L1=0.2059 PH=0.0000 total=0.0463 | VRAM=50.3GB | 4.217s/it
+[stage2] step  15849 | mse=0.0452 L1=0.2089 PH=0.0000 total=0.0452 | VRAM=50.3GB | 4.622s/it
+[stage2] step  16049 | mse=0.0450 L1=0.2043 PH=0.0000 total=0.0450 | VRAM=50.3GB | 4.863s/it
+[stage2] step  16249 | mse=0.0444 L1=0.2038 PH=0.0000 total=0.0444 | VRAM=50.3GB | 5.145s/it
+[stage2] step  16449 | mse=0.0443 L1=0.2048 PH=0.0000 total=0.0443 | VRAM=50.3GB | 2.370s/it
+[stage2] step  16649 | mse=0.0438 L1=0.2036 PH=0.0000 total=0.0438 | VRAM=50.3GB | 0.634s/it
+[stage2] step  16849 | mse=0.0428 L1=0.2024 PH=0.0000 total=0.0428 | VRAM=50.3GB | 0.635s/it
+[stage2] step  17049 | mse=0.0422 L1=0.2016 PH=0.0000 total=0.0422 | VRAM=50.3GB | 0.632s/it
+[stage2] step  17249 | mse=0.0422 L1=0.2018 PH=0.0000 total=0.0422 | VRAM=50.3GB | 0.634s/it
+[stage2] step  17449 | mse=0.0415 L1=0.1963 PH=0.0000 total=0.0415 | VRAM=50.3GB | 0.634s/it
+[stage2] step  17649 | mse=0.0418 L1=0.2010 PH=0.0000 total=0.0418 | VRAM=50.3GB | 0.632s/it
+[stage2] step  17849 | mse=0.0410 L1=0.1985 PH=0.0000 total=0.0410 | VRAM=50.3GB | 0.633s/it
+[stage2] step  18049 | mse=0.0406 L1=0.1990 PH=0.0000 total=0.0406 | VRAM=50.3GB | 0.633s/it
+[stage2] step  18249 | mse=0.0404 L1=0.1981 PH=0.0000 total=0.0404 | VRAM=50.3GB | 0.633s/it
+[stage2] step  18449 | mse=0.0401 L1=0.1968 PH=0.0000 total=0.0401 | VRAM=50.3GB | 0.633s/it
+[stage2] step  18649 | mse=0.0392 L1=0.1955 PH=0.0000 total=0.0392 | VRAM=50.3GB | 5.244s/it
+[stage2] step  18849 | mse=0.0391 L1=0.1986 PH=0.0000 total=0.0391 | VRAM=50.3GB | 3.705s/it
+[stage2] step  19049 | mse=0.0389 L1=0.1972 PH=0.0000 total=0.0389 | VRAM=50.3GB | 0.764s/it
+[stage2] step  19249 | mse=0.0380 L1=0.1946 PH=0.0000 total=0.0380 | VRAM=50.3GB | 5.074s/it
+[stage2] step  19449 | mse=0.0382 L1=0.1956 PH=0.0000 total=0.0382 | VRAM=50.3GB | 5.233s/it
+[stage2] step  19649 | mse=0.0378 L1=0.1923 PH=0.0000 total=0.0378 | VRAM=50.3GB | 5.433s/it
+[stage2] step  19849 | mse=0.0377 L1=0.1950 PH=0.0000 total=0.0377 | VRAM=50.3GB | 4.683s/it
+[stage2] step  20049 | mse=0.0363 L1=0.1905 PH=0.0000 total=0.0363 | VRAM=50.3GB | 0.636s/it
+[stage2] step  20249 | mse=0.0366 L1=0.1919 PH=0.0000 total=0.0366 | VRAM=50.3GB | 0.634s/it
+[stage2] step  20449 | mse=0.0366 L1=0.1916 PH=0.0000 total=0.0366 | VRAM=50.3GB | 0.633s/it
+[stage2] step  20649 | mse=0.0363 L1=0.1926 PH=0.0000 total=0.0363 | VRAM=50.3GB | 0.636s/it
+[stage2] step  20849 | mse=0.0361 L1=0.1933 PH=0.0000 total=0.0361 | VRAM=50.3GB | 0.634s/it
+[stage2] step  21049 | mse=0.0362 L1=0.1911 PH=0.0000 total=0.0362 | VRAM=50.3GB | 0.633s/it
+[stage2] step  21249 | mse=0.0347 L1=0.1900 PH=0.0000 total=0.0347 | VRAM=50.3GB | 0.634s/it
+[stage2] step  21449 | mse=0.0345 L1=0.1889 PH=0.0000 total=0.0345 | VRAM=50.3GB | 0.634s/it
+[stage2] step  21649 | mse=0.0346 L1=0.1887 PH=0.0000 total=0.0346 | VRAM=50.3GB | 0.634s/it
+[ckpt] saved -> deeponet_results/Object/runs/m3_s0/checkpoints/21650  (EMA weights)
+[stage2] step  21849 | mse=0.0349 L1=0.1910 PH=0.0000 total=0.0349 | VRAM=50.3GB | 0.633s/it
+[stage2] step  22049 | mse=0.0342 L1=0.1880 PH=0.0000 total=0.0342 | VRAM=50.3GB | 0.633s/it
+[stage2] step  22249 | mse=0.0339 L1=0.1885 PH=0.0000 total=0.0339 | VRAM=50.3GB | 0.637s/it
+[stage2] step  22449 | mse=0.0346 L1=0.1870 PH=0.0000 total=0.0346 | VRAM=50.3GB | 0.633s/it
+[stage2] step  22649 | mse=0.0332 L1=0.1870 PH=0.0000 total=0.0332 | VRAM=50.3GB | 1.297s/it
+[stage2] step  22849 | mse=0.0329 L1=0.1852 PH=0.0000 total=0.0329 | VRAM=50.3GB | 0.633s/it
+[stage2] step  23049 | mse=0.0331 L1=0.1855 PH=0.0000 total=0.0331 | VRAM=50.3GB | 0.634s/it
+[stage2] step  23249 | mse=0.0332 L1=0.1869 PH=0.0000 total=0.0332 | VRAM=50.3GB | 0.634s/it
+[stage2] step  23449 | mse=0.0330 L1=0.1867 PH=0.0000 total=0.0330 | VRAM=50.3GB | 0.633s/it
+[stage2] step  23649 | mse=0.0323 L1=0.1848 PH=0.0000 total=0.0323 | VRAM=50.3GB | 0.634s/it
+[stage2] step  23849 | mse=0.0325 L1=0.1861 PH=0.0000 total=0.0325 | VRAM=50.3GB | 0.633s/it
+[stage2] step  24049 | mse=0.0320 L1=0.1853 PH=0.0000 total=0.0320 | VRAM=50.3GB | 0.633s/it
+[stage2] step  24249 | mse=0.0318 L1=0.1843 PH=0.0000 total=0.0318 | VRAM=50.3GB | 0.634s/it
+[stage2] step  24449 | mse=0.0313 L1=0.1824 PH=0.0000 total=0.0313 | VRAM=50.3GB | 0.635s/it
+[stage2] step  24649 | mse=0.0312 L1=0.1834 PH=0.0000 total=0.0312 | VRAM=50.3GB | 0.635s/it
+[stage2] step  24849 | mse=0.0310 L1=0.1828 PH=0.0000 total=0.0310 | VRAM=50.3GB | 0.634s/it
+[stage2] step  25049 | mse=0.0312 L1=0.1853 PH=0.0000 total=0.0312 | VRAM=50.3GB | 0.633s/it
+[stage2] step  25249 | mse=0.0310 L1=0.1843 PH=0.0000 total=0.0310 | VRAM=50.3GB | 0.634s/it
+[stage2] step  25449 | mse=0.0308 L1=0.1810 PH=0.0000 total=0.0308 | VRAM=50.3GB | 0.635s/it
+[stage2] step  25649 | mse=0.0295 L1=0.1820 PH=0.0000 total=0.0295 | VRAM=50.3GB | 0.635s/it
+[stage2] step  25849 | mse=0.0300 L1=0.1808 PH=0.0000 total=0.0300 | VRAM=50.3GB | 5.151s/it
+[stage2] step  26049 | mse=0.0299 L1=0.1819 PH=0.0000 total=0.0299 | VRAM=50.3GB | 4.634s/it
+[stage2] step  26249 | mse=0.0297 L1=0.1803 PH=0.0000 total=0.0297 | VRAM=50.3GB | 3.454s/it
+[stage2] step  26449 | mse=0.0300 L1=0.1806 PH=0.0000 total=0.0300 | VRAM=50.3GB | 3.669s/it
+[stage2] step  26649 | mse=0.0294 L1=0.1817 PH=0.0000 total=0.0294 | VRAM=50.3GB | 0.635s/it
+[stage2] step  26849 | mse=0.0291 L1=0.1776 PH=0.0000 total=0.0291 | VRAM=50.3GB | 1.180s/it
+[stage2] step  27049 | mse=0.0284 L1=0.1776 PH=0.0000 total=0.0284 | VRAM=50.3GB | 5.013s/it
+[stage2] step  27249 | mse=0.0289 L1=0.1790 PH=0.0000 total=0.0289 | VRAM=50.3GB | 5.190s/it
+[stage2] step  27449 | mse=0.0287 L1=0.1785 PH=0.0000 total=0.0287 | VRAM=50.3GB | 5.134s/it
+[stage2] step  27649 | mse=0.0286 L1=0.1787 PH=0.0000 total=0.0286 | VRAM=50.3GB | 5.024s/it
+[stage2] step  27849 | mse=0.0288 L1=0.1822 PH=0.0000 total=0.0288 | VRAM=50.3GB | 4.384s/it
+[stage2] step  28049 | mse=0.0279 L1=0.1792 PH=0.0000 total=0.0279 | VRAM=50.3GB | 2.557s/it
+[stage2] step  28249 | mse=0.0278 L1=0.1780 PH=0.0000 total=0.0278 | VRAM=50.3GB | 0.634s/it
+[stage2] step  28449 | mse=0.0272 L1=0.1765 PH=0.0000 total=0.0272 | VRAM=50.3GB | 0.635s/it
+[stage2] step  28649 | mse=0.0277 L1=0.1786 PH=0.0000 total=0.0277 | VRAM=50.3GB | 0.634s/it
+[stage2] step  28849 | mse=0.0274 L1=0.1767 PH=0.0000 total=0.0274 | VRAM=50.3GB | 0.633s/it
+[stage2] step  29049 | mse=0.0274 L1=0.1761 PH=0.0000 total=0.0274 | VRAM=50.3GB | 0.634s/it
+[stage2] step  29249 | mse=0.0273 L1=0.1753 PH=0.0000 total=0.0273 | VRAM=50.3GB | 0.633s/it
+[stage2] step  29449 | mse=0.0272 L1=0.1769 PH=0.0000 total=0.0272 | VRAM=50.3GB | 0.634s/it
+[stage2] step  29649 | mse=0.0266 L1=0.1756 PH=0.0000 total=0.0266 | VRAM=50.3GB | 1.305s/it
+[stage2] step  29849 | mse=0.0269 L1=0.1736 PH=0.0000 total=0.0269 | VRAM=50.3GB | 4.810s/it
+[ckpt] saved -> deeponet_results/Object/runs/m3_s0/checkpoints/30000  (EMA weights)
+
+[train] DONE head=deeponet variant=baseline steps=30000 wall=594.8 min -> deeponet_results/Object/runs/m3_s0

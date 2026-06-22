@@ -1,0 +1,76 @@
+{
+  "_config": {
+    "libero_spatial": {
+      "replan": 5,
+      "indist_episodes": 20,
+      "pert_episodes": 8,
+      "max_steps": 520,
+      "models": {
+        "m3": "deeponet_results/Spatial/runs/m3_s0/checkpoints/30000"
+      }
+    }
+  },
+  "LIBERO-SPATIAL": {
+    "m3": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.45,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.7,
+          "n": 20
+        }
+      },
+      "average": 0.85
+    }
+  },
+  "_summary": {
+    "m3": {
+      "LIBERO-SPATIAL_avg": 0.85,
+      "LIBERO-SPATIAL-V_avg": null
+    }
+  }
+}

@@ -1,0 +1,32 @@
+[06-19 11:34:47] ==== DeepONet m3 + m4 campaign START (30K, batch 48; Spatial/Object/Long) ====
+[06-19 11:34:47] TRAIN start  Spatial/m3  (deeponet/baseline) 30K
+[06-19 20:22:11] TRAIN done   Spatial/m3
+[06-19 20:22:11] TRAIN start  Spatial/m4  (deeponet/ph) 30K
+[06-20 05:20:30] TRAIN done   Spatial/m4
+[06-20 05:20:30] EVAL start   Spatial/m3 -> eval_m3
+[06-20 05:42:47] EVAL done    Spatial/m3
+[06-20 05:42:48] ######## RESULT READY: Spatial/m3 -> ./deeponet_results/Spatial/runs/eval_m3 (10-task + 9-task plots & summaries) ########
+[06-20 05:42:48] EVAL start   Spatial/m4 -> eval_m4
+[06-20 06:05:12] EVAL done    Spatial/m4
+[06-20 06:05:12] ######## RESULT READY: Spatial/m4 -> ./deeponet_results/Spatial/runs/eval_m4 (10-task + 9-task plots & summaries) ########
+[06-20 06:05:12] TRAIN start  Object/m3  (deeponet/baseline) 30K
+[06-20 16:00:36] TRAIN done   Object/m3
+[06-20 16:00:36] TRAIN start  Object/m4  (deeponet/ph) 30K
+[06-21 01:13:12] TRAIN done   Object/m4
+[06-21 01:13:12] EVAL start   Object/m3 -> eval_m3
+[06-21 01:32:38] EVAL done    Object/m3
+[06-21 01:32:38] ######## RESULT READY: Object/m3 -> ./deeponet_results/Object/runs/eval_m3 (10-task + 9-task plots & summaries) ########
+[06-21 01:32:38] EVAL start   Object/m4 -> eval_m4
+[06-21 01:51:09] EVAL done    Object/m4
+[06-21 01:51:10] ######## RESULT READY: Object/m4 -> ./deeponet_results/Object/runs/eval_m4 (10-task + 9-task plots & summaries) ########
+[06-21 01:51:10] TRAIN start  Long/m3  (deeponet/baseline) 30K
+[06-21 10:45:57] TRAIN done   Long/m3
+[06-21 10:45:57] TRAIN start  Long/m4  (deeponet/ph) 30K
+[06-21 20:20:01] TRAIN done   Long/m4
+[06-21 20:20:01] EVAL start   Long/m3 -> eval_m3
+[06-21 20:50:08] EVAL done    Long/m3
+[06-21 20:50:09] ######## RESULT READY: Long/m3 -> ./deeponet_results/Long/runs/eval_m3 (10-task + 9-task plots & summaries) ########
+[06-21 20:50:09] EVAL start   Long/m4 -> eval_m4
+[06-21 21:19:49] EVAL done    Long/m4
+[06-21 21:19:50] ######## RESULT READY: Long/m4 -> ./deeponet_results/Long/runs/eval_m4 (10-task + 9-task plots & summaries) ########
+[06-21 21:19:50] ==== DeepONet m3 + m4 campaign DONE ====

@@ -1,0 +1,8 @@
+[LIBERO-SPATIAL] FULL 10-task average = 85.0%
+[LIBERO-SPATIAL] EXCL task5 (45%) -> 9-task average = 89.4%
+[LIBERO-SPATIAL] wrote summary_full.json + summary_excl_task5.json + summary_both.csv -> deeponet_results/Spatial/runs/eval_m3
+  saved libero_spatial_all10tasks.png
+  saved libero_spatial_excl_task5_9tasks.png
+[Spatial m3 30K] FULL 10-task avg = 85.0%
+[Spatial m3 30K] EXCL task5 -> 9-task avg = 89.4%
+[Spatial m3 30K] plots -> deeponet_results/Spatial/plots | summaries -> deeponet_results/Spatial/runs/eval_m3

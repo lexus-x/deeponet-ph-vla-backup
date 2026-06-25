@@ -1,0 +1,7 @@
+selection,model,Spatial,Object,Long,Goal,4suite_avg,note
+fixed-30K (Goal=15K*),M1 flow,79.5,87.5,66.5,93.5,81.75,consistent budget; Object@30K
+fixed-30K (Goal=15K*),M3 DeepONet,85.0,87.0,58.5,90.0,80.12,consistent budget; Object@30K
+fixed-30K (Goal=15K*),M4 DeepONet+PH,82.5,89.5,60.5,89.0,80.38,consistent budget; Object@30K
+best-budget per suite,M1 flow,79.5,84.5,66.5,93.5,81.0,Object@15K (selection-dependent)
+best-budget per suite,M3 DeepONet,85.0,94.0,58.5,90.0,81.88,Object@15K (selection-dependent)
+best-budget per suite,M4 DeepONet+PH,82.5,87.0,60.5,89.0,79.75,Object@15K (selection-dependent)

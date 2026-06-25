@@ -1,0 +1,11 @@
+comparison,metric,mean_diff_pp,t_p,wilcoxon_p,n,significant_0.05
+don_v2_vs_flow,in-dist,0.9,0.605,0.479,50,no
+don_v2_vs_flow,robustness,20.57,1.14e-06,2.15e-05,35,yes
+donph_v2_vs_flow,in-dist,2.1,0.355,0.381,50,no
+donph_v2_vs_flow,robustness,14.67,0.000131,0.000211,35,yes
+don_v2_vs_don_v1,in-dist,28.5,5.79e-08,2.66e-06,30,yes
+don_v2_vs_don_v1,robustness,19.37,0.00121,0.00231,21,yes
+donph_v2_vs_don_v2,in-dist,1.2,0.507,0.472,50,no
+donph_v2_vs_don_v2,robustness,-5.9,0.0315,0.0563,35,yes
+don_v1_vs_flow,in-dist,-25.83,1.12e-05,2.44e-05,30,yes
+don_v1_vs_flow,robustness,-4.76,0.416,0.313,21,no

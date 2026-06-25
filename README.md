@@ -6,8 +6,13 @@ A research project that replaces the heavy **flow-matching action expert** of a 
 in-distribution accuracy, **robustness** (LIBERO-Plus, 7 perturbations), parameter count, and inference latency.
 
 > **One-line result:** the DeepONet head is **~9.6× smaller** (99.9 M → 10.4 M params) and **~5× faster**
-> (148 ms → 29.5 ms) than the flow expert, **matches it in-distribution**, and is **>2× more robust**
-> under distribution shift (17.9% → 38.5% on LIBERO-Plus).
+> (148 ms → 29.5 ms) than the flow expert, is **statistically tied in-distribution** (80.3 vs 79.4 %, Δ=+0.9 pp,
+> **p=0.61**), and is **>2× more robust** under distribution shift on the one suite where robustness was measured
+> (LIBERO-Spatial, 17.9% → 38.5%, **p<1e-5**).
+>
+> ⚠️ **Read [`DeepONet PH/CORRECTIONS_2026-06-25.md`](DeepONet%20PH/CORRECTIONS_2026-06-25.md) first** — a statistical
+> audit that corrects several earlier overstatements (in-dist is a *tie* not a win; the operator does *not* drive
+> accuracy; PH *hurts* robustness; at a fixed budget flow wins the in-dist average; robustness was Spatial-only).
 
 ---
 
@@ -40,10 +45,14 @@ in-distribution accuracy, **robustness** (LIBERO-Plus, 7 perturbations), paramet
 | **M3 DeepONet** | 80.3 ± 2.4 % | **38.5 ± 6.9 %** | **29.5 ms** | **10.4 M** |
 | **M4 DeepONet + PH** | **81.5 ± 3.9 %** | 32.6 ± 5.1 % | 29.5 ms | 10.4 M |
 
-- **In-distribution:** DeepONet **matches or slightly beats** the flow baseline.
-- **Robustness:** DeepONet is **>2× more robust** than flow (and wins **6 of 7** perturbation categories).
-- **Efficiency:** **9.6× fewer** head parameters, **~5× faster** inference (single forward pass vs 10-step flow denoising).
-- **PH loss (M4):** improves in-distribution accuracy further, but the bare operator (M3) is the most robust — see [ablations](#ablations-libero-spatial).
+- **In-distribution:** DeepONet is a **statistical tie** with flow (Δ=+0.9 pp, **p=0.61** — not significant). Note a
+  plain **regression head with no operator scores *higher* in-dist (83.0 %)**, so the in-dist parity comes from the
+  cross-attention context, **not** the operator merge — see [ablations](#ablations-libero-spatial).
+- **Robustness:** DeepONet is **>2× more robust** than flow and wins **6 of 7** categories — **measured on
+  LIBERO-Spatial only** (8.3K, 5 seeds, p<1e-5). No robustness was measured on Object/Long/Goal.
+- **Efficiency:** **9.6× fewer** head parameters, **~5× faster** inference (single forward pass vs 10-step flow denoising). *(This is the most robust headline claim.)*
+- **PH loss (M4):** its in-dist gain is **not significant** (+1.2 pp, p=0.51) and it **significantly *hurts*
+  robustness** (−5.9 pp, **p=0.032**). Recommended config is the **bare operator M3 (PH off)**.
 
 ### Per-suite in-distribution (single seed, 15K steps — first comparison)
 
@@ -55,19 +64,40 @@ in-distribution accuracy, **robustness** (LIBERO-Plus, 7 perturbations), paramet
 
 ### Full-LIBERO sweep at 30K steps + whole-suite average (single seed — `DeepONet PH/v2/deeponet_results/`)
 
-Operator heads re-trained at the **30K-step / batch-48** recipe (matching the flow paper-repro). Whole-suite
-average uses each suite's **best-budget checkpoint** — Object & Goal @15K, Spatial & Long @30K (Object over-trains
-at 30K, so 15K is its better checkpoint; details in [Results in full](#results-in-full)):
+Operator heads re-trained at the **30K-step / batch-48** recipe (matching the flow paper-repro). **At a consistent
+30K budget, the flow baseline wins the in-distribution whole-suite average** (Goal exists only at 15K):
 
-| Model | Spatial (30K) | Object (15K) | Long (30K) | Goal (15K) | **4-suite avg** |
+| Model | Spatial 30K | Object 30K | Long 30K | Goal 15K* | **4-suite avg** |
 |---|---|---|---|---|---|
-| M1 flow (SmolVLA) | 79.5 | 84.5 | 66.5 | 93.5 | **81.00 %** |
-| **M3 DeepONet** | 85.0 | 94.0 | 58.5 | 90.0 | **81.88 %** ✅ |
-| M4 DeepONet+PH | 82.5 | 87.0 | 60.5 | 89.0 | **79.75 %** |
+| **M1 flow (SmolVLA)** | 79.5 | 87.5 | 66.5 | 93.5 | **81.75 %** ✅ |
+| M3 DeepONet | 85.0 | 87.0 | 58.5 | 90.0 | **80.12 %** |
+| M4 DeepONet+PH | 82.5 | 89.5 | 60.5 | 89.0 | **80.38 %** |
 
-→ **M3 DeepONet edges out the flow baseline on the whole-suite average (81.88 vs 81.00)** — at ~9.6× fewer params,
-~5× faster, ~2× more robust. **Long** (long-horizon) is where all three are weakest and the single-pass operator
-trails flow; no model reaches the original SmolVLA paper average of **87.3 %**.
+→ **At fixed budget, flow leads the in-dist average (81.75 vs 80.12).** A *previously reported* DeepONet "edge"
+(81.88 vs 81.00) only appears under **per-suite best-budget selection** — substituting **Object @ 15K = 94.0** for M3
+(its best checkpoint) while flow uses its weaker Object@15K. That selection is not a like-for-like comparison; the
+honest headline is the **fixed-budget table above (flow wins in-dist)**. The operator's defensible wins are
+**efficiency** and **robustness (Spatial)**, not in-dist accuracy. Full both-ways breakdown:
+[`DeepONet PH/runs/report_final/budget_comparison.csv`](DeepONet%20PH/runs/report_final/budget_comparison.csv).
+**Long** is where all three are weakest; no model reaches the SmolVLA paper average of **87.3 %**.
+*(Goal has no 30K checkpoint — 15K is its only run.)*
+
+### Checkpoint inventory & evaluation protocol
+
+**Three training-step regimes were run** (all SmolVLA: 350 M SmolVLM2 backbone + swapped head):
+
+| Regime | Suites evaluated | Seeds | Metrics | Weights on disk? |
+|---|---|---|---|---|
+| **8.3K** | Spatial | M1×5, M3×5, M4×5 (+ ablations) | in-dist **+ LIBERO-Plus** | yes (10 ckpts) |
+| **15K** | Spatial, Object, Goal | single (seed 0) | in-dist only | **no — deleted** (results kept) |
+| **30K** | Spatial, Object, Long | single (seed 0) | in-dist only | yes (9 ckpts) |
+
+- **Only Spatial has all three regimes**; **Long** appears only at 30K, **Goal** only at 15K.
+- **Robustness (LIBERO-Plus)** was run **only on Spatial @ 8.3K** (5 seeds). No other suite/regime has robustness.
+- **Eval horizons:** in-distribution = **20 episodes/task × 10 tasks, max_steps 520, replan 5**; LIBERO-Plus =
+  **15 tasks/category × 7 categories, max_steps 300, replan 5, 1 trial/task**.
+- **Significance** (Spatial 5-seed): `DeepONet PH/runs/report_final/significance_tests.csv`;
+  **per-seed raw numbers:** `seed_level_spatial_8p3k.csv`; **budget breakdown:** `budget_comparison.csv`.
 
 ---
 
@@ -193,9 +223,10 @@ produce trajectories that are *globally* the right shape, not just locally close
 - `M3` = DeepONet head, **PH loss off**.
 - `M4` = DeepONet head, **PH loss on**.
 
-**Empirically:** PH (M4) **raises in-distribution accuracy** (81.5% vs 80.3% on Spatial) but the bare operator (M3)
-is the **most robust** (38.5% vs 32.6%). So PH is an accuracy regulariser; the robustness comes from the operator
-structure itself. See [`docs/ph_loss.md`](docs/ph_loss.md).
+**Empirically (corrected — see [`CORRECTIONS_2026-06-25.md`](CORRECTIONS_2026-06-25.md)):** PH's in-distribution
+"gain" (M4 81.5 % vs M3 80.3 %, +1.2 pp) is **not statistically significant** (t-p = 0.51), and PH **significantly
+*hurts* robustness** (M4 32.6 % vs M3 38.5 %, **−5.9 pp, t-p = 0.032**). So PH is **not recommended** — the headline
+operator model is **M3 (PH off)**. See [`docs/ph_loss.md`](docs/ph_loss.md).
 
 ---
 
@@ -237,7 +268,10 @@ documented in [`DeepONet PH/PORTING_TO_PI0.md`](DeepONet%20PH/PORTING_TO_PI0.md)
 
 ## Results in full
 
-### LIBERO-Plus robustness by perturbation (Spatial, `DeepONet PH/v2_results/data/robustness_per_category.csv`)
+### LIBERO-Plus robustness by perturbation (Spatial only, `DeepONet PH/v2_results/data/robustness_per_category.csv`)
+
+> **Scope:** LIBERO-Plus robustness was measured on **LIBERO-Spatial only** (8.3K, 5 seeds). There are **no**
+> robustness numbers for Object / Long / Goal, so the ">2× more robust" headline is a **single-suite** result.
 
 | Perturbation | M1 flow | M3 DeepONet | M4 DeepONet+PH |
 |---|---|---|---|
@@ -455,14 +489,23 @@ python make_suite_plots.py --suite_dir ../Spatial --suite libero_spatial --label
 ---
 
 ## Honest limitations & caveats
-- **In-dist numbers are imitation (behavioral cloning)** success rates on LIBERO's task distribution — high in-dist
-  does *not* by itself prove generalisation; the **LIBERO-Plus robustness** numbers are the distribution-shift test.
-- **Per-suite (Object/Goal) numbers are single-seed** (15K steps); the **5-seed** comparison is Spatial only. Treat
-  single-seed numbers as ± a few % sampling noise.
-- **PH loss helps in-dist but not robustness** — the robustness win comes from the operator structure, not PH.
-- **The 30K paper-repro flow campaign is complete** (Spatial 79.5 / Object 87.5 / Long 66.5 % in-dist) but fell
-  short of the published targets (90 / 96 / ≥71); the matched DeepONet m3/m4 30K runs are still pending a second GPU
-  (`transfere/`), so the **30K head-to-head comparison is not available yet** — current head-to-head is the 15K/5-seed set.
+> Full statistical audit with p-values and backing CSVs:
+> [`DeepONet PH/CORRECTIONS_2026-06-25.md`](DeepONet%20PH/CORRECTIONS_2026-06-25.md).
+- **In-distribution accuracy is a statistical tie** (M3 vs flow Δ=+0.9 pp, **p=0.61**), and the parity does **not**
+  come from the operator — a plain regression head with no operator scores *higher* in-dist (83.0 %). The operator's
+  measurable contribution is robustness, not accuracy.
+- **At a fixed 30K budget, flow wins the in-dist whole-suite average** (81.75 vs 80.12). The DeepONet "edge" only
+  appears under per-suite best-budget selection (Object@15K). See `runs/report_final/budget_comparison.csv`.
+- **Robustness was measured on LIBERO-Spatial only** (8.3K, 5 seeds). No Object/Long/Goal robustness exists — the
+  ">2× more robust" claim is single-suite.
+- **PH loss is not recommended:** no significant in-dist gain (p=0.51) and a **significant robustness loss**
+  (−5.9 pp, p=0.032). Use the bare operator **M3**.
+- **In-dist numbers are imitation (behavioral cloning)** success rates; high in-dist does *not* by itself prove
+  generalisation — the LIBERO-Plus robustness numbers are the distribution-shift test.
+- **Per-suite 15K/30K numbers are single-seed** (no error bars); only Spatial @ 8.3K has 5 seeds + significance.
+  Treat single-seed numbers as ± a few % sampling noise.
+- **15K checkpoints were deleted** (disk pressure) — only their eval JSONs remain; 8.3K and 30K weights are on disk.
+- The 30K head-to-head **is now complete** (`DeepONet PH/v2/deeponet_results/`, in-dist, single seed).
 - Cross-model parameter savings for π0/Octo/GR00T/OpenVLA in `docs/architecture.md` use **published model sizes**
   (approximate); only the SmolVLA numbers are measured here.
 

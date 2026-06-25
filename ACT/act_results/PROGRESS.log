@@ -1,0 +1,46 @@
+[06-23 13:34:42] ==== ACT campaign START (30K, batch64; Spatial/Object/Long/Goal; 3 variants) ====
+[06-23 13:34:42] TRAIN start  Spatial/act 30K
+[06-23 20:51:43] TRAIN done   Spatial/act
+[06-23 20:51:43] TRAIN start  Spatial/act_deeponet 30K
+[06-23 21:45:11] TRAIN done   Spatial/act_deeponet
+[06-23 21:45:11] TRAIN start  Spatial/act_deeponet_ph 30K
+[06-23 22:39:46] TRAIN done   Spatial/act_deeponet_ph
+[06-23 22:39:46] EVAL  start  Spatial in-dist (3-seed)
+[06-23 22:40:53] PLUS  start  Spatial LIBERO-Plus
+[06-23 23:17:12] PLUS  done   Spatial
+[06-23 23:17:12] compare failed Spatial
+[06-23 23:17:12] ######## RESULT READY: Spatial -> ./act_results/Spatial (in-dist 3-seed + LIBERO-Plus + plots) ########
+[06-23 23:17:12] TRAIN start  Object/act 30K
+[06-24 00:25:01] TRAIN done   Object/act
+[06-24 00:25:01] TRAIN start  Object/act_deeponet 30K
+[06-24 01:22:19] TRAIN done   Object/act_deeponet
+[06-24 01:22:19] TRAIN start  Object/act_deeponet_ph 30K
+[06-24 02:20:11] TRAIN done   Object/act_deeponet_ph
+[06-24 02:20:11] EVAL  start  Object in-dist (3-seed)
+[06-24 02:21:29] PLUS  start  Object LIBERO-Plus
+[06-24 03:07:34] PLUS  done   Object
+[06-24 03:07:34] compare failed Object
+[06-24 03:07:34] ######## RESULT READY: Object -> ./act_results/Object (in-dist 3-seed + LIBERO-Plus + plots) ########
+[06-24 03:07:34] TRAIN start  Long/act 30K
+[06-24 04:25:05] TRAIN done   Long/act
+[06-24 04:25:05] TRAIN start  Long/act_deeponet 30K
+[06-24 05:33:20] TRAIN done   Long/act_deeponet
+[06-24 05:33:20] TRAIN start  Long/act_deeponet_ph 30K
+[06-24 06:41:40] TRAIN done   Long/act_deeponet_ph
+[06-24 06:41:40] EVAL  start  Long in-dist (3-seed)
+[06-24 06:43:31] PLUS  start  Long LIBERO-Plus
+[06-24 07:14:30] PLUS  done   Long
+[06-24 07:14:31] compare failed Long
+[06-24 07:14:31] ######## RESULT READY: Long -> ./act_results/Long (in-dist 3-seed + LIBERO-Plus + plots) ########
+[06-24 07:14:31] TRAIN start  Goal/act 30K
+[06-24 08:17:47] TRAIN done   Goal/act
+[06-24 08:17:47] TRAIN start  Goal/act_deeponet 30K
+[06-24 09:11:02] TRAIN done   Goal/act_deeponet
+[06-24 09:11:02] TRAIN start  Goal/act_deeponet_ph 30K
+[06-24 10:04:43] TRAIN done   Goal/act_deeponet_ph
+[06-24 10:04:43] EVAL  start  Goal in-dist (3-seed)
+[06-24 10:05:48] PLUS  start  Goal LIBERO-Plus
+[06-24 10:54:50] PLUS  done   Goal
+[06-24 10:54:50] compare failed Goal
+[06-24 10:54:50] ######## RESULT READY: Goal -> ./act_results/Goal (in-dist 3-seed + LIBERO-Plus + plots) ########
+[06-24 10:54:50] ==== ACT campaign DONE ====

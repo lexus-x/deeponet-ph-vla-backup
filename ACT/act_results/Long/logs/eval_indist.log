@@ -1,0 +1,50 @@
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+/home/user/Desktop/Ayush PH test/ACT/lang_encoder.py:40: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(layer, num_layers=n_layers)
+[eval] loaded act replan=5 seeds=3 <- act_results/Long/runs/act/checkpoints/30000
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+[eval] loaded act_deeponet replan=5 seeds=3 <- act_results/Long/runs/act_deeponet/checkpoints/30000
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+[eval] loaded act_deeponet_ph replan=5 seeds=3 <- act_results/Long/runs/act_deeponet_ph/checkpoints/30000
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+[Warning]: datasets path /home/user/Desktop/Ayush PH test/data/libero_datasets does not exist!
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/ACT/evaluate_act.py", line 276, in <module>
+    main()
+  File "/home/user/Desktop/Ayush PH test/ACT/evaluate_act.py", line 258, in main
+    eval_indist(models, args.indist_episodes, args.max_steps, results, out_path,
+  File "/home/user/Desktop/Ayush PH test/ACT/evaluate_act.py", line 159, in eval_indist
+    ok, frames = rollout(policy, pre, post, env, task_desc, max_steps,
+    ^^^^^^^^^^
+TypeError: cannot unpack non-iterable bool object
+Exception ignored in: <function MjRenderContext.__del__ at 0x73e53cd93060>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function EGLGLContext.__del__ at 0x73e53cd92f20>
+Traceback (most recent call last):
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+  File "/home/user/Desktop/Ayush PH test/venv/lib/python3.12/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>

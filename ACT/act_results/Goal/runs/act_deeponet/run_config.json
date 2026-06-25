@@ -1,0 +1,22 @@
+{
+  "args": {
+    "variant": "act_deeponet",
+    "dataset": "lerobot/libero_goal_image",
+    "out": "./act_results/Goal/runs/act_deeponet",
+    "steps": 30000,
+    "batch": 64,
+    "lr": 0.0001,
+    "lr_backbone": 1e-05,
+    "warmup": 500,
+    "ema": 0.999,
+    "ckpt_every": 5000,
+    "epoch_steps": 200,
+    "num_workers": 48,
+    "lambda_ph": 0.02,
+    "ph_k": 8,
+    "ph_warmup": 5000,
+    "ph_trigger": 0.15,
+    "seed": 0
+  },
+  "params_M": 60.711694
+}

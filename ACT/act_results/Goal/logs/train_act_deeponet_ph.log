@@ -1,0 +1,172 @@
+[train] num_workers -> 48 (cores=56)
+[train] variant=act_deeponet_ph dataset=lerobot/libero_goal_image -> act_results/Goal/runs/act_deeponet_ph
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+/home/user/Desktop/Ayush PH test/ACT/lang_encoder.py:40: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(layer, num_layers=n_layers)
+[ramcache] est 82.0 GB for 52042 items (avail 254 GB)
+[ramcache] 10000/52042  (172s)
+[ramcache] 20000/52042  (319s)
+[ramcache] 30000/52042  (466s)
+[ramcache] 40000/52042  (611s)
+[ramcache] 50000/52042  (745s)
+[ramcache] cached 52042 items in 12.5 min
+[train] params=60.71M frames=52042 batch=64 steps=30000
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[act_deeponet_ph] step    200 | l1=0.4283 total=2.032 phgate=warmup act=0.0 | VRAM=6.41GB | 0.073s/it
+[act_deeponet_ph] step    400 | l1=0.3632 total=1.141 phgate=warmup act=0.0 | VRAM=6.41GB | 0.073s/it
+[act_deeponet_ph] step    600 | l1=0.3189 total=0.565 phgate=warmup act=0.0 | VRAM=6.41GB | 0.073s/it
+[act_deeponet_ph] step    800 | l1=0.2817 total=0.366 phgate=warmup act=0.0 | VRAM=6.41GB | 0.071s/it
+[act_deeponet_ph] step   1000 | l1=0.2586 total=0.370 phgate=warmup act=0.0 | VRAM=6.41GB | 0.075s/it
+[act_deeponet_ph] step   1200 | l1=0.2433 total=0.301 phgate=warmup act=0.0 | VRAM=6.41GB | 0.077s/it
+[act_deeponet_ph] step   1400 | l1=0.2387 total=0.292 phgate=warmup act=0.0 | VRAM=6.41GB | 0.075s/it
+[act_deeponet_ph] step   1600 | l1=0.2285 total=0.252 phgate=warmup act=0.0 | VRAM=6.41GB | 0.073s/it
+[act_deeponet_ph] step   1800 | l1=0.2200 total=0.236 phgate=warmup act=0.0 | VRAM=6.41GB | 0.086s/it
+[act_deeponet_ph] step   2000 | l1=0.2153 total=0.231 phgate=warmup act=0.0 | VRAM=6.41GB | 0.074s/it
+[act_deeponet_ph] step   2200 | l1=0.2107 total=0.239 phgate=warmup act=0.0 | VRAM=6.41GB | 0.075s/it
+[act_deeponet_ph] step   2400 | l1=0.2063 total=0.228 phgate=warmup act=0.0 | VRAM=6.41GB | 0.075s/it
+[act_deeponet_ph] step   2600 | l1=0.1988 total=0.267 phgate=warmup act=0.0 | VRAM=6.41GB | 0.074s/it
+[act_deeponet_ph] step   2800 | l1=0.1954 total=0.206 phgate=warmup act=0.0 | VRAM=6.41GB | 0.074s/it
+[act_deeponet_ph] step   3000 | l1=0.1913 total=0.213 phgate=warmup act=0.0 | VRAM=6.41GB | 0.075s/it
+[act_deeponet_ph] step   3200 | l1=0.1883 total=0.215 phgate=warmup act=0.0 | VRAM=6.41GB | 0.076s/it
+[act_deeponet_ph] step   3400 | l1=0.1839 total=0.231 phgate=warmup act=0.0 | VRAM=6.41GB | 0.076s/it
+[act_deeponet_ph] step   3600 | l1=0.1792 total=0.213 phgate=warmup act=0.0 | VRAM=6.41GB | 0.080s/it
+[act_deeponet_ph] step   3800 | l1=0.1769 total=0.212 phgate=warmup act=0.0 | VRAM=6.41GB | 0.074s/it
+[act_deeponet_ph] step   4000 | l1=0.1736 total=0.192 phgate=warmup act=0.0 | VRAM=6.41GB | 0.078s/it
+[act_deeponet_ph] step   4200 | l1=0.1684 total=0.198 phgate=warmup act=0.0 | VRAM=6.41GB | 0.074s/it
+[act_deeponet_ph] step   4400 | l1=0.1664 total=0.184 phgate=warmup act=0.0 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step   4600 | l1=0.1639 total=0.204 phgate=warmup act=0.0 | VRAM=6.41GB | 0.080s/it
+[act_deeponet_ph] step   4800 | l1=0.1600 total=0.197 phgate=warmup act=0.0 | VRAM=6.41GB | 0.082s/it
+[act_deeponet_ph] step   5000 | l1=0.1584 total=0.192 phgate=warmup act=0.0 | VRAM=6.41GB | 0.083s/it
+[ckpt] saved -> act_results/Goal/runs/act_deeponet_ph/checkpoints/5000 (EMA weights)
+[act_deeponet_ph] step   5200 | l1=0.1705 total=0.256 phgate=active act=0.172 | VRAM=6.41GB | 0.076s/it
+[act_deeponet_ph] step   5400 | l1=0.1675 total=0.238 phgate=active act=0.219 | VRAM=6.41GB | 0.075s/it
+[act_deeponet_ph] step   5600 | l1=0.1662 total=0.255 phgate=active act=0.234 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step   5800 | l1=0.1637 total=0.190 phgate=active act=0.234 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step   6000 | l1=0.1628 total=0.200 phgate=active act=0.266 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step   6200 | l1=0.1608 total=0.238 phgate=active act=0.25 | VRAM=6.41GB | 0.080s/it
+[act_deeponet_ph] step   6400 | l1=0.1602 total=0.217 phgate=active act=0.109 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step   6600 | l1=0.1594 total=0.192 phgate=active act=0.172 | VRAM=6.41GB | 0.086s/it
+[act_deeponet_ph] step   6800 | l1=0.1561 total=0.199 phgate=active act=0.234 | VRAM=6.41GB | 0.076s/it
+[act_deeponet_ph] step   7000 | l1=0.1567 total=0.234 phgate=active act=0.141 | VRAM=6.41GB | 0.085s/it
+[act_deeponet_ph] step   7200 | l1=0.1549 total=0.220 phgate=active act=0.219 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step   7400 | l1=0.1538 total=0.193 phgate=active act=0.125 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step   7600 | l1=0.1507 total=0.227 phgate=active act=0.156 | VRAM=6.41GB | 0.077s/it
+[act_deeponet_ph] step   7800 | l1=0.1519 total=0.216 phgate=active act=0.203 | VRAM=6.41GB | 0.078s/it
+[act_deeponet_ph] step   8000 | l1=0.1505 total=0.207 phgate=active act=0.219 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step   8200 | l1=0.1498 total=0.207 phgate=active act=0.203 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step   8400 | l1=0.1470 total=0.243 phgate=active act=0.156 | VRAM=6.41GB | 0.087s/it
+[act_deeponet_ph] step   8600 | l1=0.1473 total=0.235 phgate=active act=0.094 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step   8800 | l1=0.1468 total=0.218 phgate=active act=0.156 | VRAM=6.41GB | 0.090s/it
+[act_deeponet_ph] step   9000 | l1=0.1445 total=0.190 phgate=active act=0.078 | VRAM=6.41GB | 0.077s/it
+[act_deeponet_ph] step   9200 | l1=0.1433 total=0.202 phgate=active act=0.156 | VRAM=6.41GB | 0.082s/it
+[act_deeponet_ph] step   9400 | l1=0.1459 total=0.206 phgate=active act=0.078 | VRAM=6.41GB | 0.077s/it
+[act_deeponet_ph] step   9600 | l1=0.1418 total=0.192 phgate=active act=0.109 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step   9800 | l1=0.1414 total=0.212 phgate=active act=0.094 | VRAM=6.41GB | 0.085s/it
+[act_deeponet_ph] step  10000 | l1=0.1396 total=0.190 phgate=active act=0.078 | VRAM=6.41GB | 0.083s/it
+[ckpt] saved -> act_results/Goal/runs/act_deeponet_ph/checkpoints/10000 (EMA weights)
+[act_deeponet_ph] step  10200 | l1=0.1400 total=0.200 phgate=active act=0.188 | VRAM=6.41GB | 0.079s/it
+[act_deeponet_ph] step  10400 | l1=0.1389 total=0.219 phgate=active act=0.094 | VRAM=6.41GB | 0.086s/it
+[act_deeponet_ph] step  10600 | l1=0.1373 total=0.213 phgate=active act=0.109 | VRAM=6.41GB | 0.076s/it
+[act_deeponet_ph] step  10800 | l1=0.1373 total=0.210 phgate=active act=0.094 | VRAM=6.41GB | 0.077s/it
+[act_deeponet_ph] step  11000 | l1=0.1352 total=0.210 phgate=active act=0.094 | VRAM=6.41GB | 0.079s/it
+[act_deeponet_ph] step  11200 | l1=0.1363 total=0.191 phgate=active act=0.078 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step  11400 | l1=0.1334 total=0.190 phgate=active act=0.078 | VRAM=6.41GB | 0.092s/it
+[act_deeponet_ph] step  11600 | l1=0.1338 total=0.202 phgate=active act=0.078 | VRAM=6.41GB | 0.082s/it
+[act_deeponet_ph] step  11800 | l1=0.1345 total=0.210 phgate=active act=0.125 | VRAM=6.41GB | 0.077s/it
+[act_deeponet_ph] step  12000 | l1=0.1314 total=0.207 phgate=active act=0.109 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step  12200 | l1=0.1311 total=0.217 phgate=active act=0.094 | VRAM=6.41GB | 0.092s/it
+[act_deeponet_ph] step  12400 | l1=0.1307 total=0.195 phgate=active act=0.156 | VRAM=6.41GB | 0.079s/it
+[act_deeponet_ph] step  12600 | l1=0.1303 total=0.188 phgate=active act=0.109 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step  12800 | l1=0.1287 total=0.180 phgate=active act=0.141 | VRAM=6.41GB | 0.077s/it
+[act_deeponet_ph] step  13000 | l1=0.1316 total=0.216 phgate=active act=0.172 | VRAM=6.41GB | 0.073s/it
+[act_deeponet_ph] step  13200 | l1=0.1294 total=0.183 phgate=active act=0.141 | VRAM=6.41GB | 0.090s/it
+[act_deeponet_ph] step  13400 | l1=0.1270 total=0.202 phgate=active act=0.141 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step  13600 | l1=0.1260 total=0.215 phgate=active act=0.141 | VRAM=6.41GB | 0.075s/it
+[act_deeponet_ph] step  13800 | l1=0.1272 total=0.161 phgate=active act=0.156 | VRAM=6.41GB | 0.074s/it
+[act_deeponet_ph] step  14000 | l1=0.1258 total=0.209 phgate=active act=0.094 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step  14200 | l1=0.1250 total=0.222 phgate=active act=0.078 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step  14400 | l1=0.1250 total=0.212 phgate=active act=0.078 | VRAM=6.41GB | 0.078s/it
+[act_deeponet_ph] step  14600 | l1=0.1232 total=0.176 phgate=active act=0.141 | VRAM=6.41GB | 0.075s/it
+[act_deeponet_ph] step  14800 | l1=0.1223 total=0.196 phgate=active act=0.031 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step  15000 | l1=0.1223 total=0.182 phgate=active act=0.125 | VRAM=6.41GB | 0.082s/it
+[ckpt] saved -> act_results/Goal/runs/act_deeponet_ph/checkpoints/15000 (EMA weights)
+[act_deeponet_ph] step  15200 | l1=0.1223 total=0.232 phgate=active act=0.031 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step  15400 | l1=0.1221 total=0.230 phgate=active act=0.141 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step  15600 | l1=0.1207 total=0.218 phgate=active act=0.078 | VRAM=6.41GB | 0.082s/it
+[act_deeponet_ph] step  15800 | l1=0.1183 total=0.165 phgate=active act=0.094 | VRAM=6.41GB | 0.082s/it
+[act_deeponet_ph] step  16000 | l1=0.1205 total=0.212 phgate=active act=0.125 | VRAM=6.41GB | 0.082s/it
+[act_deeponet_ph] step  16200 | l1=0.1192 total=0.172 phgate=active act=0.078 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step  16400 | l1=0.1182 total=0.176 phgate=active act=0.172 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step  16600 | l1=0.1191 total=0.220 phgate=active act=0.016 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step  16800 | l1=0.1185 total=0.212 phgate=active act=0.062 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step  17000 | l1=0.1173 total=0.206 phgate=active act=0.109 | VRAM=6.41GB | 0.085s/it
+[act_deeponet_ph] step  17200 | l1=0.1175 total=0.151 phgate=active act=0.125 | VRAM=6.41GB | 0.080s/it
+[act_deeponet_ph] step  17400 | l1=0.1160 total=0.210 phgate=active act=0.062 | VRAM=6.41GB | 0.077s/it
+[act_deeponet_ph] step  17600 | l1=0.1166 total=0.165 phgate=active act=0.031 | VRAM=6.41GB | 0.086s/it
+[act_deeponet_ph] step  17800 | l1=0.1164 total=0.168 phgate=active act=0.047 | VRAM=6.41GB | 0.079s/it
+[act_deeponet_ph] step  18000 | l1=0.1145 total=0.195 phgate=active act=0.047 | VRAM=6.41GB | 0.085s/it
+[act_deeponet_ph] step  18200 | l1=0.1141 total=0.192 phgate=active act=0.094 | VRAM=6.41GB | 0.086s/it
+[act_deeponet_ph] step  18400 | l1=0.1137 total=0.185 phgate=active act=0.094 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step  18600 | l1=0.1131 total=0.181 phgate=active act=0.094 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step  18800 | l1=0.1140 total=0.172 phgate=active act=0.109 | VRAM=6.41GB | 0.085s/it
+[act_deeponet_ph] step  19000 | l1=0.1119 total=0.160 phgate=active act=0.172 | VRAM=6.41GB | 0.080s/it
+[act_deeponet_ph] step  19200 | l1=0.1119 total=0.153 phgate=active act=0.047 | VRAM=6.41GB | 0.082s/it
+[act_deeponet_ph] step  19400 | l1=0.1123 total=0.171 phgate=active act=0.141 | VRAM=6.41GB | 0.079s/it
+[act_deeponet_ph] step  19600 | l1=0.1106 total=0.172 phgate=active act=0.047 | VRAM=6.41GB | 0.087s/it
+[act_deeponet_ph] step  19800 | l1=0.1115 total=0.173 phgate=active act=0.094 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step  20000 | l1=0.1107 total=0.202 phgate=active act=0.078 | VRAM=6.41GB | 0.087s/it
+[ckpt] saved -> act_results/Goal/runs/act_deeponet_ph/checkpoints/20000 (EMA weights)
+[act_deeponet_ph] step  20200 | l1=0.1101 total=0.142 phgate=active act=0.078 | VRAM=6.41GB | 0.089s/it
+[act_deeponet_ph] step  20400 | l1=0.1074 total=0.215 phgate=active act=0.125 | VRAM=6.41GB | 0.074s/it
+[act_deeponet_ph] step  20600 | l1=0.1100 total=0.204 phgate=active act=0.078 | VRAM=6.41GB | 0.078s/it
+[act_deeponet_ph] step  20800 | l1=0.1090 total=0.181 phgate=active act=0.062 | VRAM=6.41GB | 0.075s/it
+[act_deeponet_ph] step  21000 | l1=0.1092 total=0.200 phgate=active act=0.109 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step  21200 | l1=0.1072 total=0.194 phgate=active act=0.062 | VRAM=6.41GB | 0.085s/it
+[act_deeponet_ph] step  21400 | l1=0.1068 total=0.175 phgate=active act=0.078 | VRAM=6.41GB | 0.077s/it
+[act_deeponet_ph] step  21600 | l1=0.1081 total=0.171 phgate=active act=0.094 | VRAM=6.41GB | 0.080s/it
+[act_deeponet_ph] step  21800 | l1=0.1081 total=0.161 phgate=active act=0.062 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step  22000 | l1=0.1072 total=0.215 phgate=active act=0.078 | VRAM=6.41GB | 0.076s/it
+[act_deeponet_ph] step  22200 | l1=0.1065 total=0.217 phgate=active act=0.047 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step  22400 | l1=0.1059 total=0.185 phgate=active act=0.062 | VRAM=6.41GB | 0.088s/it
+[act_deeponet_ph] step  22600 | l1=0.1060 total=0.161 phgate=active act=0.109 | VRAM=6.41GB | 0.079s/it
+[act_deeponet_ph] step  22800 | l1=0.1046 total=0.151 phgate=active act=0.094 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step  23000 | l1=0.1048 total=0.197 phgate=active act=0.094 | VRAM=6.41GB | 0.086s/it
+[act_deeponet_ph] step  23200 | l1=0.1048 total=0.127 phgate=active act=0.078 | VRAM=6.41GB | 0.078s/it
+[act_deeponet_ph] step  23400 | l1=0.1041 total=0.158 phgate=active act=0.062 | VRAM=6.41GB | 0.079s/it
+[act_deeponet_ph] step  23600 | l1=0.1036 total=0.184 phgate=active act=0.109 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step  23800 | l1=0.1036 total=0.165 phgate=active act=0.047 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step  24000 | l1=0.1041 total=0.203 phgate=active act=0.109 | VRAM=6.41GB | 0.075s/it
+[act_deeponet_ph] step  24200 | l1=0.1031 total=0.194 phgate=active act=0.094 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step  24400 | l1=0.1030 total=0.168 phgate=active act=0.047 | VRAM=6.41GB | 0.086s/it
+[act_deeponet_ph] step  24600 | l1=0.1019 total=0.124 phgate=active act=0.125 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step  24800 | l1=0.1007 total=0.197 phgate=active act=0.094 | VRAM=6.41GB | 0.080s/it
+[act_deeponet_ph] step  25000 | l1=0.1014 total=0.165 phgate=active act=0.062 | VRAM=6.41GB | 0.081s/it
+[ckpt] saved -> act_results/Goal/runs/act_deeponet_ph/checkpoints/25000 (EMA weights)
+[act_deeponet_ph] step  25200 | l1=0.1012 total=0.143 phgate=active act=0.094 | VRAM=6.41GB | 0.075s/it
+[act_deeponet_ph] step  25400 | l1=0.1015 total=0.172 phgate=active act=0.047 | VRAM=6.41GB | 0.078s/it
+[act_deeponet_ph] step  25600 | l1=0.1000 total=0.199 phgate=active act=0.062 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step  25800 | l1=0.1001 total=0.142 phgate=active act=0.094 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step  26000 | l1=0.0993 total=0.146 phgate=active act=0.094 | VRAM=6.41GB | 0.074s/it
+[act_deeponet_ph] step  26200 | l1=0.0993 total=0.172 phgate=active act=0.156 | VRAM=6.41GB | 0.082s/it
+[act_deeponet_ph] step  26400 | l1=0.0992 total=0.201 phgate=active act=0.078 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step  26600 | l1=0.0987 total=0.157 phgate=active act=0.078 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step  26800 | l1=0.0991 total=0.145 phgate=active act=0.078 | VRAM=6.41GB | 0.074s/it
+[act_deeponet_ph] step  27000 | l1=0.0994 total=0.172 phgate=active act=0.047 | VRAM=6.41GB | 0.087s/it
+[act_deeponet_ph] step  27200 | l1=0.0983 total=0.170 phgate=active act=0.031 | VRAM=6.41GB | 0.083s/it
+[act_deeponet_ph] step  27400 | l1=0.0974 total=0.140 phgate=active act=0.141 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step  27600 | l1=0.0974 total=0.149 phgate=active act=0.016 | VRAM=6.41GB | 0.074s/it
+[act_deeponet_ph] step  27800 | l1=0.0977 total=0.176 phgate=active act=0.109 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step  28000 | l1=0.0971 total=0.232 phgate=active act=0.031 | VRAM=6.41GB | 0.074s/it
+[act_deeponet_ph] step  28200 | l1=0.0960 total=0.165 phgate=active act=0.109 | VRAM=6.41GB | 0.078s/it
+[act_deeponet_ph] step  28400 | l1=0.0964 total=0.205 phgate=idle act=0.0 | VRAM=6.41GB | 0.078s/it
+[act_deeponet_ph] step  28600 | l1=0.0961 total=0.138 phgate=active act=0.094 | VRAM=6.41GB | 0.081s/it
+[act_deeponet_ph] step  28800 | l1=0.0967 total=0.155 phgate=active act=0.047 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step  29000 | l1=0.0951 total=0.191 phgate=active act=0.078 | VRAM=6.41GB | 0.075s/it
+[act_deeponet_ph] step  29200 | l1=0.0951 total=0.149 phgate=active act=0.031 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step  29400 | l1=0.0954 total=0.179 phgate=active act=0.125 | VRAM=6.41GB | 0.080s/it
+[act_deeponet_ph] step  29600 | l1=0.0950 total=0.144 phgate=active act=0.125 | VRAM=6.41GB | 0.079s/it
+[act_deeponet_ph] step  29800 | l1=0.0959 total=0.177 phgate=active act=0.062 | VRAM=6.41GB | 0.084s/it
+[act_deeponet_ph] step  30000 | l1=0.0955 total=0.106 phgate=active act=0.047 | VRAM=6.41GB | 0.084s/it
+[ckpt] saved -> act_results/Goal/runs/act_deeponet_ph/checkpoints/30000 (EMA weights)
+[train] DONE act_deeponet_ph steps=30000 wall=41.0min -> act_results/Goal/runs/act_deeponet_ph

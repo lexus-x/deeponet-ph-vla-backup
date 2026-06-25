@@ -1,0 +1,172 @@
+[train] num_workers -> 48 (cores=56)
+[train] variant=act dataset=lerobot/libero_goal_image -> act_results/Goal/runs/act
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+/home/user/Desktop/Ayush PH test/ACT/lang_encoder.py:40: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(layer, num_layers=n_layers)
+[ramcache] est 82.0 GB for 52042 items (avail 254 GB)
+[ramcache] 10000/52042  (164s)
+[ramcache] 20000/52042  (303s)
+[ramcache] 30000/52042  (443s)
+[ramcache] 40000/52042  (582s)
+[ramcache] 50000/52042  (711s)
+[ramcache] cached 52042 items in 11.9 min
+[train] params=88.28M frames=52042 batch=64 steps=30000
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[act] step    200 | l1=0.4144 total=2.178 phgate=- act=0 | VRAM=9.27GB | 0.096s/it
+[act] step    400 | l1=0.3613 total=1.164 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step    600 | l1=0.3054 total=0.567 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step    800 | l1=0.2604 total=0.394 phgate=- act=0 | VRAM=9.27GB | 0.098s/it
+[act] step   1000 | l1=0.2420 total=0.286 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step   1200 | l1=0.2258 total=0.281 phgate=- act=0 | VRAM=9.27GB | 0.096s/it
+[act] step   1400 | l1=0.2166 total=0.255 phgate=- act=0 | VRAM=9.27GB | 0.109s/it
+[act] step   1600 | l1=0.2065 total=0.277 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step   1800 | l1=0.1946 total=0.239 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step   2000 | l1=0.1883 total=0.200 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step   2200 | l1=0.1783 total=0.204 phgate=- act=0 | VRAM=9.27GB | 0.106s/it
+[act] step   2400 | l1=0.1724 total=0.221 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step   2600 | l1=0.1634 total=0.208 phgate=- act=0 | VRAM=9.27GB | 0.095s/it
+[act] step   2800 | l1=0.1575 total=0.181 phgate=- act=0 | VRAM=9.27GB | 0.106s/it
+[act] step   3000 | l1=0.1516 total=0.186 phgate=- act=0 | VRAM=9.27GB | 0.110s/it
+[act] step   3200 | l1=0.1461 total=0.141 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step   3400 | l1=0.1397 total=0.173 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step   3600 | l1=0.1342 total=0.179 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step   3800 | l1=0.1309 total=0.161 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step   4000 | l1=0.1272 total=0.150 phgate=- act=0 | VRAM=9.27GB | 0.099s/it
+[act] step   4200 | l1=0.1220 total=0.148 phgate=- act=0 | VRAM=9.27GB | 0.093s/it
+[act] step   4400 | l1=0.1199 total=0.142 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step   4600 | l1=0.1173 total=0.171 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step   4800 | l1=0.1142 total=0.152 phgate=- act=0 | VRAM=9.27GB | 0.109s/it
+[act] step   5000 | l1=0.1109 total=0.175 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[ckpt] saved -> act_results/Goal/runs/act/checkpoints/5000 (EMA weights)
+[act] step   5200 | l1=0.1078 total=0.117 phgate=- act=0 | VRAM=9.27GB | 0.105s/it
+[act] step   5400 | l1=0.1076 total=0.140 phgate=- act=0 | VRAM=9.27GB | 0.104s/it
+[act] step   5600 | l1=0.1051 total=0.162 phgate=- act=0 | VRAM=9.27GB | 0.111s/it
+[act] step   5800 | l1=0.1022 total=0.123 phgate=- act=0 | VRAM=9.27GB | 0.097s/it
+[act] step   6000 | l1=0.1001 total=0.144 phgate=- act=0 | VRAM=9.27GB | 0.108s/it
+[act] step   6200 | l1=0.0989 total=0.153 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step   6400 | l1=0.0979 total=0.125 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step   6600 | l1=0.0961 total=0.142 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step   6800 | l1=0.0937 total=0.103 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step   7000 | l1=0.0931 total=0.129 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step   7200 | l1=0.0924 total=0.171 phgate=- act=0 | VRAM=9.27GB | 0.105s/it
+[act] step   7400 | l1=0.0900 total=0.142 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step   7600 | l1=0.0885 total=0.173 phgate=- act=0 | VRAM=9.27GB | 0.097s/it
+[act] step   7800 | l1=0.0867 total=0.142 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step   8000 | l1=0.0881 total=0.126 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step   8200 | l1=0.0861 total=0.134 phgate=- act=0 | VRAM=9.27GB | 0.107s/it
+[act] step   8400 | l1=0.0839 total=0.129 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step   8600 | l1=0.0832 total=0.136 phgate=- act=0 | VRAM=9.27GB | 0.110s/it
+[act] step   8800 | l1=0.0832 total=0.130 phgate=- act=0 | VRAM=9.27GB | 0.096s/it
+[act] step   9000 | l1=0.0814 total=0.133 phgate=- act=0 | VRAM=9.27GB | 0.104s/it
+[act] step   9200 | l1=0.0804 total=0.139 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step   9400 | l1=0.0797 total=0.134 phgate=- act=0 | VRAM=9.27GB | 0.099s/it
+[act] step   9600 | l1=0.0797 total=0.161 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step   9800 | l1=0.0772 total=0.141 phgate=- act=0 | VRAM=9.27GB | 0.109s/it
+[act] step  10000 | l1=0.0773 total=0.089 phgate=- act=0 | VRAM=9.27GB | 0.104s/it
+[ckpt] saved -> act_results/Goal/runs/act/checkpoints/10000 (EMA weights)
+[act] step  10200 | l1=0.0769 total=0.141 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  10400 | l1=0.0764 total=0.132 phgate=- act=0 | VRAM=9.27GB | 0.104s/it
+[act] step  10600 | l1=0.0755 total=0.137 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  10800 | l1=0.0741 total=0.133 phgate=- act=0 | VRAM=9.27GB | 0.090s/it
+[act] step  11000 | l1=0.0745 total=0.128 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  11200 | l1=0.0730 total=0.132 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  11400 | l1=0.0726 total=0.134 phgate=- act=0 | VRAM=9.27GB | 0.116s/it
+[act] step  11600 | l1=0.0718 total=0.160 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  11800 | l1=0.0714 total=0.112 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step  12000 | l1=0.0705 total=0.124 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  12200 | l1=0.0707 total=0.119 phgate=- act=0 | VRAM=9.27GB | 0.111s/it
+[act] step  12400 | l1=0.0696 total=0.126 phgate=- act=0 | VRAM=9.27GB | 0.103s/it
+[act] step  12600 | l1=0.0691 total=0.147 phgate=- act=0 | VRAM=9.27GB | 0.105s/it
+[act] step  12800 | l1=0.0687 total=0.161 phgate=- act=0 | VRAM=9.27GB | 0.108s/it
+[act] step  13000 | l1=0.0683 total=0.081 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  13200 | l1=0.0674 total=0.120 phgate=- act=0 | VRAM=9.27GB | 0.097s/it
+[act] step  13400 | l1=0.0671 total=0.120 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step  13600 | l1=0.0672 total=0.130 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step  13800 | l1=0.0662 total=0.157 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  14000 | l1=0.0664 total=0.120 phgate=- act=0 | VRAM=9.27GB | 0.109s/it
+[act] step  14200 | l1=0.0653 total=0.131 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  14400 | l1=0.0651 total=0.139 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step  14600 | l1=0.0651 total=0.140 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  14800 | l1=0.0642 total=0.115 phgate=- act=0 | VRAM=9.27GB | 0.097s/it
+[act] step  15000 | l1=0.0642 total=0.126 phgate=- act=0 | VRAM=9.27GB | 0.097s/it
+[ckpt] saved -> act_results/Goal/runs/act/checkpoints/15000 (EMA weights)
+[act] step  15200 | l1=0.0636 total=0.121 phgate=- act=0 | VRAM=9.27GB | 0.097s/it
+[act] step  15400 | l1=0.0631 total=0.129 phgate=- act=0 | VRAM=9.27GB | 0.098s/it
+[act] step  15600 | l1=0.0621 total=0.108 phgate=- act=0 | VRAM=9.27GB | 0.105s/it
+[act] step  15800 | l1=0.0629 total=0.162 phgate=- act=0 | VRAM=9.27GB | 0.096s/it
+[act] step  16000 | l1=0.0623 total=0.118 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  16200 | l1=0.0619 total=0.103 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  16400 | l1=0.0617 total=0.105 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  16600 | l1=0.0612 total=0.133 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  16800 | l1=0.0608 total=0.124 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step  17000 | l1=0.0608 total=0.143 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  17200 | l1=0.0595 total=0.103 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  17400 | l1=0.0594 total=0.092 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  17600 | l1=0.0593 total=0.151 phgate=- act=0 | VRAM=9.27GB | 0.103s/it
+[act] step  17800 | l1=0.0594 total=0.111 phgate=- act=0 | VRAM=9.27GB | 0.103s/it
+[act] step  18000 | l1=0.0587 total=0.101 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  18200 | l1=0.0582 total=0.111 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  18400 | l1=0.0579 total=0.139 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  18600 | l1=0.0577 total=0.168 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  18800 | l1=0.0572 total=0.105 phgate=- act=0 | VRAM=9.27GB | 0.105s/it
+[act] step  19000 | l1=0.0575 total=0.108 phgate=- act=0 | VRAM=9.27GB | 0.099s/it
+[act] step  19200 | l1=0.0567 total=0.135 phgate=- act=0 | VRAM=9.27GB | 0.099s/it
+[act] step  19400 | l1=0.0566 total=0.125 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  19600 | l1=0.0566 total=0.143 phgate=- act=0 | VRAM=9.27GB | 0.098s/it
+[act] step  19800 | l1=0.0565 total=0.139 phgate=- act=0 | VRAM=9.27GB | 0.099s/it
+[act] step  20000 | l1=0.0560 total=0.127 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[ckpt] saved -> act_results/Goal/runs/act/checkpoints/20000 (EMA weights)
+[act] step  20200 | l1=0.0559 total=0.138 phgate=- act=0 | VRAM=9.27GB | 0.103s/it
+[act] step  20400 | l1=0.0558 total=0.137 phgate=- act=0 | VRAM=9.27GB | 0.096s/it
+[act] step  20600 | l1=0.0554 total=0.110 phgate=- act=0 | VRAM=9.27GB | 0.106s/it
+[act] step  20800 | l1=0.0550 total=0.127 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step  21000 | l1=0.0551 total=0.108 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  21200 | l1=0.0546 total=0.124 phgate=- act=0 | VRAM=9.27GB | 0.099s/it
+[act] step  21400 | l1=0.0544 total=0.108 phgate=- act=0 | VRAM=9.27GB | 0.099s/it
+[act] step  21600 | l1=0.0550 total=0.104 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  21800 | l1=0.0542 total=0.086 phgate=- act=0 | VRAM=9.27GB | 0.099s/it
+[act] step  22000 | l1=0.0538 total=0.136 phgate=- act=0 | VRAM=9.27GB | 0.098s/it
+[act] step  22200 | l1=0.0537 total=0.108 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  22400 | l1=0.0530 total=0.083 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  22600 | l1=0.0529 total=0.105 phgate=- act=0 | VRAM=9.27GB | 0.099s/it
+[act] step  22800 | l1=0.0529 total=0.089 phgate=- act=0 | VRAM=9.27GB | 0.099s/it
+[act] step  23000 | l1=0.0520 total=0.093 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  23200 | l1=0.0528 total=0.107 phgate=- act=0 | VRAM=9.27GB | 0.099s/it
+[act] step  23400 | l1=0.0525 total=0.096 phgate=- act=0 | VRAM=9.27GB | 0.104s/it
+[act] step  23600 | l1=0.0523 total=0.105 phgate=- act=0 | VRAM=9.27GB | 0.098s/it
+[act] step  23800 | l1=0.0517 total=0.124 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step  24000 | l1=0.0525 total=0.104 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  24200 | l1=0.0517 total=0.140 phgate=- act=0 | VRAM=9.27GB | 0.104s/it
+[act] step  24400 | l1=0.0511 total=0.124 phgate=- act=0 | VRAM=9.27GB | 0.088s/it
+[act] step  24600 | l1=0.0513 total=0.109 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  24800 | l1=0.0517 total=0.125 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  25000 | l1=0.0509 total=0.119 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[ckpt] saved -> act_results/Goal/runs/act/checkpoints/25000 (EMA weights)
+[act] step  25200 | l1=0.0503 total=0.118 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  25400 | l1=0.0500 total=0.106 phgate=- act=0 | VRAM=9.27GB | 0.099s/it
+[act] step  25600 | l1=0.0503 total=0.103 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  25800 | l1=0.0502 total=0.140 phgate=- act=0 | VRAM=9.27GB | 0.098s/it
+[act] step  26000 | l1=0.0495 total=0.134 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  26200 | l1=0.0502 total=0.106 phgate=- act=0 | VRAM=9.27GB | 0.096s/it
+[act] step  26400 | l1=0.0501 total=0.152 phgate=- act=0 | VRAM=9.27GB | 0.097s/it
+[act] step  26600 | l1=0.0498 total=0.157 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step  26800 | l1=0.0490 total=0.136 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  27000 | l1=0.0492 total=0.110 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step  27200 | l1=0.0493 total=0.099 phgate=- act=0 | VRAM=9.27GB | 0.098s/it
+[act] step  27400 | l1=0.0487 total=0.119 phgate=- act=0 | VRAM=9.27GB | 0.109s/it
+[act] step  27600 | l1=0.0483 total=0.132 phgate=- act=0 | VRAM=9.27GB | 0.100s/it
+[act] step  27800 | l1=0.0489 total=0.133 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  28000 | l1=0.0486 total=0.088 phgate=- act=0 | VRAM=9.27GB | 0.098s/it
+[act] step  28200 | l1=0.0474 total=0.080 phgate=- act=0 | VRAM=9.27GB | 0.094s/it
+[act] step  28400 | l1=0.0487 total=0.121 phgate=- act=0 | VRAM=9.27GB | 0.094s/it
+[act] step  28600 | l1=0.0483 total=0.078 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step  28800 | l1=0.0476 total=0.092 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  29000 | l1=0.0479 total=0.136 phgate=- act=0 | VRAM=9.27GB | 0.103s/it
+[act] step  29200 | l1=0.0477 total=0.090 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  29400 | l1=0.0475 total=0.084 phgate=- act=0 | VRAM=9.27GB | 0.103s/it
+[act] step  29600 | l1=0.0470 total=0.135 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[act] step  29800 | l1=0.0471 total=0.128 phgate=- act=0 | VRAM=9.27GB | 0.102s/it
+[act] step  30000 | l1=0.0473 total=0.145 phgate=- act=0 | VRAM=9.27GB | 0.101s/it
+[ckpt] saved -> act_results/Goal/runs/act/checkpoints/30000 (EMA weights)
+[train] DONE act steps=30000 wall=51.2min -> act_results/Goal/runs/act

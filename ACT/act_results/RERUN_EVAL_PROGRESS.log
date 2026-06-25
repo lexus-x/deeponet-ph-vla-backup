@@ -1,0 +1,20 @@
+[06-24 10:16:08] waiting for training campaign to finish (ALL_DONE)…
+[06-24 10:30:23] waiting for training campaign to finish (ALL_DONE)…
+[06-24 10:55:23] ==== campaign done — START clean re-eval (3-seed in-dist + LIBERO-Plus, all suites) ====
+[06-24 10:55:23] INDIST start Spatial (3-seed, max_steps=520)
+[06-24 12:18:58] INDIST done Spatial
+[06-24 12:18:58] PLUS start Spatial
+[06-24 12:52:47] PLUS done Spatial
+[06-24 12:52:47] INDIST start Object (3-seed, max_steps=520)
+[06-24 14:05:36] INDIST done Object
+[06-24 14:05:36] PLUS start Object
+[06-24 14:51:21] PLUS done Object
+[06-24 14:51:21] INDIST start Long (3-seed, max_steps=700)
+[06-24 17:03:44] INDIST done Long
+[06-24 17:03:44] PLUS start Long
+[06-24 17:54:05] PLUS done Long
+[06-24 17:54:05] INDIST start Goal (3-seed, max_steps=520)
+[06-24 18:59:18] INDIST done Goal
+[06-24 18:59:18] PLUS start Goal
+[06-24 19:51:02] PLUS done Goal
+[06-24 19:51:02] ==== RE-EVAL DONE -> */runs/eval_rerun_* ====

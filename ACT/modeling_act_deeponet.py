@@ -33,7 +33,7 @@ class ACTDeepONetPolicy(ACTPolicy):
     def __init__(self, config, variant: str = "act", *, lambda_ph: float = 0.02, ph_k: int = 8,
                  ph_warmup: int = 5000, ph_trigger: float = 0.15,
                  deeponet_p: int = 256, deeponet_blocks: int = 3, deeponet_queries: int = 8,
-                 deeponet_fourier: int = 6, **kw):
+                 deeponet_fourier: int = 6, decouple_gripper: bool = False, **kw):
         super().__init__(config, **kw)
         assert variant in HEADS, variant
         self.variant = variant
@@ -51,7 +51,8 @@ class ACTDeepONetPolicy(ACTPolicy):
             self.deeponet_head = DeepONetHeadV2(
                 context_dim=d, chunk_size=config.chunk_size, action_dim=action_dim,
                 p=deeponet_p, d_model=min(d, 512), n_queries=deeponet_queries,
-                n_blocks=deeponet_blocks, n_fourier=deeponet_fourier)
+                n_blocks=deeponet_blocks, n_fourier=deeponet_fourier,
+                decouple_gripper=decouple_gripper)
             # the operator head replaces ACT's decoder — drop it (and its head) so we
             # don't carry a full unused 7-layer decoder as dead weight.
             self.model.decoder = nn.Identity()

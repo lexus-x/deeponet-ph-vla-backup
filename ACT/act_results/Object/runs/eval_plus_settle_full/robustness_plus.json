@@ -1,0 +1,1205 @@
+{
+  "_config": {
+    "suite": "libero_object",
+    "replan": 5,
+    "n_per_cat": 12,
+    "max_steps": 300,
+    "categories": [
+      "Camera Viewpoints",
+      "Light Conditions",
+      "Sensor Noise",
+      "Background Textures",
+      "Objects Layout",
+      "Robot Initial States",
+      "Language Instructions"
+    ],
+    "sampled_indices": {
+      "Camera Viewpoints": [
+        988,
+        671,
+        1004,
+        848,
+        963,
+        660,
+        659,
+        694,
+        1028,
+        872,
+        648,
+        738
+      ],
+      "Light Conditions": [
+        2353,
+        2407,
+        2297,
+        2312,
+        2435,
+        2274,
+        2482,
+        2372,
+        2425,
+        2235,
+        2410,
+        2363
+      ],
+      "Sensor Noise": [
+        1760,
+        1476,
+        1756,
+        1530,
+        1790,
+        1592,
+        1416,
+        1520,
+        1427,
+        1538,
+        1467,
+        1568
+      ],
+      "Background Textures": [
+        103,
+        89,
+        190,
+        184,
+        240,
+        229,
+        239,
+        81,
+        77,
+        129,
+        226,
+        192
+      ],
+      "Objects Layout": [
+        1864,
+        1990,
+        2217,
+        1842,
+        2063,
+        1823,
+        1865,
+        2136,
+        2122,
+        1970,
+        1959,
+        1913
+      ],
+      "Robot Initial States": [
+        565,
+        620,
+        307,
+        335,
+        359,
+        294,
+        303,
+        390,
+        544,
+        384,
+        249,
+        526
+      ],
+      "Language Instructions": [
+        1350,
+        1164,
+        1342,
+        1270,
+        1096,
+        1066,
+        1320,
+        1140,
+        1081,
+        1357,
+        1052,
+        1368
+      ]
+    }
+  },
+  "act": {
+    "Camera Viewpoints": {
+      "per_task": {
+        "988": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_0_0_100_356_354_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "671": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_4_8_initstate_0",
+          "difficulty": 2,
+          "success": false
+        },
+        "1004": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_337_15_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "848": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_view_285_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "963": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_view_323_15_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "660": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_9_15_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "659": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_8_15_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": false
+        },
+        "694": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_view_0_0_128_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "1028": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_view_0_0_100_358_8_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "872": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_view_297_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "648": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_0_0_100_2_8_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "738": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_view_0_0_136_0_0_initstate_0",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.0
+    },
+    "Light Conditions": {
+      "per_task": {
+        "2353": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_light_6",
+          "difficulty": 1,
+          "success": false
+        },
+        "2407": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_light_15",
+          "difficulty": 2,
+          "success": false
+        },
+        "2297": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_light_41",
+          "difficulty": 3,
+          "success": true
+        },
+        "2312": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_light_11",
+          "difficulty": 4,
+          "success": false
+        },
+        "2435": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_light_16",
+          "difficulty": 5,
+          "success": true
+        },
+        "2274": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_light_20",
+          "difficulty": 1,
+          "success": false
+        },
+        "2482": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_light_36",
+          "difficulty": 2,
+          "success": true
+        },
+        "2372": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_light_35",
+          "difficulty": 3,
+          "success": false
+        },
+        "2425": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_light_5",
+          "difficulty": 4,
+          "success": false
+        },
+        "2235": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_light_24",
+          "difficulty": 5,
+          "success": true
+        },
+        "2410": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_light_22",
+          "difficulty": 2,
+          "success": false
+        },
+        "2363": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_light_20",
+          "difficulty": 3,
+          "success": false
+        }
+      },
+      "average": 0.3333333333333333
+    },
+    "Sensor Noise": {
+      "per_task": {
+        "1760": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_32",
+          "difficulty": 1,
+          "success": true
+        },
+        "1476": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_44",
+          "difficulty": 2,
+          "success": false
+        },
+        "1756": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_28",
+          "difficulty": 3,
+          "success": false
+        },
+        "1530": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_8",
+          "difficulty": 4,
+          "success": false
+        },
+        "1790": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_15",
+          "difficulty": 5,
+          "success": false
+        },
+        "1592": {
+          "name": "pick_up_the_ketchup_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_34",
+          "difficulty": 1,
+          "success": false
+        },
+        "1416": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_25",
+          "difficulty": 2,
+          "success": false
+        },
+        "1520": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_47",
+          "difficulty": 3,
+          "success": false
+        },
+        "1427": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_40",
+          "difficulty": 4,
+          "success": false
+        },
+        "1538": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_18",
+          "difficulty": 5,
+          "success": false
+        },
+        "1467": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_33",
+          "difficulty": 1,
+          "success": false
+        },
+        "1568": {
+          "name": "pick_up_the_ketchup_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_4",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.08333333333333333
+    },
+    "Background Textures": {
+      "per_task": {
+        "103": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_table_15",
+          "difficulty": 1,
+          "success": false
+        },
+        "89": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_table_27",
+          "difficulty": 2,
+          "success": true
+        },
+        "190": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_table_9",
+          "difficulty": 3,
+          "success": false
+        },
+        "184": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_table_28",
+          "difficulty": 4,
+          "success": true
+        },
+        "240": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_table_27",
+          "difficulty": 5,
+          "success": false
+        },
+        "229": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_tb_3",
+          "difficulty": 1,
+          "success": true
+        },
+        "239": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_table_23",
+          "difficulty": 2,
+          "success": false
+        },
+        "81": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_table_15",
+          "difficulty": 3,
+          "success": false
+        },
+        "77": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_tb_8",
+          "difficulty": 4,
+          "success": false
+        },
+        "129": {
+          "name": "pick_up_the_ketchup_and_place_it_in_the_basket_table_12",
+          "difficulty": 5,
+          "success": false
+        },
+        "226": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_tb_18",
+          "difficulty": 1,
+          "success": true
+        },
+        "192": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_tb_10",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.3333333333333333
+    },
+    "Objects Layout": {
+      "per_task": {
+        "1864": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_add_16",
+          "difficulty": 1,
+          "success": false
+        },
+        "1990": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_add_28",
+          "difficulty": 2,
+          "success": true
+        },
+        "2217": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_level5_sample1",
+          "difficulty": 3,
+          "success": false
+        },
+        "1842": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_level1_sample4",
+          "difficulty": 4,
+          "success": false
+        },
+        "2063": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_level1_sample2",
+          "difficulty": 5,
+          "success": false
+        },
+        "1823": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_add_16",
+          "difficulty": 1,
+          "success": false
+        },
+        "1865": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_add_17",
+          "difficulty": 2,
+          "success": true
+        },
+        "2136": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_add_16",
+          "difficulty": 3,
+          "success": true
+        },
+        "2122": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_level3_sample4",
+          "difficulty": 4,
+          "success": false
+        },
+        "1970": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_level2_sample2",
+          "difficulty": 5,
+          "success": false
+        },
+        "1959": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_add_30",
+          "difficulty": 1,
+          "success": true
+        },
+        "1913": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_add_21",
+          "difficulty": 2,
+          "success": true
+        }
+      },
+      "average": 0.4166666666666667
+    },
+    "Robot Initial States": {
+      "per_task": {
+        "565": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_99",
+          "difficulty": 1,
+          "success": false
+        },
+        "620": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_240",
+          "difficulty": 2,
+          "success": false
+        },
+        "307": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_282",
+          "difficulty": 3,
+          "success": false
+        },
+        "335": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_113",
+          "difficulty": 4,
+          "success": true
+        },
+        "359": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_393",
+          "difficulty": 5,
+          "success": true
+        },
+        "294": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_112",
+          "difficulty": 1,
+          "success": false
+        },
+        "303": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_232",
+          "difficulty": 2,
+          "success": false
+        },
+        "390": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_334",
+          "difficulty": 3,
+          "success": false
+        },
+        "544": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_298",
+          "difficulty": 4,
+          "success": true
+        },
+        "384": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_274",
+          "difficulty": 5,
+          "success": false
+        },
+        "249": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_51",
+          "difficulty": 1,
+          "success": false
+        },
+        "526": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_88",
+          "difficulty": 2,
+          "success": true
+        }
+      },
+      "average": 0.3333333333333333
+    },
+    "Language Instructions": {
+      "per_task": {
+        "1350": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_language_48_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "1164": {
+          "name": "pick_up_the_ketchup_and_place_it_in_the_basket_language_5_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "1342": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_language_40_view_0_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": true
+        },
+        "1270": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_language_10_view_0_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": true
+        },
+        "1096": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_language_47_view_0_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "1066": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_language_2_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "1320": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_language_18_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "1140": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_language_15_view_0_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": true
+        },
+        "1081": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_language_26_view_0_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "1357": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_language_8_view_0_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "1052": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_language_24_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "1368": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_language_19_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.5833333333333334
+    },
+    "robustness_average": 0.2976190476190476
+  },
+  "act_deeponet": {
+    "Camera Viewpoints": {
+      "per_task": {
+        "988": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_0_0_100_356_354_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "671": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_4_8_initstate_0",
+          "difficulty": 2,
+          "success": false
+        },
+        "1004": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_337_15_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "848": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_view_285_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "963": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_view_323_15_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "660": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_9_15_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "659": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_8_15_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": false
+        },
+        "694": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_view_0_0_128_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "1028": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_view_0_0_100_358_8_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "872": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_view_297_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "648": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_0_0_100_2_8_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "738": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_view_0_0_136_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        }
+      },
+      "average": 0.08333333333333333
+    },
+    "Light Conditions": {
+      "per_task": {
+        "2353": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_light_6",
+          "difficulty": 1,
+          "success": false
+        },
+        "2407": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_light_15",
+          "difficulty": 2,
+          "success": false
+        },
+        "2297": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_light_41",
+          "difficulty": 3,
+          "success": false
+        },
+        "2312": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_light_11",
+          "difficulty": 4,
+          "success": false
+        },
+        "2435": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_light_16",
+          "difficulty": 5,
+          "success": false
+        },
+        "2274": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_light_20",
+          "difficulty": 1,
+          "success": false
+        },
+        "2482": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_light_36",
+          "difficulty": 2,
+          "success": false
+        },
+        "2372": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_light_35",
+          "difficulty": 3,
+          "success": false
+        },
+        "2425": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_light_5",
+          "difficulty": 4,
+          "success": false
+        },
+        "2235": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_light_24",
+          "difficulty": 5,
+          "success": false
+        },
+        "2410": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_light_22",
+          "difficulty": 2,
+          "success": false
+        },
+        "2363": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_light_20",
+          "difficulty": 3,
+          "success": false
+        }
+      },
+      "average": 0.0
+    },
+    "Sensor Noise": {
+      "per_task": {
+        "1760": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_32",
+          "difficulty": 1,
+          "success": false
+        },
+        "1476": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_44",
+          "difficulty": 2,
+          "success": false
+        },
+        "1756": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_28",
+          "difficulty": 3,
+          "success": false
+        },
+        "1530": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_8",
+          "difficulty": 4,
+          "success": false
+        },
+        "1790": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_15",
+          "difficulty": 5,
+          "success": false
+        },
+        "1592": {
+          "name": "pick_up_the_ketchup_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_34",
+          "difficulty": 1,
+          "success": false
+        },
+        "1416": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_25",
+          "difficulty": 2,
+          "success": false
+        },
+        "1520": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_47",
+          "difficulty": 3,
+          "success": false
+        },
+        "1427": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_40",
+          "difficulty": 4,
+          "success": false
+        },
+        "1538": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_18",
+          "difficulty": 5,
+          "success": false
+        },
+        "1467": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_33",
+          "difficulty": 1,
+          "success": false
+        },
+        "1568": {
+          "name": "pick_up_the_ketchup_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_4",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.0
+    },
+    "Background Textures": {
+      "per_task": {
+        "103": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_table_15",
+          "difficulty": 1,
+          "success": false
+        },
+        "89": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_table_27",
+          "difficulty": 2,
+          "success": false
+        },
+        "190": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_table_9",
+          "difficulty": 3,
+          "success": false
+        },
+        "184": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_table_28",
+          "difficulty": 4,
+          "success": false
+        },
+        "240": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_table_27",
+          "difficulty": 5,
+          "success": false
+        },
+        "229": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_tb_3",
+          "difficulty": 1,
+          "success": false
+        },
+        "239": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_table_23",
+          "difficulty": 2,
+          "success": false
+        },
+        "81": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_table_15",
+          "difficulty": 3,
+          "success": false
+        },
+        "77": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_tb_8",
+          "difficulty": 4,
+          "success": false
+        },
+        "129": {
+          "name": "pick_up_the_ketchup_and_place_it_in_the_basket_table_12",
+          "difficulty": 5,
+          "success": false
+        },
+        "226": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_tb_18",
+          "difficulty": 1,
+          "success": false
+        },
+        "192": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_tb_10",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.0
+    },
+    "Objects Layout": {
+      "per_task": {
+        "1864": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_add_16",
+          "difficulty": 1,
+          "success": false
+        },
+        "1990": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_add_28",
+          "difficulty": 2,
+          "success": false
+        },
+        "2217": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_level5_sample1",
+          "difficulty": 3,
+          "success": false
+        },
+        "1842": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_level1_sample4",
+          "difficulty": 4,
+          "success": false
+        },
+        "2063": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_level1_sample2",
+          "difficulty": 5,
+          "success": false
+        },
+        "1823": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_add_16",
+          "difficulty": 1,
+          "success": false
+        },
+        "1865": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_add_17",
+          "difficulty": 2,
+          "success": false
+        },
+        "2136": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_add_16",
+          "difficulty": 3,
+          "success": false
+        },
+        "2122": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_level3_sample4",
+          "difficulty": 4,
+          "success": false
+        },
+        "1970": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_level2_sample2",
+          "difficulty": 5,
+          "success": false
+        },
+        "1959": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_add_30",
+          "difficulty": 1,
+          "success": false
+        },
+        "1913": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_add_21",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.0
+    },
+    "Robot Initial States": {
+      "per_task": {
+        "565": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_99",
+          "difficulty": 1,
+          "success": false
+        },
+        "620": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_240",
+          "difficulty": 2,
+          "success": false
+        },
+        "307": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_282",
+          "difficulty": 3,
+          "success": false
+        },
+        "335": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_113",
+          "difficulty": 4,
+          "success": false
+        },
+        "359": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_393",
+          "difficulty": 5,
+          "success": false
+        },
+        "294": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_112",
+          "difficulty": 1,
+          "success": false
+        },
+        "303": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_232",
+          "difficulty": 2,
+          "success": false
+        },
+        "390": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_334",
+          "difficulty": 3,
+          "success": false
+        },
+        "544": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_298",
+          "difficulty": 4,
+          "success": false
+        },
+        "384": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_274",
+          "difficulty": 5,
+          "success": false
+        },
+        "249": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_51",
+          "difficulty": 1,
+          "success": false
+        },
+        "526": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_88",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.0
+    },
+    "Language Instructions": {
+      "per_task": {
+        "1350": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_language_48_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "1164": {
+          "name": "pick_up_the_ketchup_and_place_it_in_the_basket_language_5_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": false
+        },
+        "1342": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_language_40_view_0_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "1270": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_language_10_view_0_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "1096": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_language_47_view_0_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "1066": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_language_2_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "1320": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_language_18_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": false
+        },
+        "1140": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_language_15_view_0_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "1081": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_language_26_view_0_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "1357": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_language_8_view_0_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "1052": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_language_24_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "1368": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_language_19_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.0
+    },
+    "robustness_average": 0.011904761904761904
+  },
+  "act_deeponet_ph": {
+    "Camera Viewpoints": {
+      "per_task": {
+        "988": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_0_0_100_356_354_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "671": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_4_8_initstate_0",
+          "difficulty": 2,
+          "success": false
+        },
+        "1004": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_337_15_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "848": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_view_285_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "963": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_view_323_15_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "660": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_9_15_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "659": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_8_15_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": false
+        },
+        "694": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_view_0_0_128_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "1028": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_view_0_0_100_358_8_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "872": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_view_297_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "648": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_0_0_100_2_8_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "738": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_view_0_0_136_0_0_initstate_0",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.0
+    },
+    "Light Conditions": {
+      "per_task": {
+        "2353": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_light_6",
+          "difficulty": 1,
+          "success": false
+        },
+        "2407": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_light_15",
+          "difficulty": 2,
+          "success": false
+        },
+        "2297": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_light_41",
+          "difficulty": 3,
+          "success": false
+        },
+        "2312": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_light_11",
+          "difficulty": 4,
+          "success": false
+        },
+        "2435": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_light_16",
+          "difficulty": 5,
+          "success": false
+        },
+        "2274": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_light_20",
+          "difficulty": 1,
+          "success": false
+        },
+        "2482": {
+          "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket_light_36",
+          "difficulty": 2,
+          "success": false
+        },
+        "2372": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_light_35",
+          "difficulty": 3,
+          "success": false
+        },
+        "2425": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_light_5",
+          "difficulty": 4,
+          "success": false
+        },
+        "2235": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_light_24",
+          "difficulty": 5,
+          "success": false
+        },
+        "2410": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_light_22",
+          "difficulty": 2,
+          "success": false
+        },
+        "2363": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_light_20",
+          "difficulty": 3,
+          "success": false
+        }
+      },
+      "average": 0.0
+    },
+    "Sensor Noise": {
+      "per_task": {
+        "1760": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_32",
+          "difficulty": 1,
+          "success": false
+        },
+        "1476": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_44",
+          "difficulty": 2,
+          "success": false
+        },
+        "1756": {
+          "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_28",
+          "difficulty": 3,
+          "success": false
+        },
+        "1530": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_8",
+          "difficulty": 4,
+          "success": false
+        },
+        "1790": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_15",
+          "difficulty": 5,
+          "success": false
+        },
+        "1592": {
+          "name": "pick_up_the_ketchup_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_34",
+          "difficulty": 1,
+          "success": false
+        },
+        "1416": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_view_0_0_100_0_0_initstate_0_noise_25",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": null
+    }
+  }
+}

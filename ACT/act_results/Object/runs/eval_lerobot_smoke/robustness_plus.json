@@ -1,0 +1,87 @@
+{
+  "_config": {
+    "suite": "libero_object",
+    "replan": 5,
+    "n_per_cat": 6,
+    "max_steps": 300,
+    "seed": 42,
+    "env": "lerobot_LiberoEnv_relative",
+    "categories": [
+      "Light Conditions",
+      "Objects Layout"
+    ]
+  },
+  "act": {
+    "Light Conditions": {
+      "per_task": {
+        "2354": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_light_6",
+          "difficulty": 1,
+          "success": true
+        },
+        "2408": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_light_15",
+          "difficulty": 2,
+          "success": true
+        },
+        "2298": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_light_41",
+          "difficulty": 3,
+          "success": false
+        },
+        "2313": {
+          "name": "pick_up_the_butter_and_place_it_in_the_basket_light_11",
+          "difficulty": 4,
+          "success": true
+        },
+        "2436": {
+          "name": "pick_up_the_orange_juice_and_place_it_in_the_basket_light_16",
+          "difficulty": 5,
+          "success": true
+        },
+        "2275": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_light_20",
+          "difficulty": 1,
+          "success": true
+        }
+      },
+      "average": 0.8333333333333334
+    },
+    "robustness_average": 0.5833333333333334,
+    "Objects Layout": {
+      "per_task": {
+        "1865": {
+          "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket_add_16",
+          "difficulty": 1,
+          "success": true
+        },
+        "1991": {
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket_add_28",
+          "difficulty": 2,
+          "success": false
+        },
+        "2218": {
+          "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket_level5_sample1",
+          "difficulty": 3,
+          "success": false
+        },
+        "1843": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_level1_sample4",
+          "difficulty": 4,
+          "success": false
+        },
+        "2064": {
+          "name": "pick_up_the_milk_and_place_it_in_the_basket_level1_sample2",
+          "difficulty": 5,
+          "success": false
+        },
+        "1824": {
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket_add_16",
+          "difficulty": 1,
+          "success": true
+        }
+      },
+      "average": 0.3333333333333333
+    }
+  }
+}

@@ -84,6 +84,8 @@ def main():
     ap.add_argument("--ph_k", type=int, default=8)
     ap.add_argument("--ph_warmup", type=int, default=5000)
     ap.add_argument("--ph_trigger", type=float, default=0.15)
+    ap.add_argument("--decouple_gripper", action="store_true",
+                    help="split the binary gripper dim to a clean learned-basis head (no Fourier Gibbs ringing)")
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--augment", action="store_true", help="on-the-fly image augmentation (training only)")
     ap.add_argument("--aug_mode", default="strong", choices=["strong", "mild"],
@@ -104,7 +106,8 @@ def main():
     print(f"[train] variant={a.variant} dataset={a.dataset} -> {out}", flush=True)
 
     meta = LeRobotDatasetMetadata(a.dataset)
-    ph_kw = dict(lambda_ph=a.lambda_ph, ph_k=a.ph_k, ph_warmup=a.ph_warmup, ph_trigger=a.ph_trigger)
+    ph_kw = dict(lambda_ph=a.lambda_ph, ph_k=a.ph_k, ph_warmup=a.ph_warmup, ph_trigger=a.ph_trigger,
+                 decouple_gripper=a.decouple_gripper)
     policy = build_policy(meta, a.variant, **ph_kw).to(DEV)
     cfg = policy.config
     dt = resolve_delta_timestamps(cfg, meta)

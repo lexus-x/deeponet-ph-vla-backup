@@ -459,9 +459,15 @@ A complete chronological log is in [`docs/experiments_log.md`](docs/experiments_
 - 🎬 **Videos** → `DeepONet PH/*/runs/eval_*/episode_videos/`, `DeepONet PH/comparison_videos/`
 - 📝 **Logs** → `DeepONet PH/*/logs/`, `DeepONet PH/paper_repro/PROGRESS.log`
 
-> **Not included in this repo:** model checkpoints (`*.safetensors`, ~28 GB total — each 900 MB file exceeds GitHub's
-> 100 MB limit), the Python `venv/`, `third_party/` libraries, and HF dataset caches. See [reproduce](#how-to-reproduce)
-> to regenerate checkpoints. Everything else (code, results, plots, videos, logs) **is** backed up here.
+> **Not included in this repo (too large for GitHub):** model checkpoints (`*.safetensors`, ~40 GB total), the
+> Python `venv/`, `third_party/` libraries, and HF dataset caches. **Checkpoints are backed up on Hugging Face** so
+> the study is fully recoverable from GitHub + HF:
+> - SmolVLA flow / DeepONet m3·m4 + ablations → [`AyushShah1107/deeponet-ph-vla-checkpoints`](https://huggingface.co/AyushShah1107/deeponet-ph-vla-checkpoints)
+> - ACT-backbone campaign (ACT / +DeepONet / +PH) → [`AyushShah1107/act-deeponet-libero-checkpoints`](https://huggingface.co/AyushShah1107/act-deeponet-libero-checkpoints)
+>
+> Rebuild the env with `pip install -r requirements.txt`; re-clone `third_party/` (LIBERO-plus `sylvestf/LIBERO-plus`,
+> LIBERO `Lifelong-Robot-Learning/LIBERO`). Everything else (code, results, plots, videos, logs) **is** in this repo.
+> The ACT campaign — including LIBERO-Plus robustness, latency, and plots — is documented in [`ACT/README.md`](ACT/README.md).
 
 ---
 

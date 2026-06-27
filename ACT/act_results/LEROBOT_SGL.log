@@ -1,0 +1,8 @@
+==== Object done; starting SGL on LeRobot env ====
+==== START Spatial (libero_spatial) maxsteps=300 ====
+==== DONE Spatial rc=0 ====
+==== START Goal (libero_goal) maxsteps=300 ====
+==== DONE Goal rc=0 ====
+==== START Long (libero_10) maxsteps=520 ====
+==== DONE Long rc=0 ====
+ALL_SGL_LEROBOT_DONE

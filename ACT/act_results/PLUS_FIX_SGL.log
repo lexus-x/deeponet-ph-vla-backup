@@ -1,0 +1,9 @@
+==== START Spatial (libero_spatial) maxsteps=300 ====
+==== DONE Spatial rc=0 ====
+==== START Goal (libero_goal) maxsteps=300 ====
+/tmp/claude-1000/-home-user-Desktop-Ayush-PH-test/20b8ae9f-eeb6-4e70-8000-90d6cc07d17f/scratchpad/rerun_sgl_fix.sh: line 10: 877415 Killed                  "$VPY" evaluate_plus_act.py --model "act=${R}/act/checkpoints/30000" --model "act_deeponet=${R}/act_deeponet/checkpoints/30000" --model "act_deeponet_ph=${R}/act_deeponet_ph/checkpoints/30000" --suite "${SUITE_FLAG}" --dataset "${DATASET}" --out "${R}/eval_plus_fix" --replan 5 --n_per_cat 12 --max_steps "${MAXSTEPS}" >> "act_results/${SUITE_DIR}/logs/plus_fix.log" 2>&1
+==== DONE Goal rc=137 ====
+==== START Long (libero_10) maxsteps=520 ====
+/tmp/claude-1000/-home-user-Desktop-Ayush-PH-test/20b8ae9f-eeb6-4e70-8000-90d6cc07d17f/scratchpad/rerun_sgl_fix.sh: line 10: 956253 Killed                  "$VPY" evaluate_plus_act.py --model "act=${R}/act/checkpoints/30000" --model "act_deeponet=${R}/act_deeponet/checkpoints/30000" --model "act_deeponet_ph=${R}/act_deeponet_ph/checkpoints/30000" --suite "${SUITE_FLAG}" --dataset "${DATASET}" --out "${R}/eval_plus_fix" --replan 5 --n_per_cat 12 --max_steps "${MAXSTEPS}" >> "act_results/${SUITE_DIR}/logs/plus_fix.log" 2>&1
+==== DONE Long rc=137 ====
+ALL_SGL_FIX_DONE

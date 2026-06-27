@@ -32,17 +32,14 @@ core.*
 # NOTE: videos (*.mp4), plots (*.png), results (*.json/*.csv), logs (*.log),
 # code (*.py/*.sh) and docs (*.md) are intentionally TRACKED.
 
-# ===== ACT: keep LIBERO-Plus results + abandoned aug experiments + scratch LOCAL-ONLY =====
-# (in-distribution results and code ARE tracked; LIBERO-Plus robustness results are NOT)
+# ===== ACT: LIBERO-Plus robustness results are now TRACKED & pushed (2026-06-27) =====
+# Previously git-ignored; now included so the OOD numbers/plots live in the repo.
+# Canonical OOD set: ACT/act_results/*/runs/eval_lerobot_full/robustness_plus.json
+#
+# Abandoned aug experiments + scratch markers stay LOCAL-ONLY here (backed up to
+# Hugging Face act-deeponet-libero-checkpoints/extra/ for full recreatability).
 ACT/act_results_aug/
 ACT/act_results_aug_probe/
-ACT/**/eval_plus/
-ACT/**/eval_rerun_plus/
-ACT/**/eval_clean_plus/
-ACT/**/robustness_plus.json
-ACT/**/eval_plus.log
-ACT/**/rerun_plus.log
-ACT/**/clean_plus.log
 ACT/**/CLEAN_PLUS_*
 ACT/**/RERUN_DONE
 ACT/**/AUG_*

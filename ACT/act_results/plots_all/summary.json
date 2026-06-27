@@ -1,0 +1,254 @@
+{
+  "in_dist": {
+    "Spatial": {
+      "act": 83.7,
+      "act_deeponet": 83.7,
+      "act_deeponet_ph": 78.0
+    },
+    "Object": {
+      "act": 81.7,
+      "act_deeponet": 87.0,
+      "act_deeponet_ph": 72.0
+    },
+    "Long": {
+      "act": 54.7,
+      "act_deeponet": 62.7,
+      "act_deeponet_ph": 50.0
+    },
+    "Goal": {
+      "act": 83.3,
+      "act_deeponet": 86.3,
+      "act_deeponet_ph": 85.0
+    }
+  },
+  "libero_plus": {
+    "Spatial": {
+      "act": {
+        "overall": 61.9,
+        "by_cat": {
+          "Camera Viewpoints": 58.3,
+          "Light Conditions": 83.3,
+          "Sensor Noise": 58.3,
+          "Background Textures": 58.3,
+          "Objects Layout": 83.3,
+          "Robot Initial States": 16.7,
+          "Language Instructions": 75.0
+        }
+      },
+      "act_deeponet": {
+        "overall": 65.5,
+        "by_cat": {
+          "Camera Viewpoints": 75.0,
+          "Light Conditions": 75.0,
+          "Sensor Noise": 50.0,
+          "Background Textures": 75.0,
+          "Objects Layout": 75.0,
+          "Robot Initial States": 8.3,
+          "Language Instructions": 100.0
+        }
+      },
+      "act_deeponet_ph": {
+        "overall": 57.1,
+        "by_cat": {
+          "Camera Viewpoints": 66.7,
+          "Light Conditions": 58.3,
+          "Sensor Noise": 66.7,
+          "Background Textures": 41.7,
+          "Objects Layout": 75.0,
+          "Robot Initial States": 8.3,
+          "Language Instructions": 83.3
+        }
+      }
+    },
+    "Object": {
+      "act": {
+        "overall": 46.4,
+        "by_cat": {
+          "Camera Viewpoints": 25.0,
+          "Light Conditions": 66.7,
+          "Sensor Noise": 25.0,
+          "Background Textures": 58.3,
+          "Objects Layout": 33.3,
+          "Robot Initial States": 16.7,
+          "Language Instructions": 100.0
+        }
+      },
+      "act_deeponet": {
+        "overall": 53.6,
+        "by_cat": {
+          "Camera Viewpoints": 50.0,
+          "Light Conditions": 75.0,
+          "Sensor Noise": 33.3,
+          "Background Textures": 58.3,
+          "Objects Layout": 50.0,
+          "Robot Initial States": 8.3,
+          "Language Instructions": 100.0
+        }
+      },
+      "act_deeponet_ph": {
+        "overall": 47.6,
+        "by_cat": {
+          "Camera Viewpoints": 33.3,
+          "Light Conditions": 66.7,
+          "Sensor Noise": 25.0,
+          "Background Textures": 66.7,
+          "Objects Layout": 50.0,
+          "Robot Initial States": 16.7,
+          "Language Instructions": 75.0
+        }
+      }
+    },
+    "Long": {
+      "act": {
+        "overall": 22.6,
+        "by_cat": {
+          "Camera Viewpoints": 8.3,
+          "Light Conditions": 41.7,
+          "Sensor Noise": 8.3,
+          "Background Textures": 16.7,
+          "Objects Layout": 16.7,
+          "Robot Initial States": 8.3,
+          "Language Instructions": 58.3
+        }
+      },
+      "act_deeponet": {
+        "overall": 20.2,
+        "by_cat": {
+          "Camera Viewpoints": 0.0,
+          "Light Conditions": 25.0,
+          "Sensor Noise": 8.3,
+          "Background Textures": 8.3,
+          "Objects Layout": 33.3,
+          "Robot Initial States": 16.7,
+          "Language Instructions": 50.0
+        }
+      },
+      "act_deeponet_ph": {
+        "overall": 27.4,
+        "by_cat": {
+          "Camera Viewpoints": 0.0,
+          "Light Conditions": 66.7,
+          "Sensor Noise": 8.3,
+          "Background Textures": 8.3,
+          "Objects Layout": 8.3,
+          "Robot Initial States": 33.3,
+          "Language Instructions": 66.7
+        }
+      }
+    },
+    "Goal": {
+      "act": {
+        "overall": 54.8,
+        "by_cat": {
+          "Camera Viewpoints": 75.0,
+          "Light Conditions": 75.0,
+          "Sensor Noise": 66.7,
+          "Background Textures": 83.3,
+          "Objects Layout": 41.7,
+          "Robot Initial States": 16.7,
+          "Language Instructions": 25.0
+        }
+      },
+      "act_deeponet": {
+        "overall": 59.5,
+        "by_cat": {
+          "Camera Viewpoints": 58.3,
+          "Light Conditions": 83.3,
+          "Sensor Noise": 91.7,
+          "Background Textures": 83.3,
+          "Objects Layout": 41.7,
+          "Robot Initial States": 33.3,
+          "Language Instructions": 25.0
+        }
+      },
+      "act_deeponet_ph": {
+        "overall": 51.2,
+        "by_cat": {
+          "Camera Viewpoints": 83.3,
+          "Light Conditions": 33.3,
+          "Sensor Noise": 91.7,
+          "Background Textures": 58.3,
+          "Objects Layout": 33.3,
+          "Robot Initial States": 33.3,
+          "Language Instructions": 25.0
+        }
+      }
+    }
+  },
+  "params_M": {
+    "act": 88.284,
+    "act_deeponet": 60.712,
+    "act_deeponet_ph": 60.712
+  },
+  "latency": {
+    "act": {
+      "params_M": 88.284,
+      "plan_forward": {
+        "mean_ms": 15.965,
+        "std_ms": 1.474,
+        "p50_ms": 15.822,
+        "p90_ms": 17.868,
+        "min_ms": 13.315
+      },
+      "amortized_replan5": {
+        "mean_ms": 3.896,
+        "std_ms": 6.434,
+        "p50_ms": 0.785,
+        "p90_ms": 16.91,
+        "min_ms": 0.574
+      },
+      "control_freq_hz_plan": 62.6,
+      "control_freq_hz_amort": 256.7
+    },
+    "act_deeponet": {
+      "params_M": 60.712,
+      "plan_forward": {
+        "mean_ms": 13.386,
+        "std_ms": 1.15,
+        "p50_ms": 13.149,
+        "p90_ms": 15.148,
+        "min_ms": 11.253
+      },
+      "amortized_replan5": {
+        "mean_ms": 3.226,
+        "std_ms": 5.28,
+        "p50_ms": 0.594,
+        "p90_ms": 13.522,
+        "min_ms": 0.506
+      },
+      "control_freq_hz_plan": 74.7,
+      "control_freq_hz_amort": 310.0
+    },
+    "act_deeponet_ph": {
+      "params_M": 60.712,
+      "plan_forward": {
+        "mean_ms": 12.989,
+        "std_ms": 1.123,
+        "p50_ms": 12.696,
+        "p90_ms": 14.43,
+        "min_ms": 11.311
+      },
+      "amortized_replan5": {
+        "mean_ms": 3.352,
+        "std_ms": 5.596,
+        "p50_ms": 0.575,
+        "p90_ms": 14.379,
+        "min_ms": 0.504
+      },
+      "control_freq_hz_plan": 77.0,
+      "control_freq_hz_amort": 298.4
+    }
+  },
+  "averages": {
+    "in_dist": {
+      "act": 75.83333333333334,
+      "act_deeponet": 79.91666666666666,
+      "act_deeponet_ph": 71.25
+    },
+    "libero_plus": {
+      "act": 46.42857142857143,
+      "act_deeponet": 49.70238095238095,
+      "act_deeponet_ph": 45.833333333333336
+    }
+  }
+}

@@ -161,6 +161,14 @@ def main():
     meta = LeRobotDatasetMetadata(args.dataset)
     norm_stats = torch.load(args.stats_path) if args.stats_path else meta.stats
 
+    # Clean training instructions (used to strip LIBERO-Plus's name-derived
+    # perturbation suffixes so the policy sees the instruction it was trained on).
+    try:
+        clean_instructions = list(meta.tasks.index)
+    except Exception:
+        clean_instructions = list(getattr(meta, "tasks", []) or [])
+    print(f"[plus] {len(clean_instructions)} clean instructions loaded for suffix-stripping", flush=True)
+
     # enumerate + sample tasks per category (same for all models)
     bench, tasks = list_perturbed_tasks(args.suite)
     by_cat = {c: [t for t in tasks if t["category"] == c] for c in cats}
@@ -194,7 +202,8 @@ def main():
                 key = str(idx)
                 if key in cres["per_task"]:
                     continue
-                env = LiberoPlusEnv(bench, idx, img_size=args.img_size)
+                env = LiberoPlusEnv(bench, idx, img_size=args.img_size,
+                                    category=c, clean_instructions=clean_instructions)
                 succ = rollout(policy, pre, post, env, env.task_description, args.max_steps)
                 env.close()
                 cres["per_task"][key] = {"name": t["name"], "difficulty": t["difficulty_level"],

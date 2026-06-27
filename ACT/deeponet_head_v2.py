@@ -82,19 +82,33 @@ class CrossAttnPool(nn.Module):
 class DeepONetHeadV2(nn.Module):
     def __init__(self, context_dim, chunk_size, action_dim,
                  p=256, d_model=512, n_queries=8, n_heads=8, n_blocks=3,
-                 branch_hidden=768, trunk_hidden=256, out_hidden=256, n_fourier=6):
+                 branch_hidden=768, trunk_hidden=256, out_hidden=256, n_fourier=6,
+                 decouple_gripper=False, p_grip=64, grip_hidden=256):
         super().__init__()
         self.chunk_size = chunk_size
         self.action_dim = action_dim
         self.p = p
         self.n_fourier = n_fourier
+        self.decouple_gripper = decouple_gripper
+        # operator predicts the smooth arm dims; if decoupled, the last (gripper) dim
+        # is split off to a clean LEARNED-basis head (no Fourier -> no Gibbs ringing).
+        arm_dim = (action_dim - 1) if decouple_gripper else action_dim
 
         self.pool = CrossAttnPool(context_dim, d_model, n_queries, n_heads, n_blocks)
         self.branch = _mlp([n_queries * d_model, branch_hidden, p], act=nn.GELU, layernorm=True)
         trunk_in = 1 + 2 * n_fourier
         self.trunk = _mlp([trunk_in, trunk_hidden, trunk_hidden, p], act=nn.GELU, layernorm=False)
-        self.out_mlp = _mlp([p, out_hidden, action_dim], act=nn.GELU, layernorm=False)
-        self.out_bias = nn.Parameter(torch.zeros(action_dim))
+        self.out_mlp = _mlp([p, out_hidden, arm_dim], act=nn.GELU, layernorm=False)
+        self.out_bias = nn.Parameter(torch.zeros(arm_dim))
+
+        if decouple_gripper:
+            # gripper branch + a LEARNED per-timestep basis (replaces the Fourier trunk for
+            # the binary gripper step, which truncated Fourier cannot represent without
+            # Gibbs ringing). Same branch (x) trunk operator structure, learned basis.
+            self.grip_branch = _mlp([n_queries * d_model, grip_hidden, p_grip], act=nn.GELU, layernorm=True)
+            self.grip_basis = nn.Parameter(torch.randn(chunk_size, p_grip) * 0.02)
+            self.grip_out = _mlp([p_grip, grip_hidden, 1], act=nn.GELU, layernorm=False)
+            self.grip_bias = nn.Parameter(torch.zeros(1))
 
         tau = torch.linspace(0.0, 1.0, chunk_size).unsqueeze(-1)  # (T,1)
         self.register_buffer("tau", tau, persistent=False)
@@ -108,10 +122,18 @@ class DeepONetHeadV2(nn.Module):
 
     def forward(self, prefix: Tensor, pad_mask: Tensor) -> Tensor:
         ctx = self.pool(prefix, pad_mask)                 # (B,K,d_model)
-        c = self.branch(ctx.flatten(1))                   # (B,p)
+        ctxf = ctx.flatten(1)
+        c = self.branch(ctxf)                             # (B,p)
         phi = self.trunk(self._fourier(self.tau.to(prefix.dtype)))  # (T,p)
         feat = c.unsqueeze(1) * phi.unsqueeze(0)          # (B,T,p)
-        return self.out_mlp(feat) + self.out_bias         # (B,T,A)
+        arm = self.out_mlp(feat) + self.out_bias          # (B,T,A) or (B,T,A-1)
+        if not self.decouple_gripper:
+            return arm
+        # decoupled gripper: branch (x) LEARNED basis -> clean step, no Gibbs ringing
+        cg = self.grip_branch(ctxf)                       # (B,p_grip)
+        gfeat = cg.unsqueeze(1) * self.grip_basis.unsqueeze(0).to(prefix.dtype)  # (B,T,p_grip)
+        grip = self.grip_out(gfeat) + self.grip_bias      # (B,T,1)
+        return torch.cat([arm, grip], dim=-1)             # (B,T,A)
 
     def num_params(self):
         return sum(q.numel() for q in self.parameters())

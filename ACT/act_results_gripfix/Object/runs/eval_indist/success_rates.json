@@ -1,0 +1,127 @@
+{
+  "_config": {
+    "libero_object": {
+      "replan": 5,
+      "indist_episodes": 5,
+      "test_seeds": 1,
+      "max_steps": 520,
+      "models": {
+        "act_deeponet": "act_results_gripfix/Object/runs/act_deeponet/checkpoints/30000"
+      }
+    }
+  },
+  "LIBERO-OBJECT": {
+    "act_deeponet": {
+      "per_task": {
+        "0": {
+          "task": "pick up the alphabet soup and place it in the basket",
+          "success_rate": 0.8,
+          "std": 0.0,
+          "per_seed": [
+            0.8
+          ],
+          "n": 5,
+          "seeds": 1
+        },
+        "1": {
+          "task": "pick up the cream cheese and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0
+          ],
+          "n": 5,
+          "seeds": 1
+        },
+        "2": {
+          "task": "pick up the salad dressing and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0
+          ],
+          "n": 5,
+          "seeds": 1
+        },
+        "3": {
+          "task": "pick up the bbq sauce and place it in the basket",
+          "success_rate": 0.8,
+          "std": 0.0,
+          "per_seed": [
+            0.8
+          ],
+          "n": 5,
+          "seeds": 1
+        },
+        "4": {
+          "task": "pick up the ketchup and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0
+          ],
+          "n": 5,
+          "seeds": 1
+        },
+        "5": {
+          "task": "pick up the tomato sauce and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0
+          ],
+          "n": 5,
+          "seeds": 1
+        },
+        "6": {
+          "task": "pick up the butter and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0
+          ],
+          "n": 5,
+          "seeds": 1
+        },
+        "7": {
+          "task": "pick up the milk and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0
+          ],
+          "n": 5,
+          "seeds": 1
+        },
+        "8": {
+          "task": "pick up the chocolate pudding and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0
+          ],
+          "n": 5,
+          "seeds": 1
+        },
+        "9": {
+          "task": "pick up the orange juice and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0
+          ],
+          "n": 5,
+          "seeds": 1
+        }
+      },
+      "average": 0.96,
+      "average_std": 0.0
+    }
+  },
+  "_summary": {
+    "act_deeponet": {
+      "LIBERO-OBJECT_avg": 0.96,
+      "LIBERO-OBJECT-V_avg": null
+    }
+  }
+}

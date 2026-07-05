@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1136" height="524" viewBox="-28 -28 1136 524" font-family="DejaVu Sans, Arial, sans-serif">
+<rect x="-28" y="-28" width="1136" height="524" fill="#ffffff"/>
+<text x="540.0" y="28" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#111">Figure 10.  GR00T N1.6 with the DeepONet action head (SOTA comparison)</text>
+<defs><marker id="arw" markerWidth="12" markerHeight="12" refX="9" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#444"/></marker><marker id="arwo" markerWidth="12" markerHeight="12" refX="9" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#7a52c0"/></marker></defs>
+<rect x="22" y="74" width="1036" height="330" rx="14" ry="14" fill="none" stroke="#5b6b7a" stroke-width="2" stroke-dasharray="8 5"/>
+<rect x="38" y="63" width="95.83999999999999" height="22" rx="6" fill="#ffffff" stroke="#5b6b7a" stroke-width="1.2"/>
+<text x="85.91999999999999" y="78.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#39505f" style="">Whole model</text>
+<rect x="44" y="196" width="150" height="86" rx="10" ry="10" fill="#f2f3f5" stroke="#7a7f87" stroke-width="2"/>
+<text x="119.0" y="227.84" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Inputs</text>
+<text x="119.0" y="246.44" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">images + language +</text>
+<text x="119.0" y="260.3" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">robot state</text>
+<rect x="214" y="184" width="166" height="112" rx="10" ry="10" fill="#eaf2fb" stroke="#2f6db0" stroke-width="2"/>
+<text x="297.0" y="219.54" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Eagle VLM</text>
+<text x="297.0" y="238.14" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">backbone</text>
+<text x="297.0" y="256.74" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">vision + language</text>
+<text x="297.0" y="270.6" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">~2B, frozen</text>
+<line x1="194" y1="239" x2="212" y2="239" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<text x="430" y="206.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">VL tokens</text>
+<rect x="390" y="222" width="13" height="20" rx="3" fill="#eaf2fb" stroke="#2f6db0" stroke-width="1.3"/>
+<rect x="407" y="222" width="13" height="20" rx="3" fill="#eaf2fb" stroke="#2f6db0" stroke-width="1.3"/>
+<rect x="424" y="222" width="13" height="20" rx="3" fill="#eaf2fb" stroke="#2f6db0" stroke-width="1.3"/>
+<rect x="441" y="222" width="13" height="20" rx="3" fill="#eaf2fb" stroke="#2f6db0" stroke-width="1.3"/>
+<rect x="458" y="222" width="13" height="20" rx="3" fill="#eaf2fb" stroke="#2f6db0" stroke-width="1.3"/>
+<line x1="382" y1="239" x2="389" y2="234" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="466" y="152" width="392" height="168" rx="14" ry="14" fill="none" stroke="#7a52c0" stroke-width="2" stroke-dasharray="8 5"/>
+<rect x="482" y="141" width="162.79999999999998" height="22" rx="6" fill="#ffffff" stroke="#7a52c0" stroke-width="1.2"/>
+<text x="563.4" y="156.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#7a52c0" style="">DeepONet action head</text>
+<rect x="482" y="200" width="120" height="76" rx="10" ry="10" fill="#f1ecfa" stroke="#7a52c0" stroke-width="2"/>
+<text x="542.0" y="219.3" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#222" style="">Cross-attention</text>
+<text x="542.0" y="232.94" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#222" style="">pooler</text>
+<text x="542.0" y="246.57999999999998" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">sees the whole</text>
+<text x="542.0" y="260.44" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">input</text>
+<rect x="616" y="200" width="116" height="76" rx="10" ry="10" fill="#fdf1e6" stroke="#c2772e" stroke-width="2"/>
+<text x="674.0" y="224.47" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">branch ×</text>
+<text x="674.0" y="243.07" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">trunk</text>
+<text x="674.0" y="261.67" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">operator</text>
+<rect x="746" y="200" width="96" height="76" rx="10" ry="10" fill="#fdf1e6" stroke="#c2772e" stroke-width="2"/>
+<text x="794.0" y="231.4" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">output</text>
+<text x="794.0" y="250.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">MLP</text>
+<line x1="471" y1="239" x2="480" y2="239" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<line x1="602" y1="239" x2="614" y2="239" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<line x1="732" y1="239" x2="744" y2="239" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="886" y="200" width="152" height="76" rx="10" ry="10" fill="#fdf8e3" stroke="#b79a1f" stroke-width="2"/>
+<text x="962.0" y="233.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Action chunk</text>
+<text x="962.0" y="252.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">16 × 29 (7 used)</text>
+<line x1="842" y1="239" x2="884" y2="239" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="598" y="342" width="120" height="48" rx="10" ry="10" fill="#f2f3f5" stroke="#7a7f87" stroke-width="2"/>
+<text x="658.0" y="359.4" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Expert</text>
+<text x="658.0" y="378.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">chunk</text>
+<rect x="758" y="338" width="196" height="58" rx="10" ry="10" fill="#e9f6ec" stroke="#3a9457" stroke-width="2"/>
+<text x="856.0" y="362.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">MSE + λ·PH loss</text>
+<text x="856.0" y="381.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">(training only)</text>
+<line x1="962" y1="276" x2="902" y2="336" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<line x1="718" y1="366" x2="756" y2="366" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<text x="540" y="436.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#333" style="">Drop-in replacement for the native 32-layer diffusion head — only the action head changes between the three variants (baseline / DeepONet / DeepONet + PH).</text>
+</svg>

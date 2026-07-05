@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1036" height="486" viewBox="-28 -28 1036 486" font-family="DejaVu Sans, Arial, sans-serif">
+<rect x="-28" y="-28" width="1036" height="486" fill="#ffffff"/>
+<text x="490.0" y="28" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#111">Figure 4.  The persistent-homology (PH) idea: compare the SHAPE of trajectories</text>
+<defs><marker id="arw" markerWidth="12" markerHeight="12" refX="9" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#444"/></marker><marker id="arwo" markerWidth="12" markerHeight="12" refX="9" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#7a52c0"/></marker></defs>
+<text x="200" y="74.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#222" style="">Predicted action chunk</text>
+<text x="760" y="74.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#222" style="">Expert action chunk</text>
+<circle cx="140" cy="180" r="5" fill="#f1ecfa" stroke="#7a52c0" stroke-width="1.5"/>
+<circle cx="170" cy="145" r="5" fill="#f1ecfa" stroke="#7a52c0" stroke-width="1.5"/>
+<circle cx="200" cy="175" r="5" fill="#f1ecfa" stroke="#7a52c0" stroke-width="1.5"/>
+<circle cx="225" cy="150" r="5" fill="#f1ecfa" stroke="#7a52c0" stroke-width="1.5"/>
+<circle cx="255" cy="185" r="5" fill="#f1ecfa" stroke="#7a52c0" stroke-width="1.5"/>
+<circle cx="215" cy="210" r="5" fill="#f1ecfa" stroke="#7a52c0" stroke-width="1.5"/>
+<circle cx="180" cy="205" r="5" fill="#f1ecfa" stroke="#7a52c0" stroke-width="1.5"/>
+<circle cx="240" cy="130" r="5" fill="#f1ecfa" stroke="#7a52c0" stroke-width="1.5"/>
+<circle cx="706" cy="176" r="5" fill="#e9f6ec" stroke="#3a9457" stroke-width="1.5"/>
+<circle cx="736" cy="141" r="5" fill="#e9f6ec" stroke="#3a9457" stroke-width="1.5"/>
+<circle cx="766" cy="171" r="5" fill="#e9f6ec" stroke="#3a9457" stroke-width="1.5"/>
+<circle cx="791" cy="146" r="5" fill="#e9f6ec" stroke="#3a9457" stroke-width="1.5"/>
+<circle cx="821" cy="181" r="5" fill="#e9f6ec" stroke="#3a9457" stroke-width="1.5"/>
+<circle cx="781" cy="206" r="5" fill="#e9f6ec" stroke="#3a9457" stroke-width="1.5"/>
+<circle cx="746" cy="201" r="5" fill="#e9f6ec" stroke="#3a9457" stroke-width="1.5"/>
+<circle cx="806" cy="126" r="5" fill="#e9f6ec" stroke="#3a9457" stroke-width="1.5"/>
+<text x="200" y="250.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="normal" fill="#555" style="">the 50 timesteps as a cloud</text>
+<text x="200" y="265.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="normal" fill="#555" style="">of points in action space</text>
+<text x="760" y="258.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="normal" fill="#555" style="">same, for the expert</text>
+<rect x="350" y="300" width="280" height="52" rx="10" ry="10" fill="#f2f3f5" stroke="#7a7f87" stroke-width="2"/>
+<text x="490.0" y="321.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">top-k pairwise distances</text>
+<text x="490.0" y="340.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">the &quot;topological fingerprint&quot;</text>
+<line x1="240" y1="205" x2="380" y2="298" stroke="#7a52c0" stroke-width="2" marker-end="url(#arwo)"/>
+<text x="310.0" y="245.5" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#7a52c0" style="">measure distances</text>
+<line x1="730" y1="205" x2="600" y2="298" stroke="#3a9457" stroke-width="2" marker-end="url(#arwo)"/>
+<text x="665.0" y="245.5" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3a9457" style="">measure distances</text>
+<rect x="350" y="372" width="280" height="42" rx="10" ry="10" fill="#e9f6ec" stroke="#3a9457" stroke-width="2"/>
+<text x="490.0" y="386.4" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">PH loss = match the two</text>
+<text x="490.0" y="405.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">fingerprints</text>
+<line x1="490" y1="352" x2="490" y2="370" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<text x="490" y="116.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#333" style="">Idea: two motions can hit different points yet share the same overall shape.</text>
+</svg>

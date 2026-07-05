@@ -101,6 +101,45 @@ honest headline is the **fixed-budget table above (flow wins in-dist)**. The ope
 
 ---
 
+## Scaling to larger flow VLAs — pi0.5 (comp‑1) and GR00T N1.6‑3B (comp‑2)
+
+The operator head won robustness on **SmolVLA (450 M, +20.6 pp, 5‑seed, p<0.001)** and **ACT**. Does it
+transfer to much larger flow‑matching VLAs? We ran it head‑only (frozen backbone) on **pi0.5 (3.3 B,
+PaliGemma+flow)** and are running it on **GR00T N1.6‑3B (Eagle+diffusion)**. Code: [`DeepONet PH/pi05/`](DeepONet%20PH/pi05/),
+[`DeepONet PH/comp3_groot/`](DeepONet%20PH/comp3_groot/).
+
+### pi0.5 (comp‑1) — COMPLETE, closed‑loop replan=5, single seed (`DeepONet PH/pi05/results_replan5/`)
+
+| Suite | Flow in‑dist / **Plus** | DeepONet in‑dist / **Plus** | +PH in‑dist / **Plus** |
+|---|---|---|---|
+| Spatial | 88.3 / **64.3** | 86.7 / 39.3 | 90.0 / 48.2 |
+| Object | 87.5 / **55.4** | 81.7 / 30.4 | 83.3 / 32.1 |
+| Long | 66.7 / **50.0** | 60.8 / 12.5 | 44.2 / 12.5 |
+| Goal | 93.3 / **50.0** | 96.7 / 35.7 | 87.5 / 50.0 |
+| **Average** | **84.0 / 54.9** | 81.5 / 29.5 | 76.3 / 35.7 |
+
+**Honest result: on pi0.5, flow leads both in‑dist (+2.5 pp) and robustness (+25.4 pp) — the SmolVLA/ACT
+robustness win did NOT transfer.** This is a real negative result, not an artifact (the eval was audited:
+closed‑loop replan=5, correct action space / physics‑settle, symmetric flow‑vs‑DeepONet init, matched aggregation).
+
+**Likely cause — backbone co‑adaptation.** In *both* winning cases the representation was free to adapt to the
+operator head (ACT trains the encoder end‑to‑end from scratch; SmolVLA unfroze the backbone in stage 2 at lr 1e‑5).
+On pi0.5 the backbone is **frozen and head‑only**, and was pretrained end‑to‑end *as a flow model* — so its
+features are native to flow and foreign to a bolted‑on operator head. The signature fits: **in‑dist nearly ties**
+(the readout still fits) while **Plus collapses** (OOD robustness lives in the representation the head can't reshape).
+The apples‑to‑apples test (unfreeze the pi0.5 backbone, matching the SmolVLA regime) is the decisive follow‑up.
+
+> ⚠️ An earlier open‑loop run (`n_action_steps=50`) had both heads far lower and is superseded — replan=5 is the
+> comparable setting to the SmolVLA study. See [`.claude` memory / commit history] for the bug write‑up.
+
+### GR00T N1.6‑3B (comp‑2) — RUNNING
+
+Same head‑only protocol on GR00T (Eagle VLM + diffusion head). The pipeline required aligning to GR00T's pinned
+deps (torch 2.7.1 + flash‑attn 2.8.0.post2) and 7 bring‑up fixes — see
+[`DeepONet PH/comp3_groot/README.md`](DeepONet%20PH/comp3_groot/README.md). Results will populate `results_c3/`.
+
+---
+
 ## The idea & why it is novel
 
 A VLA model has two parts: a **VLM backbone** (vision + language → token features) and an **action head/expert**

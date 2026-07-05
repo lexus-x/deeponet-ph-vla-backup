@@ -1,0 +1,7 @@
+{
+  "comparison": "c1",
+  "variant": "c1_pi05_deeponet_ph",
+  "suite": "Goal",
+  "indist_avg": 0.875,
+  "plus_avg": 0.5
+}

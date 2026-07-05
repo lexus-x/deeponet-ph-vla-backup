@@ -138,6 +138,25 @@ Same head‑only protocol on GR00T (Eagle VLM + diffusion head). The pipeline re
 deps (torch 2.7.1 + flash‑attn 2.8.0.post2) and 7 bring‑up fixes — see
 [`DeepONet PH/comp3_groot/README.md`](DeepONet%20PH/comp3_groot/README.md). Results will populate `results_c3/`.
 
+### ACT — V2 transfer regime (40‑task pretrain → per‑suite finetune) — COMPLETE (`ACT/act_results_v2/`)
+
+On **ACT** (small transformer, trained end‑to‑end — the backbone *does* co‑adapt), the operator head **wins the
+whole‑suite average** even under the harder transfer regime (in‑dist **+1.9**, robustness **+3.3** vs baseline),
+winning Spatial (+4.3) and Long (+21.0):
+
+| Suite | ACT baseline in / **Plus** | ACT+DeepONet in / **Plus** |
+|---|---|---|
+| Spatial | 81.0 / 58.3 | **85.3 / 66.7** |
+| Object | 81.3 / 45.2 | 65.0 / 45.2 |
+| Long | 45.3 / 19.0 | **66.3 / 20.2** |
+| Goal | 86.0 / 50.0 | 84.7 / 53.6 |
+| **Avg** | 73.4 / 43.1 | **75.3 / 46.4** |
+
+The one exception is **Object (−16.3, a sign‑flip from V1's +5.3)** — root‑caused to **under‑training** under the
+short transfer‑finetune (not a bug; V1=30K from‑scratch vs V2=15K pretrain→15K finetune), see
+[`ACT/act_results_v2/README.md`](ACT/act_results_v2/README.md). This reinforces the pi0.5 finding: **the operator
+head helps when the representation can adapt (ACT, SmolVLA); on a frozen 3.3 B flow backbone (pi0.5) it does not.**
+
 ---
 
 ## The idea & why it is novel

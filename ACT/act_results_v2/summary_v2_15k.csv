@@ -1,0 +1,13 @@
+suite,variant,indist_avg,plus_avg
+Spatial,act,81.0,58.3
+Spatial,act_deeponet,85.3,66.7
+Spatial,act_deeponet_ph,76.7,57.1
+Object,act,81.3,45.2
+Object,act_deeponet,65.0,45.2
+Object,act_deeponet_ph,70.7,38.1
+Long,act,45.3,19.0
+Long,act_deeponet,66.3,20.2
+Long,act_deeponet_ph,44.3,23.8
+Goal,act,86.0,50.0
+Goal,act_deeponet,84.7,53.6
+Goal,act_deeponet_ph,74.0,50.0

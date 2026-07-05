@@ -5,11 +5,18 @@ This is the **ACT-backbone** companion to the SmolVLA study in the parent repo. 
 regularised by a **gated Persistent-Homology (PH) topological loss**) and benchmarks all three heads
 **in-distribution on the four LIBERO suites** (Spatial / Object / Goal / Long).
 
-> **One-line result:** the DeepONet head **wins on every axis on average** — higher **in-distribution**
-> (79.9 vs 75.9 %), higher **out-of-distribution robustness** (LIBERO-Plus 49.7 vs 46.4 %), **3.7× smaller
-> action head** (37.8 M → 10.2 M; 88.3 M → 60.7 M total), and **~16 % lower planning latency** (13.4 vs 16.0 ms).
-> The PH regulariser does **not** help: it lowers in-distribution accuracy on every suite and is below the ACT
-> baseline on OOD average (its one win is Long-OOD).
+> **One-line result (V1 — from-scratch, 30K/suite):** the DeepONet head **wins on every axis on average** —
+> higher **in-distribution** (79.9 vs 75.9 %), higher **out-of-distribution robustness** (LIBERO-Plus 49.7 vs
+> 46.4 %), **3.7× smaller action head** (37.8 M → 10.2 M; 88.3 M → 60.7 M total), and **~16 % lower planning
+> latency** (13.4 vs 16.0 ms). The PH regulariser does **not** help: it lowers in-distribution accuracy on every
+> suite and is below the ACT baseline on OOD average (its one win is Long-OOD).
+
+> **Two training regimes.** All numbers above and in the tables below are **V1 = from-scratch, 30K steps per
+> suite**. A later **V2 = transfer regime** (40-task pretrain 15K → per-suite finetune 15K) is reported in its
+> own section — [V2 transfer results](#v2--transfer-regime-40-task-pretrain--per-suite-finetune) and
+> [`act_results_v2/`](act_results_v2/). Under V2 the DeepONet head still wins the whole-suite average
+> (in-dist +1.9, robustness +3.3) and wins Spatial/Long, but **Object flips negative (−16.3)** — root-caused to
+> transfer under-training, not a bug. V2 is the regime that motivated the pi0.5 / GR00T comparisons in the parent repo.
 
 > **Scope note (updated 2026-06-27):** this repository now contains the **architecture, training/eval code,
 > in-distribution results, LIBERO-Plus robustness (OOD) results, measured latency, and all plots**. Model
@@ -128,6 +135,37 @@ relative-action env). `robustness_average` is the mean over the 7 categories. Ca
 > **Note on the eval harness:** earlier LIBERO-Plus numbers were corrupted by two harness bugs (a skipped
 > physics-settle step and a wrong action space) that made DeepONet-Object read ~0 %. Both are fixed in the
 > LeRobot relative-action env used by `evaluate_plus_lerobot.py`; `eval_lerobot_full` is the canonical set.
+
+---
+
+## V2 — transfer regime (40-task pretrain → per-suite finetune)
+
+The **V2** regime replaces from-scratch 30K training with a **40-task multi-suite pretrain (15K)** followed by a
+per-suite **finetune (15K)**. Eval is byte-identical to V1 (`evaluate_act.py`, 10 tasks × 3 seeds, replan=5,
+max_steps 520, last checkpoint, EMA 0.999). Numbers parsed from `act_results_v2/eval_v2_15k.log`
+(`act_results_v2/summary_v2_15k.csv`); details in [`act_results_v2/README.md`](act_results_v2/README.md).
+
+| Suite | ACT baseline in-dist / **Plus** | ACT+DeepONet in-dist / **Plus** | +PH in-dist / **Plus** | DeepONet − base (in-dist) |
+|---|---|---|---|---|
+| LIBERO-Spatial | 81.0 / 58.3 | **85.3 / 66.7** | 76.7 / 57.1 | **+4.3** ✅ |
+| LIBERO-Object | 81.3 / 45.2 | 65.0 / 45.2 | 70.7 / 38.1 | **−16.3** ❌ |
+| LIBERO-Long | 45.3 / 19.0 | **66.3 / 20.2** | 44.3 / 23.8 | **+21.0** ✅ |
+| LIBERO-Goal | 86.0 / 50.0 | 84.7 / 53.6 | 74.0 / 50.0 | −1.3 (tie) |
+| **Average** | 73.4 / 43.1 | **75.3 / 46.4** | 66.4 / 44.8 | **+1.9 / +3.3** |
+
+- Under V2 the DeepONet head **still wins the whole-suite average** (in-dist +1.9, robustness +3.3) and wins
+  **Spatial (+4.3)** and **Long (+21.0)**.
+- **Object flips negative (−16.3)** — the opposite of V1's +5.3. Root cause: **transfer under-training**, not an
+  eval/harness bug (eval is byte-identical V1↔V2; only the budget differs — V1=30K from-scratch, V2=15K pretrain→15K
+  finetune). 8K→15K the operator rises +0.67 pp while the baseline drops, and collapsed Object tasks recover
+  (salad-dressing 10→43 %, orange-juice 17→33 %). It is Object-specific.
+- **PH again does not help** (lower in-dist on 3/4 suites).
+- **V2 checkpoints** are on HF `AyushShah1107/act-deeponet-libero-checkpoints` under `v2/` (see
+  `act_results_v2/backup_v2_to_hf.py`); pruned locally.
+
+**Why V2 matters:** it is the head-only-style transfer regime that the pi0.5 (comp-1) and GR00T (comp-2) studies in
+the parent repo scale up. The takeaway is consistent — the operator head helps when the representation can adapt
+(ACT trains end-to-end; SmolVLA unfreezes stage-2), and struggles most where budget/adaptation is limited.
 
 ---
 

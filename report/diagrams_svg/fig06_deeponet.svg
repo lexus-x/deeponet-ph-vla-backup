@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1066" height="526" viewBox="-28 -28 1066 526" font-family="DejaVu Sans, Arial, sans-serif">
+<rect x="-28" y="-28" width="1066" height="526" fill="#ffffff"/>
+<text x="505.0" y="28" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#111">Figure 6.  Inside the DeepONet operator action head</text>
+<defs><marker id="arw" markerWidth="12" markerHeight="12" refX="9" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#444"/></marker><marker id="arwo" markerWidth="12" markerHeight="12" refX="9" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#7a52c0"/></marker></defs>
+<rect x="214" y="84" width="660" height="318" rx="14" ry="14" fill="none" stroke="#7a52c0" stroke-width="2" stroke-dasharray="8 5"/>
+<rect x="230" y="73" width="162.79999999999998" height="22" rx="6" fill="#ffffff" stroke="#7a52c0" stroke-width="1.2"/>
+<text x="311.4" y="88.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#7a52c0" style="">DeepONet action head</text>
+<rect x="34" y="118" width="150" height="60" rx="10" ry="10" fill="#eaf2fb" stroke="#2f6db0" stroke-width="2"/>
+<text x="109.0" y="143.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Prefix tokens</text>
+<text x="109.0" y="162.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">(B, N, D)</text>
+<rect x="240" y="96" width="200" height="104" rx="10" ry="10" fill="#f1ecfa" stroke="#7a52c0" stroke-width="2"/>
+<text x="340.0" y="136.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Cross-attention</text>
+<text x="340.0" y="154.6" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">pooler</text>
+<text x="340.0" y="173.2" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">K=8 queries read all tokens</text>
+<text x="340.0" y="187.06" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">(keeps spatial detail)</text>
+<line x1="184" y1="148" x2="238" y2="148" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="500" y="108" width="150" height="80" rx="10" ry="10" fill="#fdf1e6" stroke="#c2772e" stroke-width="2"/>
+<text x="575.0" y="143.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Branch MLP</text>
+<text x="575.0" y="162.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">→ coefficients c</text>
+<line x1="440" y1="148" x2="498" y2="146" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<text x="575" y="208.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="normal" fill="#555" style="">c in R^p  (p=256)</text>
+<rect x="34" y="300" width="150" height="60" rx="10" ry="10" fill="#f2f3f5" stroke="#7a7f87" stroke-width="2"/>
+<text x="109.0" y="316.47" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Time τ in</text>
+<text x="109.0" y="335.07000000000005" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">[0,1]</text>
+<text x="109.0" y="353.6700000000001" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">50 steps</text>
+<rect x="240" y="286" width="200" height="84" rx="10" ry="10" fill="#f2f3f5" stroke="#7a7f87" stroke-width="2"/>
+<text x="340.0" y="323.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Fourier features</text>
+<text x="340.0" y="342.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">τ → [τ, sin, cos ...]</text>
+<line x1="184" y1="330" x2="238" y2="330" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="500" y="290" width="150" height="80" rx="10" ry="10" fill="#fdf1e6" stroke="#c2772e" stroke-width="2"/>
+<text x="575.0" y="325.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Trunk MLP</text>
+<text x="575.0" y="344.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">→ basis φ(τ)</text>
+<line x1="440" y1="330" x2="498" y2="330" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<text x="575" y="388.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="normal" fill="#555" style="">φ(τ) in R^p</text>
+<rect x="712" y="200" width="130" height="80" rx="10" ry="10" fill="#e9f6ec" stroke="#3a9457" stroke-width="2"/>
+<text x="777.0" y="236.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Merge</text>
+<text x="777.0" y="254.6" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">c × φ(τ)</text>
+<text x="777.0" y="268.46" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">element-wise</text>
+<line x1="650" y1="148" x2="722" y2="202" stroke="#c2772e" stroke-width="2" marker-end="url(#arwo)"/>
+<line x1="650" y1="330" x2="722" y2="278" stroke="#c2772e" stroke-width="2" marker-end="url(#arwo)"/>
+<rect x="884" y="205" width="100" height="70" rx="10" ry="10" fill="#fdf1e6" stroke="#c2772e" stroke-width="2"/>
+<text x="934.0" y="233.4" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Output</text>
+<text x="934.0" y="252.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">MLP</text>
+<line x1="842" y1="240" x2="882" y2="240" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="884" y="320" width="116" height="70" rx="10" ry="10" fill="#fdf8e3" stroke="#b79a1f" stroke-width="2"/>
+<text x="942.0" y="341.47" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Action</text>
+<text x="942.0" y="360.07000000000005" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">chunk</text>
+<text x="942.0" y="378.6700000000001" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">a(τ) (B,T,A)</text>
+<line x1="934" y1="275" x2="934" y2="318" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<text x="505" y="448.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#333" style="">One forward pass — no denoising loop.  a(τ) = OutMLP( branch(obs) × trunk(τ) ).  ~10-11M params. Trained with MSE (+ optional PH loss).</text>
+</svg>

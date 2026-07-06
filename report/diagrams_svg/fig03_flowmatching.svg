@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1036" height="476" viewBox="-28 -28 1036 476" font-family="DejaVu Sans, Arial, sans-serif">
+<rect x="-28" y="-28" width="1036" height="476" fill="#ffffff"/>
+<text x="490.0" y="28" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#111">Figure 3.  How the flow-matching action head works</text>
+<defs><marker id="arw" markerWidth="12" markerHeight="12" refX="9" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#444"/></marker><marker id="arwo" markerWidth="12" markerHeight="12" refX="9" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#7a52c0"/></marker></defs>
+<rect x="40" y="90" width="160" height="55" rx="10" ry="10" fill="#eaf2fb" stroke="#2f6db0" stroke-width="2"/>
+<text x="120.0" y="113.27" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Prefix tokens</text>
+<text x="120.0" y="131.87" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">from backbone</text>
+<rect x="40" y="175" width="160" height="55" rx="10" ry="10" fill="#f2f3f5" stroke="#7a7f87" stroke-width="2"/>
+<text x="120.0" y="182.04" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Noisy action</text>
+<text x="120.0" y="200.64" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">x_t</text>
+<text x="120.0" y="219.23999999999998" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">x_t = t·noise +</text>
+<text x="120.0" y="233.09999999999997" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">(1-t)·action</text>
+<rect x="40" y="260" width="160" height="55" rx="10" ry="10" fill="#f2f3f5" stroke="#7a7f87" stroke-width="2"/>
+<text x="120.0" y="290.2" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Time t in [0,1]</text>
+<rect x="300" y="150" width="220" height="130" rx="10" ry="10" fill="#fdf1e6" stroke="#c2772e" stroke-width="2"/>
+<text x="410.0" y="198.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Transformer</text>
+<text x="410.0" y="216.6" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">(cross-attention)</text>
+<text x="410.0" y="235.2" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">predicts a velocity field v_t</text>
+<line x1="200" y1="117" x2="298" y2="175" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<line x1="200" y1="202" x2="298" y2="205" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<line x1="200" y1="287" x2="298" y2="245" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="600" y="165" width="180" height="90" rx="10" ry="10" fill="#f1ecfa" stroke="#7a52c0" stroke-width="2"/>
+<text x="690.0" y="205.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Velocity v_t</text>
+<text x="690.0" y="224.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">denoising direction</text>
+<line x1="520" y1="215" x2="598" y2="210" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="600" y="300" width="340" height="60" rx="10" ry="10" fill="#fdf8e3" stroke="#b79a1f" stroke-width="2"/>
+<text x="770.0" y="323.4" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Clean action = x_t − t·v_t (one</text>
+<text x="770.0" y="342.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">formula, one pass)</text>
+<line x1="690" y1="255" x2="690" y2="298" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="820" y="175" width="130" height="70" rx="10" ry="10" fill="#e9f6ec" stroke="#3a9457" stroke-width="2"/>
+<text x="885.0" y="196.47" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Training</text>
+<text x="885.0" y="215.07" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">loss</text>
+<text x="885.0" y="233.67" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">MSE(v_t, target)</text>
+<line x1="780" y1="210" x2="818" y2="210" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+</svg>

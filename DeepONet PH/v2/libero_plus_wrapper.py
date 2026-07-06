@@ -99,10 +99,23 @@ class LiberoPlusEnv:
         self.task_description = getattr(task, "language", None) or \
             getattr(self.env, "language_instruction", "")
 
-    def reset(self, seed: int = 0):
+    def reset(self, seed: int = 0, num_steps_wait: int = 10):
         self.env.reset()
         st = self.init_states[seed % len(self.init_states)]
-        return self.env.set_init_state(st)
+        obs = self.env.set_init_state(st)
+        # Match lerobot.envs.libero.LiberoEnv.reset() so the perturbed env behaves
+        # exactly like the (working) in-dist env:
+        #  (1) physics-settle for num_steps_wait no-op frames (objects/robot stabilise);
+        #  (2) put the OSC controller in DELTA/relative mode so pi0.5's RELATIVE actions
+        #      are applied correctly. Without this the raw OffScreenRenderEnv treats the
+        #      deltas as ABSOLUTE targets -> arm barely moves -> artifactual ~0% success
+        #      on every visual/state perturbation (the bug that made Plus read ~0).
+        _dummy = [0, 0, 0, 0, 0, 0, -1]
+        for _ in range(num_steps_wait):
+            obs, _, _, _ = self.env.step(_dummy)
+        for robot in self.env.robots:
+            robot.controller.use_delta = True
+        return obs
 
     def step(self, action):
         return self.env.step(action)  # (obs, reward, done, info)

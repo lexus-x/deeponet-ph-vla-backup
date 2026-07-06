@@ -152,6 +152,38 @@ def _save(results, out_path):
     Path(out_path).write_text(json.dumps(results, indent=2))
 
 
+def run_plus_for_policy(policy, pre, post, suite, n_per_cat=12, max_steps=300,
+                        out_dir=None, replan=5, img_size=256, categories=None):
+    """Run the LIBERO-Plus robustness sweep for ONE already-loaded policy and
+    return its robustness_average (mean over category averages). Reuses the same
+    stratified sampling + per-category rollout as main(). Used by eval_pi05.py so
+    the pi0.5 variants share this exact harness."""
+    cats = CATEGORIES if not categories else [c.strip() for c in categories.split(",")]
+    bench, tasks = list_perturbed_tasks(suite)
+    by_cat = {c: [t for t in tasks if t["category"] == c] for c in cats}
+    sampled = {c: stratified_sample(by_cat[c], n_per_cat, seed=42) for c in cats}
+    cat_avgs = []
+    per_cat = {}
+    for c in cats:
+        vals = []
+        for t in sampled[c]:
+            env = LiberoPlusEnv(bench, t["index"], img_size=img_size)
+            succ = rollout(policy, pre, post, env, env.task_description, max_steps)
+            env.close()
+            vals.append(bool(succ))
+        avg = float(np.mean(vals)) if vals else None
+        per_cat[c] = avg
+        if avg is not None:
+            cat_avgs.append(avg)
+        print(f"[plus] {c}: {avg}", flush=True)
+    rob = float(np.mean(cat_avgs)) if cat_avgs else None
+    if out_dir is not None:
+        Path(out_dir).mkdir(parents=True, exist_ok=True)
+        _save({"per_category": per_cat, "robustness_average": rob},
+              Path(out_dir) / "robustness_plus.json")
+    return rob
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", action="append", required=True,

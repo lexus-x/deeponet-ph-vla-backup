@@ -47,8 +47,10 @@ def save_ckpt(policy, ema, out_dir, step, variant, ph_kw):
 
 def load_ckpt(meta, ckpt_dir):
     ckpt_dir = Path(ckpt_dir)
-    if (ckpt_dir / "LATEST.txt").exists() and not (ckpt_dir / "model.safetensors").exists():
-        ckpt_dir = ckpt_dir / (ckpt_dir / "LATEST.txt").read_text().strip()
+    if ckpt_dir.name in ("LATEST", "BEST") and (ckpt_dir.parent / "LATEST.txt").exists():
+        ckpt_dir = ckpt_dir.parent / (ckpt_dir.parent / "LATEST.txt").read_text().strip()  # .../checkpoints/LATEST
+    elif (ckpt_dir / "LATEST.txt").exists() and not (ckpt_dir / "model.safetensors").exists():
+        ckpt_dir = ckpt_dir / (ckpt_dir / "LATEST.txt").read_text().strip()                 # .../checkpoints
     m = json.loads((ckpt_dir / "meta.json").read_text())
     pol = build_policy(meta, m["variant"], **m.get("ph_kw", {}))
     pol.load_state_dict(load_file(str(ckpt_dir / "model.safetensors")))

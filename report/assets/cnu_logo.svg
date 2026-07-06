@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="66" viewBox="0 0 252 66" font-family="DejaVu Sans, Arial, sans-serif">
+  <rect x="0" y="0" width="252" height="66" fill="#ffffff"/>
+  <path d="M10,6 L46,6 L46,36 Q46,58 28,66 Q10,58 10,36 Z" fill="#00337a" stroke="#001f4d" stroke-width="1.6"/>
+  <path d="M28,16 L39,42 L28,35 L17,42 Z" fill="#ffffff"/>
+  <text x="28" y="59" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffd24d">CNU</text>
+  <text x="58" y="29" font-size="13" font-weight="bold" fill="#00337a">CHANGWON NATIONAL</text>
+  <text x="58" y="47" font-size="13" font-weight="bold" fill="#00337a">UNIVERSITY</text>
+</svg>

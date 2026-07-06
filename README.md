@@ -101,6 +101,87 @@ honest headline is the **fixed-budget table above (flow wins in-dist)**. The ope
 
 ---
 
+## Scaling to larger flow VLAs — pi0.5 (comp‑1) and GR00T N1.6‑3B (comp‑2)
+
+The operator head won robustness on **SmolVLA (450 M, +20.6 pp, 5‑seed, p<0.001)** and **ACT**. Does it
+transfer to much larger flow‑matching VLAs? We ran it head‑only (frozen backbone) on **pi0.5 (3.3 B,
+PaliGemma+flow)** and are running it on **GR00T N1.6‑3B (Eagle+diffusion)**. Code: [`DeepONet PH/pi05/`](DeepONet%20PH/pi05/),
+[`DeepONet PH/comp3_groot/`](DeepONet%20PH/comp3_groot/).
+
+### pi0.5 (comp‑1) — COMPLETE, closed‑loop replan=5, single seed (`DeepONet PH/pi05/results_replan5/`)
+
+| Suite | Flow in‑dist / **Plus** | DeepONet in‑dist / **Plus** | +PH in‑dist / **Plus** |
+|---|---|---|---|
+| Spatial | 88.3 / **64.3** | 86.7 / 39.3 | 90.0 / 48.2 |
+| Object | 87.5 / **55.4** | 81.7 / 30.4 | 83.3 / 32.1 |
+| Long | 66.7 / **50.0** | 60.8 / 12.5 | 44.2 / 12.5 |
+| Goal | 93.3 / **50.0** | 96.7 / 35.7 | 87.5 / 50.0 |
+| **Average** | **84.0 / 54.9** | 81.5 / 29.5 | 76.3 / 35.7 |
+
+**Honest result: on pi0.5, flow leads both in‑dist (+2.5 pp) and robustness (+25.4 pp) — the SmolVLA/ACT
+robustness win did NOT transfer.** This is a real negative result, not an artifact (the eval was audited:
+closed‑loop replan=5, correct action space / physics‑settle, symmetric flow‑vs‑DeepONet init, matched aggregation).
+
+**Likely cause — backbone co‑adaptation.** In *both* winning cases the representation was free to adapt to the
+operator head (ACT trains the encoder end‑to‑end from scratch; SmolVLA unfroze the backbone in stage 2 at lr 1e‑5).
+On pi0.5 the backbone is **frozen and head‑only**, and was pretrained end‑to‑end *as a flow model* — so its
+features are native to flow and foreign to a bolted‑on operator head. The signature fits: **in‑dist nearly ties**
+(the readout still fits) while **Plus collapses** (OOD robustness lives in the representation the head can't reshape).
+The apples‑to‑apples test (unfreeze the pi0.5 backbone, matching the SmolVLA regime) is the decisive follow‑up.
+
+#### Provenance — the replan bug (before → after)
+
+**The error.** The first pi0.5 run used the model config default `n_action_steps=50` — it executed all 50
+predicted actions **open‑loop** before re‑querying, instead of the **replan=5** receding‑horizon control the
+SmolVLA study uses. Near‑open‑loop control tanks closed‑loop LIBERO tasks, so every absolute score was
+artificially low (and a second audit caught an asymmetric `--init` where the flow baseline discarded its pretrain).
+
+**The change.** `eval_pi05.py` now forces `n_action_steps = args.replan` (=5) and both heads resume the same
+pretrain; the whole campaign was re‑run → `results_replan5/` (the table above, canonical).
+
+**Before — open‑loop (`n_action_steps=50`), superseded** (`DeepONet PH/pi05/results_openloop_superseded/`):
+
+| Suite | Flow in‑dist / **Plus** | DeepONet in‑dist / **Plus** | +PH in‑dist / **Plus** |
+|---|---|---|---|
+| Spatial | 53.3 / 33.9 | 63.3 / 19.6 | 70.0 / 16.1 |
+| Object | 58.3 / 28.6 | 41.7 / 7.1 | 47.5 / 8.9 |
+| Long | 28.3 / 14.3 | 30.8 / 5.4 | 30.8 / 7.1 |
+| Goal | 71.7 / 33.9 | 77.5 / 32.1 | 78.3 / 26.8 |
+| **Average** | **52.9 / 27.7** | **53.3 / 16.1** | **56.7 / 14.7** |
+
+**What the fix changed — and didn't.** It roughly *doubled* every absolute score (Flow in‑dist 52.9 → 84.0),
+confirming the bug was crippling. But the **conclusion is unchanged**: flow beats DeepONet on robustness under
+**both** protocols (Plus average — Flow 27.7 vs DeepONet 16.1 open‑loop; 54.9 vs 29.5 at replan=5). The negative
+result is a property of the frozen head‑only regime, not an artifact of the replan bug. Full write‑up:
+[`DeepONet PH/pi05/README.md`](DeepONet%20PH/pi05/README.md).
+
+### GR00T N1.6‑3B (comp‑2) — RUNNING
+
+Same head‑only protocol on GR00T (Eagle VLM + diffusion head). The pipeline required aligning to GR00T's pinned
+deps (torch 2.7.1 + flash‑attn 2.8.0.post2) and 7 bring‑up fixes — see
+[`DeepONet PH/comp3_groot/README.md`](DeepONet%20PH/comp3_groot/README.md). Results will populate `results_c3/`.
+
+### ACT — V2 transfer regime (40‑task pretrain → per‑suite finetune) — COMPLETE (`ACT/act_results_v2/`)
+
+On **ACT** (small transformer, trained end‑to‑end — the backbone *does* co‑adapt), the operator head **wins the
+whole‑suite average** even under the harder transfer regime (in‑dist **+1.9**, robustness **+3.3** vs baseline),
+winning Spatial (+4.3) and Long (+21.0):
+
+| Suite | ACT baseline in / **Plus** | ACT+DeepONet in / **Plus** |
+|---|---|---|
+| Spatial | 81.0 / 58.3 | **85.3 / 66.7** |
+| Object | 81.3 / 45.2 | 65.0 / 45.2 |
+| Long | 45.3 / 19.0 | **66.3 / 20.2** |
+| Goal | 86.0 / 50.0 | 84.7 / 53.6 |
+| **Avg** | 73.4 / 43.1 | **75.3 / 46.4** |
+
+The one exception is **Object (−16.3, a sign‑flip from V1's +5.3)** — root‑caused to **under‑training** under the
+short transfer‑finetune (not a bug; V1=30K from‑scratch vs V2=15K pretrain→15K finetune), see
+[`ACT/act_results_v2/README.md`](ACT/act_results_v2/README.md). This reinforces the pi0.5 finding: **the operator
+head helps when the representation can adapt (ACT, SmolVLA); on a frozen 3.3 B flow backbone (pi0.5) it does not.**
+
+---
+
 ## The idea & why it is novel
 
 A VLA model has two parts: a **VLM backbone** (vision + language → token features) and an **action head/expert**

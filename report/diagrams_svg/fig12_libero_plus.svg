@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1066" height="396" viewBox="-28 -28 1066 396" font-family="DejaVu Sans, Arial, sans-serif">
+<rect x="-28" y="-28" width="1066" height="396" fill="#ffffff"/>
+<text x="505.0" y="28" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#111">Figure 12.  LIBERO-Plus: seven ways the world is changed to test robustness</text>
+<rect x="34" y="120" width="126" height="92" rx="10" ry="10" fill="#fdecec" stroke="#c0392b" stroke-width="2"/>
+<text x="97.0" y="164.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Camera</text>
+<text x="97.0" y="182.6" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">viewpoints</text>
+<rect x="173" y="120" width="126" height="92" rx="10" ry="10" fill="#fdf1e6" stroke="#c2772e" stroke-width="2"/>
+<text x="236.0" y="164.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Lighting</text>
+<text x="236.0" y="182.6" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">conditions</text>
+<rect x="312" y="120" width="126" height="92" rx="10" ry="10" fill="#fdecec" stroke="#c0392b" stroke-width="2"/>
+<text x="375.0" y="164.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Sensor</text>
+<text x="375.0" y="182.6" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">noise</text>
+<rect x="451" y="120" width="126" height="92" rx="10" ry="10" fill="#fdf1e6" stroke="#c2772e" stroke-width="2"/>
+<text x="514.0" y="164.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Background</text>
+<text x="514.0" y="182.6" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">textures</text>
+<rect x="590" y="120" width="126" height="92" rx="10" ry="10" fill="#fdecec" stroke="#c0392b" stroke-width="2"/>
+<text x="653.0" y="164.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Object</text>
+<text x="653.0" y="182.6" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">layout</text>
+<rect x="729" y="120" width="126" height="92" rx="10" ry="10" fill="#fdf1e6" stroke="#c2772e" stroke-width="2"/>
+<text x="792.0" y="164.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Robot</text>
+<text x="792.0" y="182.6" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">initial</text>
+<text x="792.0" y="201.2" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">state</text>
+<rect x="868" y="120" width="126" height="92" rx="10" ry="10" fill="#fdecec" stroke="#c0392b" stroke-width="2"/>
+<text x="931.0" y="164.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Language</text>
+<text x="931.0" y="182.6" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">wording</text>
+<text x="505" y="74.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="normal" fill="#333" style="">The model is trained on the normal world, then tested on each perturbed version it has never seen.</text>
+<text x="505" y="262.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">Robustness score = average success across these seven categories.</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1036" height="486" viewBox="-28 -28 1036 486" font-family="DejaVu Sans, Arial, sans-serif">
+<rect x="-28" y="-28" width="1036" height="486" fill="#ffffff"/>
+<text x="490.0" y="28" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#111">Figure 1.  A vision-language-action (VLA) model, at a glance</text>
+<defs><marker id="arw" markerWidth="12" markerHeight="12" refX="9" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#444"/></marker><marker id="arwo" markerWidth="12" markerHeight="12" refX="9" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#7a52c0"/></marker></defs>
+<rect x="30" y="95" width="150" height="48" rx="10" ry="10" fill="#f2f3f5" stroke="#7a7f87" stroke-width="2"/>
+<text x="105.0" y="114.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Camera images</text>
+<text x="105.0" y="133.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">main + wrist</text>
+<rect x="30" y="165" width="150" height="48" rx="10" ry="10" fill="#f2f3f5" stroke="#7a7f87" stroke-width="2"/>
+<text x="105.0" y="184.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Language</text>
+<text x="105.0" y="203.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">&quot;put the bowl ...&quot;</text>
+<rect x="30" y="235" width="150" height="48" rx="10" ry="10" fill="#f2f3f5" stroke="#7a7f87" stroke-width="2"/>
+<text x="105.0" y="254.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Robot state</text>
+<text x="105.0" y="273.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">arm + gripper</text>
+<rect x="250" y="120" width="175" height="150" rx="10" ry="10" fill="#eaf2fb" stroke="#2f6db0" stroke-width="2"/>
+<text x="337.5" y="183.84" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">VLM backbone</text>
+<text x="337.5" y="202.44" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">vision + language</text>
+<text x="337.5" y="216.3" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">(usually frozen)</text>
+<line x1="180" y1="119" x2="248" y2="150" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<line x1="180" y1="189" x2="248" y2="195" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<line x1="180" y1="259" x2="248" y2="245" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<text x="470" y="150.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">prefix tokens</text>
+<rect x="452" y="160" width="13" height="20" rx="3" fill="#eaf2fb" stroke="#2f6db0" stroke-width="1.3"/>
+<rect x="469" y="160" width="13" height="20" rx="3" fill="#eaf2fb" stroke="#2f6db0" stroke-width="1.3"/>
+<rect x="486" y="160" width="13" height="20" rx="3" fill="#eaf2fb" stroke="#2f6db0" stroke-width="1.3"/>
+<rect x="503" y="160" width="13" height="20" rx="3" fill="#eaf2fb" stroke="#2f6db0" stroke-width="1.3"/>
+<rect x="520" y="160" width="13" height="20" rx="3" fill="#eaf2fb" stroke="#2f6db0" stroke-width="1.3"/>
+<rect x="537" y="160" width="13" height="20" rx="3" fill="#eaf2fb" stroke="#2f6db0" stroke-width="1.3"/>
+<line x1="425" y1="195" x2="452" y2="178" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="560" y="130" width="170" height="130" rx="10" ry="10" fill="#fdf1e6" stroke="#c2772e" stroke-width="2"/>
+<text x="645.0" y="190.76999999999998" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Action head</text>
+<text x="645.0" y="209.36999999999998" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">the part we study</text>
+<line x1="540" y1="178" x2="558" y2="190" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="770" y="155" width="175" height="90" rx="10" ry="10" fill="#fdf8e3" stroke="#b79a1f" stroke-width="2"/>
+<text x="857.5" y="195.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Action chunk</text>
+<text x="857.5" y="214.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">a(τ), τ in [0,1]</text>
+<line x1="730" y1="195" x2="768" y2="198" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="770" y="300" width="175" height="60" rx="10" ry="10" fill="#e9f6ec" stroke="#3a9457" stroke-width="2"/>
+<text x="857.5" y="325.77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#222" style="">Robot executes</text>
+<text x="857.5" y="344.37" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#555" style="">a few steps</text>
+<line x1="857" y1="245" x2="857" y2="298" stroke="#444" stroke-width="2" marker-end="url(#arw)"/>
+<path d="M770,330 Q430,405 105,288" fill="none" stroke="#3a9457" stroke-width="2" marker-end="url(#arwo)"/>
+<text x="437.5" y="325.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3a9457" style="">execute a few steps, then look again (receding horizon)</text>
+</svg>

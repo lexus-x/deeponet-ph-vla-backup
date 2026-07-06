@@ -31,12 +31,36 @@ the operator head *won* robustness (ACT trains end‑to‑end; SmolVLA unfreezes
 representation could co‑adapt. **The decisive follow‑up is unfreezing the pi0.5 backbone** (matching the SmolVLA
 regime) on 1–2 suites.
 
-### Provenance note — the replan bug
-An earlier open‑loop run used pi0.5's config default `n_action_steps=50` (nearly open‑loop) instead of the
-intended **replan=5** used by the SmolVLA study. Both heads ran at 50, so it was internally fair but not
-comparable to SmolVLA. `eval_pi05.py` now sets `policy.config.n_action_steps = args.replan`; **`results_replan5/`
-is the canonical, comparable set** (the open‑loop numbers are superseded). A second audit also fixed an asymmetric
-`--init` (the flow baseline had been discarding its pretrain) — fixed before this run, so the comparison is fair.
+### Provenance — the replan bug (before → after)
+
+**The error.** The first pi0.5 run used the model config's default `n_action_steps=50`: it executed all 50
+predicted actions **open‑loop** before re‑querying the policy, instead of the **replan=5** receding‑horizon
+control used by the SmolVLA study this campaign compares against. Near‑open‑loop control tanks closed‑loop
+LIBERO tasks, so every absolute score was artificially low and the setup was not comparable to SmolVLA
+(though internally fair — both heads ran at 50). A second audit also caught an asymmetric `--init` (the flow
+baseline had been discarding its pretrain).
+
+**The change.** `eval_pi05.py` now forces `policy.config.n_action_steps = args.replan` (=5) so the policy
+re‑plans every 5 steps, matching SmolVLA; the `--init` asymmetry was fixed so flow and DeepONet resume the
+same pretrain. The **entire campaign was re‑run** at replan=5 → `results_replan5/` (canonical).
+
+**Before — open‑loop (`n_action_steps=50`), superseded:**
+
+| Suite | Flow in‑dist / **Plus** | DeepONet in‑dist / **Plus** | +PH in‑dist / **Plus** |
+|---|---|---|---|
+| Spatial | 53.3 / 33.9 | 63.3 / 19.6 | 70.0 / 16.1 |
+| Object | 58.3 / 28.6 | 41.7 / 7.1 | 47.5 / 8.9 |
+| Long | 28.3 / 14.3 | 30.8 / 5.4 | 30.8 / 7.1 |
+| Goal | 71.7 / 33.9 | 77.5 / 32.1 | 78.3 / 26.8 |
+| **Average** | **52.9 / 27.7** | **53.3 / 16.1** | **56.7 / 14.7** |
+
+**After — replan=5 (canonical):** the results table at the top of this README
+(Flow **84.0 / 54.9**, DeepONet **81.5 / 29.5**, +PH **76.3 / 35.7**).
+
+**What the fix changed — and didn't.** The fix roughly *doubled* every absolute score (Flow in‑dist 52.9 → 84.0),
+confirming the bug was crippling. But the **conclusion is unchanged**: flow beats DeepONet on robustness under
+**both** protocols (Plus average — Flow 27.7 vs DeepONet 16.1 open‑loop; 54.9 vs 29.5 at replan=5). The negative
+result is a property of the frozen head‑only regime, **not** an artifact of the replan bug.
 
 ## Checkpoints
 The preserved deeponet_ph 40‑task pretrain (16 GB) is backed up to HF

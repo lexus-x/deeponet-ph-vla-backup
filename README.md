@@ -129,8 +129,31 @@ features are native to flow and foreign to a bolted‑on operator head. The sign
 (the readout still fits) while **Plus collapses** (OOD robustness lives in the representation the head can't reshape).
 The apples‑to‑apples test (unfreeze the pi0.5 backbone, matching the SmolVLA regime) is the decisive follow‑up.
 
-> ⚠️ An earlier open‑loop run (`n_action_steps=50`) had both heads far lower and is superseded — replan=5 is the
-> comparable setting to the SmolVLA study. See [`.claude` memory / commit history] for the bug write‑up.
+#### Provenance — the replan bug (before → after)
+
+**The error.** The first pi0.5 run used the model config default `n_action_steps=50` — it executed all 50
+predicted actions **open‑loop** before re‑querying, instead of the **replan=5** receding‑horizon control the
+SmolVLA study uses. Near‑open‑loop control tanks closed‑loop LIBERO tasks, so every absolute score was
+artificially low (and a second audit caught an asymmetric `--init` where the flow baseline discarded its pretrain).
+
+**The change.** `eval_pi05.py` now forces `n_action_steps = args.replan` (=5) and both heads resume the same
+pretrain; the whole campaign was re‑run → `results_replan5/` (the table above, canonical).
+
+**Before — open‑loop (`n_action_steps=50`), superseded** (`DeepONet PH/pi05/results_openloop_superseded/`):
+
+| Suite | Flow in‑dist / **Plus** | DeepONet in‑dist / **Plus** | +PH in‑dist / **Plus** |
+|---|---|---|---|
+| Spatial | 53.3 / 33.9 | 63.3 / 19.6 | 70.0 / 16.1 |
+| Object | 58.3 / 28.6 | 41.7 / 7.1 | 47.5 / 8.9 |
+| Long | 28.3 / 14.3 | 30.8 / 5.4 | 30.8 / 7.1 |
+| Goal | 71.7 / 33.9 | 77.5 / 32.1 | 78.3 / 26.8 |
+| **Average** | **52.9 / 27.7** | **53.3 / 16.1** | **56.7 / 14.7** |
+
+**What the fix changed — and didn't.** It roughly *doubled* every absolute score (Flow in‑dist 52.9 → 84.0),
+confirming the bug was crippling. But the **conclusion is unchanged**: flow beats DeepONet on robustness under
+**both** protocols (Plus average — Flow 27.7 vs DeepONet 16.1 open‑loop; 54.9 vs 29.5 at replan=5). The negative
+result is a property of the frozen head‑only regime, not an artifact of the replan bug. Full write‑up:
+[`DeepONet PH/pi05/README.md`](DeepONet%20PH/pi05/README.md).
 
 ### GR00T N1.6‑3B (comp‑2) — RUNNING
 

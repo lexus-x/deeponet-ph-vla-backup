@@ -18,15 +18,19 @@ unfreezing it. This is the final pi0.5 result.
 |---|---|---|---|
 | Spatial | 87.5 / **71.4** | 92.5 / 44.6 | 90.8 / 35.7 |
 | Object | 88.3 / **57.1** | 92.5 / 55.4 | 85.8 / 53.6 |
-| Long | 70.0 / **46.4** | 53.3 / 26.8 | *running (ETA tonight)* |
-| Goal | 90.8 / **55.4** | 97.5 / 50.0 | *running (ETA tonight)* |
-| **Average** | **84.2 / 57.6** | **84.0 / 44.2** | *2/4 suites so far* |
+| Long | 70.0 / **46.4** | 53.3 / 26.8 | 44.2 / 16.1 |
+| Goal | 90.8 / **55.4** | 97.5 / 50.0 | 93.3 / 41.1 |
+| **Average** | **84.2 / 57.6** | **84.0 / 44.2** | 78.5 / 36.6 |
 
-**Honest result (aug): the operator head now *ties* flow in‑distribution (84.0 vs 84.2, Δ −0.2) but flow still
-leads robustness (+13.4 pp: 57.6 vs 44.2).** Augmentation lifts both heads relative to the no‑aug run (flow Plus
-54.9 → 57.6; DeepONet 29.5 → 44.2) and **halves** the robustness gap (−25.4 → −13.4 pp), but it does **not flip
-the sign**. The SmolVLA/ACT robustness win still does not transfer to a frozen pi0.5 backbone. Single seed;
-per‑suite deltas are noisy (Object is within noise at −1.8 pp; Spatial −26.8 and Long −19.6 carry the gap).
+**Honest result (aug): the operator head *ties* flow in‑distribution (84.0 vs 84.2, Δ −0.2) but flow still
+leads robustness (+13.4 pp: 57.6 vs 44.2); adding the shape regularizer (+SR) makes it *worse* (−21.0: 36.6),
+not better.** Augmentation lifts both heads relative to the no‑aug run (flow Plus 54.9 → 57.6; DeepONet 29.5 →
+44.2) and **halves** the robustness gap (−25.4 → −13.4 pp), but it does **not flip the sign**. The SmolVLA/ACT
+robustness win still does not transfer to a frozen pi0.5 backbone. Single seed; per‑suite deltas are noisy
+(Object is within noise at −1.8 pp; Spatial −26.8 and Long −19.6 carry the gap). **+SR *hurts* on the frozen
+backbone** (36.6 Plus vs the bare head's 44.2, and 78.5 in‑dist vs 84.0) — the opposite of its effect on the
+adapting backbones (ACT/SmolVLA), consistent with co‑adaptation: a training‑only shape prior cannot help a
+representation that is not allowed to adapt.
 
 ### Why — frozen backbone (unchanged by augmentation)
 On pi0.5 the backbone is **frozen and head‑only**, and was pretrained end‑to‑end *as a flow model*, so its

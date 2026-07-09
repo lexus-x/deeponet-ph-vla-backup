@@ -111,22 +111,22 @@ Code: [`DeepONet PH/pi05/`](DeepONet%20PH/pi05/), [`DeepONet PH/comp3_groot/`](D
 ### pi0.5 (comp‑1) — canonical: **photometric‑augmentation** run, replan=5, single seed (`DeepONet PH/pi05/results_aug/`)
 
 Final pi0.5 result: every head trained with identical per‑sample color‑jitter (`--color_jitter`, training‑only) —
-the standard way to buy robustness on a **frozen** backbone. Baseline and factorized (DeepONet) are complete;
-**+PH is 2/4 suites** (Long training, Goal queued — land tonight).
+the standard way to buy robustness on a **frozen** backbone. All three variants complete, 4/4 suites.
 
 | Suite | Flow in‑dist / **Plus** | DeepONet in‑dist / **Plus** | +PH in‑dist / **Plus** |
 |---|---|---|---|
 | Spatial | 87.5 / **71.4** | 92.5 / 44.6 | 90.8 / 35.7 |
 | Object | 88.3 / **57.1** | 92.5 / 55.4 | 85.8 / 53.6 |
-| Long | 70.0 / **46.4** | 53.3 / 26.8 | *running* |
-| Goal | 90.8 / **55.4** | 97.5 / 50.0 | *running* |
-| **Average** | **84.2 / 57.6** | **84.0 / 44.2** | *2/4* |
+| Long | 70.0 / **46.4** | 53.3 / 26.8 | 44.2 / 16.1 |
+| Goal | 90.8 / **55.4** | 97.5 / 50.0 | 93.3 / 41.1 |
+| **Average** | **84.2 / 57.6** | **84.0 / 44.2** | 78.5 / 36.6 |
 
-**Honest result (aug): the factorized head now *ties* flow in‑distribution (84.0 vs 84.2) but flow still leads
-robustness (+13.4 pp: 57.6 vs 44.2).** Augmentation lifts both heads (flow Plus 54.9 → 57.6; DeepONet 29.5 → 44.2)
-and **halves** the gap (−25.4 → −13.4 pp) but does **not flip its sign** — the SmolVLA/ACT robustness win still
-does not transfer to a frozen pi0.5 backbone. Real negative result, audited (closed‑loop replan=5, correct action
-space / physics‑settle, symmetric flow‑vs‑DeepONet init, matched aggregation, single seed).
+**Honest result (aug): the factorized head *ties* flow in‑distribution (84.0 vs 84.2) but flow still leads
+robustness (+13.4 pp: 57.6 vs 44.2); the shape regularizer (+PH) makes it *worse* (−21.0: 36.6), not better.**
+Augmentation lifts both heads (flow Plus 54.9 → 57.6; DeepONet 29.5 → 44.2) and **halves** the gap (−25.4 → −13.4 pp)
+but does **not flip its sign** — the SmolVLA/ACT robustness win still does not transfer to a frozen pi0.5 backbone,
+and +PH (which *helps* on the adapting backbones) actively hurts here. Real negative result, audited (closed‑loop
+replan=5, correct action space / physics‑settle, symmetric flow‑vs‑DeepONet init, matched aggregation, single seed).
 
 **Likely cause — backbone co‑adaptation.** In *both* winning cases the representation was free to adapt to the
 operator head (ACT trains the encoder end‑to‑end from scratch; SmolVLA unfroze the backbone in stage 2 at lr 1e‑5).

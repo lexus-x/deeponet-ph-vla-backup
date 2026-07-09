@@ -104,9 +104,9 @@ honest headline is the **fixed-budget table above (flow wins in-dist)**. The ope
 ## Scaling to larger flow VLAs — pi0.5 (comp‑1) and GR00T N1.6‑3B (comp‑2)
 
 The operator head won robustness on **SmolVLA (450 M, +20.6 pp, 5‑seed, p<0.001)** and **ACT**. Does it
-transfer to much larger flow‑matching VLAs? We ran it head‑only (frozen backbone) on **pi0.5 (3.3 B,
-PaliGemma+flow)** and are running it on **GR00T N1.6‑3B (Eagle+diffusion)**. Code: [`DeepONet PH/pi05/`](DeepONet%20PH/pi05/),
-[`DeepONet PH/comp3_groot/`](DeepONet%20PH/comp3_groot/).
+transfer to much larger flow‑matching / diffusion VLAs? We ran it head‑only on **pi0.5 (3.3 B,
+PaliGemma+flow, frozen backbone)** and **GR00T N1.6‑3B (Eagle+diffusion, partly frozen)** — both now complete.
+Code: [`DeepONet PH/pi05/`](DeepONet%20PH/pi05/), [`DeepONet PH/comp3_groot/`](DeepONet%20PH/comp3_groot/).
 
 ### pi0.5 (comp‑1) — canonical: **photometric‑augmentation** run, replan=5, single seed (`DeepONet PH/pi05/results_aug/`)
 
@@ -147,11 +147,30 @@ augmentation. **The conclusion is invariant across all three protocols:** on a f
 baseline leads robustness (Plus average — 27.7 vs 16.1 open‑loop; 54.9 vs 29.5 replan=5; **57.6 vs 44.2 with aug**).
 Full write‑up + all three tables: [`DeepONet PH/pi05/README.md`](DeepONet%20PH/pi05/README.md).
 
-### GR00T N1.6‑3B (comp‑2) — RUNNING
+### GR00T N1.6‑3B (comp‑2) — COMPLETE, single seed (`DeepONet PH/comp3_groot/results_c3/`)
 
-Same head‑only protocol on GR00T (Eagle VLM + diffusion head). The pipeline required aligning to GR00T's pinned
-deps (torch 2.7.1 + flash‑attn 2.8.0.post2) and 7 bring‑up fixes — see
-[`DeepONet PH/comp3_groot/README.md`](DeepONet%20PH/comp3_groot/README.md). Results will populate `results_c3/`.
+Same head‑only protocol on GR00T (Eagle VLM + diffusion head, partly frozen: the projector and the 1.09 B DiT
+train while the Eagle VLM stays mostly frozen). The pipeline required aligning to GR00T's pinned deps
+(torch 2.7.1 + flash‑attn 2.8.0.post2) and 7 bring‑up fixes — see
+[`DeepONet PH/comp3_groot/README.md`](DeepONet%20PH/comp3_groot/README.md).
+
+| Suite | Diffusion in‑dist / **Plus** | DeepONet in‑dist / **Plus** | +PH in‑dist / **Plus** |
+|---|---|---|---|
+| Spatial | 98.3 / **91.1** | 96.7 / 83.9 | 98.3 / 83.9 |
+| Object | 98.3 / 83.9 | 99.2 / 75.0 | 99.2 / **82.1** |
+| Long | 95.8 / **91.1** | 95.0 / 69.6 | 87.5 / 73.2 |
+| Goal | 99.2 / 83.9 | 96.7 / 75.0 | 97.5 / 73.2 |
+| **Average** | **97.9 / 87.5** | 96.9 / 75.9 | 95.6 / 78.1 |
+
+**Honest result: the operator head essentially *ties* in‑distribution (96.9 vs 97.9) at a ~100× smaller head
+(~11 M vs the 1.09 B DiT) but loses robustness (−11.6 pp: 75.9 vs 87.5); +PH partly recovers it (78.1, −9.4),
+mainly by lifting Object‑Plus 75.0→82.1.** This is the *middle* of the co‑adaptation trend: GR00T is only
+*partly* frozen, so its robustness loss (−11.6) is smaller than fully‑frozen pi0.5 (−13.4, aug) and far from
+adapting SmolVLA (+20.6). The 3 B diffusion baseline is inherently appearance‑robust (Spatial: Light/Sensor/
+Texture/Layout/Language all 100; Camera 62.5, Robot‑init 75.0 — an appearance‑robust, geometry‑fragile
+signature), so the head has little robustness headroom to add. Single seed; 8 ep/category × 7 = 56 Plus
+instances/suite. **No GR00T checkpoints are retained** (the 3 B per‑suite finetunes were pruned after each
+confirmed result; the raw per‑category results in `results_c3/` are the durable record).
 
 ### ACT — V2 transfer regime (40‑task pretrain → per‑suite finetune) — COMPLETE (`ACT/act_results_v2/`)
 

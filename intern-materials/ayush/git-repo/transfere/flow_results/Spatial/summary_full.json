@@ -1,0 +1,18 @@
+{
+  "suite": "LIBERO-SPATIAL",
+  "n_tasks": 10,
+  "average_all_tasks_pct": 79.5,
+  "per_task_pct": {
+    "task0": 80.0,
+    "task1": 100.0,
+    "task2": 100.0,
+    "task3": 95.0,
+    "task4": 75.0,
+    "task5": 5.0,
+    "task6": 90.0,
+    "task7": 90.0,
+    "task8": 70.0,
+    "task9": 90.0
+  },
+  "note": "OFFICIAL LIBERO number = average over ALL tasks."
+}

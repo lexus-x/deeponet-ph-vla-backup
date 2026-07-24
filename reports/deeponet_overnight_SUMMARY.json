@@ -1,0 +1,716 @@
+{
+  "updated": "2026-07-24T15:12:51+09:00",
+  "plus": {
+    "flow_libero_10": {
+      "path": "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/plus_multisuite_campaign/flow_libero_10/robustness_plus.json",
+      "models": {
+        "flow": {
+          "robustness_average": 0.0,
+          "per_category": {
+            "Camera Viewpoints": 0.0,
+            "Light Conditions": 0.0,
+            "Sensor Noise": 0.0,
+            "Background Textures": 0.0,
+            "Objects Layout": 0.0,
+            "Robot Initial States": 0.0,
+            "Language Instructions": 0.0
+          },
+          "n_tasks_done": 56
+        }
+      },
+      "config": {
+        "suite": "libero_10",
+        "replan": 5,
+        "n_per_cat": 8,
+        "max_steps": 300,
+        "categories": [
+          "Camera Viewpoints",
+          "Light Conditions",
+          "Sensor Noise",
+          "Background Textures",
+          "Objects Layout",
+          "Robot Initial States",
+          "Language Instructions"
+        ],
+        "sampled_indices": {
+          "Camera Viewpoints": [
+            710,
+            978,
+            944,
+            1089,
+            913,
+            724,
+            977,
+            699
+          ],
+          "Light Conditions": [
+            2419,
+            2424,
+            2268,
+            2269,
+            2337,
+            2428,
+            2400,
+            2332
+          ],
+          "Sensor Noise": [
+            1806,
+            1785,
+            1534,
+            1520,
+            1852,
+            1511,
+            1623,
+            1517
+          ],
+          "Background Textures": [
+            186,
+            159,
+            225,
+            106,
+            118,
+            196,
+            218,
+            223
+          ],
+          "Objects Layout": [
+            1970,
+            2084,
+            2238,
+            2062,
+            1956,
+            1939,
+            2193,
+            2160
+          ],
+          "Robot Initial States": [
+            491,
+            359,
+            299,
+            664,
+            298,
+            530,
+            296,
+            458
+          ],
+          "Language Instructions": [
+            1393,
+            1161,
+            1192,
+            1216,
+            1163,
+            1303,
+            1105,
+            1206
+          ]
+        }
+      }
+    },
+    "flow_libero_object": {
+      "path": "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/plus_multisuite_campaign/flow_libero_object/robustness_plus.json",
+      "models": {
+        "flow": {
+          "robustness_average": 0.0,
+          "per_category": {
+            "Camera Viewpoints": 0.0,
+            "Light Conditions": 0.0,
+            "Sensor Noise": 0.0,
+            "Background Textures": 0.0,
+            "Objects Layout": 0.0,
+            "Robot Initial States": 0.0,
+            "Language Instructions": 0.0
+          },
+          "n_tasks_done": 56
+        }
+      },
+      "config": {
+        "suite": "libero_object",
+        "replan": 5,
+        "n_per_cat": 8,
+        "max_steps": 300,
+        "categories": [
+          "Camera Viewpoints",
+          "Light Conditions",
+          "Sensor Noise",
+          "Background Textures",
+          "Objects Layout",
+          "Robot Initial States",
+          "Language Instructions"
+        ],
+        "sampled_indices": {
+          "Camera Viewpoints": [
+            988,
+            671,
+            1004,
+            848,
+            963,
+            660,
+            659,
+            694
+          ],
+          "Light Conditions": [
+            2353,
+            2407,
+            2297,
+            2312,
+            2435,
+            2274,
+            2482,
+            2372
+          ],
+          "Sensor Noise": [
+            1760,
+            1476,
+            1756,
+            1530,
+            1790,
+            1592,
+            1416,
+            1520
+          ],
+          "Background Textures": [
+            103,
+            89,
+            190,
+            184,
+            240,
+            229,
+            239,
+            81
+          ],
+          "Objects Layout": [
+            1864,
+            1990,
+            2217,
+            1842,
+            2063,
+            1823,
+            1865,
+            2136
+          ],
+          "Robot Initial States": [
+            565,
+            620,
+            307,
+            335,
+            359,
+            294,
+            303,
+            390
+          ],
+          "Language Instructions": [
+            1350,
+            1164,
+            1342,
+            1270,
+            1096,
+            1066,
+            1320,
+            1140
+          ]
+        }
+      }
+    },
+    "flow_libero_spatial": {
+      "path": "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/plus_multisuite_campaign/flow_libero_spatial/robustness_plus.json",
+      "models": {
+        "flow": {
+          "robustness_average": 0.32142857142857145,
+          "per_category": {
+            "Camera Viewpoints": 0.25,
+            "Light Conditions": 0.5,
+            "Sensor Noise": 0.375,
+            "Background Textures": 0.375,
+            "Objects Layout": 0.5,
+            "Robot Initial States": 0.25,
+            "Language Instructions": 0.0
+          },
+          "n_tasks_done": 56
+        }
+      },
+      "config": {
+        "suite": "libero_spatial",
+        "replan": 5,
+        "n_per_cat": 8,
+        "max_steps": 300,
+        "categories": [
+          "Camera Viewpoints",
+          "Light Conditions",
+          "Sensor Noise",
+          "Background Textures",
+          "Objects Layout",
+          "Robot Initial States",
+          "Language Instructions"
+        ],
+        "sampled_indices": {
+          "Camera Viewpoints": [
+            668,
+            682,
+            755,
+            791,
+            980,
+            613,
+            857,
+            876
+          ],
+          "Light Conditions": [
+            2269,
+            2359,
+            2326,
+            2203,
+            2139,
+            2307,
+            2157,
+            2114
+          ],
+          "Sensor Noise": [
+            1658,
+            1443,
+            1502,
+            1410,
+            1669,
+            1427,
+            1599,
+            1656
+          ],
+          "Background Textures": [
+            227,
+            248,
+            238,
+            176,
+            170,
+            117,
+            36,
+            37
+          ],
+          "Objects Layout": [
+            1978,
+            1952,
+            2054,
+            1788,
+            1883,
+            1971,
+            1969,
+            2098
+          ],
+          "Robot Initial States": [
+            569,
+            311,
+            522,
+            592,
+            453,
+            330,
+            415,
+            446
+          ],
+          "Language Instructions": [
+            1084,
+            1324,
+            1096,
+            1057,
+            1100,
+            1236,
+            1029,
+            1041
+          ]
+        }
+      }
+    },
+    "m3_libero_10": {
+      "path": "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/plus_multisuite_campaign/m3_libero_10/robustness_plus.json",
+      "models": {
+        "m3": {
+          "robustness_average": 0.0,
+          "per_category": {
+            "Camera Viewpoints": 0.0,
+            "Light Conditions": 0.0,
+            "Sensor Noise": 0.0,
+            "Background Textures": 0.0,
+            "Objects Layout": 0.0,
+            "Robot Initial States": 0.0,
+            "Language Instructions": 0.0
+          },
+          "n_tasks_done": 56
+        }
+      },
+      "config": {
+        "suite": "libero_10",
+        "replan": 5,
+        "n_per_cat": 8,
+        "max_steps": 300,
+        "categories": [
+          "Camera Viewpoints",
+          "Light Conditions",
+          "Sensor Noise",
+          "Background Textures",
+          "Objects Layout",
+          "Robot Initial States",
+          "Language Instructions"
+        ],
+        "sampled_indices": {
+          "Camera Viewpoints": [
+            710,
+            978,
+            944,
+            1089,
+            913,
+            724,
+            977,
+            699
+          ],
+          "Light Conditions": [
+            2419,
+            2424,
+            2268,
+            2269,
+            2337,
+            2428,
+            2400,
+            2332
+          ],
+          "Sensor Noise": [
+            1806,
+            1785,
+            1534,
+            1520,
+            1852,
+            1511,
+            1623,
+            1517
+          ],
+          "Background Textures": [
+            186,
+            159,
+            225,
+            106,
+            118,
+            196,
+            218,
+            223
+          ],
+          "Objects Layout": [
+            1970,
+            2084,
+            2238,
+            2062,
+            1956,
+            1939,
+            2193,
+            2160
+          ],
+          "Robot Initial States": [
+            491,
+            359,
+            299,
+            664,
+            298,
+            530,
+            296,
+            458
+          ],
+          "Language Instructions": [
+            1393,
+            1161,
+            1192,
+            1216,
+            1163,
+            1303,
+            1105,
+            1206
+          ]
+        }
+      }
+    },
+    "m3_libero_object": {
+      "path": "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/plus_multisuite_campaign/m3_libero_object/robustness_plus.json",
+      "models": {
+        "m3": {
+          "robustness_average": 0.0,
+          "per_category": {
+            "Camera Viewpoints": 0.0,
+            "Light Conditions": 0.0,
+            "Sensor Noise": 0.0,
+            "Background Textures": 0.0,
+            "Objects Layout": 0.0,
+            "Robot Initial States": 0.0,
+            "Language Instructions": 0.0
+          },
+          "n_tasks_done": 56
+        }
+      },
+      "config": {
+        "suite": "libero_object",
+        "replan": 5,
+        "n_per_cat": 8,
+        "max_steps": 300,
+        "categories": [
+          "Camera Viewpoints",
+          "Light Conditions",
+          "Sensor Noise",
+          "Background Textures",
+          "Objects Layout",
+          "Robot Initial States",
+          "Language Instructions"
+        ],
+        "sampled_indices": {
+          "Camera Viewpoints": [
+            988,
+            671,
+            1004,
+            848,
+            963,
+            660,
+            659,
+            694
+          ],
+          "Light Conditions": [
+            2353,
+            2407,
+            2297,
+            2312,
+            2435,
+            2274,
+            2482,
+            2372
+          ],
+          "Sensor Noise": [
+            1760,
+            1476,
+            1756,
+            1530,
+            1790,
+            1592,
+            1416,
+            1520
+          ],
+          "Background Textures": [
+            103,
+            89,
+            190,
+            184,
+            240,
+            229,
+            239,
+            81
+          ],
+          "Objects Layout": [
+            1864,
+            1990,
+            2217,
+            1842,
+            2063,
+            1823,
+            1865,
+            2136
+          ],
+          "Robot Initial States": [
+            565,
+            620,
+            307,
+            335,
+            359,
+            294,
+            303,
+            390
+          ],
+          "Language Instructions": [
+            1350,
+            1164,
+            1342,
+            1270,
+            1096,
+            1066,
+            1320,
+            1140
+          ]
+        }
+      }
+    },
+    "m3_libero_spatial": {
+      "path": "/home/user/Desktop/Ayush PH test/DeepONet PH/v2/plus_multisuite_campaign/m3_libero_spatial/robustness_plus.json",
+      "models": {
+        "m3": {
+          "robustness_average": 0.44642857142857145,
+          "per_category": {
+            "Camera Viewpoints": 0.5,
+            "Light Conditions": 0.625,
+            "Sensor Noise": 0.25,
+            "Background Textures": 0.375,
+            "Objects Layout": 0.625,
+            "Robot Initial States": 0.125,
+            "Language Instructions": 0.625
+          },
+          "n_tasks_done": 56
+        }
+      },
+      "config": {
+        "suite": "libero_spatial",
+        "replan": 5,
+        "n_per_cat": 8,
+        "max_steps": 300,
+        "categories": [
+          "Camera Viewpoints",
+          "Light Conditions",
+          "Sensor Noise",
+          "Background Textures",
+          "Objects Layout",
+          "Robot Initial States",
+          "Language Instructions"
+        ],
+        "sampled_indices": {
+          "Camera Viewpoints": [
+            668,
+            682,
+            755,
+            791,
+            980,
+            613,
+            857,
+            876
+          ],
+          "Light Conditions": [
+            2269,
+            2359,
+            2326,
+            2203,
+            2139,
+            2307,
+            2157,
+            2114
+          ],
+          "Sensor Noise": [
+            1658,
+            1443,
+            1502,
+            1410,
+            1669,
+            1427,
+            1599,
+            1656
+          ],
+          "Background Textures": [
+            227,
+            248,
+            238,
+            176,
+            170,
+            117,
+            36,
+            37
+          ],
+          "Objects Layout": [
+            1978,
+            1952,
+            2054,
+            1788,
+            1883,
+            1971,
+            1969,
+            2098
+          ],
+          "Robot Initial States": [
+            569,
+            311,
+            522,
+            592,
+            453,
+            330,
+            415,
+            446
+          ],
+          "Language Instructions": [
+            1084,
+            1324,
+            1096,
+            1057,
+            1100,
+            1236,
+            1029,
+            1041
+          ]
+        }
+      }
+    }
+  },
+  "pod30k": {
+    "log_exists": true,
+    "latest_ckpt": "30000",
+    "last_lines": [
+      "[stage2] step  29199 | mse=0.3407 L1=0.8970 PH=0.0000 total=0.3407 | VRAM=50.3GB | 0.635s/it",
+      "[stage2] step  29399 | mse=0.3380 L1=0.9149 PH=0.0000 total=0.3380 | VRAM=50.3GB | 0.636s/it",
+      "[stage2] step  29599 | mse=0.3403 L1=0.9230 PH=0.0000 total=0.3403 | VRAM=50.3GB | 0.638s/it",
+      "[stage2] step  29799 | mse=0.3432 L1=0.9236 PH=0.0000 total=0.3432 | VRAM=50.3GB | 0.638s/it",
+      "[stage2] step  29999 | mse=0.3374 L1=0.9212 PH=0.0000 total=0.3374 | VRAM=50.3GB | 0.637s/it",
+      "[ckpt] saved -> /home/user/Desktop/Ayush PH test/DeepONet PH/v2/pod_train_spatial_30k/checkpoints/30000  (EMA weights)",
+      "",
+      "[train] DONE head=deeponet variant=baseline steps=30000 wall=522.0 min -> /home/user/Desktop/Ayush PH test/DeepONet PH/v2/pod_train_spatial_30k"
+    ],
+    "last_step": 29999,
+    "status": "DONE"
+  },
+  "long_boundary": {
+    "ens": {
+      "mean_sr": 55.5,
+      "n_tasks": 10,
+      "per_task": {
+        "0": 30.0,
+        "1": 45.0,
+        "2": 90.0,
+        "3": 85.0,
+        "4": 50.0,
+        "5": 85.0,
+        "6": 45.0,
+        "7": 45.0,
+        "8": 5.0,
+        "9": 75.0
+      }
+    },
+    "pin": {
+      "mean_sr": 5.0,
+      "n_tasks": 3,
+      "per_task": {
+        "0": 0.0,
+        "5": 5.0,
+        "6": 10.0
+      },
+      "status": "partial_aborted_for_pod_cpu",
+      "note": "t0=0% t5=5% t6=10% vs m3_r5=60 \u2014 catastrophic; aborted"
+    },
+    "note": "from exec_campaign_results SUMMARY",
+    "anchors": {
+      "m3_r5": 60.0,
+      "flow_r5": 65.0,
+      "flow_reported": 66.5
+    },
+    "ens_worst_tasks": [
+      [
+        "8",
+        5.0
+      ],
+      [
+        "0",
+        30.0
+      ],
+      [
+        "1",
+        45.0
+      ]
+    ],
+    "ens_best_tasks": [
+      [
+        "2",
+        90.0
+      ],
+      [
+        "3",
+        85.0
+      ],
+      [
+        "5",
+        85.0
+      ]
+    ],
+    "mechanism": "Long ens mean=55.5% vs m3_r5=60.0%; pin status=partial_aborted_for_pod_cpu. Averaging/pinning across mode jumps hurts closed-loop SR (BID-consistent)."
+  },
+  "verdict": "Plus partial/complete \u2014 libero_10: m3=0.000 flow=0.000 d=+0.000; libero_object: m3=0.000 flow=0.000 d=+0.000; libero_spatial: m3=0.446 flow=0.321 d=+0.125"
+}

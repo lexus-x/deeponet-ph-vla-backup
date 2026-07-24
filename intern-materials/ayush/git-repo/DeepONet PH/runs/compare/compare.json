@@ -1,0 +1,28 @@
+{
+  "flow": {
+    "params": {
+      "backbone": 350165184,
+      "head": 99880992,
+      "dead_excluded": 0,
+      "active_total": 450046176
+    },
+    "latency_ms_mean": 148.14603308477672,
+    "latency_ms_std": 4.892003769581345,
+    "num_steps": 10
+  },
+  "deeponet": {
+    "params": {
+      "backbone": 350165184,
+      "head": 2308480,
+      "dead_excluded": 99849312,
+      "active_total": 352473664
+    },
+    "latency_ms_mean": 23.332198249894038,
+    "latency_ms_std": 1.375461893552576,
+    "num_steps": 10
+  },
+  "_comparison": {
+    "head_param_ratio_flow_over_deeponet": 43.26699473246465,
+    "latency_speedup_flow_over_deeponet": 6.349424580491447
+  }
+}

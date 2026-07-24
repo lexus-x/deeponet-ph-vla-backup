@@ -1,0 +1,7 @@
+{
+  "comparison": "c1",
+  "variant": "c1_pi05_deeponet",
+  "suite": "Long",
+  "indist_avg": 0.30833333333333335,
+  "plus_avg": 0.05357142857142857
+}

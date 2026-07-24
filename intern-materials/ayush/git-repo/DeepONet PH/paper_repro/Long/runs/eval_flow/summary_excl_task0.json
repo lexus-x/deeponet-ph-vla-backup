@@ -1,0 +1,20 @@
+{
+  "suite": "LIBERO-10",
+  "model": "flow",
+  "excluded_task": "task0",
+  "excluded_task_success_pct": 30.0,
+  "n_tasks_kept": 9,
+  "average_excluding_task_pct": 70.56,
+  "per_task_kept_pct": {
+    "task1": 75.0,
+    "task2": 100.0,
+    "task3": 95.0,
+    "task4": 60.0,
+    "task5": 85.0,
+    "task6": 65.0,
+    "task7": 60.0,
+    "task8": 30.0,
+    "task9": 65.0
+  },
+  "note": "SUPPLEMENTARY analysis only (hardest task removed). NOT the official LIBERO number."
+}

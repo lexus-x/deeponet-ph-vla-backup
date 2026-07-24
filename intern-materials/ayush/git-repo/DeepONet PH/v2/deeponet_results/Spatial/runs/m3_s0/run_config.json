@@ -1,0 +1,46 @@
+{
+  "args": {
+    "head": "deeponet",
+    "variant": "baseline",
+    "out": "./deeponet_results/Spatial/runs/m3_s0",
+    "base_ckpt": "lerobot/smolvla_base",
+    "dataset": "lerobot/libero_spatial_image",
+    "lambda_ph": 0.02,
+    "ph_k": 8,
+    "deeponet_p": 256,
+    "deeponet_blocks": 3,
+    "deeponet_queries": 8,
+    "deeponet_fourier": 16,
+    "deeponet_head": "deeponet",
+    "num_workers": 8,
+    "stage1_steps": 1650,
+    "stage2_steps": 28350,
+    "stage1_batch": 48,
+    "stage2_batch": 48,
+    "warmup": 500,
+    "head_lr": 0.0001,
+    "backbone_lr": 1e-05,
+    "ema": 0.999,
+    "ckpt_every": 10000,
+    "epoch_steps": 200,
+    "stats_path": null,
+    "seed": 0
+  },
+  "stage_configs": {
+    "stage1": {
+      "steps": 1650,
+      "batch": 48,
+      "head_lr": 0.0001
+    },
+    "stage2": {
+      "steps": 28350,
+      "batch": 48,
+      "head_lr": 0.0001,
+      "backbone_lr": 1e-05,
+      "warmup": 500,
+      "grad_ckpt": true
+    }
+  },
+  "dataset_frames": 52970,
+  "planned_epochs": 27.185199169341136
+}

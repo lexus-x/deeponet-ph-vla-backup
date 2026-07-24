@@ -1,0 +1,681 @@
+{
+  "_config": {
+    "libero_spatial": {
+      "replan": 5,
+      "indist_episodes": 20,
+      "pert_episodes": 8,
+      "max_steps": 520,
+      "models": {
+        "reg_s2": "runs/reg_s2/checkpoints/8300"
+      }
+    }
+  },
+  "LIBERO-SPATIAL": {
+    "abl_p64_s0": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.7,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.05,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        }
+      },
+      "average": 0.8200000000000001
+    },
+    "abl_p64_s1": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.65,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.15,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        }
+      },
+      "average": 0.8099999999999999
+    },
+    "abl_noF_s0": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.4,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.8,
+          "n": 20
+        }
+      },
+      "average": 0.8450000000000001
+    },
+    "abl_noF_s1": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.35,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        }
+      },
+      "average": 0.825
+    },
+    "abl_1blk_s0": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.35,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.6,
+          "n": 20
+        }
+      },
+      "average": 0.8099999999999999
+    },
+    "abl_1blk_s1": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.6,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.3,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.6,
+          "n": 20
+        }
+      },
+      "average": 0.765
+    },
+    "reg_s0": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.25,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        }
+      },
+      "average": 0.86
+    },
+    "reg_s1": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.4,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        }
+      },
+      "average": 0.86
+    },
+    "abl_p64_s2": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.35,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.65,
+          "n": 20
+        }
+      },
+      "average": 0.8200000000000001
+    },
+    "abl_noF_s2": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.1,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.8,
+          "n": 20
+        }
+      },
+      "average": 0.8099999999999999
+    },
+    "abl_1blk_s2": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.2,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.7,
+          "n": 20
+        }
+      },
+      "average": 0.77
+    },
+    "reg_s2": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.15,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.7,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.7,
+          "n": 20
+        }
+      },
+      "average": 0.7700000000000001
+    }
+  },
+  "_summary": {
+    "reg_s2": {
+      "LIBERO-SPATIAL_avg": 0.7700000000000001,
+      "LIBERO-SPATIAL-V_avg": null
+    }
+  }
+}

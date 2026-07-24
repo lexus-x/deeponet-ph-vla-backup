@@ -1,0 +1,19 @@
+{
+  "suite": "LIBERO-OBJECT",
+  "model": "flow",
+  "n_tasks": 10,
+  "average_all_tasks_pct": 87.5,
+  "per_task_pct": {
+    "task0": 80.0,
+    "task1": 95.0,
+    "task2": 100.0,
+    "task3": 80.0,
+    "task4": 100.0,
+    "task5": 80.0,
+    "task6": 90.0,
+    "task7": 90.0,
+    "task8": 100.0,
+    "task9": 60.0
+  },
+  "note": "OFFICIAL LIBERO number = average over ALL tasks."
+}

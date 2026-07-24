@@ -1,0 +1,24 @@
+{
+  "task": "pick up the black bowl on the ramekin and place it on the plate",
+  "ckpt": "../Spatial/runs/flow_s0/checkpoints/LATEST",
+  "results": {
+    "replan_5": {
+      "passes": 1,
+      "n": 12,
+      "success_rate": 0.08333333333333333,
+      "wall_s": 321.7
+    },
+    "replan_2": {
+      "passes": 1,
+      "n": 12,
+      "success_rate": 0.08333333333333333,
+      "wall_s": 570.8
+    },
+    "replan_1": {
+      "passes": 0,
+      "n": 12,
+      "success_rate": 0.0,
+      "wall_s": 1029.9
+    }
+  }
+}

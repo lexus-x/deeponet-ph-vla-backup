@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "dtype": "bfloat16",
+    "batch": 1,
+    "dataset": "lerobot/libero_spatial_image",
+    "n_warm": 20,
+    "n_iter": 200,
+    "chunk_size": 100
+  },
+  "act": {
+    "params_M": 88.284,
+    "plan_forward": {
+      "mean_ms": 15.965,
+      "std_ms": 1.474,
+      "p50_ms": 15.822,
+      "p90_ms": 17.868,
+      "min_ms": 13.315
+    },
+    "amortized_replan5": {
+      "mean_ms": 3.896,
+      "std_ms": 6.434,
+      "p50_ms": 0.785,
+      "p90_ms": 16.91,
+      "min_ms": 0.574
+    },
+    "control_freq_hz_plan": 62.6,
+    "control_freq_hz_amort": 256.7
+  },
+  "act_deeponet": {
+    "params_M": 60.712,
+    "plan_forward": {
+      "mean_ms": 13.386,
+      "std_ms": 1.15,
+      "p50_ms": 13.149,
+      "p90_ms": 15.148,
+      "min_ms": 11.253
+    },
+    "amortized_replan5": {
+      "mean_ms": 3.226,
+      "std_ms": 5.28,
+      "p50_ms": 0.594,
+      "p90_ms": 13.522,
+      "min_ms": 0.506
+    },
+    "control_freq_hz_plan": 74.7,
+    "control_freq_hz_amort": 310.0
+  },
+  "act_deeponet_ph": {
+    "params_M": 60.712,
+    "plan_forward": {
+      "mean_ms": 12.989,
+      "std_ms": 1.123,
+      "p50_ms": 12.696,
+      "p90_ms": 14.43,
+      "min_ms": 11.311
+    },
+    "amortized_replan5": {
+      "mean_ms": 3.352,
+      "std_ms": 5.596,
+      "p50_ms": 0.575,
+      "p90_ms": 14.379,
+      "min_ms": 0.504
+    },
+    "control_freq_hz_plan": 77.0,
+    "control_freq_hz_amort": 298.4
+  }
+}

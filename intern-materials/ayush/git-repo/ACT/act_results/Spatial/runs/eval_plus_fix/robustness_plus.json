@@ -1,0 +1,1491 @@
+{
+  "_config": {
+    "suite": "libero_spatial",
+    "replan": 5,
+    "n_per_cat": 12,
+    "max_steps": 300,
+    "categories": [
+      "Camera Viewpoints",
+      "Light Conditions",
+      "Sensor Noise",
+      "Background Textures",
+      "Objects Layout",
+      "Robot Initial States",
+      "Language Instructions"
+    ],
+    "sampled_indices": {
+      "Camera Viewpoints": [
+        668,
+        682,
+        755,
+        791,
+        980,
+        613,
+        857,
+        876,
+        811,
+        809,
+        715,
+        771
+      ],
+      "Light Conditions": [
+        2269,
+        2359,
+        2326,
+        2203,
+        2139,
+        2307,
+        2157,
+        2114,
+        2346,
+        2211,
+        2260,
+        2118
+      ],
+      "Sensor Noise": [
+        1658,
+        1443,
+        1502,
+        1410,
+        1669,
+        1427,
+        1599,
+        1656,
+        1642,
+        1412,
+        1382,
+        1415
+      ],
+      "Background Textures": [
+        227,
+        248,
+        238,
+        176,
+        170,
+        117,
+        36,
+        37,
+        54,
+        18,
+        3,
+        222
+      ],
+      "Objects Layout": [
+        1978,
+        1952,
+        2054,
+        1788,
+        1883,
+        1971,
+        1969,
+        2098,
+        1735,
+        1815,
+        1975,
+        2057
+      ],
+      "Robot Initial States": [
+        569,
+        311,
+        522,
+        592,
+        453,
+        330,
+        415,
+        446,
+        491,
+        409,
+        261,
+        331
+      ],
+      "Language Instructions": [
+        1084,
+        1324,
+        1096,
+        1057,
+        1100,
+        1236,
+        1029,
+        1041,
+        1140,
+        1164,
+        1346,
+        987
+      ]
+    }
+  },
+  "act": {
+    "Camera Viewpoints": {
+      "per_task": {
+        "668": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_36_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "682": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_43_15_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "755": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_61_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "791": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_0_0_160_0_0_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "980": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_view_356_15_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": true
+        },
+        "613": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_view_15_15_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "857": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_view_308_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "876": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_176_0_0_initstate_0",
+          "difficulty": 3,
+          "success": true
+        },
+        "811": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_290_15_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "809": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_289_15_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "715": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_view_51_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "771": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_70_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.5
+    },
+    "Light Conditions": {
+      "per_task": {
+        "2269": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_light_41",
+          "difficulty": 1,
+          "success": true
+        },
+        "2359": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_light_22",
+          "difficulty": 2,
+          "success": true
+        },
+        "2326": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_light_21",
+          "difficulty": 3,
+          "success": false
+        },
+        "2203": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_light_10",
+          "difficulty": 4,
+          "success": true
+        },
+        "2139": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_light_41",
+          "difficulty": 5,
+          "success": true
+        },
+        "2307": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_light_44",
+          "difficulty": 1,
+          "success": true
+        },
+        "2157": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_light_14",
+          "difficulty": 2,
+          "success": true
+        },
+        "2114": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_light_13",
+          "difficulty": 3,
+          "success": true
+        },
+        "2346": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_light_6",
+          "difficulty": 4,
+          "success": false
+        },
+        "2211": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_light_18",
+          "difficulty": 5,
+          "success": true
+        },
+        "2260": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_light_33",
+          "difficulty": 1,
+          "success": true
+        },
+        "2118": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_light_17",
+          "difficulty": 2,
+          "success": true
+        }
+      },
+      "average": 0.8333333333333334
+    },
+    "Sensor Noise": {
+      "per_task": {
+        "1658": {
+          "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_3",
+          "difficulty": 1,
+          "success": false
+        },
+        "1443": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_6",
+          "difficulty": 2,
+          "success": true
+        },
+        "1502": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_47",
+          "difficulty": 3,
+          "success": false
+        },
+        "1410": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_7",
+          "difficulty": 4,
+          "success": false
+        },
+        "1669": {
+          "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_19",
+          "difficulty": 5,
+          "success": false
+        },
+        "1427": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_33",
+          "difficulty": 1,
+          "success": true
+        },
+        "1599": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_28",
+          "difficulty": 2,
+          "success": true
+        },
+        "1656": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_49",
+          "difficulty": 3,
+          "success": false
+        },
+        "1642": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_29",
+          "difficulty": 4,
+          "success": false
+        },
+        "1412": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_9",
+          "difficulty": 5,
+          "success": false
+        },
+        "1382": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_12",
+          "difficulty": 1,
+          "success": true
+        },
+        "1415": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_13",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.3333333333333333
+    },
+    "Background Textures": {
+      "per_task": {
+        "227": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_tb_12",
+          "difficulty": 1,
+          "success": false
+        },
+        "248": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_table_23",
+          "difficulty": 2,
+          "success": true
+        },
+        "238": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_tb_3",
+          "difficulty": 3,
+          "success": false
+        },
+        "176": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_table_19",
+          "difficulty": 4,
+          "success": false
+        },
+        "170": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_table_12",
+          "difficulty": 5,
+          "success": false
+        },
+        "117": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_tb_20",
+          "difficulty": 1,
+          "success": true
+        },
+        "36": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_table_18",
+          "difficulty": 2,
+          "success": true
+        },
+        "37": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_table_19",
+          "difficulty": 3,
+          "success": true
+        },
+        "54": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_tb_11",
+          "difficulty": 4,
+          "success": true
+        },
+        "18": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_table_9",
+          "difficulty": 1,
+          "success": true
+        },
+        "3": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_table_13",
+          "difficulty": 2,
+          "success": true
+        },
+        "222": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_table_7",
+          "difficulty": 3,
+          "success": true
+        }
+      },
+      "average": 0.6666666666666666
+    },
+    "Objects Layout": {
+      "per_task": {
+        "1978": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_level2_sample2",
+          "difficulty": 1,
+          "success": true
+        },
+        "1952": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_add_14",
+          "difficulty": 2,
+          "success": true
+        },
+        "2054": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_level1_sample4",
+          "difficulty": 3,
+          "success": false
+        },
+        "1788": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_add_7",
+          "difficulty": 4,
+          "success": true
+        },
+        "1883": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_level5_sample4",
+          "difficulty": 5,
+          "success": false
+        },
+        "1971": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_add_8",
+          "difficulty": 1,
+          "success": true
+        },
+        "1969": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_add_4",
+          "difficulty": 2,
+          "success": true
+        },
+        "2098": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_level3_sample1",
+          "difficulty": 3,
+          "success": true
+        },
+        "1735": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_add_20",
+          "difficulty": 4,
+          "success": true
+        },
+        "1815": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_add_18",
+          "difficulty": 5,
+          "success": true
+        },
+        "1975": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_level1_sample3",
+          "difficulty": 1,
+          "success": true
+        },
+        "2057": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_level2_sample3",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.75
+    },
+    "Robot Initial States": {
+      "per_task": {
+        "569": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_90",
+          "difficulty": 1,
+          "success": false
+        },
+        "311": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_322",
+          "difficulty": 2,
+          "success": true
+        },
+        "522": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_438",
+          "difficulty": 3,
+          "success": false
+        },
+        "592": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_350",
+          "difficulty": 4,
+          "success": true
+        },
+        "453": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_446",
+          "difficulty": 5,
+          "success": false
+        },
+        "330": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_43",
+          "difficulty": 1,
+          "success": true
+        },
+        "415": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_375",
+          "difficulty": 2,
+          "success": true
+        },
+        "446": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_356",
+          "difficulty": 3,
+          "success": false
+        },
+        "491": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_118",
+          "difficulty": 4,
+          "success": false
+        },
+        "409": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_305",
+          "difficulty": 5,
+          "success": false
+        },
+        "261": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_121",
+          "difficulty": 1,
+          "success": true
+        },
+        "331": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_83",
+          "difficulty": 2,
+          "success": true
+        }
+      },
+      "average": 0.5
+    },
+    "Language Instructions": {
+      "per_task": {
+        "1084": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_language_40_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "1324": {
+          "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_language_48_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "1096": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_language_7_view_0_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "1057": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_language_45_view_0_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": true
+        },
+        "1100": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_language_14_view_0_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": true
+        },
+        "1236": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_language_38_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "1029": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_language_50_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "1041": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_language_18_view_0_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": true
+        },
+        "1140": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_language_12_view_0_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": true
+        },
+        "1164": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_language_44_view_0_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": true
+        },
+        "1346": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_language_22_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "987": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_language_4_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.5833333333333334
+    },
+    "robustness_average": 0.5952380952380952
+  },
+  "act_deeponet": {
+    "Camera Viewpoints": {
+      "per_task": {
+        "668": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_36_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "682": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_43_15_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "755": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_61_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": true
+        },
+        "791": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_0_0_160_0_0_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "980": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_view_356_15_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "613": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_view_15_15_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "857": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_view_308_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "876": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_176_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "811": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_290_15_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "809": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_289_15_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "715": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_view_51_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        },
+        "771": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_70_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.4166666666666667
+    },
+    "Light Conditions": {
+      "per_task": {
+        "2269": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_light_41",
+          "difficulty": 1,
+          "success": false
+        },
+        "2359": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_light_22",
+          "difficulty": 2,
+          "success": true
+        },
+        "2326": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_light_21",
+          "difficulty": 3,
+          "success": true
+        },
+        "2203": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_light_10",
+          "difficulty": 4,
+          "success": false
+        },
+        "2139": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_light_41",
+          "difficulty": 5,
+          "success": true
+        },
+        "2307": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_light_44",
+          "difficulty": 1,
+          "success": true
+        },
+        "2157": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_light_14",
+          "difficulty": 2,
+          "success": true
+        },
+        "2114": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_light_13",
+          "difficulty": 3,
+          "success": true
+        },
+        "2346": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_light_6",
+          "difficulty": 4,
+          "success": false
+        },
+        "2211": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_light_18",
+          "difficulty": 5,
+          "success": true
+        },
+        "2260": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_light_33",
+          "difficulty": 1,
+          "success": false
+        },
+        "2118": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_light_17",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.5833333333333334
+    },
+    "Sensor Noise": {
+      "per_task": {
+        "1658": {
+          "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_3",
+          "difficulty": 1,
+          "success": true
+        },
+        "1443": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_6",
+          "difficulty": 2,
+          "success": true
+        },
+        "1502": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_47",
+          "difficulty": 3,
+          "success": false
+        },
+        "1410": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_7",
+          "difficulty": 4,
+          "success": true
+        },
+        "1669": {
+          "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_19",
+          "difficulty": 5,
+          "success": false
+        },
+        "1427": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_33",
+          "difficulty": 1,
+          "success": true
+        },
+        "1599": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_28",
+          "difficulty": 2,
+          "success": true
+        },
+        "1656": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_49",
+          "difficulty": 3,
+          "success": true
+        },
+        "1642": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_29",
+          "difficulty": 4,
+          "success": false
+        },
+        "1412": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_9",
+          "difficulty": 5,
+          "success": true
+        },
+        "1382": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_12",
+          "difficulty": 1,
+          "success": true
+        },
+        "1415": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_13",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.6666666666666666
+    },
+    "Background Textures": {
+      "per_task": {
+        "227": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_tb_12",
+          "difficulty": 1,
+          "success": true
+        },
+        "248": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_table_23",
+          "difficulty": 2,
+          "success": true
+        },
+        "238": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_tb_3",
+          "difficulty": 3,
+          "success": true
+        },
+        "176": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_table_19",
+          "difficulty": 4,
+          "success": true
+        },
+        "170": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_table_12",
+          "difficulty": 5,
+          "success": true
+        },
+        "117": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_tb_20",
+          "difficulty": 1,
+          "success": false
+        },
+        "36": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_table_18",
+          "difficulty": 2,
+          "success": true
+        },
+        "37": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_table_19",
+          "difficulty": 3,
+          "success": false
+        },
+        "54": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_tb_11",
+          "difficulty": 4,
+          "success": true
+        },
+        "18": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_table_9",
+          "difficulty": 1,
+          "success": true
+        },
+        "3": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_table_13",
+          "difficulty": 2,
+          "success": true
+        },
+        "222": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_table_7",
+          "difficulty": 3,
+          "success": true
+        }
+      },
+      "average": 0.8333333333333334
+    },
+    "Objects Layout": {
+      "per_task": {
+        "1978": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_level2_sample2",
+          "difficulty": 1,
+          "success": true
+        },
+        "1952": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_add_14",
+          "difficulty": 2,
+          "success": true
+        },
+        "2054": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_level1_sample4",
+          "difficulty": 3,
+          "success": false
+        },
+        "1788": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_add_7",
+          "difficulty": 4,
+          "success": true
+        },
+        "1883": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_level5_sample4",
+          "difficulty": 5,
+          "success": true
+        },
+        "1971": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_add_8",
+          "difficulty": 1,
+          "success": true
+        },
+        "1969": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_add_4",
+          "difficulty": 2,
+          "success": false
+        },
+        "2098": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_level3_sample1",
+          "difficulty": 3,
+          "success": true
+        },
+        "1735": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_add_20",
+          "difficulty": 4,
+          "success": true
+        },
+        "1815": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_add_18",
+          "difficulty": 5,
+          "success": false
+        },
+        "1975": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_level1_sample3",
+          "difficulty": 1,
+          "success": true
+        },
+        "2057": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_level2_sample3",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.6666666666666666
+    },
+    "Robot Initial States": {
+      "per_task": {
+        "569": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_90",
+          "difficulty": 1,
+          "success": false
+        },
+        "311": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_322",
+          "difficulty": 2,
+          "success": true
+        },
+        "522": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_438",
+          "difficulty": 3,
+          "success": false
+        },
+        "592": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_350",
+          "difficulty": 4,
+          "success": true
+        },
+        "453": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_446",
+          "difficulty": 5,
+          "success": false
+        },
+        "330": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_43",
+          "difficulty": 1,
+          "success": true
+        },
+        "415": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_375",
+          "difficulty": 2,
+          "success": false
+        },
+        "446": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_356",
+          "difficulty": 3,
+          "success": true
+        },
+        "491": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_118",
+          "difficulty": 4,
+          "success": false
+        },
+        "409": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_305",
+          "difficulty": 5,
+          "success": false
+        },
+        "261": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_121",
+          "difficulty": 1,
+          "success": true
+        },
+        "331": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_83",
+          "difficulty": 2,
+          "success": true
+        }
+      },
+      "average": 0.5
+    },
+    "Language Instructions": {
+      "per_task": {
+        "1084": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_language_40_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "1324": {
+          "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_language_48_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "1096": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_language_7_view_0_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "1057": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_language_45_view_0_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": true
+        },
+        "1100": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_language_14_view_0_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": true
+        },
+        "1236": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_language_38_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "1029": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_language_50_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "1041": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_language_18_view_0_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": true
+        },
+        "1140": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_language_12_view_0_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": true
+        },
+        "1164": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_language_44_view_0_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": true
+        },
+        "1346": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_language_22_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "987": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_language_4_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        }
+      },
+      "average": 0.9166666666666666
+    },
+    "robustness_average": 0.6547619047619048
+  },
+  "act_deeponet_ph": {
+    "Camera Viewpoints": {
+      "per_task": {
+        "668": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_36_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "682": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_43_15_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "755": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_61_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "791": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_0_0_160_0_0_initstate_0",
+          "difficulty": 4,
+          "success": true
+        },
+        "980": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_view_356_15_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": true
+        },
+        "613": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_view_15_15_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "857": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_view_308_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "876": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_176_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "811": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_290_15_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": false
+        },
+        "809": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_289_15_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": false
+        },
+        "715": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_view_51_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "771": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_70_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        }
+      },
+      "average": 0.6666666666666666
+    },
+    "Light Conditions": {
+      "per_task": {
+        "2269": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_light_41",
+          "difficulty": 1,
+          "success": true
+        },
+        "2359": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_light_22",
+          "difficulty": 2,
+          "success": true
+        },
+        "2326": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_light_21",
+          "difficulty": 3,
+          "success": false
+        },
+        "2203": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_light_10",
+          "difficulty": 4,
+          "success": true
+        },
+        "2139": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_light_41",
+          "difficulty": 5,
+          "success": true
+        },
+        "2307": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_light_44",
+          "difficulty": 1,
+          "success": true
+        },
+        "2157": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_light_14",
+          "difficulty": 2,
+          "success": true
+        },
+        "2114": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_light_13",
+          "difficulty": 3,
+          "success": false
+        },
+        "2346": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_light_6",
+          "difficulty": 4,
+          "success": false
+        },
+        "2211": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_light_18",
+          "difficulty": 5,
+          "success": true
+        },
+        "2260": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_light_33",
+          "difficulty": 1,
+          "success": true
+        },
+        "2118": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_light_17",
+          "difficulty": 2,
+          "success": true
+        }
+      },
+      "average": 0.75
+    },
+    "Sensor Noise": {
+      "per_task": {
+        "1658": {
+          "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_3",
+          "difficulty": 1,
+          "success": false
+        },
+        "1443": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_6",
+          "difficulty": 2,
+          "success": true
+        },
+        "1502": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_47",
+          "difficulty": 3,
+          "success": true
+        },
+        "1410": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_7",
+          "difficulty": 4,
+          "success": false
+        },
+        "1669": {
+          "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_19",
+          "difficulty": 5,
+          "success": false
+        },
+        "1427": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_33",
+          "difficulty": 1,
+          "success": true
+        },
+        "1599": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_28",
+          "difficulty": 2,
+          "success": false
+        },
+        "1656": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_49",
+          "difficulty": 3,
+          "success": false
+        },
+        "1642": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_29",
+          "difficulty": 4,
+          "success": true
+        },
+        "1412": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_9",
+          "difficulty": 5,
+          "success": false
+        },
+        "1382": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_12",
+          "difficulty": 1,
+          "success": true
+        },
+        "1415": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_13",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.4166666666666667
+    },
+    "Background Textures": {
+      "per_task": {
+        "227": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_tb_12",
+          "difficulty": 1,
+          "success": true
+        },
+        "248": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_table_23",
+          "difficulty": 2,
+          "success": true
+        },
+        "238": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_tb_3",
+          "difficulty": 3,
+          "success": false
+        },
+        "176": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_table_19",
+          "difficulty": 4,
+          "success": false
+        },
+        "170": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_table_12",
+          "difficulty": 5,
+          "success": false
+        },
+        "117": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_tb_20",
+          "difficulty": 1,
+          "success": false
+        },
+        "36": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_table_18",
+          "difficulty": 2,
+          "success": true
+        },
+        "37": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_table_19",
+          "difficulty": 3,
+          "success": true
+        },
+        "54": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_tb_11",
+          "difficulty": 4,
+          "success": true
+        },
+        "18": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_table_9",
+          "difficulty": 1,
+          "success": false
+        },
+        "3": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_table_13",
+          "difficulty": 2,
+          "success": true
+        },
+        "222": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_table_7",
+          "difficulty": 3,
+          "success": true
+        }
+      },
+      "average": 0.5833333333333334
+    },
+    "Objects Layout": {
+      "per_task": {
+        "1978": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_level2_sample2",
+          "difficulty": 1,
+          "success": true
+        },
+        "1952": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_add_14",
+          "difficulty": 2,
+          "success": true
+        },
+        "2054": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_level1_sample4",
+          "difficulty": 3,
+          "success": false
+        },
+        "1788": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_add_7",
+          "difficulty": 4,
+          "success": true
+        },
+        "1883": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_level5_sample4",
+          "difficulty": 5,
+          "success": true
+        },
+        "1971": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_add_8",
+          "difficulty": 1,
+          "success": false
+        },
+        "1969": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_add_4",
+          "difficulty": 2,
+          "success": true
+        },
+        "2098": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_level3_sample1",
+          "difficulty": 3,
+          "success": false
+        },
+        "1735": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_add_20",
+          "difficulty": 4,
+          "success": true
+        },
+        "1815": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_add_18",
+          "difficulty": 5,
+          "success": true
+        },
+        "1975": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_level1_sample3",
+          "difficulty": 1,
+          "success": true
+        },
+        "2057": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_level2_sample3",
+          "difficulty": 2,
+          "success": false
+        }
+      },
+      "average": 0.6666666666666666
+    },
+    "Robot Initial States": {
+      "per_task": {
+        "569": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_90",
+          "difficulty": 1,
+          "success": false
+        },
+        "311": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_322",
+          "difficulty": 2,
+          "success": true
+        },
+        "522": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_438",
+          "difficulty": 3,
+          "success": false
+        },
+        "592": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_350",
+          "difficulty": 4,
+          "success": true
+        },
+        "453": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_446",
+          "difficulty": 5,
+          "success": false
+        },
+        "330": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_43",
+          "difficulty": 1,
+          "success": true
+        },
+        "415": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_375",
+          "difficulty": 2,
+          "success": true
+        },
+        "446": {
+          "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_356",
+          "difficulty": 3,
+          "success": false
+        },
+        "491": {
+          "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_118",
+          "difficulty": 4,
+          "success": false
+        },
+        "409": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_305",
+          "difficulty": 5,
+          "success": true
+        },
+        "261": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_121",
+          "difficulty": 1,
+          "success": true
+        },
+        "331": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_83",
+          "difficulty": 2,
+          "success": true
+        }
+      },
+      "average": 0.5833333333333334
+    },
+    "Language Instructions": {
+      "per_task": {
+        "1084": {
+          "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_language_40_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "1324": {
+          "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_language_48_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "1096": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_language_7_view_0_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": true
+        },
+        "1057": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_language_45_view_0_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": true
+        },
+        "1100": {
+          "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_language_14_view_0_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": true
+        },
+        "1236": {
+          "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_language_38_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "1029": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_language_50_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        },
+        "1041": {
+          "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_language_18_view_0_0_100_0_0_initstate_0",
+          "difficulty": 3,
+          "success": false
+        },
+        "1140": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_language_12_view_0_0_100_0_0_initstate_0",
+          "difficulty": 4,
+          "success": true
+        },
+        "1164": {
+          "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_language_44_view_0_0_100_0_0_initstate_0",
+          "difficulty": 5,
+          "success": true
+        },
+        "1346": {
+          "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_language_22_view_0_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": true
+        },
+        "987": {
+          "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_language_4_view_0_0_100_0_0_initstate_0",
+          "difficulty": 2,
+          "success": true
+        }
+      },
+      "average": 0.9166666666666666
+    },
+    "robustness_average": 0.6547619047619048
+  }
+}

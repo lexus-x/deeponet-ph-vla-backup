@@ -1,0 +1,129 @@
+{
+  "_config": {
+    "suite": "libero_10",
+    "replan": 5,
+    "n_per_cat": 12,
+    "max_steps": 520,
+    "categories": [
+      "Camera Viewpoints",
+      "Light Conditions",
+      "Sensor Noise",
+      "Background Textures",
+      "Objects Layout",
+      "Robot Initial States",
+      "Language Instructions"
+    ],
+    "sampled_indices": {
+      "Camera Viewpoints": [
+        710,
+        978,
+        944,
+        1089,
+        913,
+        724,
+        977,
+        699,
+        993,
+        762,
+        702,
+        718
+      ],
+      "Light Conditions": [
+        2419,
+        2424,
+        2268,
+        2269,
+        2337,
+        2428,
+        2400,
+        2332,
+        2248,
+        2472,
+        2430,
+        2504
+      ],
+      "Sensor Noise": [
+        1806,
+        1785,
+        1534,
+        1520,
+        1852,
+        1511,
+        1623,
+        1517,
+        1571,
+        1579,
+        1484,
+        1485
+      ],
+      "Background Textures": [
+        186,
+        159,
+        225,
+        106,
+        118,
+        196,
+        218,
+        223,
+        14,
+        246,
+        286,
+        190
+      ],
+      "Objects Layout": [
+        1970,
+        2084,
+        2238,
+        2062,
+        1956,
+        1939,
+        2193,
+        2160,
+        2069,
+        2092,
+        2044,
+        2031
+      ],
+      "Robot Initial States": [
+        491,
+        359,
+        299,
+        664,
+        298,
+        530,
+        296,
+        458,
+        604,
+        353,
+        642,
+        420
+      ],
+      "Language Instructions": [
+        1393,
+        1161,
+        1192,
+        1216,
+        1163,
+        1303,
+        1105,
+        1206,
+        1181,
+        1468,
+        1141,
+        1336
+      ]
+    }
+  },
+  "act": {
+    "Camera Viewpoints": {
+      "per_task": {
+        "710": {
+          "name": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket_view_17_0_100_0_0_initstate_0",
+          "difficulty": 1,
+          "success": false
+        }
+      },
+      "average": null
+    }
+  }
+}

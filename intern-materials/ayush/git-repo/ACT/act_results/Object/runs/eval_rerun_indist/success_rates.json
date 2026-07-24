@@ -1,0 +1,409 @@
+{
+  "_config": {
+    "libero_object": {
+      "replan": 5,
+      "indist_episodes": 10,
+      "test_seeds": 3,
+      "max_steps": 520,
+      "models": {
+        "act": "act_results/Object/runs/act/checkpoints/30000",
+        "act_deeponet": "act_results/Object/runs/act_deeponet/checkpoints/30000",
+        "act_deeponet_ph": "act_results/Object/runs/act_deeponet_ph/checkpoints/30000"
+      }
+    }
+  },
+  "LIBERO-OBJECT": {
+    "act": {
+      "per_task": {
+        "0": {
+          "task": "pick up the alphabet soup and place it in the basket",
+          "success_rate": 0.7000000000000001,
+          "std": 0.14142135623730953,
+          "per_seed": [
+            0.6,
+            0.9,
+            0.6
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "1": {
+          "task": "pick up the cream cheese and place it in the basket",
+          "success_rate": 0.9333333333333332,
+          "std": 0.09428090415820632,
+          "per_seed": [
+            1.0,
+            1.0,
+            0.8
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "2": {
+          "task": "pick up the salad dressing and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "3": {
+          "task": "pick up the bbq sauce and place it in the basket",
+          "success_rate": 0.3333333333333333,
+          "std": 0.04714045207910319,
+          "per_seed": [
+            0.3,
+            0.3,
+            0.4
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "4": {
+          "task": "pick up the ketchup and place it in the basket",
+          "success_rate": 0.8666666666666667,
+          "std": 0.12472191289246473,
+          "per_seed": [
+            0.7,
+            1.0,
+            0.9
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "5": {
+          "task": "pick up the tomato sauce and place it in the basket",
+          "success_rate": 0.6999999999999998,
+          "std": 0.08164965809277264,
+          "per_seed": [
+            0.8,
+            0.6,
+            0.7
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "6": {
+          "task": "pick up the butter and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "7": {
+          "task": "pick up the milk and place it in the basket",
+          "success_rate": 0.8666666666666667,
+          "std": 0.04714045207910316,
+          "per_seed": [
+            0.9,
+            0.9,
+            0.8
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "8": {
+          "task": "pick up the chocolate pudding and place it in the basket",
+          "success_rate": 0.9666666666666667,
+          "std": 0.04714045207910316,
+          "per_seed": [
+            1.0,
+            0.9,
+            1.0
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "9": {
+          "task": "pick up the orange juice and place it in the basket",
+          "success_rate": 0.7999999999999999,
+          "std": 0.14142135623730953,
+          "per_seed": [
+            0.9,
+            0.6,
+            0.9
+          ],
+          "n": 10,
+          "seeds": 3
+        }
+      },
+      "average": 0.8166666666666668,
+      "average_std": 0.07249165438553722
+    },
+    "act_deeponet": {
+      "per_task": {
+        "0": {
+          "task": "pick up the alphabet soup and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "1": {
+          "task": "pick up the cream cheese and place it in the basket",
+          "success_rate": 0.8666666666666666,
+          "std": 0.12472191289246473,
+          "per_seed": [
+            1.0,
+            0.9,
+            0.7
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "2": {
+          "task": "pick up the salad dressing and place it in the basket",
+          "success_rate": 0.9666666666666667,
+          "std": 0.04714045207910316,
+          "per_seed": [
+            1.0,
+            0.9,
+            1.0
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "3": {
+          "task": "pick up the bbq sauce and place it in the basket",
+          "success_rate": 0.6333333333333333,
+          "std": 0.09428090415820632,
+          "per_seed": [
+            0.5,
+            0.7,
+            0.7
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "4": {
+          "task": "pick up the ketchup and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "5": {
+          "task": "pick up the tomato sauce and place it in the basket",
+          "success_rate": 0.8666666666666667,
+          "std": 0.04714045207910316,
+          "per_seed": [
+            0.9,
+            0.9,
+            0.8
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "6": {
+          "task": "pick up the butter and place it in the basket",
+          "success_rate": 0.8333333333333334,
+          "std": 0.04714045207910316,
+          "per_seed": [
+            0.8,
+            0.8,
+            0.9
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "7": {
+          "task": "pick up the milk and place it in the basket",
+          "success_rate": 0.8333333333333334,
+          "std": 0.04714045207910316,
+          "per_seed": [
+            0.8,
+            0.9,
+            0.8
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "8": {
+          "task": "pick up the chocolate pudding and place it in the basket",
+          "success_rate": 0.9666666666666667,
+          "std": 0.04714045207910316,
+          "per_seed": [
+            1.0,
+            0.9,
+            1.0
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "9": {
+          "task": "pick up the orange juice and place it in the basket",
+          "success_rate": 0.7333333333333334,
+          "std": 0.12472191289246473,
+          "per_seed": [
+            0.6,
+            0.9,
+            0.7
+          ],
+          "n": 10,
+          "seeds": 3
+        }
+      },
+      "average": 0.8699999999999999,
+      "average_std": 0.05794269903386516
+    },
+    "act_deeponet_ph": {
+      "per_task": {
+        "0": {
+          "task": "pick up the alphabet soup and place it in the basket",
+          "success_rate": 0.5666666666666668,
+          "std": 0.04714045207910316,
+          "per_seed": [
+            0.6,
+            0.5,
+            0.6
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "1": {
+          "task": "pick up the cream cheese and place it in the basket",
+          "success_rate": 0.5333333333333333,
+          "std": 0.04714045207910316,
+          "per_seed": [
+            0.5,
+            0.5,
+            0.6
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "2": {
+          "task": "pick up the salad dressing and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "3": {
+          "task": "pick up the bbq sauce and place it in the basket",
+          "success_rate": 0.26666666666666666,
+          "std": 0.09428090415820634,
+          "per_seed": [
+            0.4,
+            0.2,
+            0.2
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "4": {
+          "task": "pick up the ketchup and place it in the basket",
+          "success_rate": 0.8333333333333334,
+          "std": 0.16996731711975951,
+          "per_seed": [
+            0.6,
+            0.9,
+            1.0
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "5": {
+          "task": "pick up the tomato sauce and place it in the basket",
+          "success_rate": 0.8000000000000002,
+          "std": 1.1102230246251565e-16,
+          "per_seed": [
+            0.8,
+            0.8,
+            0.8
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "6": {
+          "task": "pick up the butter and place it in the basket",
+          "success_rate": 0.9333333333333332,
+          "std": 0.04714045207910316,
+          "per_seed": [
+            0.9,
+            0.9,
+            1.0
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "7": {
+          "task": "pick up the milk and place it in the basket",
+          "success_rate": 0.4000000000000001,
+          "std": 0.08164965809277261,
+          "per_seed": [
+            0.5,
+            0.3,
+            0.4
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "8": {
+          "task": "pick up the chocolate pudding and place it in the basket",
+          "success_rate": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "n": 10,
+          "seeds": 3
+        },
+        "9": {
+          "task": "pick up the orange juice and place it in the basket",
+          "success_rate": 0.8666666666666667,
+          "std": 0.04714045207910316,
+          "per_seed": [
+            0.8,
+            0.9,
+            0.9
+          ],
+          "n": 10,
+          "seeds": 3
+        }
+      },
+      "average": 0.7200000000000001,
+      "average_std": 0.05344596876871512
+    }
+  },
+  "_summary": {
+    "act": {
+      "LIBERO-OBJECT_avg": 0.8166666666666668,
+      "LIBERO-OBJECT-V_avg": null
+    },
+    "act_deeponet": {
+      "LIBERO-OBJECT_avg": 0.8699999999999999,
+      "LIBERO-OBJECT-V_avg": null
+    },
+    "act_deeponet_ph": {
+      "LIBERO-OBJECT_avg": 0.7200000000000001,
+      "LIBERO-OBJECT-V_avg": null
+    }
+  }
+}

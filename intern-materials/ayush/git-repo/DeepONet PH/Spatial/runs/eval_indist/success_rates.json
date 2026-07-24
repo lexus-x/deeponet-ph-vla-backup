@@ -1,0 +1,196 @@
+{
+  "_config": {
+    "libero_spatial": {
+      "replan": 5,
+      "indist_episodes": 20,
+      "pert_episodes": 8,
+      "max_steps": 520,
+      "models": {
+        "flow": "../Spatial/runs/flow_s0/checkpoints/15000",
+        "m3": "../Spatial/runs/m3_s0/checkpoints/15000",
+        "m4": "../Spatial/runs/m4_s0/checkpoints/15000"
+      }
+    }
+  },
+  "LIBERO-SPATIAL": {
+    "flow": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.05,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.7,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        }
+      },
+      "average": 0.785
+    },
+    "m3": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 1.0,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.4,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.8,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.75,
+          "n": 20
+        }
+      },
+      "average": 0.8200000000000001
+    },
+    "m4": {
+      "per_task": {
+        "0": {
+          "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "1": {
+          "task": "pick up the black bowl next to the ramekin and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "2": {
+          "task": "pick up the black bowl from table center and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "3": {
+          "task": "pick up the black bowl on the cookie box and place it on the plate",
+          "success_rate": 0.95,
+          "n": 20
+        },
+        "4": {
+          "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "5": {
+          "task": "pick up the black bowl on the ramekin and place it on the plate",
+          "success_rate": 0.15,
+          "n": 20
+        },
+        "6": {
+          "task": "pick up the black bowl next to the cookie box and place it on the plate",
+          "success_rate": 0.85,
+          "n": 20
+        },
+        "7": {
+          "task": "pick up the black bowl on the stove and place it on the plate",
+          "success_rate": 0.75,
+          "n": 20
+        },
+        "8": {
+          "task": "pick up the black bowl next to the plate and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        },
+        "9": {
+          "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+          "success_rate": 0.9,
+          "n": 20
+        }
+      },
+      "average": 0.805
+    }
+  },
+  "_summary": {
+    "flow": {
+      "LIBERO-SPATIAL_avg": 0.785,
+      "LIBERO-SPATIAL-V_avg": null
+    },
+    "m3": {
+      "LIBERO-SPATIAL_avg": 0.8200000000000001,
+      "LIBERO-SPATIAL-V_avg": null
+    },
+    "m4": {
+      "LIBERO-SPATIAL_avg": 0.805,
+      "LIBERO-SPATIAL-V_avg": null
+    }
+  }
+}

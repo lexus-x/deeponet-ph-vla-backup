@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-07-24",
+  "long_ens": {"mean_sr": 55.5, "anchor_m3": 60.0, "anchor_flow": 65.0, "verdict": "FAIL"},
+  "long_pin": {"mean_sr_partial": 5.0, "n_tasks": 3, "verdict": "FAIL_ABORTED"},
+  "spatial_indist": {"m3": 77.0, "flow": 78.0, "verdict": "TIE"},
+  "long_confirm_10eps": {"m3": 54.0, "flow": 66.0, "verdict": "FLOW_AHEAD"},
+  "pod_spatial_8300": {"mean_sr": 58.0, "delta_vs_m3": -19.0, "verdict": "FAIL"},
+  "gpus_used": ["blackwell", "a100"],
+  "gpus_skipped": ["a6000", "a6000-left", "a6000-mid"]
+}
